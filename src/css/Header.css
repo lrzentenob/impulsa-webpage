@@ -4,17 +4,19 @@ header {
     position: absolute;
     width: 100%;
     z-index: 999;
-    border: 1px solid gray;
+    height: 4em;
+    border: 1px solid red;
 }
 
 nav {
+    position: absolute;
     padding-top: 1em;
     border: 1px solid red;
-    position: absolute;
-    top: 100%
-}
-h1 {
-    border: 1px solid blue;
+    top: 100%;
+    width: 100%;
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 400ms;
 }
 
 nav ul{
@@ -25,21 +27,106 @@ nav li {
     margin-bottom: 1em;
     margin-left: 1em;
 }
-nav a {
+nav a,
+nav p {
     color: black;
     text-decoration: none;
-    
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
 }
 nav a:hover {
     color: gainsboro;
 }
 
-nav {
-    display: none;
-}
 .navtoggle {
     display: none;
 }
-.navtoggle:checked ~ nav {
+.navtoggle:checked ~ nav {    
+    transform: scale(1,1);
+}
+.navtoggle:checked ~ nav a,
+.navtoggle:checked ~ nav p{    
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+.navtoggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navtoggle-label span,
+.navtoggle-label span::before,
+.navtoggle-label span::after {
     display: block;
+    background: black;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+.navtoggle-label span::before,
+.navtoggle-label span::after {
+    content: '';
+    position: absolute;
+}
+.navtoggle-label span::before {
+    bottom: 7px;
+}
+.navtoggle-label span::after {
+    top: 7px;
+}
+
+@media screen and (min-width: 980px) {
+    .navtoggle-label {
+        display: none;
+    }
+    header { 
+        display: grid;
+        grid-template-columns: 1fr auto minmax(800px,1fr) 1fr;
+    }
+    .logo {
+        grid-column: 1 / 2;
+    }
+    nav {
+        all: unset;
+        grid-column: 3 / 4;
+        border: 1px solid blue;
+    }
+    nav a,
+    nav p{
+        opacity: 1;
+    }
+    nav a {
+        position: relative;
+    }
+    nav p{ 
+        text-align: right;
+        width: 300px;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1em;
+    }
+    nav a::before {
+        content: '';
+        display: block;
+        height: 5px;
+        background: black;
+        position: absolute;
+        top: -0.75em;
+        left: 0;
+        right: 0;
+        transform: scale(0,1);
+        transition: transform ease-in-out 250ms;
+    }
+    nav a:hover::before {
+        transform: scale(1,1);
+    }
 }
