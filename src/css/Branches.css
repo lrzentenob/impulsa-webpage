@@ -1,0 +1,48 @@
+.branches {
+    position: relative;
+    overflow: hidden;
+}
+.cut-bkground{
+    position: absolute;
+    right: 0;
+    top: -30em;
+    right: -30em;
+    width: 935px;
+    height: 710px;
+    overflow: hidden;
+}
+.cut-bkground img {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: 0;
+}
+.branches-upper-content {
+    text-align: center;
+    line-height: 1.5em;
+    max-width: 500px;
+    margin: auto;
+    padding: 1em;
+}
+
+.branches-lower-content {
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.branches-detail {
+    width: 400px;
+}
+.branches-detail ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.branches-detail li {
+    font-size: var(--fs-xsm);
+    max-width: 220px;
+    
+}
+.branches-detail img {
+    width: 100%;
+}

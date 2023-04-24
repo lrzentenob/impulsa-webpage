@@ -4,8 +4,7 @@ export const Header  = ()=>{
 
     return (
         <header>
-            <h1 className='logo'>Logo</h1>
-            <input type='checkbox' className='navtoggle' id='togglecheck'></input>
+            <input type='checkbox' className='navtoggle' id='togglecheck-header'></input>
             <nav>
                 <ul>
                     <li> <a href='#'>Fianzas</a></li>
@@ -15,7 +14,7 @@ export const Header  = ()=>{
                     <li> <p>800 902 3456</p></li>
                 </ul>
             </nav>
-            <label htmlFor='togglecheck' className='navtoggle-label'>
+            <label htmlFor='togglecheck-header' className='navtoggle-label'>
                 <span></span>
             </label>
         </header>
