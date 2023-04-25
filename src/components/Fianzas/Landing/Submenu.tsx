@@ -1,5 +1,6 @@
 import './css/Submenu.css';
 import fiLogo from '../../../assets/fianzas/fianzas-logo.png'
+import { Link } from 'react-router-dom';
 export const Submenu = () => {
 
     return(
@@ -10,12 +11,12 @@ export const Submenu = () => {
             <input type='checkbox' className='navtoggle' id='togglecheck-submenu'></input>
             <nav>
                 <ul>
-                    <li> <a href="#">Inicio</a></li>
-                    <li> <a href="#">Productos</a></li>
-                    <li> <a href="#">Nosotros</a></li>
-                    <li> <a href="#">Oficinas</a></li>
-                    <li> <a href="#">Directorio</a></li>
-                    <li> <a href="#" className="btn-fianzas">Contacto</a></li>
+                    <li> <Link to="/">Inicio</Link></li>
+                    <li> <Link to="/productos">Productos</Link></li>
+                    <li> <Link to="/requisitos">Requisitos</Link></li>
+                    <li> <Link to="/oficinas">Oficinas</Link></li>
+                    <li> <Link to="/nosotros">Nosotros</Link></li>
+                    <li> <Link to="/contacto" className="btn-fianzas">Contacto</Link></li>
                 </ul>
             </nav>
             <label htmlFor='togglecheck-submenu' className='navtoggle-label'>

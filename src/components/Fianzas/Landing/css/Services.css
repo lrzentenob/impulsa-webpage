@@ -4,6 +4,7 @@
 .services-upper-content {
     position: relative;    
     overflow: hidden;
+    min-height: 550px;
 }
 
 .services-upper-content .cover {
@@ -58,26 +59,3 @@
     margin-bottom: 1em;   
 }
 
-
-.services .services-lower-content {
-    background: var(--clr-gray);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 4em;
-    height: auto;
-}
-
-.services .service-title {
-    line-height: 1.5em;
-    max-width: 400px;
-}
-.services-lower-content .service-title h2{
-    color: var(--clr-blue);
-}
-
-.services .service-action {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}

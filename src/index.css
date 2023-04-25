@@ -48,8 +48,12 @@
 /*** generaly removes all a tags default format */ 
 a {
   text-decoration: none;
+  color: var(--clr-blue);
 }
 
+.content {
+  height: 400px;
+}
 
 section {
   max-width: var(--maximum-width);

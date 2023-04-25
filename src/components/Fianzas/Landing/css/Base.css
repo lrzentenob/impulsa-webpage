@@ -69,6 +69,11 @@
     left: -5em;
     width: 130%;
   }
+  .curved-faded {
+    position: absolute;
+    top:4em;
+    right: 0;
+}
   
   h1 {
     font-size: var(--fs-h1); 

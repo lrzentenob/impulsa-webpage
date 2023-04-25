@@ -9,6 +9,17 @@ import playStore from  '../../../assets/general/playstore.png';
 export const Footer = ()=>{
     return (
         <footer>
+            <div className='services-content'>
+                <div className='service-title'>
+                    <h2>Servicio Eficiente</h2>
+                    <p>Coberturas a tu medida en el menor tiempo, con facilidades de pago y grandes beneficios.</p>
+                </div>
+                <div className='service-action'>
+                    <a className='btn-fianzas' href="#">Contáctanos</a>
+                </div>
+            </div>
+
+
             <div className='footer-upper-content'>
                 <div className='footer-upper-content-container'>
                     <div>

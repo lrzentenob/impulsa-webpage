@@ -1,53 +1,30 @@
 
 import { Routes, Route, Link } from 'react-router-dom';
 import { Fianzas } from './pages/Fianzas/Fianzas';
+import { FianzasProductos } from './pages/Fianzas/FianzasProductos';
+import { FianzasRequisitos } from './pages/Fianzas/FianzasRequisitos';
+import { FianzasOficinas } from './pages/Fianzas/FianzasOficinas';
+import { FianzasNosotros } from './pages/Fianzas/FianzasNosotros';
+import { FianzasContacto } from './pages/Fianzas/FianzasContacto';
 
 function App() {
   return ( 
+
       <Routes>
-        <Route path="/" element={<Fianzas />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="dashboard" element={<Dashboard />} />
-          <Route path="*" element={<NoMatch />} />
-        </Route>
+        <Route path="/" element={<Fianzas/>}></Route>
+        <Route path="/productos" element={<FianzasProductos/>}></Route>
+        <Route path="/requisitos" element={<FianzasRequisitos/>}></Route>
+        <Route path="/oficinas" element={<FianzasOficinas/>}></Route>
+        <Route path="/nosotros" element={<FianzasNosotros/>}></Route>
+        <Route path="/contacto" element={<FianzasContacto/>}></Route>
+
+        <Route path="/seguros" element={<Fianzas/>}></Route>
+        <Route path="/consultoria" element={<Fianzas/>}></Route>
+        <Route path="/riesgos" element={<Fianzas/>}></Route>
+
       </Routes>
+    
 )
 }
 
-function Home() {
-  return (
-    <div>
-      <h2>Home</h2>
-    </div>
-  );
-}
-
-function About() {
-  return (
-    <div>
-      <h2>About</h2>
-    </div>
-  );
-}
-
-function Dashboard() {
-  return (
-    <div>
-      <h2>Dashboard</h2>
-    </div>
-  );
-}
-
-
-function NoMatch() {
-  return (
-    <div>
-      <h2>Sition en construccion!</h2>
-      <p>
-        <Link to="/">Regresar al inicio</Link>
-      </p>
-    </div>
-  );
-}
 export default App

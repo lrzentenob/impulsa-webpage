@@ -37,15 +37,7 @@ export const Services = ()=> {
                 </div>
             </div>
 
-            <div className='services-lower-content'>
-                <div className='service-title'>
-                    <h2>Servicio Eficiente</h2>
-                    <p>Coberturas a tu medida en el menor tiempo, con facilidades de pago y grandes beneficios.</p>
-                </div>
-                <div className='service-action'>
-                    <a className='btn-fianzas' href="#">Contáctanos</a>
-                </div>
-            </div>
+
         </div>
     )
 }

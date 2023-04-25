@@ -1,0 +1,44 @@
+.productos {
+    padding-top: var(--section-padding-top);
+    padding-left: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+}
+
+.productos-content h1 {
+    
+    text-align: center;
+    color: var(--clr-blue);
+    line-height: 2em;
+}
+
+.productos .products-whatis-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.products-whatis-container p {
+    line-height: 1.5em;
+    color: var(--clr-gray-font);
+}
+.products-whatis-container h2 {
+    line-height: 3em;
+    color: var(--clr-blue);
+}
+
+.whatis-left, .whatis-right {
+    padding: 1em;
+    margin: 1em;
+    max-width: 400px;
+}
+
+.services-upper-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services-upper-content .service-main .service-box {
+    width: 400px;
+    
+}
