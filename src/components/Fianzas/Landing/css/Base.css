@@ -1,0 +1,78 @@
+/** Style button */
+.btn-fianzas {
+    display: inline-block;
+    padding: 10px 30px; 
+    cursor: pointer;
+    background: var(--clr-orange);
+    color:white;
+    border: none;
+    border-radius:  5px;
+  }
+  .btn-fianzas-outline {
+    display: inline-block;
+    padding: 10px 30px; 
+    cursor: pointer;
+    background: white;
+    color:black;
+    border: 1px solid var(--clr-orange);
+    border-radius:  5px;
+  }
+
+  .flex-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+  }
+  
+  .left-div {
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .right-div{
+    height: 550px;
+    width: 400px;
+  }
+  
+  .home-intro {
+    padding: 1em;
+    line-height: 1.5rem;
+  }
+  .home-intro .buttons-array {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .home-intro .buttons-array a {
+    margin-bottom: 1em;
+  }
+  .home-intro p {
+    margin-bottom: 1em;
+  }
+  
+  /*** Imagen con fondo curvo */
+  .curved-bk-img{
+    position: relative;
+  }
+  .girl-img {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    width:100%;
+    
+  }
+  .curvedbk-img {
+    position: absolute;
+    top: 5em;
+    left: -5em;
+    width: 130%;
+  }
+  
+  h1 {
+    font-size: var(--fs-h1); 
+    line-height: 1em;
+    padding-bottom: 0.5em;
+  }
+    

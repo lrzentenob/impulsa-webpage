@@ -1,5 +1,5 @@
-import '../css/Services.css'
-import fiCallcenter from '../assets/fianzas/fianzas-callcenter.jpg';
+import './css/Services.css'
+import fiCallcenter from '../../../assets/fianzas/fianzas-callcenter.jpg';
 export const Services = ()=> {
     return (
         <div className='services'>
@@ -43,7 +43,7 @@ export const Services = ()=> {
                     <p>Coberturas a tu medida en el menor tiempo, con facilidades de pago y grandes beneficios.</p>
                 </div>
                 <div className='service-action'>
-                    <a className='btn' href="#">Contáctanos</a>
+                    <a className='btn-fianzas' href="#">Contáctanos</a>
                 </div>
             </div>
         </div>

@@ -37,6 +37,7 @@
 .branches-detail ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    list-style: none;
 }
 .branches-detail li {
     font-size: var(--fs-xsm);

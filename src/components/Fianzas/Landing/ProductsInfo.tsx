@@ -1,8 +1,8 @@
-import '../css/ProductsInfo.css';
-import fiFidelidad from '../assets/fianzas/fianzas-fidelidad.png';
-import fiGasolineras from '../assets/fianzas/fianzas-gasolineras.png';
-import fiJudiciales from '../assets/fianzas/fianzas-judiciales-ic.png';
-import fiNotario from '../assets/fianzas/fianzas-notario.png';
+import './css/ProductsInfo.css';
+import fiFidelidad from '../../../assets/fianzas/fianzas-fidelidad.png';
+import fiGasolineras from '../../../assets/fianzas/fianzas-gasolineras.png';
+import fiJudiciales from '../../../assets/fianzas/fianzas-judiciales-ic.png';
+import fiNotario from '../../../assets/fianzas/fianzas-notario.png';
 
 export const ProductsInfo = () =>{
 
@@ -15,6 +15,13 @@ export const ProductsInfo = () =>{
                 </div>
             </div>
             <div className='products-container'>
+
+                    <div className='product-detail'>
+                        <img src={fiJudiciales}></img>
+                        <h5>Fianzas de Arrendamiento</h5>
+                        <p>Garantiza cumplimiento de contrato entre inquilino y dueño del inmueble.</p>
+                    </div>
+                
                     <div className='product-detail'>
                         <img src={fiJudiciales}></img>
                         <h5>Fianzas Judiciales</h5>
@@ -36,6 +43,9 @@ export const ProductsInfo = () =>{
                         <h5>Fianzas de Fidelidad</h5>
                         <p>Garantizan al patrón la reparación del daño patrimonial derivado de delitos cometidos por uno o más empleados.</p>
                     </div>
+            </div>
+            <div className='products-action'>
+                    <a href="#" className='btn-fianzas'>Ver productos</a>
             </div>
         </div>
     );

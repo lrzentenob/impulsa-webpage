@@ -1,0 +1,14 @@
+.centralslider {
+    padding: var(--section-padding-top) 1em 1em 1em; /* 8em to avoid menu overlap*/
+    color: var(--clr-blue);
+}
+
+.buttons-array {
+    max-width: 500px;
+}
+.centralslider .curved-faded {
+    position: absolute;
+    top:4em;
+    right: 0;
+    
+}

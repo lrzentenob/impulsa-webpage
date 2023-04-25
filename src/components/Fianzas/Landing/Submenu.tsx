@@ -1,10 +1,12 @@
-import '../css/Submenu.css';
-
+import './css/Submenu.css';
+import fiLogo from '../../../assets/fianzas/fianzas-logo.png'
 export const Submenu = () => {
 
     return(
         <div className="submenu">
-            <p>LOGO</p>
+            <div className='logo'>
+                <img src={fiLogo}></img>
+            </div>
             <input type='checkbox' className='navtoggle' id='togglecheck-submenu'></input>
             <nav>
                 <ul>
@@ -13,7 +15,7 @@ export const Submenu = () => {
                     <li> <a href="#">Nosotros</a></li>
                     <li> <a href="#">Oficinas</a></li>
                     <li> <a href="#">Directorio</a></li>
-                    <li> <a href="#" className="btn">Contacto</a></li>
+                    <li> <a href="#" className="btn-fianzas">Contacto</a></li>
                 </ul>
             </nav>
             <label htmlFor='togglecheck-submenu' className='navtoggle-label'>
