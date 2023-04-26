@@ -5,6 +5,7 @@ import { faEnvelope, faPhone, faLocationDot} from '@fortawesome/free-solid-svg-i
 import fiLogo from '../../../assets/fianzas/fianzas-logo.png';
 import appStore from '../../../assets/general/appstore.png';
 import playStore from  '../../../assets/general/playstore.png';
+import { Link } from 'react-router-dom';
 
 export const Footer = ()=>{
     return (
@@ -29,11 +30,11 @@ export const Footer = ()=>{
                     <div>
                         <h4>Productos</h4>
                         <ul>
-                            <li><a href="#">Arrendamiento</a></li>
-                            <li><a href="#">Fidelidad</a></li>
-                            <li><a href="#">Fiscales</a></li>
-                            <li><a href="#">Judiciales</a></li>
-                            <li><a href="#">Notario</a></li>
+                            <li><Link to='/arrendamiento'>Arrendamiento</Link></li>
+                            <li><Link to='/fidelidad'>Fidelidad</Link></li>
+                            <li><Link to='/fiscal'>Fiscales</Link></li>
+                            <li><Link to='/judicial'>Judiciales</Link></li>
+                            <li><Link to='/notario'>Notario</Link></li>
                             
                         </ul>
                     </div>

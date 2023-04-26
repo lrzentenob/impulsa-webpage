@@ -1,8 +1,11 @@
 import './css/ProductsInfo.css';
-import fiFidelidad from '../../../assets/fianzas/fianzas-fidelidad.png';
-import fiGasolineras from '../../../assets/fianzas/fianzas-gasolineras.png';
-import fiJudiciales from '../../../assets/fianzas/fianzas-judiciales-ic.png';
-import fiNotario from '../../../assets/fianzas/fianzas-notario.png';
+
+import fiFidelidad from '../../../assets/fianzas/fianza-fidelidad.png';
+import fiArrendamiento from '../../../assets/fianzas/fianza-arrendamiento.png';
+import fiFiscal from '../../../assets/fianzas/fianza-fiscal.png';
+import fiJudicial from '../../../assets/fianzas/fianza-judicial.png';
+import fiNotario from '../../../assets/fianzas/fianza-notario.png';
+import { Link } from 'react-router-dom';
 
 export const ProductsInfo = () =>{
 
@@ -16,33 +19,45 @@ export const ProductsInfo = () =>{
             </div>
             <div className='products-container'>
 
-                    <div className='product-detail'>
-                        <img src={fiJudiciales}></img>
-                        <h5>Fianzas de Arrendamiento</h5>
-                        <p>Garantiza cumplimiento de contrato entre inquilino y dueño del inmueble.</p>
-                    </div>
-                
-                    <div className='product-detail'>
-                        <img src={fiJudiciales}></img>
-                        <h5>Fianzas Judiciales</h5>
-                        <p>Pago de obligaciones de beneficios de libertidad provisional, preparatoria y condena condicional.</p>
-                    </div>
-                    <div className='product-detail'>
-                        <img src={fiNotario}></img>
-                        <h5>Fianzas de Notario</h5>
-                        <p>Para cumplir con requisitos que marcan las leyes al inicio de tus funciones.</p>
-                    </div>
-                    <div className='product-detail'>
-                        <img src={fiGasolineras}></img>
-                        <h5>Fianzas a Gasolineras</h5>
-                        <p>Crédito de suministro y garantía de pago en productos derivados del petróleo (gasolina,diesel, etc)</p>
+                    <Link to='/arrendamiento'>
+                        <div className='product-detail'>
+                            <img src={fiArrendamiento}></img>
+                            <h5>Fianzas de Arrendamiento</h5>
+                            <p>Garantiza cumplimiento de contrato entre inquilino y dueño del inmueble.</p>
+                        </div>
+                    </Link>
+                    <Link to='/fidelidad'>
+                        <div className='product-detail'>
+                            <img src={fiFidelidad}></img>
+                            <h5>Fianzas de Fidelidad</h5>
+                            <p>Protege patrimonio empresarial de delitos cometidos por empleados.</p>
+                        </div>
+                    </Link>
+                    <Link to='/fiscal'>
+                        <div className='product-detail'>
+                            <img src={fiFiscal}></img>
+                            <h5>Fianzas Fiscales</h5>
+                            <p>Garantiza obligaciones fiscales ante Secretaría de Hacienda y Crédito Público.</p>
 
-                    </div>
-                    <div className='product-detail'>
-                        <img src={fiFidelidad}></img>
-                        <h5>Fianzas de Fidelidad</h5>
-                        <p>Garantizan al patrón la reparación del daño patrimonial derivado de delitos cometidos por uno o más empleados.</p>
-                    </div>
+                        </div>
+                    </Link>
+                    <Link to='/judicial'>
+                        <div className='product-detail'>
+                            <img src={fiJudicial}></img>
+                            <h5>Fianzas Judiciales</h5>
+                            <p>Garantiza pago de obligaciones en beneficios de libertad condicional.</p>
+                        </div>
+                    </Link>
+                    
+                    <Link to='/notario'>
+                        <div className='product-detail'>
+                            <img src={fiNotario}></img>
+                            <h5>Fianzas de Notario</h5>
+                            <p>Cumple requisitos legales para inicio de funciones notariales.</p>
+                        </div>
+                    </Link>
+
+
             </div>
             <div className='products-action'>
                     <a href="#" className='btn-fianzas'>Ver productos</a>

@@ -5,7 +5,12 @@ import { FianzasProductos } from './pages/Fianzas/FianzasProductos';
 import { FianzasRequisitos } from './pages/Fianzas/FianzasRequisitos';
 import { FianzasOficinas } from './pages/Fianzas/FianzasOficinas';
 import { FianzasNosotros } from './pages/Fianzas/FianzasNosotros';
-import { FianzasContacto } from './pages/Fianzas/FianzasContacto';
+import { FianzaArrendamiento } from './pages/Fianzas/FianzaArrendamiento';
+import { FianzaFidelidad } from './pages/Fianzas/FianzaFidelidad';
+import { FianzaFiscal } from './pages/Fianzas/FianzaFiscal';
+import { FianzaJudicial } from './pages/Fianzas/FianzaJudicial';
+import { FianzaNotario } from './pages/Fianzas/FianzaNotario';
+
 
 function App() {
   return ( 
@@ -16,7 +21,13 @@ function App() {
         <Route path="/requisitos" element={<FianzasRequisitos/>}></Route>
         <Route path="/oficinas" element={<FianzasOficinas/>}></Route>
         <Route path="/nosotros" element={<FianzasNosotros/>}></Route>
-        <Route path="/contacto" element={<FianzasContacto/>}></Route>
+
+        <Route path="/arrendamiento" element={<FianzaArrendamiento/>}></Route>
+        <Route path="/fidelidad" element={<FianzaFidelidad/>}></Route>
+        <Route path="/fiscal" element={<FianzaFiscal/>}></Route>
+        <Route path="/judicial" element={<FianzaJudicial/>}></Route>
+        <Route path="/notario" element={<FianzaNotario/>}></Route>
+        
 
         <Route path="/seguros" element={<Fianzas/>}></Route>
         <Route path="/consultoria" element={<Fianzas/>}></Route>
