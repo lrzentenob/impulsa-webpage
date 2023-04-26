@@ -1,0 +1,31 @@
+.contacto-content h1{
+    text-align: center;
+    color:var(--clr-blue);
+}
+
+.contacto-content .contacto-content-detail {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacto-content .contacto-content-detail .contacto-box {
+    width: 400px;
+}
+
+.contacto-content .contacto-content-detail .left-contact-box {
+    position: relative;
+}
+.contacto-box .contacto-girl-img{
+    width: 100%;
+}
+.contacto-content .contacto-content-detail .form-contact {
+    border: 1px solid gray;
+}
+
+.contacto-box .contacto-curved-img {
+    position: absolute;
+    top: 0;
+    left: -4em;
+    width: 140%;
+    z-index: -999;
+}

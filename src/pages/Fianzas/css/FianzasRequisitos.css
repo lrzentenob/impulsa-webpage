@@ -1,0 +1,45 @@
+
+.requisitos h1 {
+    text-align: center;
+    color: var(--clr-blue);
+}
+.requisitos .legend-note {
+    color: #9c3f3b;
+    max-width: 550px;
+    line-height: 2em;
+    font-size: var(--fs-xsm);
+    text-align: justify;
+    margin: auto;
+}
+.requisitos-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.requisitos-content h2 {
+    color: var(--clr-blue);
+    line-height: 3em;
+}
+.requisitos-content p {
+    color: var(--clr-gray-font);
+    line-height: 2em;
+    margin-bottom: 1em;
+}
+.requisitos-content .requisitos-actions {
+    display: flex;
+    justify-content: flex-start;
+}
+.requisitos-actions a {
+    margin: 1em;
+}
+
+.requisitos-left {    
+    margin-right: 1em;
+    margin-left: 1em;
+    max-width: 400px;
+}
+
+.requisitos-right {
+    max-width: 400px;
+}
+

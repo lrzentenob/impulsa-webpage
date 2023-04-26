@@ -2,7 +2,7 @@ import './css/Base.css';
 import './css/CentralSlider.css';
 import fiGirlBk from '../../../assets/fianzas/fianzas-girl-home.png';
 import curvedBk from '../../../assets/general/curved-background.png';
-import curvedFaded from '../../../assets/general/curved-faded.png';
+
 import { BackgroundImages } from './BackgroundImages';
 export const CentralSlider = () => {
 

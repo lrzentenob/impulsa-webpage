@@ -5,12 +5,13 @@ import { Header } from "../../components/Fianzas/Landing/Header"
 import { Submenu } from "../../components/Fianzas/Landing/Submenu"
 import { faMessage } from "@fortawesome/free-solid-svg-icons"
 import { ProductsInfo } from "../../components/Fianzas/Landing/ProductsInfo"
-import { Branches } from "../../components/Fianzas/Landing/Branches"
 import { Services } from "../../components/Fianzas/Landing/Services"
 import { Footer } from "../../components/Fianzas/Landing/Footer"
 import '../../components/Fianzas/Landing/css/ChatIcon.css';
 
+
 export const Fianzas  = () =>{
+
     return (
         <>
         <Header />
@@ -21,7 +22,6 @@ export const Fianzas  = () =>{
           <FontAwesomeIcon icon={faMessage} size='2x' className='faicon' />
         </div>
         <ProductsInfo />
-        {/* <Branches /> */}
         <Services />
         <Footer/>
       </>         

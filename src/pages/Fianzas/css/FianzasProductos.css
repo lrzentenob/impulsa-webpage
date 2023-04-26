@@ -1,12 +1,5 @@
-.productos {
-    padding-top: var(--section-padding-top);
-    padding-left: 1em;
-    padding-bottom: 1em;
-    padding-right: 1em;
-}
 
 .productos-content h1 {
-    
     text-align: center;
     color: var(--clr-blue);
     line-height: 2em;

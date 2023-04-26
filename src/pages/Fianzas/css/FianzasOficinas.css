@@ -1,0 +1,36 @@
+
+.oficinas {
+    margin-bottom: 4em;
+}
+.oficinas h1 {
+    text-align: center;
+    color: var(--clr-blue);
+}
+.oficinas-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.oficinas-content h2 {
+    color: var(--clr-blue);
+    line-height: 3em;
+}
+.oficinas-content p {
+    color: var(--clr-gray-font);
+    margin-bottom: 1em;
+}
+.oficinas .oficina-box {
+    width: 290px;
+    margin-right: 1em;
+}
+.oficina-box .iconfa {
+    color: var(--clr-orange);
+}
+.oficina-box a {
+    color: var(--clr-gray-font);
+    font-weight: 500;
+}
+.oficina-box .address {
+    height: 160px;
+}
