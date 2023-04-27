@@ -1,0 +1,79 @@
+.guiareclamos-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.guiareclamos-content .guiareclamos-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+.guiareclamos-content  .guiareclamos-protrait {
+    width: 350px;
+}
+.guiareclamos-content .guiareclamos-box {
+    margin: 1em;
+}
+
+
+.guiareclamos-box .guiareclamos-protrait {
+    position: relative;
+    text-align: center;
+}
+.guiareclamos-box .guiareclamos-protrait .guiareclamos-img{
+    margin-top: 1em;
+}
+.guiareclamos-box .guiareclamos-protrait .guiareclamos-img2 {
+    max-width: 100%;
+}
+.guiareclamos-box .guiareclamos-protrait .guiareclamos-bk {
+    position: absolute;
+    top: 0;
+    left: 0em;
+    width: 100%;
+}
+
+.guiareclamos-box .guiareclamos-paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+}
+.guiareclamos-box .guiareclamos-paragraph h1{
+    color: var(--clr-blue);
+    font-size: 2em;
+    margin: 1em 0 1em 0;
+}
+.guiareclamos-box .guiareclamos-paragraph p{
+    color: var(--clr-gray-font);
+    line-height: 1.8em;
+}
+
+.guiareclamos-box .requisitos-reclamos {
+    max-width: 600px;
+}
+.guiareclamos-box .requisitos-reclamos h2 {
+    color:var(--clr-blue);
+    margin-bottom: 1em;
+}
+
+.guiareclamos-box h2{
+    color: var(--clr-blue);
+    margin-bottom: 0.5em;
+}
+.guiareclamos-box .requisitos-reclamos p{
+    text-align: justify;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    color: var(--clr-gray-font);
+    
+}
+.guiareclamos-box .guiareclamos-actions a {
+    margin: 0em 0.5em 0em 0.5em;
+}
+.guiareclamos-box .requisitos-reclamos a {
+    color: var(--clr-orange);
+    text-decoration: underline;
+}
