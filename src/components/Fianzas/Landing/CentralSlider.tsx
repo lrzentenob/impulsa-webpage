@@ -6,6 +6,12 @@ import curvedBk from '../../../assets/general/curved-background.png';
 import { BackgroundImages } from './BackgroundImages';
 export const CentralSlider = () => {
 
+    function onShowContactForm () {
+        const modal = document.getElementById('contact-component');
+        const disp = modal?.style.display;
+        modal!.style.display = disp === 'block' ? "none" : "block";
+    }
+
     return (
         <section className="centralslider">
             <div className='flex-content'>
@@ -15,9 +21,9 @@ export const CentralSlider = () => {
                         
                         <p>La importancia de las fianzas y su inmediatez es algo que entendemos a la perfección, así que nos aseguramos de que tengas tu fianza en 24 horas.</p>
                         <div className='buttons-array'>
-                            <a className='btn-fianzas'>¡Cotiza tu fianza!</a>
-                            <a className='btn-fianzas-outline'>Requisitos</a>
-                            <a className='btn-fianzas-outline'>Contáctanos</a>
+                            <a className='btn-fianzas' href='/cotizacion'>¡Cotiza tu fianza!</a>
+                            <a className='btn-fianzas-outline' href='/requisitos'>Requisitos</a>
+                            <a className='btn-fianzas-outline' onClick={onShowContactForm}>Contáctanos</a>
                         </div>
                     </div>
 

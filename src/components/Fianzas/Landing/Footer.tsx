@@ -5,9 +5,13 @@ import { faEnvelope, faPhone, faLocationDot} from '@fortawesome/free-solid-svg-i
 import fiLogo from '../../../assets/fianzas/fianzas-logo.png';
 import appStore from '../../../assets/general/appstore.png';
 import playStore from  '../../../assets/general/playstore.png';
-import { Link } from 'react-router-dom';
 
 export const Footer = ()=>{
+    function onShowContactForm () {
+        const modal = document.getElementById('contact-component');
+        const disp = modal?.style.display;
+        modal!.style.display = disp === 'block' ? "none" : "block";
+    }
     return (
         <footer>
             <div className='services-content'>
@@ -16,7 +20,7 @@ export const Footer = ()=>{
                     <p>Coberturas a tu medida en el menor tiempo, con facilidades de pago y grandes beneficios.</p>
                 </div>
                 <div className='service-action'>
-                    <a className='btn-fianzas' href="#">Contáctanos</a>
+                    <a className='btn-fianzas' href="#" onClick={onShowContactForm}>Contáctanos</a>
                 </div>
             </div>
 
@@ -30,11 +34,11 @@ export const Footer = ()=>{
                     <div>
                         <h4>Productos</h4>
                         <ul>
-                            <li><Link to='/arrendamiento'>Arrendamiento</Link></li>
-                            <li><Link to='/fidelidad'>Fidelidad</Link></li>
-                            <li><Link to='/fiscal'>Fiscales</Link></li>
-                            <li><Link to='/judicial'>Judiciales</Link></li>
-                            <li><Link to='/notario'>Notario</Link></li>
+                            <li><a href='/arrendamiento'>Arrendamiento</a></li>
+                            <li><a href='/fidelidad'>Fidelidad</a></li>
+                            <li><a href='/fiscal'>Fiscales</a></li>
+                            <li><a href='/judicial'>Judiciales</a></li>
+                            <li><a href='/notario'>Notario</a></li>
                             
                         </ul>
                     </div>

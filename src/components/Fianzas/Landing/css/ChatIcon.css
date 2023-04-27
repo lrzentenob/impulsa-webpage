@@ -9,7 +9,7 @@
     height: 50px;
     box-shadow: 5px 10px 50px 0px var(--clr-gray-font);
     z-index: 1000;
-    
+    background: white;
   }
   .faicon {
     position: absolute;

@@ -50,6 +50,10 @@
 .service-main-right {
     padding: 1em;
 }
+.service-box h4 {
+    line-height: 2em;
+    color:black;
+}
 
 .service-box {
     background: white;

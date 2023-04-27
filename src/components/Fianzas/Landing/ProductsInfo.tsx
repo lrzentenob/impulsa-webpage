@@ -5,7 +5,6 @@ import fiArrendamiento from '../../../assets/fianzas/fianza-arrendamiento.png';
 import fiFiscal from '../../../assets/fianzas/fianza-fiscal.png';
 import fiJudicial from '../../../assets/fianzas/fianza-judicial.png';
 import fiNotario from '../../../assets/fianzas/fianza-notario.png';
-import { Link } from 'react-router-dom';
 
 export const ProductsInfo = () =>{
 
@@ -19,43 +18,43 @@ export const ProductsInfo = () =>{
             </div>
             <div className='products-container'>
 
-                    <Link to='/arrendamiento'>
+                    <a href='/arrendamiento'>
                         <div className='product-detail'>
                             <img src={fiArrendamiento}></img>
                             <h5>Fianzas de Arrendamiento</h5>
                             <p>Garantiza cumplimiento de contrato entre inquilino y dueño del inmueble.</p>
                         </div>
-                    </Link>
-                    <Link to='/fidelidad'>
+                    </a>
+                    <a href='/fidelidad'>
                         <div className='product-detail'>
                             <img src={fiFidelidad}></img>
                             <h5>Fianzas de Fidelidad</h5>
                             <p>Protege patrimonio empresarial de delitos cometidos por empleados.</p>
                         </div>
-                    </Link>
-                    <Link to='/fiscal'>
+                    </a>
+                    <a href='/fiscal'>
                         <div className='product-detail'>
                             <img src={fiFiscal}></img>
                             <h5>Fianzas Fiscales</h5>
                             <p>Garantiza obligaciones fiscales ante Secretaría de Hacienda y Crédito Público.</p>
 
                         </div>
-                    </Link>
-                    <Link to='/judicial'>
+                    </a>
+                    <a href='/judicial'>
                         <div className='product-detail'>
                             <img src={fiJudicial}></img>
                             <h5>Fianzas Judiciales</h5>
                             <p>Garantiza pago de obligaciones en beneficios de libertad condicional.</p>
                         </div>
-                    </Link>
+                    </a>
                     
-                    <Link to='/notario'>
+                    <a href='/notario'>
                         <div className='product-detail'>
                             <img src={fiNotario}></img>
                             <h5>Fianzas de Notario</h5>
                             <p>Cumple requisitos legales para inicio de funciones notariales.</p>
                         </div>
-                    </Link>
+                    </a>
 
 
             </div>
