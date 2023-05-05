@@ -13,13 +13,14 @@
 :root {
   --ff-primary: 'Roboto', sans-serif;
   --ff-secondary: 'Dancing Script', sans-serif;
+  --fw-thin: 100;
   --fw-regular: 300;
   --fw-bold: 900;
   --clr-gray: #F0F0F0;
   --clr-gray-font: #737373;
   --clr-blue: #003DA6;
-  --clr-amarillo-riesgos: #F7AA24;
-  --clr-verde-consultoria: #648E3D;
+  --clr-gold: #F7AA24;
+  --clr-emerald: #648E3D;
   --clr-orange: #FF5100;
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -29,6 +30,7 @@
   --fs-sm: 1rem;
   --fs-mm: 1.2rem;
   --fs-lg: 1.5rem;
+  --fs-slg: 3em;
   --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
   
   --header-height: 4em;
