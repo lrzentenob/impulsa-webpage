@@ -1,4 +1,4 @@
-.submenu {
+.submenu-seguros {
     /* background: var(--clr-orange); */
     text-align: center;
     position: absolute;
@@ -8,7 +8,7 @@
     top: var(--header-height);
 }
 
-.submenu nav {
+.submenu-seguros nav {
     background: white ;
     position: absolute;
     padding-top: 1em;    
@@ -18,41 +18,41 @@
     transform-origin: top;
     transition: transform 400ms;
 }
-.submenu .logo {
+.submenu-seguros .logo {
     padding:1em;   
 }
 
-.submenu nav ul{
+.submenu-seguros nav ul{
     text-align: left;
     list-style: none;
 }
-.submenu nav li {
+.submenu-seguros nav li {
     margin-bottom: 1em;
     margin-left: 1em;
 }
-.submenu nav a,
-.submenu nav p {
+.submenu-seguros nav a,
+.submenu-seguros nav p {
     text-decoration: none;
     opacity: 0;
     transition: opacity 150ms ease-in-out;
 }
-.submenu nav a:hover {
+.submenu-seguros nav a:hover {
     color: gainsboro;
 }
 
-.submenu .navtoggle {
+.submenu-seguros .navtoggle {
     display: none;
 }
-.submenu .navtoggle:checked ~ nav {    
+.submenu-seguros .navtoggle:checked ~ nav {    
     transform: scale(1,1);
 }
-.submenu .navtoggle:checked ~ nav a,
-.submenu .navtoggle:checked ~ nav p{ 
+.submenu-seguros .navtoggle:checked ~ nav a,
+.submenu-seguros .navtoggle:checked ~ nav p{ 
     opacity: 1;
     transition: opacity 250ms ease-in-out 250ms;
 }
 
-.submenu .navtoggle-label {
+.submenu-seguros .navtoggle-label {
     position: absolute;
     top: 0;
     left: 0;
@@ -62,9 +62,9 @@
     align-items: center;
 }
 
-.submenu .navtoggle-label span,
-.submenu .navtoggle-label span::before,
-.submenu .navtoggle-label span::after {
+.submenu-seguros .navtoggle-label span,
+.submenu-seguros .navtoggle-label span::before,
+.submenu-seguros .navtoggle-label span::after {
     display: block;
     background: black;
     height: 2px;
@@ -72,30 +72,30 @@
     border-radius: 2px;
     position: relative;
 }
-.submenu .navtoggle-label span::before,
-.submenu .navtoggle-label span::after {
+.submenu-seguros .navtoggle-label span::before,
+.submenu-seguros .navtoggle-label span::after {
     content: '';
     position: absolute;
 }
-.submenu .navtoggle-label span::before {
+.submenu-seguros .navtoggle-label span::before {
     bottom: 7px;
 }
-.submenu .navtoggle-label span::after {
+.submenu-seguros .navtoggle-label span::after {
     top: 7px;
 }
 
 @media screen and (min-width: 980px) {
-    .submenu .navtoggle-label {
+    .submenu-seguros .navtoggle-label {
         display: none;
     }
-    .submenu { 
+    .submenu-seguros { 
         display: grid;
         grid-template-columns: 1fr auto minmax(800px, 1fr) 0.1fr;
     }
-    .submenu .logo {
+    .submenu-seguros .logo {
         grid-column: 1 / 2;
     }
-    .submenu nav {
+    .submenu-seguros nav {
         all: unset;
         grid-column: 3 / 4;
         
@@ -103,22 +103,22 @@
         flex-direction: column;
         justify-content: center;
     }
-    .submenu nav a,
-    .submenu nav p{
+    .submenu-seguros nav a,
+    .submenu-seguros nav p{
         opacity: 1;
     }
-    .submenu nav a {
+    .submenu-seguros nav a {
         position: relative;
     }
-    .submenu nav p{ 
+    .submenu-seguros nav p{ 
         text-align: right;
         width: 300px;
     }
-    .submenu nav ul {
+    .submenu-seguros nav ul {
         display: flex;
         justify-content: space-around;
     }
-    .submenu nav ul li {
+    .submenu-seguros nav ul li {
         display: flex;
         flex-direction: column;
         justify-content: center;

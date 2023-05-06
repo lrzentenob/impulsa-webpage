@@ -1,20 +1,20 @@
 /** Style button */
-.btn-fianzas {
+.btn-seguros {
     display: inline-block;
     padding: 10px 30px; 
     cursor: pointer;
-    background: var(--clr-orange);
+    background: var(--clr-blue);
     color:white;
     border: none;
     border-radius:  5px;
   }
-  .btn-fianzas-outline {
+  .btn-seguros-outline {
     display: inline-block;
     padding: 10px 30px; 
     cursor: pointer;
     background: white;
     color:black;
-    border: 1px solid var(--clr-orange);
+    border: 1px solid var(--clr-blue);
     border-radius:  5px;
   }
 

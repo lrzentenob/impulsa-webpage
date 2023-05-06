@@ -9,6 +9,7 @@ import { Services } from "../../components/Fianzas/Landing/Services"
 import { Footer } from "../../components/Fianzas/Landing/Footer"
 import '../../components/Fianzas/Landing/css/ChatIcon.css';
 import { useEffect } from "react"
+import { Branches } from "../../components/Fianzas/Landing/Branches"
 
 export const Fianzas  = () =>{
 
@@ -34,6 +35,7 @@ export const Fianzas  = () =>{
           <FontAwesomeIcon icon={faMessage} size='2x' className='faicon' />
         </div>
         <ProductsInfo />
+        
         <Services />
         <Footer/>
         

@@ -15,6 +15,7 @@ import { FianzasProgramaProveedores } from './pages/Fianzas/FianzasProgramaProve
 import { FianzasCancelacion } from './pages/Fianzas/FianzasCancelacion';
 import { FianzasGuiaReclamos } from './pages/Fianzas/FianzasGuiaReclamos';
 import { FianzasCotizacion } from './pages/Fianzas/FianzasCotizacion';
+import { Seguros } from './pages/Seguros/Seguros';
 
 
 function App() {
@@ -40,7 +41,7 @@ function App() {
         <Route path="/programa-proveedores" element={<FianzasProgramaProveedores/>}></Route>
         
 
-        <Route path="/seguros" element={<Fianzas/>}></Route>
+        <Route path="/seguros" element={<Seguros/>}></Route>
         <Route path="/consultoria" element={<Fianzas/>}></Route>
         <Route path="/riesgos" element={<Fianzas/>}></Route>
 

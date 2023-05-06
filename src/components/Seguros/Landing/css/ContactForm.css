@@ -1,0 +1,224 @@
+.chat-modal-window {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */    
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+    text-align: center;
+  }
+
+/* Modal Content */
+.chat-content {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+}
+
+.chat-content-form {
+  max-width: 700px;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* The Close Button */
+.chat-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.chat-close:hover,
+.chat-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -400px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+  /* Modal Header */
+.chat-header {
+  padding: 1rem 1rem;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: space-between;
+}
+.chat-header p{
+  line-height: 2rem;
+}
+/* */
+.btn {
+  padding: 10px 30px; 
+  cursor: pointer;
+  background: #003da6;
+  color:white;
+  border: none;
+  border-radius: 8px;
+  font-size: var(--fs-mm);
+}
+.btn:disabled, .btn2:disabled {
+  background: gray;
+  color: #f3f3f3;
+}
+.btn2 {
+  padding: 10px 30px; 
+  cursor: pointer;
+  background: #ff5100;
+  color:white;
+  border: none;
+  border-radius: 8px;
+  max-width: 180px;
+  font-size: var(--fs-mm);
+}
+
+/* Modal Body */
+.chat-body-login{
+  background-color:#003da6 ;
+  padding: 3rem;
+  
+}
+.chat-body-login h3{
+  color: white;  
+  text-align: left;
+  padding-bottom: 1rem;
+}
+.chat-body-login .input-container{
+  padding: 1rem;
+  margin: auto;
+  
+}
+
+.chat-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.chat-login-form{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  background: #003da6;
+  height: 400px;
+  width: 100%;
+  padding: 2rem;
+  
+}
+.chat-body-col{
+  height: 400px;
+  width: 100%;
+}
+
+.chat-body-left{
+  background-color: #003da6;
+  width: 250px;
+}
+
+.chat-info {
+  text-align: left;
+  color: white;
+  padding: 1rem 1rem;
+  line-height: 2rem;
+}
+.chat-info ul {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.chat-info-rooms ul{ background-color: #5b6ee0;}
+
+.chat-body-right{
+  background-color: white;
+  padding: 1rem; 
+  overflow: scroll;
+}
+
+/* Modal Footer */
+.chat-footer {
+  display: flex;
+  padding: 1rem 1rem;
+  justify-content: space-around;  
+  background-color: #ff5100;
+}
+.input-container{
+  width: 400px;
+}
+.input-container input, textarea {
+  border-radius: 50px;
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  border: none;
+}
+.input-container textarea{
+  height: 6rem;
+  border-radius: 10px;
+}
+
+.input-container input:focus, .input-container textarea:focus{
+  outline: none;
+}
+
+
+/* chat messages*/
+.chat-message-container {  
+  display: flex;
+  justify-content: flex-end;
+}
+.chat-message {
+  background-color: #e4e6ff;
+  text-align: left;
+  padding: 1rem;
+  border-radius: 5px;
+  max-width: 400px;
+  margin-top: 1rem;
+}
+
+.message-header {
+  display: flex;
+}
+.message-header-sender{
+  margin-right: 1rem;
+  color: #97a3fb;
+}
+.message-header-time{
+  color: #898a99
+}
+.chat-message-client {
+  padding-top: 1rem;
+  background-color: #d9fdd3;
+}
+/* chat messages sections */
+

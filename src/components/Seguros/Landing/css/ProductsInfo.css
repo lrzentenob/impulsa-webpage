@@ -1,0 +1,43 @@
+.product-info-seguros {
+    background: var(--clr-gray);
+    padding: 2em;
+    
+}
+
+.product-info-seguros .product-upper-content {
+    text-align: center;
+    padding: 1em;
+}
+.product-info-seguros .product-upper-content h1{
+    color: var(--clr-blue);
+}
+.product-info-seguros .product-upper-content p{
+    color: var(--clr-gray-font);
+}
+
+.product-info-seguros .products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.product-info-seguros .product-detail {
+    max-width: 250px;
+    padding: 1em;
+    text-align: center;
+    line-height: 1.5em;
+    margin: 3em;
+}
+.product-info-seguros .product-detail img {
+    height: 50px;
+}
+.product-info-seguros .product-detail h5 {
+    color: var(--clr-blue);
+}
+.product-info-seguros .product-detail p {
+    color: var( --clr-gray-font);
+    font-size: var(--fs-xsm);
+}
+.product-info-seguros .products-action {
+    text-align: center;
+}
