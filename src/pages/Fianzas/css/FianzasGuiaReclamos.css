@@ -33,6 +33,7 @@
     top: 0;
     left: 0em;
     width: 100%;
+    z-index: -999;
 }
 
 .guiareclamos-box .guiareclamos-paragraph {
@@ -68,7 +69,6 @@
     line-height: 1.5em;
     margin-bottom: 1em;
     color: var(--clr-gray-font);
-    
 }
 .guiareclamos-box .guiareclamos-actions a {
     margin: 0em 0.5em 0em 0.5em;
@@ -76,4 +76,16 @@
 .guiareclamos-box .requisitos-reclamos a {
     color: var(--clr-orange);
     text-decoration: underline;
+}
+.guiareclamos-box .howitworks-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.guiareclamos-box .howitworks-paragraph {
+    color: var(--clr-gray-font);
+    max-width: 500px;
+    line-height: 1.8em;
+    text-align: justify;
 }

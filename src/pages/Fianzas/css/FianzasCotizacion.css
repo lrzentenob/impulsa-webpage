@@ -1,0 +1,14 @@
+.fianzas-quote {
+    position: relative;
+}
+.fianzas-quote .test-background-image{
+    width: 100%;
+}
+.fianzas-quote .image-cover-blur {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 300px;
+    backdrop-filter: blur(6px);
+    
+}

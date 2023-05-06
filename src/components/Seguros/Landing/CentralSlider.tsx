@@ -1,9 +1,8 @@
 import './css/Base.css';
 import './css/CentralSlider.css';
-import fiGirlBk from '../../../assets/fianzas/fianzas-girl-home.png';
-import curvedBk from '../../../assets/general/curved-background.png';
+import seGirlBk from '../../../assets/seguros/seguros-girl-home.png';
+import curvedBk from '../../../assets/seguros/general/seguros-curvedbk.png';
 
-import { BackgroundImages } from './BackgroundImages';
 import { Link } from 'react-router-dom';
 export const CentralSlider = () => {
 
@@ -18,11 +17,11 @@ export const CentralSlider = () => {
             <div className='flex-content'>
                 <div className='left-div'>
                     <div className='home-intro'>
-                        <h1>Expertos en el ramo afianzador</h1>
+                        <h1>Cubrimos todas tus necesidades</h1>
                         
                         <p>La importancia de las fianzas y su inmediatez es algo que entendemos a la perfección, así que nos aseguramos de que tengas tu fianza en 24 horas.</p>
                         <div className='buttons-array'>
-                            <Link className='btn-fianzas' to='/cotizacion'>¡Cotiza tu fianza!</Link>
+                            <button className='btn-seguros' onClick={onShowContactForm}>Contáctanos</button>
                             {/* <a className='btn-fianzas-outline' href='/requisitos'>Requisitos</a>
                             <a className='btn-fianzas-outline' onClick={onShowContactForm}>Contáctanos</a> */}
                         </div>
@@ -31,13 +30,13 @@ export const CentralSlider = () => {
                 </div>
                 <div className='right-div'>
                     <div className='curved-bk-img'>
-                        <img src={fiGirlBk} alt='fianzas girl' className='girl-img'/>
+                        <img src={seGirlBk} alt='fianzas girl' className='girl-img'/>
                         <img src={curvedBk} alt='curved background' className='curvedbk-img'/>
                     </div>
 
                 </div>
             </div>
-            <BackgroundImages />
+            
         </section>
     );
 }
