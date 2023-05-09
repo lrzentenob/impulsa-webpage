@@ -10,7 +10,7 @@ export const Services = ()=> {
                 <div className='cover'></div>
                 <img src={fiCallcenter}></img>
                     <div className='service-main'>
-Link                    <div className='service-main-left'>
+                        <div className='service-main-left'>
                         <div className='service-title'>
                             <h2>Servicios</h2>
                             <p>Si buscas expertos en fianzas, Impulsa asesores es tu empresa de confianza.</p>

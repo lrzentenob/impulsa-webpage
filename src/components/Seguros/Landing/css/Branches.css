@@ -1,8 +1,8 @@
-.branches {
+.branches-seguros {
     position: relative;
     overflow: hidden;
 }
-.cut-bkground{
+.branches-seguros .cut-bkground{
     position: absolute;
     right: 0;
     top: -30em;
@@ -11,39 +11,49 @@
     height: 710px;
     overflow: hidden;
 }
-.cut-bkground img {
+.branches-seguros .cut-bkground img {
     position: absolute;
     width: 100%;
     right: 0;
     top: 0;
 }
-.branches-upper-content {
+.branches-seguros .branches-upper-content {
     text-align: center;
     line-height: 1.5em;
     max-width: 500px;
     margin: auto;
     padding: 1em;
 }
+.branches-seguros .branches-upper-content h1 {
+    color: var(--clr-blue);
+}
+.branches-seguros .branches-upper-content p {
+    color: var(--clr-gray-font);
+    line-height: 1.5em;
+    text-align: justify;
+}
 
-.branches-lower-content {
+
+.branches-seguros .branches-lower-content {
     padding: 1em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.branches-detail {
+.branches-seguros .branches-detail {
     width: 400px;
 }
-.branches-detail ul {
+.branches-seguros .branches-detail ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     list-style: none;
 }
-.branches-detail li {
-    font-size: var(--fs-xsm);
+.branches-seguros .branches-detail li {
+    font-size: var(--fs-sm);
     max-width: 220px;
-    
+    color: var(--clr-blue);
+    line-height: 2em;
 }
-.branches-detail img {
+.branches-seguros .branches-detail img {
     width: 100%;
 }

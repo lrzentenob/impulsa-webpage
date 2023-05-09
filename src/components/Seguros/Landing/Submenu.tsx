@@ -18,11 +18,11 @@ export const Submenu = () => {
             <input type='checkbox' className='navtoggle' id='togglecheck-submenu'></input>
             <nav>
                 <ul>
-                    <li> <Link to="/">Inicio</Link></li>
-                    <li> <Link to="/productos">Productos</Link></li>
-                    <li> <Link to="/requisitos">Requisitos</Link></li>
-                    <li> <Link to="/oficinas">Oficinas</Link></li>
-                    <li> <Link to="/nosotros">Nosotros</Link></li>
+                    <li> <Link to="/seguros">Inicio</Link></li>
+                    <li> <Link to="/seguros/productos">Productos</Link></li>
+                    <li> <Link to="/seguros/oficinas">Oficinas</Link></li>
+                    <li> <Link to="/seguros/soycliente">Soy Cliente</Link></li>
+                    <li> <Link to="/seguros/nosotros">Nosotros</Link></li>
                     <li> <button className="btn-seguros" onClick={onShowContactForm}>Contacto</button></li>
                 </ul>
             </nav>
