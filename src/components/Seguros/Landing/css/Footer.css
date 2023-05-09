@@ -1,8 +1,5 @@
-footer {
 
-}
-
-footer .services-content {
+.footer-seguros .services-content {
     background: var(--clr-gray);
     display: flex;
     flex-wrap: wrap;
@@ -11,18 +8,18 @@ footer .services-content {
     height: auto;
 }
 
-footer .service-title {
+.footer-seguros .service-title {
     line-height: 1.5em;
     max-width: 400px;
 }
-footer .service-title p {
+.footer-seguros .service-title p {
     color: var(--clr-gray-font);
 }
-.services-content .service-title h2{
+.footer-seguros .services-content .service-title h2{
     color: var(--clr-blue);
 }
 
-footer .service-action {
+.footer-seguros .service-action {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,67 +28,67 @@ footer .service-action {
 
 
 
-footer .footer-upper-content {
+.footer-seguros .footer-upper-content {
     padding: 1em;
 }
-footer .footer-upper-content-container {
+.footer-seguros .footer-upper-content-container {
     max-width: var(--maximum-width);
     margin: auto;
 }
-.footer-upper-content-container div {    
+.footer-seguros .footer-upper-content-container div {    
     width: 200px;
     padding: 1em;
 }
-.footer-upper-content-container h4 {
+.footer-seguros .footer-upper-content-container h4 {
     color: black;
     line-height: 2em;
     
 }
-.footer-upper-content-container  ul {
+.footer-seguros .footer-upper-content-container  ul {
     list-style: none;
     line-height: 1.5em;
 }
 
-footer .footer-upper-content-container {
+.footer-seguros .footer-upper-content-container {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 
 }
 
-footer .footer-upper-content-container div .logo {
+.footer-seguros .footer-upper-content-container div .logo {
     width: 80%;
 }
-footer .footer-upper-content-container div .store {
+.footer-seguros .footer-upper-content-container div .store {
     width: 50%;
 }
 
-footer .footer-upper-content-container div span { 
+.footer-seguros .footer-upper-content-container div span { 
     font-size: 0.7em;
 }
 
-footer .footer-upper-content-container p,
-footer .footer-upper-content-container  a{
+.footer-seguros .footer-upper-content-container p,
+.footer-seguros .footer-upper-content-container  a{
     color: var(--clr-gray-font);
     font-size: var(--fs-xsm);
     line-height: 1.5em;
     margin-bottom:1em;
 }
-footer .footer-upper-content-container h4{
+.footer-seguros .footer-upper-content-container h4{
     color: var(--clr-blue);
     
 }
 
-.fa-iconx {
-    color: var(--clr-orange);
+.footer-seguros .fa-iconx {
+    color: var(--clr-blue);
 }
 
-footer .footer-lower-content {
+.footer-seguros .footer-lower-content {
     color: var(--clr-gray-font);
     background: var(--clr-gray);
     padding: 1em;
 }
-footer .footer-lower-content .footer-lower-content-foot {
+.footer-seguros .footer-lower-content .footer-lower-content-foot {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -99,15 +96,15 @@ footer .footer-lower-content .footer-lower-content-foot {
     max-width: var(--maximum-width);
     
 }
-footer .footer-lower-content-foot p{
+.footer-seguros .footer-lower-content-foot p{
     font-size: 12px;
 }
 
-footer .footer-social{
+.footer-seguros .footer-social{
     display: flex;
     width: 250px;
     justify-content: space-between;
     font-size: 12px;
-    color: var(--clr-orange);
+    color: var(--clr-blue);
 }
 

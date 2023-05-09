@@ -1,0 +1,80 @@
+.seguros-vida {
+    padding: 2em;   
+}
+
+.seguros-vida .seguros-vida-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+/* Aplicado solo al primero elemento de los blocks*/
+.seguros-vida .top {
+    justify-content: flex-end;
+}
+.seguros-vida .top .floating-portrait {
+    width: 350px;
+    height: auto;
+}
+
+.seguros-vida .paragraph {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.seguros-vida .paragraph h1,
+.seguros-vida .paragraph h2 {
+    color: var(--clr-blue);
+}
+.seguros-vida .paragraph h2 {
+    margin-bottom: 0.5em;
+}
+
+.seguros-vida .footnote,
+.seguros-vida .paragraph p {
+    color: var(--clr-gray-font);
+    line-height: 1.5em;
+    text-align: justify;
+    margin-bottom: 1em;;
+}
+/* Image con fondo curveado */
+.seguros-vida .floating-portrait {
+    position: relative;
+    width: 450px;
+    height: 450px;
+}
+
+.seguros-vida .floating-portrait .curvedbk {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -9999;
+}
+.seguros-vida .floating-portrait .lg {
+    width: 500px;
+}
+.seguros-vida .floating-portrait .seguros-vida-icon {
+    margin: 6em 8em;
+}
+.seguros-vida .floating-portrait .seguros-vida-portrait {
+    position: absolute;
+    top: 0;
+    left: 4em;
+}
+.seguros-vida .single-image {
+    max-width: 400px;
+}
+.seguros-vida .single-image img {
+    width: 100%;
+}
+
+.seguros-vida .footnote {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}

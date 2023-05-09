@@ -1,0 +1,101 @@
+.seguros-gastos-medicos {
+    padding: 2em;   
+}
+
+.seguros-gastos-medicos .seguros-gastos-medicos-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+    padding: 1em;   
+}
+
+/* Aplicado solo al primero elemento de los blocks*/
+.seguros-gastos-medicos .top {
+    justify-content: flex-end;
+}
+.seguros-gastos-medicos .top .floating-portrait {
+    width: 350px;
+    height: auto;
+}
+
+.seguros-gastos-medicos .paragraph {
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.seguros-gastos-medicos .single-paragraph {
+    max-width: 700px;
+    margin: auto;
+}
+.seguros-gastos-medicos .single-paragraph p{
+    color: var(--clr-gray-font);
+    line-height: 1.5em;
+    text-align: justify;
+}
+.seguros-gastos-medicos .single-paragraph h2{
+    color: var(--clr-blue);
+    line-height: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.seguros-gastos-medicos .paragraph h1,
+.seguros-gastos-medicos .paragraph h2 {
+    color: var(--clr-blue);
+}
+.seguros-gastos-medicos .paragraph h2 {
+    margin-bottom: 0.5em;
+}
+
+.seguros-gastos-medicos .footnote,
+.seguros-gastos-medicos .paragraph p {
+    color: var(--clr-gray-font);
+    line-height: 1.5em;
+    text-align: justify;
+    margin-bottom: 1em;
+}
+/* Image con fondo curveado */
+.seguros-gastos-medicos .floating-portrait {
+    position: relative;
+    width: 450px;
+    height: 420px;
+}
+
+.seguros-gastos-medicos .floating-portrait .curvedbk {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -9999;
+}
+.seguros-gastos-medicos .floating-portrait .lg {
+    width: 500px;
+}
+.seguros-gastos-medicos .floating-portrait .seguros-vida-icon {
+    margin: 5em 7em;
+}
+.seguros-gastos-medicos .floating-portrait .seguros-vida-portrait {
+    position: absolute;
+    top: 0;
+    left: 4em;
+}
+.seguros-gastos-medicos .single-image {
+    max-width: 400px;
+}
+.seguros-gastos-medicos .single-image img {
+    width: 100%;
+}
+
+.seguros-gastos-medicos .footnote {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5em;
+}
+.seguros-gastos-medicos .footnote p{
+    margin-bottom: 1em
+}

@@ -16,6 +16,9 @@ import { FianzasCancelacion } from './pages/Fianzas/FianzasCancelacion';
 import { FianzasGuiaReclamos } from './pages/Fianzas/FianzasGuiaReclamos';
 import { FianzasCotizacion } from './pages/Fianzas/FianzasCotizacion';
 import { Seguros } from './pages/Seguros/Seguros';
+import { SegurosVida } from './pages/Seguros/SegurosVida';
+import { SegurosGastosMedicos } from './pages/Seguros/SegurosGastosMedicos';
+import { SegurosAuto } from './pages/Seguros/SegurosAuto';
 
 
 function App() {
@@ -42,6 +45,9 @@ function App() {
         
 
         <Route path="/seguros" element={<Seguros/>}></Route>
+        <Route path="/seguros/vida" element={<SegurosVida/>}></Route>
+        <Route path="/seguros/gastos-medicos" element={<SegurosGastosMedicos/>}></Route>
+        <Route path="/seguros/auto" element={<SegurosAuto/>}></Route>
         <Route path="/consultoria" element={<Fianzas/>}></Route>
         <Route path="/riesgos" element={<Fianzas/>}></Route>
 

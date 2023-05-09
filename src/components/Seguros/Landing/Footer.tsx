@@ -2,7 +2,7 @@ import { faFacebook, faInstagram,faTwitter, faGoogle, faWhatsapp } from '@fortaw
 import './css/Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faLocationDot} from '@fortawesome/free-solid-svg-icons'
-import fiLogo from '../../../assets/fianzas/fianzas-logo.png';
+import seLogo from '../../../assets/seguros/seguros-logo.png';
 import appStore from '../../../assets/general/appstore.png';
 import playStore from  '../../../assets/general/playstore.png';
 import { Link } from 'react-router-dom';
@@ -14,14 +14,14 @@ export const Footer = ()=>{
         modal!.style.display = disp === 'block' ? "none" : "block";
     }
     return (
-        <footer>
+        <footer className='footer-seguros'>
             <div className='services-content'>
                 <div className='service-title'>
                     <h2>Servicio Eficiente</h2>
                     <p>Coberturas a tu medida en el menor tiempo, con facilidades de pago y grandes beneficios.</p>
                 </div>
                 <div className='service-action'>
-                    <a className='btn-fianzas' href="#" onClick={onShowContactForm}>Contáctanos</a>
+                    <a className='btn-seguros' href="#" onClick={onShowContactForm}>Contáctanos</a>
                 </div>
             </div>
 
@@ -29,7 +29,7 @@ export const Footer = ()=>{
             <div className='footer-upper-content'>
                 <div className='footer-upper-content-container'>
                     <div>
-                        <img src={fiLogo} className='logo'></img>
+                        <img src={seLogo} className='logo'></img>
                         <p>Más de 37 años de experiencia en el ramo afianzador.</p>
                     </div>
                     <div>
