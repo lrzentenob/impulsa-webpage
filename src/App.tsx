@@ -19,6 +19,7 @@ import { Seguros } from './pages/Seguros/Seguros';
 import { SegurosVida } from './pages/Seguros/SegurosVida';
 import { SegurosGastosMedicos } from './pages/Seguros/SegurosGastosMedicos';
 import { SegurosAuto } from './pages/Seguros/SegurosAuto';
+import { SegurosHogar } from './pages/Seguros/SegurosHogar';
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
         <Route path="/seguros/vida" element={<SegurosVida/>}></Route>
         <Route path="/seguros/gastos-medicos" element={<SegurosGastosMedicos/>}></Route>
         <Route path="/seguros/auto" element={<SegurosAuto/>}></Route>
+        <Route path="/seguros/hogar" element={<SegurosHogar/>}></Route>
         <Route path="/consultoria" element={<Fianzas/>}></Route>
         <Route path="/riesgos" element={<Fianzas/>}></Route>
 

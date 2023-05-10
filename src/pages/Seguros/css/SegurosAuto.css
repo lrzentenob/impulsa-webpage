@@ -55,11 +55,6 @@
     height: 345px;
     
 }
-.vertical-centered {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 .seguros-auto .floating-portrait .curvedbk {
     position: absolute;
