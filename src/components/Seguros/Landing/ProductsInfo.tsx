@@ -40,7 +40,7 @@ export const ProductsInfo = () =>{
 
                         </div>
                     </Link>
-                    <Link to='/seguros/inmuebles'>
+                    <Link to='/seguros/hogar'>
                         <div className='product-detail'>
                             <img src={seDanosInmuebles}></img>
                             <h5>Hogar y empresariales</h5>

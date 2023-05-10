@@ -64,3 +64,9 @@ section {
 hr {
   color: var(--clr-gray);
 }
+
+.vertical-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
