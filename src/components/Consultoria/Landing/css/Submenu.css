@@ -1,0 +1,126 @@
+.submenu-consult {
+    /* background: var(--clr-orange); */
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    height: var(--submenu-height);
+    top: var(--header-height);
+}
+
+.submenu-consult nav {
+    background: white ;
+    position: absolute;
+    padding-top: 1em;    
+    top: 100%;
+    width: 100%;
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 400ms;
+}
+.submenu-consult .logo {
+    padding:1em;   
+}
+
+.submenu-consult nav ul{
+    text-align: left;
+    list-style: none;
+}
+.submenu-consult nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+.submenu-consult nav a,
+.submenu-consult nav p {
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+.submenu-consult nav a:hover {
+    color: gainsboro;
+}
+
+.submenu-consult .navtoggle {
+    display: none;
+}
+.submenu-consult .navtoggle:checked ~ nav {    
+    transform: scale(1,1);
+}
+.submenu-consult .navtoggle:checked ~ nav a,
+.submenu-consult .navtoggle:checked ~ nav p{ 
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+.submenu-consult .navtoggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.submenu-consult .navtoggle-label span,
+.submenu-consult .navtoggle-label span::before,
+.submenu-consult .navtoggle-label span::after {
+    display: block;
+    background: black;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+.submenu-consult .navtoggle-label span::before,
+.submenu-consult .navtoggle-label span::after {
+    content: '';
+    position: absolute;
+}
+.submenu-consult .navtoggle-label span::before {
+    bottom: 7px;
+}
+.submenu-consult .navtoggle-label span::after {
+    top: 7px;
+}
+
+@media screen and (min-width: 980px) {
+    .submenu-consult .navtoggle-label {
+        display: none;
+    }
+    .submenu-consult { 
+        display: grid;
+        grid-template-columns: 1fr auto minmax(800px, 1fr) 0.1fr;
+    }
+    .submenu-consult .logo {
+        grid-column: 1 / 2;
+    }
+    .submenu-consult nav {
+        all: unset;
+        grid-column: 3 / 4;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .submenu-consult nav a,
+    .submenu-consult nav p{
+        opacity: 1;
+    }
+    .submenu-consult nav a {
+        position: relative;
+    }
+    .submenu-consult nav p{ 
+        text-align: right;
+        width: 300px;
+    }
+    .submenu-consult nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    .submenu-consult nav ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

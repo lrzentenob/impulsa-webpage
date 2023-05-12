@@ -1,0 +1,175 @@
+.seguros-soycli {
+    padding: 1em;
+}
+
+.seguros-soycli .seguros-soycli-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+    padding: 1em;   
+}
+
+
+/* Aplicado solo al primero elemento de los blocks*/
+.seguros-soycli .top {
+    justify-content: flex-end;
+}
+
+.seguros-soycli .top .floating-portrait {
+    width: 350px;
+    height: auto;
+}
+
+.seguros-soycli .paragraph {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.seguros-soycli .paragraph .appstore-container{
+    width: 200px;
+    display: flex;
+    justify-content: flex-start;
+}
+.seguros-soycli .appstore-container img {
+    margin-right: 1em;
+}
+
+.seguros-soycli .single-paragraph {
+    max-width: 700px;
+    margin: auto;
+}
+.seguros-soycli .single-paragraph p{
+    color: var(--clr-gray-font);
+    line-height: 1.5em;
+    text-align: justify;
+}
+.seguros-soycli .single-paragraph h2{
+    color: var(--clr-blue);
+    line-height: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.seguros-soycli .paragraph h1,
+.seguros-soycli .paragraph h2 {
+    color: var(--clr-blue);
+}
+.seguros-soycli .paragraph h2 {
+    margin-bottom: 0.5em;
+}
+
+.seguros-soycli .footnote,
+.seguros-soycli .paragraph p {
+    color: var(--clr-gray-font);
+    line-height: 1.5em;
+    text-align: justify;
+    margin-bottom: 1em;
+}
+/* Image con fondo curveado */
+.seguros-soycli .floating-portrait {
+    position: relative;
+    width: 450px;
+    height: 420px;
+}
+
+.seguros-soycli .floating-portrait .curvedbk {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -9999;
+}
+.seguros-soycli .floating-portrait .lg {
+    width: 500px;
+}
+.seguros-soycli .floating-portrait .seguros-soycli-icon {
+    margin: 5em 7em;
+}
+.seguros-soycli .floating-portrait .seguros-soycli-portrait {
+    position: absolute;
+    top: 0;
+    left: 4em;
+}
+.seguros-soycli .single-image {
+    max-width: 400px;
+}
+.seguros-soycli .single-image img {
+    width: 100%;
+}
+
+.seguros-soycli-gethelp {
+    width: 100%;
+    height: 150px;
+    background: var(--clr-gray);
+    
+}
+.seguros-soycli-gethelp .gethelp-container {
+    width: 900px;
+    margin: auto;
+    text-align: left;
+    
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.seguros-soycli-gethelp .gethelp-container h2 {
+    color: var(--clr-blue);
+}
+.seguros-soycli-gethelp .gethelp-container p {
+    color: var(--clr-gray-font);
+    line-height: 2em;
+    font-size: var(--fs-xsm);
+}
+.seguros-soycli-gethelp .gethelp-container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.seguros-soycli-ventajas {
+    padding: 1em;
+}
+.seguros-soycli-ventajas h2 {
+    text-align: center;
+    color: var(--clr-blue);
+    margin-bottom: 1em;
+}
+.seguros-soycli-ventajas .ventajas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--clr-blue);
+}
+
+.seguros-soycli-ventajas .ventajas-container .box {
+    height: 230px;
+    width: 300px;
+    color: white;
+    text-align: center;
+    margin: 1em;
+}
+.seguros-soycli-ventajas .ventajas-container .box h3 {
+    margin: 1em;
+}
+.seguros-soycli-ventajas .ventajas-container .box p {
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-thin);
+}
+
+
+
+.seguros-soycli .footnote {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5em;
+}
+.seguros-soycli .footnote p{
+    margin-bottom: 1em
+}

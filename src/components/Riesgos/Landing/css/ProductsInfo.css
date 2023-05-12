@@ -1,0 +1,42 @@
+.product-info-riesgos {
+    background: var(--clr-gray);
+    padding: 2em;
+}
+
+.product-info-riesgos .product-upper-content {
+    text-align: center;
+    padding: 1em;
+}
+.product-info-riesgos .product-upper-content h1{
+    color: var(--clr-blue);
+}
+.product-info-riesgos .product-upper-content p{
+    color: var(--clr-gray-font);
+}
+
+.product-info-riesgos .products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.product-info-riesgos .product-detail {
+    max-width: 250px;
+    padding: 1em;
+    text-align: center;
+    line-height: 1.5em;
+    margin: 1em;
+}
+.product-info-riesgos .product-detail img {
+    height: 50px;
+}
+.product-info-riesgos .product-detail h5 {
+    color: var(--clr-gold);
+}
+.product-info-riesgos .product-detail p {
+    color: var( --clr-gray-font);
+    font-size: var(--fs-xsm);
+}
+.product-info-riesgos .products-action {
+    text-align: center;
+}

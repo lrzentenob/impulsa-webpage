@@ -10,6 +10,10 @@ export const Submenu = () => {
         const disp = modal?.style.display;
         modal!.style.display = disp === 'block' ? "none" : "block";
     }
+    function onGoTo () {
+        const item = document.getElementById('seguros-productos');
+        item?.scrollIntoView()
+    }
     return(
         <div className="submenu-seguros">
             <div className='logo'>
@@ -19,7 +23,6 @@ export const Submenu = () => {
             <nav>
                 <ul>
                     <li> <Link to="/seguros">Inicio</Link></li>
-                    <li> <Link to="/seguros/productos">Productos</Link></li>
                     <li> <Link to="/seguros/oficinas">Oficinas</Link></li>
                     <li> <Link to="/seguros/soycliente">Soy Cliente</Link></li>
                     <li> <Link to="/seguros/nosotros">Nosotros</Link></li>

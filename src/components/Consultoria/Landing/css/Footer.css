@@ -1,0 +1,110 @@
+
+.footer-consult .services-content {
+    background: var(--clr-gray);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2em;
+    height: auto;
+}
+
+.footer-consult .service-title {
+    line-height: 1.5em;
+    max-width: 400px;
+}
+.footer-consult .service-title p {
+    color: var(--clr-gray-font);
+}
+.footer-consult .services-content .service-title h2{
+    color: var(--clr-blue);
+}
+
+.footer-consult .service-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+.footer-consult .footer-upper-content {
+    padding: 1em;
+}
+.footer-consult .footer-upper-content-container {
+    max-width: var(--maximum-width);
+    margin: auto;
+}
+.footer-consult .footer-upper-content-container div {    
+    width: 200px;
+    padding: 1em;
+}
+.footer-consult .footer-upper-content-container h4 {
+    color: black;
+    line-height: 2em;
+    
+}
+.footer-consult .footer-upper-content-container  ul {
+    list-style: none;
+    line-height: 1.5em;
+}
+
+.footer-consult .footer-upper-content-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.footer-consult .footer-upper-content-container div .logo {
+    width: 80%;
+}
+.footer-consult .footer-upper-content-container div .store {
+    width: 50%;
+}
+
+.footer-consult .footer-upper-content-container div span { 
+    font-size: 0.7em;
+}
+
+.footer-consult .footer-upper-content-container p,
+.footer-consult .footer-upper-content-container  a{
+    color: var(--clr-gray-font);
+    font-size: var(--fs-xsm);
+    line-height: 1.5em;
+    margin-bottom:1em;
+}
+.footer-consult .footer-upper-content-container h4{
+    color: var(--clr-blue);
+    
+}
+
+.footer-consult .fa-iconx {
+    color: var(--clr-emerald);
+}
+
+.footer-consult .footer-lower-content {
+    color: var(--clr-gray-font);
+    background: var(--clr-gray);
+    padding: 1em;
+}
+.footer-consult .footer-lower-content .footer-lower-content-foot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    max-width: var(--maximum-width);
+    
+}
+.footer-consult .footer-lower-content-foot p{
+    font-size: 12px;
+}
+
+.footer-consult .footer-social{
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--clr-emerald);
+}
+

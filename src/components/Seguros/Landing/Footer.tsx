@@ -21,7 +21,7 @@ export const Footer = ()=>{
                     <p>Coberturas a tu medida en el menor tiempo, con facilidades de pago y grandes beneficios.</p>
                 </div>
                 <div className='service-action'>
-                    <a className='btn-seguros' href="#" onClick={onShowContactForm}>Contáctanos</a>
+                    <Link className='btn-seguros' to="" onClick={onShowContactForm}>Contáctanos</Link>
                 </div>
             </div>
 

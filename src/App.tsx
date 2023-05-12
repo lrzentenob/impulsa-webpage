@@ -1,5 +1,5 @@
 
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { Fianzas } from './pages/Fianzas/Fianzas';
 import { FianzasProductos } from './pages/Fianzas/FianzasProductos';
 import { FianzasRequisitos } from './pages/Fianzas/FianzasRequisitos';
@@ -20,6 +20,12 @@ import { SegurosVida } from './pages/Seguros/SegurosVida';
 import { SegurosGastosMedicos } from './pages/Seguros/SegurosGastosMedicos';
 import { SegurosAuto } from './pages/Seguros/SegurosAuto';
 import { SegurosHogar } from './pages/Seguros/SegurosHogar';
+import { SegurosSoyCliente } from './pages/Seguros/SegurosSoyCliente';
+import { SegurosOficinas } from './pages/Seguros/SegurosOficinas';
+import { SegurosNosotros } from './pages/Seguros/SegurosNosotros';
+import { Consultoria } from './pages/Consultoria/Consultoria';
+import { Riesgos } from './pages/Riesgos/Riesgos';
+import { RiesgosOficinas } from './pages/Riesgos/RiesgosOficinas';
 
 
 function App() {
@@ -50,8 +56,14 @@ function App() {
         <Route path="/seguros/gastos-medicos" element={<SegurosGastosMedicos/>}></Route>
         <Route path="/seguros/auto" element={<SegurosAuto/>}></Route>
         <Route path="/seguros/hogar" element={<SegurosHogar/>}></Route>
-        <Route path="/consultoria" element={<Fianzas/>}></Route>
-        <Route path="/riesgos" element={<Fianzas/>}></Route>
+        <Route path="/seguros/soycliente" element={<SegurosSoyCliente/>}></Route>
+        <Route path="/seguros/oficinas" element={<SegurosOficinas/>}></Route>
+        <Route path="/seguros/nosotros" element={<SegurosNosotros/>}></Route>
+
+        <Route path="/consultoria" element={<Consultoria/>}></Route>
+        
+        <Route path="/riesgos" element={<Riesgos/>}></Route>
+        <Route path="/riesgos/oficinas" element={<RiesgosOficinas/>}></Route>
 
       </Routes>
     

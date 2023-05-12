@@ -8,7 +8,7 @@ import { ProductsInfo } from "../../components/Fianzas/Landing/ProductsInfo"
 import { Services } from "../../components/Fianzas/Landing/Services"
 import { Footer } from "../../components/Fianzas/Landing/Footer"
 import '../../components/Fianzas/Landing/css/ChatIcon.css';
-import { useEffect } from "react"
+
 import { Branches } from "../../components/Fianzas/Landing/Branches"
 
 export const Fianzas  = () =>{
@@ -17,13 +17,8 @@ export const Fianzas  = () =>{
     const modal = document.getElementById('chat-window-component');
     const disp = modal?.style.display;
     modal!.style.display = disp === 'block' ? "none" : "block";
+    
   }
-
-  useEffect( ()=> {
-    const modal = document.getElementById("impulsa-home-modal-window");
-    console.log(modal);
-    modal!.style.display = "block";
-  },[])
 
     return (
         <>
@@ -35,7 +30,7 @@ export const Fianzas  = () =>{
           <FontAwesomeIcon icon={faMessage} size='2x' className='faicon' />
         </div>
         <ProductsInfo />
-        
+        <Branches />
         <Services />
         <Footer/>
         

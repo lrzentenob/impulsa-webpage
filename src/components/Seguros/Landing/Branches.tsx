@@ -1,5 +1,5 @@
 import './css/Branches.css';
-import seMap from '../../../assets/seguros/mapa.png';
+import seMap from '../../../assets/seguros/map-seguros.jpg';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
@@ -16,7 +16,7 @@ export const Branches = () => {
                 <div className='branches-detail'>
                     <img src={seMap} alt='mapa de sucursales'></img>
                 </div>
-                <div className='branches-detail'>
+                <div className='branches-detail vertical-centered'>
                     <ul>
                         <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className='bullet-point' /> Cuidad de México</p></li>
                         <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className='bullet-point' /> Estado de México</p></li>

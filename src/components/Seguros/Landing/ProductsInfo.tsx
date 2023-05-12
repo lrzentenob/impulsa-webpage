@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 export const ProductsInfo = () =>{
 
     return (
-        <div className="product-info-seguros">
+        <div className="product-info-seguros" id="seguros-productos">
             <div className="product-upper-content">
                 <div>
                     <h1>Productos Específicos</h1>

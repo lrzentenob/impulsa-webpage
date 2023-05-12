@@ -1,0 +1,60 @@
+.branches-riesgos {
+    position: relative;
+    overflow: hidden;
+}
+
+.branches-riesgos .cut-bkground{
+    position: absolute;
+    right: 0;
+    top: -30em;
+    right: -30em;
+    width: 935px;
+    height: 710px;
+    overflow: hidden;
+}
+.branches-riesgos .cut-bkground img {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: 0;
+}
+.branches-riesgos .branches-upper-content {
+    text-align: center;
+    line-height: 1.5em;
+    max-width: 500px;
+    margin: auto;
+    padding: 1em;
+}
+.branches-riesgos .branches-upper-content h1 {
+    color: var(--clr-blue);
+}
+.branches-riesgos .branches-upper-content p {
+    color: var(--clr-gray-font);
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+
+.branches-riesgos .branches-lower-content {
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.branches-riesgos .branches-detail {
+    width: 400px;
+}
+.branches-riesgos .branches-detail ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+}
+.branches-riesgos .branches-detail li {
+    font-size: var(--fs-sm);
+    max-width: 220px;
+    color: var(--clr-gold);
+    line-height: 2em;
+}
+.branches-riesgos .branches-detail img {
+    width: 100%;
+}

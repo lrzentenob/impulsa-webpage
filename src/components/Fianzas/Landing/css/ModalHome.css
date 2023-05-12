@@ -1,11 +1,11 @@
 .impulsa-modal {
-    text-align: center;
     position: absolute;
+    text-align: center;
     top: 0;
     left: 0;
     z-index: 9999;
-    width: 100%;
-    
+    margin: auto;
+    border: 1px solid red;
 }
 
 .impulsa-content {
@@ -14,7 +14,7 @@
     backdrop-filter: blur(10px);
     color: white;
     padding: 1em;
-    
+    height: 100%;
 }
 .modalhome-title-content {
     padding: 2em;

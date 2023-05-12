@@ -5,7 +5,6 @@ import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 import { ContactoForm } from './components/Fianzas/Landing/ContactoForm'
 import { ChatWindow } from './components/Fianzas/Landing/ChatWindow'
-import { ModalHome } from './components/Fianzas/Landing/ModalHome'
 import ScrollToTop from './components/Fianzas/Landing/ScrollToTop'
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
@@ -15,7 +14,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <App />
       <ContactoForm />
       <ChatWindow />
-      <ModalHome />
     </BrowserRouter>
   </React.StrictMode>
 )

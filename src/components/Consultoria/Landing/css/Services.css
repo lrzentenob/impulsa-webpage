@@ -1,0 +1,68 @@
+
+.services-consult {
+    /* background: var(--clr-gray); */
+}
+.services-consult .services-upper-content {
+    position: relative;    
+    overflow: hidden;
+    min-height: 550px;
+}
+
+.services-consult .services-upper-content .cover {
+    position: absolute;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(100, 142, 61, 0.462), rgb(100, 142, 61,0.7));
+    z-index: -998;
+}
+
+.services-consult .services-upper-content img {
+    position: absolute;
+    top: 0;
+    z-index: -999;
+    width: 100%;
+    color: white;
+}
+.services-consult .service-main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+    justify-content: center;
+    
+}
+.services-consult .service-main-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services-consult .service-main-left .service-title {
+    padding: 1em;
+    max-width: 350px;
+    color: white;
+}
+.services-consult .service-title h2 {
+    line-height: 2em;
+}
+.services-consult .service-title p {
+    line-height: 1.5em;
+}
+.services-consult .service-main-right {
+    padding: 1em;
+}
+.services-consult .service-box h4 {
+    line-height: 2em;
+    color:black;
+}
+
+.services-consult .service-box {
+    background: white;
+    max-width: 450px;
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 1em;   
+}
+
+
+

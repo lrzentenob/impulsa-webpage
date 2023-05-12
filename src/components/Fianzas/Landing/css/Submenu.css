@@ -6,6 +6,8 @@
     z-index: 1000;
     height: var(--submenu-height);
     top: var(--header-height);
+    border: 1px solid blue;
+    
 }
 
 .submenu nav {
@@ -98,11 +100,12 @@
     .submenu nav {
         all: unset;
         grid-column: 3 / 4;
-        
         display: flex;
         flex-direction: column;
         justify-content: center;
+        
     }
+
     .submenu nav a,
     .submenu nav p{
         opacity: 1;
@@ -116,11 +119,13 @@
     }
     .submenu nav ul {
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-end;
+        
     }
     .submenu nav ul li {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 120px;
     }
 }

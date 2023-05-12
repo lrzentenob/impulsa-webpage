@@ -5,7 +5,9 @@ header {
     width: 100%;
     z-index: 1010;
     height: var(--header-height);   
+    border: 1px solid blue;
 }
+
 
 header nav {
     background: var(--clr-orange);
@@ -94,7 +96,8 @@ header .navtoggle-label span::after {
     header nav {
         all: unset;
         grid-column: 2 / 3;
-        width: var(--maximum-width)
+        width: var(--maximum-width);
+        
     }
     header nav a,header nav p {
         opacity: 1;

@@ -1,0 +1,146 @@
+.impulsa-modal {
+    text-align: center;
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+}
+
+.impulsa-content {
+    position: relative;
+    background: rgba(169, 171, 169, 0.758) /* Green background with 30% opacity */;
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 1em;
+    
+}
+.modalhome-title-content {
+    padding: 2em;
+}
+.modalhome-title-content p {
+    font-size: 18px;
+}
+.title-shadow {
+    text-shadow: 1px 1px 2px gray, 0 0 1em var(--clr-gray), 0 0 0.2em var(--clr-orange);
+}
+.close {
+    font-size: 4em;
+    position: absolute;
+    top: 0;
+    right: 0.5em;
+}
+
+.modalhome-logo {
+    margin-bottom: 2em;
+}
+.modalhome-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.modalhome-banner-box {
+    height: 300px;
+    width: 320px;
+    border-radius: 5px;
+    padding: 2em 1em 1em 2em;
+    line-height: 1.5em;
+    font-weight: var(--fw-thin);
+    text-align: left;
+    margin: 0.5em;
+}
+.modalhome-banner-box:hover {
+    border: 1px solid gray;
+     cursor: pointer;
+}
+.modalhome-banner-box h1 {
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-slg);
+}
+
+.banner-box-fianzas {
+    color: white;
+    background: var(--clr-orange);
+}
+.banner-box-seguros {
+    color: white;
+    background: var(--clr-blue);
+}
+.banner-box-riesgos {
+    color: white;
+    background: var(--clr-gold);
+}
+.banner-box-consultoria {
+    color: white;
+    background: var(--clr-emerald);
+}
+
+
+.modal-mvision-content {    
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.5em;
+}
+
+.modal-mvision-content label {
+    font-size: var(--fs-lg);
+    line-height: 3em;
+}
+.modal-mvision-content p {
+    font-weight: var(--fw-thin);
+}
+.modalhome-descripton-c ul,
+.modalhome-descripton-d ul {
+    text-align: left;
+}
+
+.modal-mvision-content .modalhome-descripton-a {
+    text-align: justify;
+}
+.modal-mvision-content input {
+    display: none;
+}
+
+.modal-mvision-content .fa-dropdown-icon-plus-a,
+.modal-mvision-content .fa-dropdown-icon-minus-a,
+.modal-mvision-content .fa-dropdown-icon-plus-b,
+.modal-mvision-content .fa-dropdown-icon-minus-b,
+.modal-mvision-content .fa-dropdown-icon-plus-c,
+.modal-mvision-content .fa-dropdown-icon-minus-c,
+.modal-mvision-content .fa-dropdown-icon-plus-d,
+.modal-mvision-content .fa-dropdown-icon-minus-d {
+    font-size: var(--fs-lg);
+    margin-right: 0.5em;
+}
+
+.modalhome-descripton-a,
+.modalhome-descripton-b,
+.modalhome-descripton-c,
+.modalhome-descripton-d {
+    display: none;
+}
+.modalhome-check-a:checked ~ .modalhome-descripton-a,
+.modalhome-check-b:checked ~ .modalhome-descripton-b,
+.modalhome-check-c:checked ~ .modalhome-descripton-c,
+.modalhome-check-d:checked ~ .modalhome-descripton-d {
+    display: block;
+}
+
+.fa-dropdown-icon-minus-a,
+.fa-dropdown-icon-minus-b,
+.fa-dropdown-icon-minus-c,
+.fa-dropdown-icon-minus-d { display: none }
+
+.modalhome-check-a:checked ~ .fa-dropdown-icon-minus-a,
+.modalhome-check-b:checked ~ .fa-dropdown-icon-minus-b,
+.modalhome-check-c:checked ~ .fa-dropdown-icon-minus-c,
+.modalhome-check-d:checked ~ .fa-dropdown-icon-minus-d {
+    display: inline-block;
+}
+.modalhome-check-a:checked ~ .fa-dropdown-icon-plus-a,
+.modalhome-check-b:checked ~ .fa-dropdown-icon-plus-b,
+.modalhome-check-c:checked ~ .fa-dropdown-icon-plus-c,
+.modalhome-check-d:checked ~ .fa-dropdown-icon-plus-d {
+    display: none;
+}

@@ -1,0 +1,43 @@
+
+.services-riesgos .services-upper-content {
+    position: relative;    
+    overflow: hidden;
+    min-height: 250px;   
+}
+
+.services-riesgos .services-upper-content .cover {
+    position: absolute;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, rgb(247, 170, 36,0.7), rgb(247, 170, 36,0.7));
+    z-index: -998;
+}
+
+.services-riesgos .services-upper-content .services-bkimage {
+    position: absolute;
+    top: -20em;
+    z-index: -999;
+    width: 100%;
+    color: white;
+    
+}
+.services-riesgos .service-main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1em;
+}
+
+.services-riesgos .service-main h1 {
+    color: white;
+    
+}
+.services-riesgos .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: auto;
+    color: white;
+}

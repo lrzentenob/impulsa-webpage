@@ -46,6 +46,9 @@
   margin: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
 /*** generaly removes all a tags default format */ 
 a {
   text-decoration: none;

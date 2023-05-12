@@ -18,10 +18,10 @@ export const Footer = ()=>{
             <div className='services-content'>
                 <div className='service-title'>
                     <h2>Servicio Eficiente</h2>
-                    <p>Coberturas a tu medida en el menor tiempo, con facilidades de pago y grandes beneficios.</p>
+                    <p>En 24 horas ofrecemos la solución que la inmediatez de tu caso requiere.</p>
                 </div>
                 <div className='service-action'>
-                    <a className='btn-fianzas' href="#" onClick={onShowContactForm}>Contáctanos</a>
+                    <Link className='btn-fianzas' to="" onClick={onShowContactForm}>Contáctanos</Link>
                 </div>
             </div>
 
@@ -54,7 +54,7 @@ export const Footer = ()=>{
                     <div>
                         <h4>Contacto</h4>
                         <ul>
-                            <li><Link to="/"><p><FontAwesomeIcon icon={faPhone} size='1x'  className='fa-iconx'/> 01 800 902 3456</p></Link></li>
+                            <li><Link to="/"><p><FontAwesomeIcon icon={faPhone} size='1x'  className='fa-iconx'/> 800 902 3456</p></Link></li>
                             <li><Link to="/"><p><FontAwesomeIcon icon={faLocationDot} size='1x' className='fa-iconx'/> 9 oficinas en todo el país</p></Link></li>
                             <li><Link to="/"><p><FontAwesomeIcon icon={faEnvelope} size='1x' className='fa-iconx'/><span> atencion@impulsaasesores.mx</span></p></Link></li>
                         </ul>
@@ -72,7 +72,7 @@ export const Footer = ()=>{
 
             <div className='footer-lower-content'>
                 <div className='footer-lower-content-foot'>
-                    <p>© 2020 Impulsa Fianzas. Todos los derechos reservados</p>
+                    <p>© 2023 Impulsa Asesores. Todos los derechos reservados</p>
                     <div className='footer-social'>
                         <FontAwesomeIcon icon={faFacebook} size='2x' />
                         <FontAwesomeIcon icon={faInstagram} size='2x' />
