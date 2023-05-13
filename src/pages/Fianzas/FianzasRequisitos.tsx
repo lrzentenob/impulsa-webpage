@@ -4,6 +4,7 @@ import { Header } from "../../components/Fianzas/Landing/Header";
 import { Submenu } from "../../components/Fianzas/Landing/Submenu";
 import './css/Base.css';
 import './css/FianzasRequisitos.css';
+import curvedImageBk from '../../assets/general/curved-background.png';
 
 export const FianzasRequisitos = () => {
     return (
@@ -11,8 +12,18 @@ export const FianzasRequisitos = () => {
         <Header />
         <Submenu />
         <section className="requisitos">
-            <h1>Requisitos</h1>
+                <div className="curved-titled">
+                    <div className="h-container">   
+                        <h1 className="title-text">Requisitos</h1>
+                        <div className="image-content">
+                            <img src={curvedImageBk} className="image-background"></img>
+                        </div>
+                    </div>
+                </div>
+
+
             <div className="requisitos-content">
+
                 <div className="requisitos-left">
                     <h2>Persona Física</h2>
                         <ul>

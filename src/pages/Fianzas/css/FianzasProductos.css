@@ -2,21 +2,26 @@
 .productos-content h1 {
     text-align: center;
     color: var(--clr-blue);
-    line-height: 2em;
+    line-height: 1em;
+    
 }
 
 .productos .products-whatis-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    
 }
 .products-whatis-container p {
     line-height: 1.5em;
     color: var(--clr-gray-font);
+    text-align: justify;
+    
 }
 .products-whatis-container h2 {
     line-height: 3em;
     color: var(--clr-blue);
+    
 }
 
 .whatis-left, .whatis-right {
@@ -32,6 +37,11 @@
 }
 
 .services-upper-content .service-main .service-box {
-    width: 400px;
-    
+    width: 600px;
+    height: 90px;
+    padding: 2em;
+}
+.services-upper-content .service-main .service-box:hover {
+    border: 1px solid gray;
+    cursor: pointer;
 }

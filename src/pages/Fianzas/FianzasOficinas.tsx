@@ -7,6 +7,7 @@ import { Header } from "../../components/Fianzas/Landing/Header";
 import { Submenu } from "../../components/Fianzas/Landing/Submenu";
 import './css/FianzasOficinas.css';
 import { Link } from "react-router-dom";
+import curvedImageBk from '../../assets/general/curved-background.png';
 
 export const FianzasOficinas = () => {
     return (
@@ -14,7 +15,16 @@ export const FianzasOficinas = () => {
             <Header />
             <Submenu />
             <section className="oficinas">
-            <h1>Oficinas</h1>
+                <div className="curved-titled">
+                    <div className="h-container">   
+                        <h1 className="title-text">Oficinas</h1>
+                        <div className="image-content">
+                            <img src={curvedImageBk} className="image-background"></img>
+                        </div>
+                    </div>
+                </div>
+            
+
             <div className="oficinas-content">
                 <div className="oficina-box">
                     <div className="address">

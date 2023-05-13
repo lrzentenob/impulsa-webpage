@@ -3,6 +3,7 @@ import { Header } from "../../components/Fianzas/Landing/Header";
 import { Submenu } from "../../components/Fianzas/Landing/Submenu";
 import './css/FianzasNosotros.css'
 import fiFianzasNosostros from '../../assets/fianzas/fianzas-nosotros.png';
+import curvedImageBk from '../../assets/general/curved-background.png';
 
 export const FianzasNosotros = () => {
     return (
@@ -11,8 +12,15 @@ export const FianzasNosotros = () => {
         <Submenu />
         <section className="nosotros">
             <div className="nosotros-content">
+            <div className="curved-titled">
+                    <div className="h-container">   
+                        <h1 className="title-text">Nosotros</h1>
+                        <div className="image-content">
+                            <img src={curvedImageBk} className="image-background"></img>
+                        </div>
+                    </div>
+                </div>
 
-                <h1>Nosotros</h1>
                 
                 <div className="nosotros-about">
 

@@ -46,6 +46,7 @@
   margin: 0;
 }
 
+
 html {
 	scroll-behavior: smooth;
 }
@@ -54,6 +55,10 @@ a {
   text-decoration: none;
   color: var(--clr-blue);
 }
+ p {
+  font-size: 16px;
+  font-weight: var(--fw-regular);
+ }
 
 .content {
   height: 400px;
@@ -73,3 +78,31 @@ hr {
   flex-direction: column;
   justify-content: center;
 }
+
+/* container of the title with curved background*/ 
+.curved-titled {
+  padding: 1em;
+}
+.curved-titled .h-container {
+  position: relative;
+  max-width: 400px;
+  margin: auto;
+  
+  height: 300px;
+} 
+.curved-titled .title-text {
+  text-align: center;
+  position: absolute;
+  top: 2em;
+  left: 2em;
+}
+.curved-titled .image-content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.curved-titled .image-background {
+  width: 100%;
+}
+
+/* ****************************** */
