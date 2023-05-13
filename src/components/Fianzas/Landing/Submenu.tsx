@@ -11,24 +11,25 @@ export const Submenu = () => {
     }
     return(
         <div className="submenu">
-            <div className='logo'>
-                <img src={fiLogo}></img>
+            <div className='submenu-container'>
+                <div className='logo'>
+                    <img src={fiLogo}></img>
+                </div>
+                <input type='checkbox' className='navtoggle' id='togglecheck-submenu'></input>
+                <nav>
+                    <ul>
+                        <li> <Link to="/fianzas">Inicio</Link></li>
+                        <li> <Link to="/fianzas/productos">Productos</Link></li>
+                        <li> <Link to="/fianzas/requisitos">Requisitos</Link></li>
+                        <li> <Link to="/fianzas/oficinas">Oficinas</Link></li>
+                        <li> <Link to="/fianzas/nosotros">Nosotros</Link></li>
+                        <li> <button className="btn-fianzas" onClick={onShowContactForm}>Contacto</button></li>
+                    </ul>
+                </nav>
+                <label htmlFor='togglecheck-submenu' className='navtoggle-label'>
+                    <span></span>
+                </label>
             </div>
-            <input type='checkbox' className='navtoggle' id='togglecheck-submenu'></input>
-            <nav>
-                <ul>
-                    <li> <Link to="/">Inicio</Link></li>
-                    <li> <Link to="/productos">Productos</Link></li>
-                    <li> <Link to="/requisitos">Requisitos</Link></li>
-                    <li> <Link to="/oficinas">Oficinas</Link></li>
-                    <li> <Link to="/nosotros">Nosotros</Link></li>
-                    <li> <button className="btn-fianzas" onClick={onShowContactForm}>Contacto</button></li>
-                </ul>
-            </nav>
-            <label htmlFor='togglecheck-submenu' className='navtoggle-label'>
-                <span></span>
-            </label>
-
         </div>
     );
 }

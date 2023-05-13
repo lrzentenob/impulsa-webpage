@@ -5,6 +5,7 @@
     width: 100%;
     z-index: 1010;
     height: var(--header-height);   
+    color: white;
 }
 
 .header-consult nav {
@@ -16,9 +17,13 @@
     transform: scale(1,0);
     transform-origin: top;
     transition: transform 400ms;
-    
+
 }
-header-consult nav ul{
+.header-consult .menu-container p{
+    color: var(--clr-emerald);
+}
+
+.header-consult nav ul{
     text-align: left;
     list-style: none;
 }
@@ -28,7 +33,7 @@ header-consult nav ul{
 }
 .header-consult nav a,
 .header-consult nav p {
-    color: black;
+    color: white;
     text-decoration: none;
     opacity: 0;
     transition: opacity 150ms ease-in-out;
@@ -63,7 +68,7 @@ header-consult nav ul{
 .header-consult .navtoggle-label span::before,
 .header-consult .navtoggle-label span::after {
     display: block;
-    background: black;
+    background: white;
     height: 2px;
     width: 2em;
     border-radius: 2px;
@@ -85,35 +90,41 @@ header-consult nav ul{
     .header-consult .navtoggle-label {
         display: none;
     }
-    .header-consult {        
-        display: grid;
-        grid-template-columns: 1fr auto 1fr;
-        
+    .header-consult .menu-container p{
+        color: white;
+    }
+    
+    .header-consult {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header-consult .menu-container{
+        display: flex;
+        justify-content: space-between;
+        width: var(--maximum-width);
+        margin: auto;
     }
     
     .header-consult nav {
-        all: unset;
-        grid-column: 2 / 3;
-        width: var(--maximum-width)
+        all: unset;        
     }
     .header-consult nav a,.header-consult nav p {
         opacity: 1;
         color: white;
-        
     }
-    .header-consult nav a {
-        position: relative;
-    }
-    .header-consult nav p{ 
-        text-align: right;
-        width: 300px;
+    .header-consult nav li {
+        position: relative;        
     }
     .header-consult nav ul {
         display: flex;
-        justify-content: space-around;
-        margin-top: 1em;
+        justify-content: flex-start;    
     }
-    .header-consult nav a::before {
+    .header-consult nav li {
+        width: 120px;
+        text-align: center;
+    }
+    .header-consult nav li::before {
         content: '';
         display: block;
         height: 5px;
@@ -125,7 +136,7 @@ header-consult nav ul{
         transform: scale(0,1);
         transition: transform ease-in-out 250ms;
     }
-    .header-consult nav a:hover::before {
+    .header-consult nav li:hover::before {
         transform: scale(1,1);
     }
 }

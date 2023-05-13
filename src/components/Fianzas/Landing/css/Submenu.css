@@ -6,7 +6,6 @@
     z-index: 1000;
     height: var(--submenu-height);
     top: var(--header-height);
-    border: 1px solid blue;
     
 }
 
@@ -90,19 +89,31 @@
     .submenu .navtoggle-label {
         display: none;
     }
-    .submenu { 
-        display: grid;
-        grid-template-columns: 1fr auto minmax(800px, 1fr) 0.1fr;
-    }
-    .submenu .logo {
-        grid-column: 1 / 2;
-    }
-    .submenu nav {
-        all: unset;
-        grid-column: 3 / 4;
+    .submenu {
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    .submenu .submenu-container {
+        width: var(--maximum-width);
+        margin: auto;
+        
+    }
+    .submenu .submenu-container { 
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    .submenu .logo {
+        padding: 0;
+    }
+    
+    .submenu nav {
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 650px;
         
     }
 

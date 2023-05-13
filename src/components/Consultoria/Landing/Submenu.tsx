@@ -16,24 +16,25 @@ export const Submenu = () => {
     }
     return(
         <div className="submenu-consult">
-            <div className='logo'>
-                <img src={seLogo}></img>
+            <div className='submenu-container'>
+                <div className='logo'>
+                    <img src={seLogo}></img>
+                </div>
+                <input type='checkbox' className='navtoggle' id='togglecheck-submenu'></input>
+                <nav>
+                    <ul>
+                        <li> <Link to="/consultoria">Inicio</Link></li>
+                        <li> <Link to="/consultoria" onClick={onGoTo} >Productos</Link></li>
+                        <li> <Link to="/consultoria/oficinas">Oficinas</Link></li>
+                        <li> <Link to="/consultoria/soycliente">Soy Cliente</Link></li>
+                        <li> <Link to="/consultoria/nosotros">Nosotros</Link></li>
+                        <li> <button className="btn-consult" onClick={onShowContactForm}>Contacto</button></li>
+                    </ul>
+                </nav>
+                <label htmlFor='togglecheck-submenu' className='navtoggle-label'>
+                    <span></span>
+                </label>
             </div>
-            <input type='checkbox' className='navtoggle' id='togglecheck-submenu'></input>
-            <nav>
-                <ul>
-                    <li> <Link to="/consultoria">Inicio</Link></li>
-                    <li> <Link to="/consultoria" onClick={onGoTo} >Productos</Link></li>
-                    <li> <Link to="/consultoria/oficinas">Oficinas</Link></li>
-                    <li> <Link to="/consultoria/soycliente">Soy Cliente</Link></li>
-                    <li> <Link to="/consultoria/nosotros">Nosotros</Link></li>
-                    <li> <button className="btn-consult" onClick={onShowContactForm}>Contacto</button></li>
-                </ul>
-            </nav>
-            <label htmlFor='togglecheck-submenu' className='navtoggle-label'>
-                <span></span>
-            </label>
-
         </div>
     );
 }

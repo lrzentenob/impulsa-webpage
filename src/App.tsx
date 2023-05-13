@@ -1,5 +1,5 @@
 
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, redirect, Navigate } from 'react-router-dom';
 import { Fianzas } from './pages/Fianzas/Fianzas';
 import { FianzasProductos } from './pages/Fianzas/FianzasProductos';
 import { FianzasRequisitos } from './pages/Fianzas/FianzasRequisitos';
@@ -27,28 +27,29 @@ import { Consultoria } from './pages/Consultoria/Consultoria';
 import { Riesgos } from './pages/Riesgos/Riesgos';
 import { RiesgosOficinas } from './pages/Riesgos/RiesgosOficinas';
 
-
 function App() {
   return ( 
 
       <Routes>
-        <Route path="/" element={<Fianzas/>}></Route>
-        <Route path="/productos" element={<FianzasProductos/>}></Route>
-        <Route path="/requisitos" element={<FianzasRequisitos/>}></Route>
-        <Route path="/oficinas" element={<FianzasOficinas/>}></Route>
-        <Route path="/nosotros" element={<FianzasNosotros/>}></Route>
+        <Route path="/" element={ <Navigate to='/fianzas' replace={true}/>}>
+        </Route>
+        <Route path="/fianzas" element={<Fianzas/>}></Route>
+        <Route path="/fianzas/productos" element={<FianzasProductos/>}></Route>
+        <Route path="/fianzas/requisitos" element={<FianzasRequisitos/>}></Route>
+        <Route path="/fianzas/oficinas" element={<FianzasOficinas/>}></Route>
+        <Route path="/fianzas/nosotros" element={<FianzasNosotros/>}></Route>
 
-        <Route path="/arrendamiento" element={<FianzaArrendamiento/>}></Route>
-        <Route path="/fidelidad" element={<FianzaFidelidad/>}></Route>
-        <Route path="/fiscal" element={<FianzaFiscal/>}></Route>
-        <Route path="/judicial" element={<FianzaJudicial/>}></Route>
-        <Route path="/notario" element={<FianzaNotario/>}></Route>
+        <Route path="/fianzas/arrendamiento" element={<FianzaArrendamiento/>}></Route>
+        <Route path="/fianzas/fidelidad" element={<FianzaFidelidad/>}></Route>
+        <Route path="/fianzas/fiscal" element={<FianzaFiscal/>}></Route>
+        <Route path="/fianzas/judicial" element={<FianzaJudicial/>}></Route>
+        <Route path="/fianzas/notario" element={<FianzaNotario/>}></Route>
 
-        <Route path="/cotizacion" element={<FianzasCotizacion/>}></Route>
-        <Route path="/validacion" element={<FianzasValidacion/>}></Route>
-        <Route path="/cancelacion" element={<FianzasCancelacion/>}></Route>
-        <Route path="/guia-reclamos" element={<FianzasGuiaReclamos/>}></Route>
-        <Route path="/programa-proveedores" element={<FianzasProgramaProveedores/>}></Route>
+        <Route path="/fianzas/cotizacion" element={<FianzasCotizacion/>}></Route>
+        <Route path="/fianzas/validacion" element={<FianzasValidacion/>}></Route>
+        <Route path="/fianzas/cancelacion" element={<FianzasCancelacion/>}></Route>
+        <Route path="/fianzas/guia-reclamos" element={<FianzasGuiaReclamos/>}></Route>
+        <Route path="/fianzas/programa-proveedores" element={<FianzasProgramaProveedores/>}></Route>
         
 
         <Route path="/seguros" element={<Seguros/>}></Route>

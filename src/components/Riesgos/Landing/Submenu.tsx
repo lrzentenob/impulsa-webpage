@@ -16,9 +16,10 @@ export const Submenu = () => {
     }
     return(
         <div className="submenu-riesgos">
-            <div className='logo'>
-                <img src={riLogo}></img>
-            </div>
+            <div className='submenu-container'>
+                <div className='logo'>
+                    <img src={riLogo}></img>
+                </div>
             {/* <input type='checkbox' className='navtoggle' id='togglecheck-submenu'></input> */}
             {/* <nav>
                 <ul>
@@ -33,7 +34,7 @@ export const Submenu = () => {
             {/* <label htmlFor='togglecheck-submenu' className='navtoggle-label'>
                 <span></span>
             </label> */}
-
+            </div>
         </div>
     );
 }

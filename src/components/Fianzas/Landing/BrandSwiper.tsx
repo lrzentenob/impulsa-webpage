@@ -1,12 +1,17 @@
 // Import Swiper React components
 import { Autoplay } from 'swiper';
-import fiAtlas from '../../../assets/fianzas/brands/atlas.png';
-import fiBerkley from '../../../assets/fianzas/brands/berkley.png';
-import fiCbi from '../../../assets/fianzas/brands/cbi.png';
-import fiChub from '../../../assets/fianzas/brands/chubb.png';
-import fiDoroma from '../../../assets/fianzas/brands/doroma.png';
-import fiInsurgentes from '../../../assets/fianzas/brands/insurgentes.png';
-import fiMapre from '../../../assets/fianzas/brands/mapfre.png';
+import fiBrand01 from '../../../assets/fianzas/brands/1-aserta.jpg';
+import fiBrand02 from '../../../assets/fianzas/brands/2-berkley.jpg';
+import fiBrand03 from '../../../assets/fianzas/brands/3-chubb.jpg';
+import fiBrand04 from '../../../assets/fianzas/brands/4-insurgentes.jpg';
+import fiBrand05 from '../../../assets/fianzas/brands/5-doroma.jpg';
+import fiBrand06 from '../../../assets/fianzas/brands/6-sofimex.jpg';
+import fiBrand07 from '../../../assets/fianzas/brands/7-liberty.jpg';
+import fiBrand08 from '../../../assets/fianzas/brands/8-fianzas-atlas.jpg';
+import fiBrand09 from '../../../assets/fianzas/brands/9-cescemex.jpg';
+import fiBrand10 from '../../../assets/fianzas/brands/10-fiducia.jpg';
+import fiBrand11 from '../../../assets/fianzas/brands/11-mapfre.jpg';
+import fiBrand12 from '../../../assets/fianzas/brands/12-avla.jpg';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -24,13 +29,18 @@ export default () => {
         autoplay={ {delay: 1000, waitForTransition: false }}
       className='brandswiper'
     >
-      <SwiperSlide><div className='brand-container'><img src={fiAtlas}></img></div></SwiperSlide>
-      <SwiperSlide><div className='brand-container'><img src={fiBerkley}></img></div></SwiperSlide>
-      <SwiperSlide><div className='brand-container'><img src={fiCbi}></img></div></SwiperSlide>
-      <SwiperSlide><div className='brand-container'><img src={fiChub}></img></div></SwiperSlide>
-      <SwiperSlide><div className='brand-container'><img src={fiDoroma}></img></div></SwiperSlide>
-      <SwiperSlide><div className='brand-container'><img src={fiInsurgentes}></img></div></SwiperSlide>
-      <SwiperSlide><div className='brand-container'><img src={fiMapre}></img></div></SwiperSlide>
+      <SwiperSlide><div className='brand-container'><img src={fiBrand01}></img></div></SwiperSlide>
+      <SwiperSlide><div className='brand-container'><img src={fiBrand02}></img></div></SwiperSlide>
+      <SwiperSlide><div className='brand-container'><img src={fiBrand03}></img></div></SwiperSlide>
+      <SwiperSlide><div className='brand-container'><img src={fiBrand04}></img></div></SwiperSlide>
+      <SwiperSlide><div className='brand-container'><img src={fiBrand05}></img></div></SwiperSlide>
+      <SwiperSlide><div className='brand-container'><img src={fiBrand06}></img></div></SwiperSlide>
+      <SwiperSlide><div className='brand-container'><img src={fiBrand07}></img></div></SwiperSlide>
+      <SwiperSlide><div className='brand-container'><img src={fiBrand08}></img></div></SwiperSlide>
+      <SwiperSlide><div className='brand-container'><img src={fiBrand09}></img></div></SwiperSlide>
+      <SwiperSlide><div className='brand-container'><img src={fiBrand10}></img></div></SwiperSlide>
+      <SwiperSlide><div className='brand-container'><img src={fiBrand11}></img></div></SwiperSlide>
+      <SwiperSlide><div className='brand-container'><img src={fiBrand12}></img></div></SwiperSlide>
 
     </Swiper>
   );

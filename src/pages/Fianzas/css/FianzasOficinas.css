@@ -10,6 +10,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 2em;
     
 }
 .oficinas-content h2 {
@@ -22,7 +23,8 @@
 }
 .oficinas .oficina-box {
     width: 290px;
-    margin-right: 1em;
+    margin-right: 2em;
+    
 }
 .oficina-box .iconfa {
     color: var(--clr-orange);

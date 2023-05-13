@@ -13,6 +13,7 @@ export const Footer = ()=>{
         const disp = modal?.style.display;
         modal!.style.display = disp === 'block' ? "none" : "block";
     }
+
     return (
         <footer>
             <div className='services-content'>

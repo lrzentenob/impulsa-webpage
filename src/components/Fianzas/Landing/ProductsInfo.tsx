@@ -19,21 +19,21 @@ export const ProductsInfo = () =>{
             </div>
             <div className='products-container'>
 
-                    <Link to='/arrendamiento'>
+                    <Link to='/fianzas/arrendamiento'>
                         <div className='product-detail'>
                             <img src={fiArrendamiento}></img>
                             <h5>Fianzas de Arrendamiento</h5>
                             <p>Garantiza cumplimiento de contrato entre inquilino y dueño del inmueble.</p>
                         </div>
                     </Link>
-                    <Link to='/fidelidad'>
+                    <Link to='/fianzas/fidelidad'>
                         <div className='product-detail'>
                             <img src={fiFidelidad}></img>
                             <h5>Fianzas de Fidelidad</h5>
                             <p>Protege patrimonio empresarial de delitos cometidos por empleados.</p>
                         </div>
                     </Link>
-                    <Link to='/fiscal'>
+                    <Link to='/fianzas/fiscal'>
                         <div className='product-detail'>
                             <img src={fiFiscal}></img>
                             <h5>Fianzas Fiscales</h5>
@@ -41,7 +41,7 @@ export const ProductsInfo = () =>{
 
                         </div>
                     </Link>
-                    <Link to='/judicial'>
+                    <Link to='/fianzas/judicial'>
                         <div className='product-detail'>
                             <img src={fiJudicial}></img>
                             <h5>Fianzas Judiciales</h5>
@@ -49,7 +49,7 @@ export const ProductsInfo = () =>{
                         </div>
                     </Link>
                     
-                    <Link to='/notario'>
+                    <Link to='/fianzas/fianzas/notario'>
                         <div className='product-detail'>
                             <img src={fiNotario}></img>
                             <h5>Fianzas de Notario</h5>

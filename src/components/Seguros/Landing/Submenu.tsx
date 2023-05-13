@@ -16,6 +16,7 @@ export const Submenu = () => {
     }
     return(
         <div className="submenu-seguros">
+            <div className='submenu-container'>
             <div className='logo'>
                 <img src={seLogo}></img>
             </div>
@@ -32,7 +33,7 @@ export const Submenu = () => {
             <label htmlFor='togglecheck-submenu' className='navtoggle-label'>
                 <span></span>
             </label>
-
+            </div>
         </div>
     );
 }

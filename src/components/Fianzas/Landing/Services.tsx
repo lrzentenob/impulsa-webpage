@@ -19,20 +19,20 @@ export const Services = ()=> {
                     <div className='service-main-right'>
                         
                         <div className='service-box'>
-                        <Link to='/validacion'><h4>Valida tu fianza</h4></Link>
+                        <Link to='/fianzas/validacion'><h4>Valida tu fianza</h4></Link>
                             <p>Te ofrecemos una herramienta esencial para verificar la autenticidad y respaldo de tu póliza de fianza.</p>
                         </div>
                         
                         <div className='service-box'>
-                        <Link to='/cancelacion'><h4>Cancelaciones</h4></Link>
+                        <Link to='/fianzas/cancelacion'><h4>Cancelaciones</h4></Link>
                             <p>Te ofrecemos una herramienta esencial para verificar la autenticidad y respaldo de tu póliza de fianza.</p>
                         </div>
                         <div className='service-box'>
-                            <Link to='/guia-reclamos'><h4>Guía para Reclamos</h4></Link>
+                            <Link to='/fianzas/guia-reclamos'><h4>Guía para Reclamos</h4></Link>
                             <p>Te ofrecemos una herramienta esencial para verificar la autenticidad y respaldo de tu póliza de fianza.</p>
                         </div>
                         <div className='service-box'>
-                            <Link to='/programa-proveedores'><h4>Programa de Proveedores</h4></Link>
+                            <Link to='/fianzas/programa-proveedores'><h4>Programa de Proveedores</h4></Link>
                             <p>Te ofrecemos una herramienta esencial para verificar la autenticidad y respaldo de tu póliza de fianza.</p>
                         </div>
                     </div>

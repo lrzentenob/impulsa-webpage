@@ -2,7 +2,11 @@
     padding: var(--section-padding-top) 1em 1em 1em; /* 8em to avoid menu overlap*/
     color: var(--clr-blue);
 }
+.central-swiper .slide {
+    padding: 1em;
+}
 
 .buttons-array {
     max-width: 500px;
 }
+

@@ -5,9 +5,8 @@ header {
     width: 100%;
     z-index: 1010;
     height: var(--header-height);   
-    border: 1px solid blue;
+    color: white;
 }
-
 
 header nav {
     background: var(--clr-orange);
@@ -18,8 +17,12 @@ header nav {
     transform: scale(1,0);
     transform-origin: top;
     transition: transform 400ms;
-    
+
 }
+header .menu-container p{
+    color: var(--clr-orange);
+}
+
 header nav ul{
     text-align: left;
     list-style: none;
@@ -30,7 +33,7 @@ header nav li {
 }
 header nav a,
 header nav p {
-    color: black;
+    color: white;
     text-decoration: none;
     opacity: 0;
     transition: opacity 150ms ease-in-out;
@@ -65,7 +68,7 @@ header .navtoggle-label span,
 header .navtoggle-label span::before,
 header .navtoggle-label span::after {
     display: block;
-    background: black;
+    background: white;
     height: 2px;
     width: 2em;
     border-radius: 2px;
@@ -87,36 +90,41 @@ header .navtoggle-label span::after {
     header .navtoggle-label {
         display: none;
     }
-    header {        
-        display: grid;
-        grid-template-columns: 1fr auto 1fr;
-        
+    header .menu-container p{
+        color: white;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    header .menu-container{
+        display: flex;
+        justify-content: space-between;
+        width: var(--maximum-width);
+        margin: auto;
     }
     
     header nav {
-        all: unset;
-        grid-column: 2 / 3;
-        width: var(--maximum-width);
-        
+        all: unset;        
     }
     header nav a,header nav p {
         opacity: 1;
         color: white;
-        
     }
-    header nav a {
-        position: relative;
-    }
-    header nav p{ 
-        text-align: right;
-        width: 300px;
+    header nav li {
+        position: relative;        
     }
     header nav ul {
         display: flex;
-        justify-content: space-around;
-        margin-top: 1em;
+        justify-content: flex-start;    
     }
-    header nav a::before {
+    header nav li {
+        width: 120px;
+        text-align: center;
+    }
+    header nav li::before {
         content: '';
         display: block;
         height: 5px;
@@ -128,7 +136,7 @@ header .navtoggle-label span::after {
         transform: scale(0,1);
         transition: transform ease-in-out 250ms;
     }
-    header nav a:hover::before {
+    header nav li:hover::before {
         transform: scale(1,1);
     }
 }

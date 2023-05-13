@@ -6,6 +6,7 @@
     z-index: 1000;
     height: var(--submenu-height);
     top: var(--header-height);
+    
 }
 
 .submenu-consult nav {
@@ -80,7 +81,7 @@
 .submenu-consult .navtoggle-label span::before {
     bottom: 7px;
 }
-.submenu-consult .navtoggle-label span::after {
+.submenu-consult .navtoggle-label span::af-consultter {
     top: 7px;
 }
 
@@ -88,21 +89,34 @@
     .submenu-consult .navtoggle-label {
         display: none;
     }
-    .submenu-consult { 
-        display: grid;
-        grid-template-columns: 1fr auto minmax(800px, 1fr) 0.1fr;
-    }
-    .submenu-consult .logo {
-        grid-column: 1 / 2;
-    }
-    .submenu-consult nav {
-        all: unset;
-        grid-column: 3 / 4;
-        
+    .submenu-consult {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
+    .submenu-consult .submenu-container {
+        width: var(--maximum-width);
+        margin: auto;
+        
+    }
+    .submenu-consult .submenu-container { 
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    .submenu-consult .logo {
+        padding: 0;
+    }
+    
+    .submenu-consult nav {
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 650px;
+        
+    }
+
     .submenu-consult nav a,
     .submenu-consult nav p{
         opacity: 1;
@@ -116,11 +130,13 @@
     }
     .submenu-consult nav ul {
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-end;
+        
     }
     .submenu-consult nav ul li {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 120px;
     }
 }

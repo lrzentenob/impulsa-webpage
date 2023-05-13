@@ -19,10 +19,7 @@
   }
 
   .flex-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  
+    padding: 1em;
   }
   
   .left-div {
@@ -54,11 +51,15 @@
     position: relative;
   }
   .girl-img {
-    
     position: absolute;
     top: 0;
     width:100%;
     
+  }
+  .girl-img-size2 {
+    position: absolute;
+    top: 5em;
+    width: 100%;
   }
   .curvedbk-img {
     position: absolute;

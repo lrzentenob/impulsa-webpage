@@ -21,7 +21,6 @@ export const ModalHome = () => {
     function onHideModal (){
         const modal = document.getElementById("impulsa-home-modal-window");
         modal!.style.display = "none";
-
     }
 
     return(
@@ -37,7 +36,7 @@ export const ModalHome = () => {
                 
                 
                 <div className='modalhome-banner'>
-                    <Link to='/' onClick={onGoTo}>
+                    <Link to='/fianzas' onClick={onGoTo}>
                     <div className='modalhome-banner-box banner-box-fianzas'>
                         <img src={iconFi}></img>
                         <h1>Fianzas</h1>

@@ -21,8 +21,7 @@
   .flex-content {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
-  
+    flex-wrap: wrap; 
   }
   
   .left-div {
@@ -30,6 +29,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
   }
   .right-div{
     height: 550px;

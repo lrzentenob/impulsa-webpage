@@ -12,7 +12,7 @@ export const ProductsInfo = () =>{
         <div className="product-info-seguros" id="seguros-productos">
             <div className="product-upper-content">
                 <div>
-                    <h1>Productos Específicos</h1>
+                    <h1>Productos</h1>
                     <p>Ofrecemos asesoría en seguros para:</p>
                 </div>
             </div>

@@ -1,12 +1,24 @@
 import './css/Base.css';
 import './css/CentralSlider.css';
 import fiGirlBk from '../../../assets/fianzas/fianzas-girl-home.png';
+import slide2girl from '../../../assets/fianzas/slider/slide2-girl.png';
+import slide3girl from '../../../assets/fianzas/slider/slide3-girl.png';
 import curvedBk from '../../../assets/general/curved-background.png';
 
-import { BackgroundImages } from './BackgroundImages';
 import { Link } from 'react-router-dom';
-export const CentralSlider = () => {
 
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Navigation } from 'swiper';
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+
+import './css/BrandSwiper.css';
+
+export const CentralSlider = () => {
     function onShowContactForm () {
         const modal = document.getElementById('contact-component');
         const disp = modal?.style.display;
@@ -14,30 +26,126 @@ export const CentralSlider = () => {
     }
 
     return (
+
         <section className="centralslider">
-            <div className='flex-content'>
-                <div className='left-div'>
-                    <div className='home-intro'>
-                        <h1>Expertos en el ramo afianzador</h1>
-                        
-                        <p>La importancia de las fianzas y su inmediatez es algo que entendemos a la perfección, así que nos aseguramos de que tengas tu fianza en 24 horas.</p>
-                        <div className='buttons-array'>
-                            <Link className='btn-fianzas' to='/cotizacion'>¡Cotiza tu fianza!</Link>
-                            {/* <a className='btn-fianzas-outline' href='/requisitos'>Requisitos</a>
-                            <a className='btn-fianzas-outline' onClick={onShowContactForm}>Contáctanos</a> */}
+            <Swiper navigation={true} modules={[Autoplay, Navigation]} speed={500} autoplay={ {delay: 5000, waitForTransition: true }} className="central-swiper">
+                    <SwiperSlide className='slide'>
+                        <div className='flex-content'>
+                            <div className='left-div'>
+                                <div className='home-intro'>
+                                    <h1>Cotiza tu fianza</h1>
+                                    
+                                    <p>Si desea saber el costo aproximado de su fianza con gusto se lo proporcionamos.</p>
+                                    <div className='buttons-array'>
+                                        <Link className='btn-fianzas' to='/fianzas/cotizacion'>¡Cotiza ya!</Link>                            
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div className='right-div'>
+                                <div className='curved-bk-img'>
+                                    <img src={fiGirlBk} alt='fianzas girl' className='girl-img'/>
+                                    <img src={curvedBk} alt='curved background' className='curvedbk-img'/>
+                                </div>
+
+                            </div>                            
                         </div>
-                    </div>
+                    </SwiperSlide>
+                    <SwiperSlide className='slide'>
+                        <div className='flex-content'>
+                            <div className='left-div'>
+                                <div className='home-intro'>
+                                    <h1>Requisitos</h1>
+                                    
+                                    <p>¿Necesita una Fianza?, consulte los requisitos que debe cumplir.</p>
+                                    <div className='buttons-array'>
+                                        <Link className='btn-fianzas-outline' to='/fianzas/requisitos'>Requisitos</Link>                            
+                                    </div>
+                                </div>
 
-                </div>
-                <div className='right-div'>
-                    <div className='curved-bk-img'>
-                        <img src={fiGirlBk} alt='fianzas girl' className='girl-img'/>
-                        <img src={curvedBk} alt='curved background' className='curvedbk-img'/>
-                    </div>
+                            </div>
+                            <div className='right-div'>
+                                <div className='curved-bk-img'>
+                                    <img src={fiGirlBk} alt='fianzas girl' className='girl-img'/>
+                                    <img src={curvedBk} alt='curved background' className='curvedbk-img'/>
+                                </div>
 
-                </div>
-            </div>
-            <BackgroundImages />
+                            </div>                            
+                        </div>
+                    </SwiperSlide>
+                    
+                    <SwiperSlide className='slide'>
+                        <div className='flex-content'>
+                            <div className='left-div'>
+                                <div className='home-intro'>
+                                    <h1>Contáctanos</h1>
+                                    
+                                    <p>La urgencia de las Fianzas es algo que entendemos a la perfección, así que nos aseguramos de que tenga su fianza en 24 horas.</p>
+                                    <div className='buttons-array'>
+                                        <Link className='btn-fianzas' to='' onClick={onShowContactForm}>Contáctanos</Link>                            
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div className='right-div'>
+                                <div className='curved-bk-img'>
+                                    <img src={slide3girl} alt='fianzas girl' className='girl-img'/>
+                                    <img src={curvedBk} alt='curved background' className='curvedbk-img'/>
+                                </div>
+
+                            </div>                            
+                        </div>
+                    </SwiperSlide>
+
+                    <SwiperSlide className='slide'>
+                        <div className='flex-content'>
+                            <div className='left-div'>
+                                <div className='home-intro'>
+                                    <h1>Expertos en el ramo afianzador</h1>
+                                    
+                                    <p>Con más de 41 años de experiencia usted recibirá siempre la mejor asesoría del mercado.</p>
+                                    <div className='buttons-array'>
+                                        <Link className='btn-fianzas' to='/fianzas/oficinas'>Ubícanos</Link>                            
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div className='right-div'>
+                                <div className='curved-bk-img'>
+                                    <img src={fiGirlBk} alt='fianzas girl' className='girl-img'/>
+                                    <img src={curvedBk} alt='curved background' className='curvedbk-img'/>
+                                </div>
+
+                            </div>                            
+                        </div>
+
+                    </SwiperSlide>
+
+            </Swiper> 
+
+            {/* <Swiper
+                    modules={[Autoplay,Navigation,Pagination]}
+                    navigation
+                    slidesPerView={1}
+                    speed={5000}
+                    autoplay={ {delay: 5000, waitForTransition: false }}
+                    className='central-swiper' >
+                <SwiperSlide>
+                        <div className='brand-container'>
+                            
+                            <p>Brand 1</p>
+                            <div className="swiper-button-next"></div>
+                        </div>
+                    </SwiperSlide>
+                <SwiperSlide><div className='brand-container'><p>Brand 2</p></div></SwiperSlide>
+                <SwiperSlide><div className='brand-container'><p>Brand 3</p></div></SwiperSlide>
+
+            </Swiper>
+  */}
+
+
+            
+            
         </section>
     );
 }

@@ -17,7 +17,6 @@
     transform: scale(1,0);
     transform-origin: top;
     transition: transform 400ms;
-    display: none;
 }
 .submenu-riesgos .logo {
     padding:1em;   
@@ -89,21 +88,34 @@
     .submenu-riesgos .navtoggle-label {
         display: none;
     }
-    .submenu-riesgos { 
-        display: grid;
-        grid-template-columns: 1fr auto minmax(800px, 1fr) 0.1fr;
-    }
-    .submenu-riesgos .logo {
-        grid-column: 1 / 2;
-    }
-    .submenu-riesgos nav {
-        all: unset;
-        grid-column: 3 / 4;
-        display: none;
+    .submenu-riesgos {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
+    .submenu-riesgos .submenu-container {
+        width: var(--maximum-width);
+        margin: auto;
+        
+    }
+    .submenu-riesgos .submenu-container { 
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    .submenu-riesgos .logo {
+        padding: 0;
+    }
+    
+    .submenu-riesgos nav {
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 650px;
+        
+    }
+
     .submenu-riesgos nav a,
     .submenu-riesgos nav p{
         opacity: 1;
@@ -117,11 +129,13 @@
     }
     .submenu-riesgos nav ul {
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-end;
+        
     }
     .submenu-riesgos nav ul li {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 120px;
     }
 }

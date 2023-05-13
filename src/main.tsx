@@ -6,6 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { ContactoForm } from './components/Fianzas/Landing/ContactoForm'
 import { ChatWindow } from './components/Fianzas/Landing/ChatWindow'
 import ScrollToTop from './components/Fianzas/Landing/ScrollToTop'
+import { BackgroundImages } from './components/Fianzas/Landing/BackgroundImages'
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -14,6 +15,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <App />
       <ContactoForm />
       <ChatWindow />
+      <BackgroundImages />
     </BrowserRouter>
   </React.StrictMode>
 )

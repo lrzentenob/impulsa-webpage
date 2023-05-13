@@ -7,20 +7,21 @@ export const Header  = ()=>{
 
     return (
         <header className='header-consult'>
-            <input type='checkbox' className='navtoggle' id='togglecheck-header'></input>
-            <nav>
-                <ul>
-                    <li> <Link to='/'>Fianzas</Link></li>
-                    <li> <Link to='/seguros'>Seguros</Link></li>
-                    <li> <Link to='/riesgos'>Riesgos</Link></li>
-                    <li> <Link to='/consultoria'>Consultoria</Link></li>
-                    <li> <p><FontAwesomeIcon icon={faPhone}/> 800 902 3456</p></li>
-                </ul>
-            </nav>
-            <label htmlFor='togglecheck-header' className='navtoggle-label'>
-                <span></span>
-            </label>
-
+            <div className='menu-container'>
+                <input type='checkbox' className='navtoggle' id='togglecheck-header'></input>
+                <nav>
+                    <ul>
+                        <li><Link to='/fianzas'>Fianzas</Link></li>
+                        <li> <Link to='/seguros'>Seguros</Link></li>
+                        <li> <Link to='/riesgos'>Riesgos</Link></li>
+                        <li> <Link to='/consultoria'>Consultoria</Link></li>
+                    </ul>
+                </nav>
+                <label htmlFor='togglecheck-header' className='navtoggle-label'>
+                    <span></span>
+                </label>
+                <p><FontAwesomeIcon icon={faPhone}/> 800 902 3456</p>
+            </div>
         </header>
 
         
