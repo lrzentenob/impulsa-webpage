@@ -21,7 +21,8 @@
   .flex-content {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    
   }
   
   .left-div {
@@ -32,14 +33,14 @@
     
   }
   .right-div{
-    height: 550px;
+    height: 500px;
     width: 400px;
+    
   }
   
   .home-intro {
     padding: 1em;
     line-height: 1.5rem;
-    
   }
 
   .home-intro .buttons-array a {

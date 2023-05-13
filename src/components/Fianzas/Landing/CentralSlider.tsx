@@ -15,9 +15,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-
-import './css/BrandSwiper.css';
-
 export const CentralSlider = () => {
     function onShowContactForm () {
         const modal = document.getElementById('contact-component');
