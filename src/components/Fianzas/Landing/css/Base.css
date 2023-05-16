@@ -69,8 +69,9 @@
   }
   .curved-faded {
     position: absolute;
-    top:4em;
+    top: 4em;
     right: 0;
+    z-index: -9999;
 }
   
   h1 {

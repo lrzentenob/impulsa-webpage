@@ -1,14 +1,135 @@
 .fianzas-quote {
-    position: relative;
+    color: gray;
 }
-.fianzas-quote .test-background-image{
-    width: 100%;
+
+.fianzas-quote .container {
+    margin: auto;   
 }
-.fianzas-quote .image-cover-blur {
-    position: absolute;
-    top: 0;
+.fianzas-quote .container .range-selection {
+  display: flex;
+}
+
+.range-selection .label {
+  
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+}
+
+
+.fianzas-quote input[type=text], select, textarea {
     width: 100%;
-    height: 300px;
-    backdrop-filter: blur(6px);
-    
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+ .fianzas-quote .container label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+ .fianzas-quote .container input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+ .fianzas-quote .container input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+ .fianzas-quote .container  {
+    border-radius: 5px;
+    padding: 20px;
+}
+  
+ .fianzas-quote .container  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+ .fianzas-quote .container  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .fianzas-quote .container .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+   .fianzas-quote .container  .col-25, .fianzas-quote .container .col-75,.fianzas-quote .container  input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+
+  .fianzas-quote table {
+    /* border-collapse: collapse; */
+    width: 100%;
+    color: var(--clr-gray-font);
+    font-size: var(--fs-mm);
+  }
+  
+  .fianzas-quote .table-title {
+    text-align: center;
+    width: 100% ;
+  }
+  
+  .fianzas-quote .table-title h1{
+    color: var(--clr-blue);
+  }
+  
+  .fianzas-quote .table-title p{
+    color: var(--clr-gray-font);
+    margin-bottom: 1em;
+  }
+  
+  
+  .fianzas-quote .th-left {
+    border-top-left-radius: 10px;
+  }
+  .fianzas-quote .th-right {
+    border-top-right-radius: 10px;
+  }
+  .fianzas-quote .td-left {
+    border-bottom-left-radius: 10px;
+  }
+  .fianzas-quote .td-right {
+    border-bottom-right-radius: 10px;
+  }
+  
+  .fianzas-quote th {
+    color: white;
+  }
+  
+  .fianzas-quote th,td,caption {
+    padding: 1em;
+  }
+
+.fianzas-quote .th-left ,
+.fianzas-quote .th-right ,
+.fianzas-quote .th-mid {
+  border: 2px solid var(--clr-orange);
+}
+ 
+.fianzas-quote th {
+  background: var(--clr-orange);
+}
+.fianzas-quote td,th {
+  border: 2px solid var(--clr-orange);
 }

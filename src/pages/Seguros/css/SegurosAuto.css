@@ -95,64 +95,14 @@
     margin-bottom: 2em;
 }
 
-.seguros-auto table {
-    /* border-collapse: collapse; */
-    width: 100%;
-    color: var(--clr-gray-font);
-    font-size: var(--fs-mm);
-}
-
-.seguros-auto td,th {
-    border: 2px solid var(--clr-blue);
-}
-
-.seguros-auto caption {
-    color: var(--clr-blue);
-    font-size: var(--fs-h1);
-    font-weight: var(--fw-semibold);
-}
-.seguros-auto .table-title {
-    text-align: center;
-    width: 100% ;
-}
-.seguros-auto .table-title h1{
-    color: var(--clr-blue);
-}
-.seguros-auto .table-title p{
-    color: var(--clr-gray-font);
-    margin-bottom: 1em;
-}
-
-
-.seguros-auto .th-left {
-    border-top-left-radius: 10px;
-}
-.seguros-auto .th-right {
-    border-top-right-radius: 10px;
-}
-.seguros-auto .td-left {
-    border-bottom-left-radius: 10px;
-}
-.seguros-auto .td-right {
-    border-bottom-right-radius: 10px;
-}
-.seguros-auto th {
-    color: white;
-    background: var(--clr-blue);
-}
-.seguros-auto th,td,caption {
-    padding: 1em;
-}
-
 .seguros-auto-block .seguros-auto-choices {
     background: var(--clr-gray-font);
     color: white;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    
-
 }
+
 .seguros-auto-block .seguros-auto-choices .option img{
     height: 40px;
     margin-bottom: 0.7em;
@@ -174,7 +124,58 @@
     margin-bottom: 3em;
 }
 
+.seguros-auto table {
+    /* border-collapse: collapse; */
+    width: 100%;
+    color: var(--clr-gray-font);
+    font-size: var(--fs-mm);
+}
+  
+.seguros-auto .table-title {
+    text-align: center;
+    width: 100% ;
+}
+  
+.seguros-auto .table-title h1{
+    color: var(--clr-blue);
+}
+  
+.seguros-auto .table-title p{
+    color: var(--clr-gray-font);
+    margin-bottom: 1em;
+}
+  
+.seguros-auto .th-left {
+    border-top-left-radius: 10px;
+}
+.seguros-auto .th-right {
+    border-top-right-radius: 10px;
+}
+.seguros-auto .td-left {
+  border-bottom-left-radius: 10px;
+}
+  
+.seguros-auto .td-right {
+    border-bottom-right-radius: 10px;
+}
+  
+.seguros-auto th {
+    color: white;
+}
+  
+.seguros-auto th,td,caption {
+    padding: 1em;
+}
 
+.seguros-auto td,th {
+    border: 2px solid var(--clr-blue);
+}
+  
+.seguros-auto th {
+    background: var(--clr-blue);
+}
+
+  
 @media screen and (max-width: 1100px) {
     .seguros-auto .floating-portrait {
         display: none;
