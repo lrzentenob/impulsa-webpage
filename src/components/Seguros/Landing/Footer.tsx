@@ -30,16 +30,15 @@ export const Footer = ()=>{
                 <div className='footer-upper-content-container'>
                     <div>
                         <img src={seLogo} className='logo'></img>
-                        <p>Más de 37 años de experiencia en el ramo afianzador.</p>
+                        <p>Más de 20 años de experiencia.</p>
                     </div>
                     <div>
                         <h4>Productos</h4>
                         <ul>
-                            <li><Link to='/arrendamiento'>Arrendamiento</Link></li>
-                            <li><Link to='/fidelidad'>Fidelidad</Link></li>
-                            <li><Link to='/fiscal'>Fiscales</Link></li>
-                            <li><Link to='/judicial'>Judiciales</Link></li>
-                            <li><Link to='/notario'>Notario</Link></li>
+                            <li><Link to='/seguros/vida'>Vida y Accidentes</Link></li>
+                            <li><Link to='/seguros/auto'>Auto, Camion, Moto</Link></li>
+                            <li><Link to='/seguros/gastos-medicos'>Gastos Medicos</Link></li>                            
+                            <li><Link to='/seguros/hogar'>Hogar y Empresas</Link></li>
                             
                         </ul>
                     </div>

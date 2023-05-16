@@ -20,7 +20,7 @@
 .branches-consult .branches-upper-content {
     text-align: center;
     line-height: 1.5em;
-    max-width: 500px;
+    max-width: 700px;
     margin: auto;
     padding: 1em;
 }
@@ -52,8 +52,11 @@
 .branches-consult .branches-detail li {
     font-size: var(--fs-sm);
     max-width: 220px;
-    color: var(--clr-emerald);
+    color: var(--clr-blue);
     line-height: 2em;
+}
+.branches-consult .branches-detail li .bullet-point {
+    color: var(--clr-emerald);
 }
 .branches-consult .branches-detail img {
     width: 100%;

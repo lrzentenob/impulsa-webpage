@@ -101,8 +101,7 @@ export const FianzasCotizacion = () => {
 
                     </div>
                 
-
-                    
+                
                     <div className="table-title">
                         <h1>Cotizacion</h1>
                         <p>Monto del Contrato: <b>{`${formatLocalCurrency(amount*1000000, "$","","")}`}</b></p>

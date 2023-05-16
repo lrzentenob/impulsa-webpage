@@ -18,6 +18,7 @@ export const ModalHome = () => {
     function onGoTo (e:any) {
         onHideModal();
     }
+    
     function onHideModal (){
         const modal = document.getElementById("impulsa-home-modal-window");
         modal!.style.display = "none";

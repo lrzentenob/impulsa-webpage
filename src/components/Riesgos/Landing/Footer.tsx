@@ -18,7 +18,7 @@ export const Footer = ()=>{
             <div className='services-content'>
                 <div className='service-title'>
                     <h2>Servicio Eficiente</h2>
-                    <p>Coberturas a tu medida en el menor tiempo, con facilidades de pago y grandes beneficios.</p>
+                    <p>Cuidamos de tu empresa con análisis de riesgos, para ofrecerte productos que te protejan.</p>
                 </div>
                 <div className='service-action'>
                     <Link className='btn-riesgos' to="/riesgos" onClick={onShowContactForm}>Contáctanos</Link>
@@ -30,9 +30,9 @@ export const Footer = ()=>{
                 <div className='footer-upper-content-container'>
                     <div>
                         <img src={riLogo} className='logo'></img>
-                        <p>Más de 37 años de experiencia en el ramo afianzador.</p>
+                        <p></p>
                     </div>
-                    <div>
+                    {/* <div>
                         <h4>Productos</h4>
                         <ul>
                             <li><Link to='/arrendamiento'>Arrendamiento</Link></li>
@@ -42,7 +42,7 @@ export const Footer = ()=>{
                             <li><Link to='/notario'>Notario</Link></li>
                             
                         </ul>
-                    </div>
+                    </div> */}
                     <div>
                         <h4>Legal</h4>
                         <ul>
