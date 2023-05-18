@@ -55,6 +55,9 @@
     color: var(--clr-blue);
     line-height: 2em;
 }
+.branches-consult .branches-detail li p {
+    font-weight: var(--fw-semibold);
+}
 .branches-consult .branches-detail li .bullet-point {
     color: var(--clr-emerald);
 }

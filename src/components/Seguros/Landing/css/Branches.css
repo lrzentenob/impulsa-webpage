@@ -2,6 +2,7 @@
     position: relative;
     overflow: hidden;
 }
+
 .branches-seguros .cut-bkground{
     position: absolute;
     right: 0;
@@ -34,14 +35,18 @@
 }
 
 
+
 .branches-seguros .branches-lower-content {
     padding: 1em;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    
+    
 }
 .branches-seguros .branches-detail {
     width: 400px;
+    
 }
 .branches-seguros .branches-detail ul {
     display: grid;
@@ -53,6 +58,9 @@
     max-width: 220px;
     color: var(--clr-blue);
     line-height: 2em;
+}
+.branches-seguros .branches-detail li p {
+    font-weight: var(--fw-semibold);
 }
 .branches-seguros .branches-detail img {
     width: 100%;

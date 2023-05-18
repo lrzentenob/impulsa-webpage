@@ -1,0 +1,34 @@
+.modal-tipo-fianza {
+    position: fixed;
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+    z-index: 99999;
+    overflow: auto;
+}
+
+.modal-tipo-fianza .tipo-fianza-content {
+    position: absolute;
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    padding: 3em;
+    overflow: auto;
+    
+}
+.modal-tipo-fianza .tipo-fianza-content h2 {
+       line-height: 2em;
+       color: var(--clr-blue);
+}
+.modal-tipo-fianza .tipo-fianza-content ul {
+    list-style: none;
+}
+
+.modal-tipo-fianza .tipo-fianza-content p {
+    line-height: 1.8em;
+    text-align: justify;
+    color: var(--clr-gray-font);
+}

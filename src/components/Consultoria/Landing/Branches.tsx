@@ -1,5 +1,5 @@
 import './css/Branches.css';
-import cnMap from '../../../assets/consultoria/map-consultoria.jpg';
+import cnMap from '../../../assets/consultoria/map-consultoria.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';

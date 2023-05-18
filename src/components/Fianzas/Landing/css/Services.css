@@ -1,5 +1,7 @@
-.services {
+
+.services a{
     /* background: var(--clr-gray); */
+    color: black;
 }
 .services-upper-content {
     position: relative;    
@@ -63,6 +65,9 @@
     margin-bottom: 1em;
     display: flex;
     flex-direction: column;
-    justify-content: center;   
+    justify-content: center;      
 }
 
+.service-box p {
+    margin-bottom: 1em;
+}

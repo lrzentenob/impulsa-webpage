@@ -25,7 +25,7 @@ export const CentralSlider = () => {
     return (
 
         <section className="centralslider">
-            <Swiper navigation={true} modules={[Autoplay, Navigation]} speed={500} autoplay={ {delay: 5000, waitForTransition: true }} className="central-swiper">
+            <Swiper navigation={true} modules={[Autoplay, Navigation]} speed={500} autoplay={ {delay: 5000, waitForTransition: true }} className="central-swiper" >
                     <SwiperSlide className='slide'>
                         <div className='flex-content'>
                             <div className='left-div'>

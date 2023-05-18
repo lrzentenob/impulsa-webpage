@@ -19,8 +19,8 @@ export const FianzaNotario = () => {
                         <img src={fiCurveBk} className="fianza-tipo-curved-image"></img>
                     </div>
                     <div className="tipo-fianza-box">
-                        <h2>Fianzas de Notario</h2>
-                        <h3>Protección y cumplimiento en tu ejercicio profesional.</h3>
+                        <h1>Fianzas de Notario:</h1>
+                        <h2>Protección y cumplimiento en tu ejercicio profesional.</h2>
                         <p>Para el inicio de sus funciones el notario deberá cumplir con ciertos requisitos que marcan las leyes de los estados, dentro de los cuales se establece que deberá otorgar depósito en efectivo, fianza, o hipoteca ante la autoridad competente, para integrarlo al fondo de garantía del notariado. Nosotros le ayudamos a tener su fianza de notario rápido, fácil y al mejor precio del mercado.</p>
                     </div>
                 </div>

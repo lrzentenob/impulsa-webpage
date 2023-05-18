@@ -7,6 +7,7 @@ import fiCheck from '../../assets/fianzas/fianzas-check.png';
 import fiCurvedBk from '../../assets/general/curved-background.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 export const FianzasValidacion = () => {
     return (
         <>
@@ -33,18 +34,19 @@ export const FianzasValidacion = () => {
 
                     <div className="fianza-valid-brands">
                     <ul>
-                        <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> Afianzadora Insurgentes</p></li>
-                        <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> Afianzadora Aserta</p></li>
-                        <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> Afianzadora Monterrey</p></li>
-                        <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> Liberty Fianzas</p></li>
-                        <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> Afianzadora Sofimex</p></li>
-                        <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> Afianzadora Berkley</p></li>
-                        <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> Fianzas Doroma</p></li>
-                        <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> Zurich Fianzas de Mexico</p></li>
-                        <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> Fudicia</p></li>
-                        <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> Afianzadora Cescemex </p></li>
-                        <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> Chubb de México Compañía Afianzadora</p></li>
-                        <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> Afianzadora Mapfre</p></li>
+                        <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> <Link to=''>Afianzadora Insurgentes</Link></p></li>
+                        <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> <Link to=''>Afianzadora Aserta</Link></p></li>
+                        <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> <Link to=''>Afianzadora Monterrey</Link></p></li>
+                        <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> <Link to=''>Liberty Fianzas</Link></p></li>
+                        <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> <Link to=''>Afianzadora Sofimex</Link></p></li>
+                        <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> <Link to=''>Afianzadora Berkley</Link></p></li>
+                        <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> <Link to=''>Fianzas Doroma</Link></p></li>
+                        <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> <Link to=''>Zurich Fianzas de Mexico</Link></p></li>
+                        <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> <Link to=''>Fudicia</Link></p></li>
+                        <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> <Link to=''>Afianzadora Cescemex</Link> </p></li>
+                        <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> <Link to=''>Chubb México</Link></p></li>
+                        <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> <Link to=''>Afianzadora Mapfre</Link></p></li>
+                        <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> <Link to=''>Tokio Marine</Link></p></li>
                     </ul>
                     </div>
                     

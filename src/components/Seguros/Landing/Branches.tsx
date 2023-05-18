@@ -1,5 +1,5 @@
 import './css/Branches.css';
-import seMap from '../../../assets/seguros/map-seguros.jpg';
+import seMap from '../../../assets/seguros/map-seguros.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';

@@ -47,7 +47,7 @@
     padding: 1em;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .branches-riesgos .branches-detail {
     width: 400px;
@@ -62,6 +62,9 @@
     max-width: 220px;
     color: var(--clr-gold);
     line-height: 2em;
+}
+.branches-riesgos .branches-detail li p {
+    font-weight: var(--fw-semibold);
 }
 .branches-riesgos .branches-detail img {
     width: 100%;

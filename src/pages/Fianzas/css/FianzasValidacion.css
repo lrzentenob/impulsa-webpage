@@ -10,7 +10,6 @@
 }
 .fianza-valid-content .fianza-valid-portrait div {
     position: relative;
-    width: 300px;
     margin: auto;
 }
 .fianza-valid-content .fianza-valid-portrait .fianza-valid-check{
@@ -31,20 +30,30 @@
     color: var(--clr-gray-font);
     line-height: 1.5em;
     text-align: left;
+    
+    
 }
 .fianza-valid-content .fianza-valid-brands ul {
     list-style: none;
-    max-height: 12em;
+    max-height: 15em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
     text-align: left;
-    line-height: 2em;
+    line-height: 2.1em;
+    
+}
+.fianza-valid-content .fianza-valid-brands ul li {
+    width: 300px;
+    
 }
 .fianza-valid-content .fianza-valid-brands .icon{
     color: var(--clr-orange);
 }
-.fianza-valid-content .fianza-valid-brands p{
+.fianza-valid-content .fianza-valid-brands a{
     color: var(--clr-blue);
+    font-weight: var(--fw-semibold);
+    text-decoration: underline;
+ 
 }

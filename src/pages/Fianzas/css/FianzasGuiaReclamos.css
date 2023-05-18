@@ -1,91 +1,120 @@
 .guiareclamos-content {
     display: flex;
     flex-direction: column;
-}
-
-.guiareclamos-content .guiareclamos-box {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: flex-start;
     padding: 1em;
+    height: 1200px;
 }
 
-.guiareclamos-content  .guiareclamos-protrait {
-    width: 350px;
-}
-.guiareclamos-content .guiareclamos-box {
-    margin: 1em;
-}
-
-
-.guiareclamos-box .guiareclamos-protrait {
-    position: relative;
-    text-align: center;
-}
-.guiareclamos-box .guiareclamos-protrait .guiareclamos-img{
-    margin-top: 1em;
-}
-.guiareclamos-box .guiareclamos-protrait .guiareclamos-img2 {
-    max-width: 100%;
-}
-.guiareclamos-box .guiareclamos-protrait .guiareclamos-bk {
-    position: absolute;
-    top: 0;
-    left: 0em;
-    width: 100%;
-    z-index: -999;
-}
-
-.guiareclamos-box .guiareclamos-paragraph {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 500px;
-}
-.guiareclamos-box .guiareclamos-paragraph h1{
+.guiareclamos-content h1,
+.guiareclamos-content h2 {
     color: var(--clr-blue);
-    font-size: 2em;
-    margin: 1em 0 1em 0;
-}
-.guiareclamos-box .guiareclamos-paragraph p{
-    color: var(--clr-gray-font);
-    line-height: 1.8em;
 }
 
-.guiareclamos-box .requisitos-reclamos {
-    max-width: 600px;
-}
-.guiareclamos-box .requisitos-reclamos h2 {
-    color:var(--clr-blue);
+.guiareclamos-content .row {
     margin-bottom: 1em;
+
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.guiareclamos-box h2{
-    color: var(--clr-blue);
-    margin-bottom: 0.5em;
+.guiareclamos-content .row .logo-curvebk {
+    position: relative;
+    height: 380px;
+    width: 500px;
 }
-.guiareclamos-box .requisitos-reclamos p{
+
+.guiareclamos-content .row .logo-curvebk .bk {
+    position: absolute;
+    width: 100%;
+}
+.guiareclamos-content .row .logo-curvebk .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.guiareclamos-content .row .paragraph {
+    position: relative;
+    height: 380px;
+    width: 500px;
+}
+.guiareclamos-content .row .paragraph p {
+    max-width: 480px;
     text-align: justify;
     line-height: 1.5em;
-    margin-bottom: 1em;
     color: var(--clr-gray-font);
 }
-.guiareclamos-box .guiareclamos-actions a {
-    margin: 0em 0.5em 0em 0.5em;
+.guiareclamos-content .row .paragraph .top{
+    position: absolute;
+    left: -4em;
 }
-.guiareclamos-box .requisitos-reclamos a {
-    color: var(--clr-orange);
-    text-decoration: underline;
+.guiareclamos-content .row .paragraph .mid{
+    position: absolute;
+    left: 4em;
 }
-.guiareclamos-box .howitworks-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.guiareclamos-content .row .paragraph .mid h2, 
+.guiareclamos-content .row .paragraph .mid p{ 
+    margin-bottom: 1.5em;
 }
 
-.guiareclamos-box .howitworks-paragraph {
+.guiareclamos-content .guiareclamos-content .row .single-img {
+    height: 380px;
+    width: 500px;
+    
+}
+.guiareclamos-content .row .single-img img {
+    width: 100%;   
+}
+
+.guiareclamos-content .row .text-note {
+    height: 400px;
+    width: 700px;
+    margin: auto;
+    
+}
+.guiareclamos-content .row .text-note h2 {
+    text-align: center;
+    max-width: 300px;
+    margin: 1em auto;
+}
+.guiareclamos-content .row .text-note ol {
     color: var(--clr-gray-font);
-    max-width: 500px;
     line-height: 1.8em;
-    text-align: justify;
+    font-weight: var(--fw-regular);
+
+}
+
+ .text-titles-container {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+ .text-titles-container div {
+    display: flex;
+    justify-content: space-around;
+    max-width: 700px;
+    margin: auto;   
+}
+
+.text-titles-container h2 {
+    color: var(--clr-blue);
+    width: 600px;
+    text-align: center;
+}
+.text-titles-container .actions {
+    width: 400px;
+}
+.text-footer-notes {
+    max-width: 700px;
+    margin: auto;
+    height: 120px;
+    color: var(--clr-gray-font);
+    line-height: 1.8em;
+}
+.text-footer-notes a {
+    color: var(--clr-orange);
+    text-decoration: underline;
 }

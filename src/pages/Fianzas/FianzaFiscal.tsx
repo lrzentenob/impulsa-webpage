@@ -18,8 +18,8 @@ export const FianzaFiscal = () => {
                         <img src={fiCurveBk} className="fianza-tipo-curved-image"></img>
                     </div>
                     <div className="tipo-fianza-box">
-                        <h2>Fianzas Fiscales</h2>
-                        <h3>Garantiza tus obligaciones fiscales y evita embargos.</h3>
+                        <h1>Fianzas Fiscales:</h1>
+                        <h2>Garantiza tus obligaciones fiscales y evita embargos.</h2>
                         <p>Te permite garantizar tus obligaciones fiscales como una Persona Moral o Física, frente a la Secretaría de Hacienda y Crédito Público y evitar el pago o embargo por parte de la autoridad hasta que se obtenga resolución.</p>
                     </div>
                 </div>

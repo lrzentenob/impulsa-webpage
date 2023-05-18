@@ -71,30 +71,43 @@ export const ModalHome = () => {
                 <div className='modal-mvision-content'>
                 
                     <div className='modal-mvision-box'>
+
                         <input type='checkbox' id='modalhome-toggle-a' className='modalhome-check-a' ></input>
-                        <FontAwesomeIcon icon={faSquarePlus} className='fa-dropdown-icon-plus-a'/>
-                        <FontAwesomeIcon icon={faSquareMinus} className='fa-dropdown-icon-minus-a'/>
-                        <label htmlFor='modalhome-toggle-a'>Nuestra empresa</label>
+
+
+                        <label htmlFor='modalhome-toggle-a'>
+                            <FontAwesomeIcon icon={faSquarePlus} className='fa-dropdown-icon-plus-a'/>
+                            <FontAwesomeIcon icon={faSquareMinus} className='fa-dropdown-icon-minus-a'/>
+                            Nuestra empresa
+                        </label>
+
                         <div className='modalhome-descripton-a'>
                             <p>Impulsa Asesores fue fundada en 2012 con el objetivo de ser una empresa líder en el sector financiero. Con nuestra amplia experiencia y conocimiento de la industria, brindamos soluciones a medida para ayudar a nuestros clientes a alcanzar sus metas. Contamos con 8 sedes y un equipo especializado que se dedica a brindar el mejor servicio.<br /><br /> Con nosotros, podrá contar con una asesoría personalizada y un servicio excepcional que le permitirá tomar decisiones informadas y alcanzar sus objetivos empresariales.</p>
                         </div>
+
                     </div>
                 
                     <div className='modal-mvision-box'>
                         <input type='checkbox' id='modalhome-toggle-b' className='modalhome-check-b' ></input>
-                        <FontAwesomeIcon icon={faSquarePlus} className='fa-dropdown-icon-plus-b'/>
-                        <FontAwesomeIcon icon={faSquareMinus} className='fa-dropdown-icon-minus-b'/>
-                        <label htmlFor='modalhome-toggle-b'>Mision</label>
+                        
+                        <label htmlFor='modalhome-toggle-b'>
+                            <FontAwesomeIcon icon={faSquarePlus} className='fa-dropdown-icon-plus-b'/>
+                            <FontAwesomeIcon icon={faSquareMinus} className='fa-dropdown-icon-minus-b'/>
+                            Mision
+                        </label>
                         <div className='modalhome-descripton-b'>
                             <p>Atraer y Satisfacer la demanda de los consumidores, generando constantemente valor para nuestros clientes y colaboradores.</p>
                         </div>
                     </div>
 
                     <div className='modal-mvision-box'>
-                        <input type='checkbox' id='modalhome-toggle-c' className='modalhome-check-c' ></input>
-                        <FontAwesomeIcon icon={faSquarePlus} className='fa-dropdown-icon-plus-c'/>
-                        <FontAwesomeIcon icon={faSquareMinus} className='fa-dropdown-icon-minus-c'/>
-                        <label htmlFor='modalhome-toggle-c'>Vision</label>
+                        <input type='checkbox' id='modalhome-toggle-c' className='modalhome-check-c' ></input>                        
+
+                        <label htmlFor='modalhome-toggle-c'>
+                            <FontAwesomeIcon icon={faSquarePlus} className='fa-dropdown-icon-plus-c'/>
+                            <FontAwesomeIcon icon={faSquareMinus} className='fa-dropdown-icon-minus-c'/>
+                            Vision
+                        </label>
                         <div className='modalhome-descripton-c'>
                             <ul>
                                 <li><p>Ser la mejor opción para los consumidores.</p></li>
@@ -107,9 +120,12 @@ export const ModalHome = () => {
                     </div>
                     <div className='modal-mvision-box'>
                         <input type='checkbox' id='modalhome-toggle-d' className='modalhome-check-d' ></input>
-                        <FontAwesomeIcon icon={faSquarePlus} className='fa-dropdown-icon-plus-d'/>
-                        <FontAwesomeIcon icon={faSquareMinus} className='fa-dropdown-icon-minus-d'/>
-                        <label htmlFor='modalhome-toggle-d'>Valores</label>
+                        
+                        <label htmlFor='modalhome-toggle-d'>
+                            <FontAwesomeIcon icon={faSquarePlus} className='fa-dropdown-icon-plus-d'/>
+                            <FontAwesomeIcon icon={faSquareMinus} className='fa-dropdown-icon-minus-d'/>
+                            Valores
+                        </label>
                         <div className='modalhome-descripton-d'>
                             <ul>
                                 <li><p>Trabajo en Equipo</p></li>

@@ -14,12 +14,15 @@ export const FianzaArrendamiento = () => {
                 <div className="tipo-fianza-content">
 
                     <div className="tipo-fianza-box left-box-tipo-fianza">
-                        <img src={fiTipoArrendamiento} className="fianza-tipo-photo"></img>
-                        <img src={fiCurveBk} className="fianza-tipo-curved-image"></img>
+                        <div>
+                            <img src={fiTipoArrendamiento} className="fianza-tipo-photo"></img>
+                            <img src={fiCurveBk} className="fianza-tipo-curved-image"></img>
+                        </div>
                     </div>
+
                     <div className="tipo-fianza-box">
-                        <h2>Fianza de Arrendamiento</h2>
-                        <h3>Seguridad en sus contratos de alquiler</h3>
+                        <h1>Fianza de Arrendamiento:</h1>
+                        <h2>Seguridad en sus contratos de alquiler</h2>
                         <p>Tiene como objetivo asegurar el cumplimiento del contrato que se celebra entre el inquilino y el dueño de un inmueble, garantizando así que los arrendatarios cumplan con el pago de las rentas y demás obligaciones adquiridas al rentar el inmueble.</p>
                     </div>
                 </div>

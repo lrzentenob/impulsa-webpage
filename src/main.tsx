@@ -8,6 +8,7 @@ import { ChatWindow } from './components/Fianzas/Landing/ChatWindow'
 import ScrollToTop from './components/Fianzas/Landing/ScrollToTop'
 import { BackgroundImages } from './components/Fianzas/Landing/BackgroundImages'
 import { ModalHome } from './components/Fianzas/Landing/ModalHome'
+import { TipoFianzaModal } from './components/Fianzas/Landing/TipoFianzaModal/TipoFianzaModal'
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <ChatWindow />
       <BackgroundImages />
       <ModalHome />
+      
     </BrowserRouter>
   </React.StrictMode>
 )

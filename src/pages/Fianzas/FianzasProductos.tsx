@@ -9,13 +9,44 @@ import fiProductos from '../../assets/fianzas/productos/fianzas-productos-que-es
 import fiProductsBackground from '../../assets/fianzas/productos/fianzas-productos-background.jpg';
 import { BackgroundImages } from "../../components/Fianzas/Landing/BackgroundImages";
 import curvedImageBk from '../../assets/general/curved-background.png';
+import { TipoFianzaModal } from "../../components/Fianzas/Landing/TipoFianzaModal/TipoFianzaModal";
+import { useState } from "react";
 export const FianzasProductos = () => {
+    const [showFianzaType, setShowType] = useState('01');
+    function onSelectTipoFianza (e:any) {
+        
+        const typeFromId = e.target.id.split('-');
+        const modalWindow = document.getElementById('div-modal-tipo-fianza');
+        modalWindow!.style.display = 'block';
 
+        if ( typeFromId.length == 4 ){
+            
+            switch( typeFromId[3]) {
+                case '01':
+                    setShowType('01')
+                    break;
+                case '02':
+                    setShowType('02');
+                    break;
+                case '03':
+                    setShowType('03');
+                    break;
+                case '04':
+                    setShowType('04');
+                    break;
+                default: 
+                    break;
+            }
+
+        }
+    }
 
     return (
         <>
+        <TipoFianzaModal tipoFianza={showFianzaType}/>
         <Header />
         <Submenu />
+
         <section className="productos">
             <div className="productos-content">
 
@@ -57,17 +88,17 @@ export const FianzasProductos = () => {
                         </div>
                     </div>
                     <div className='service-main-right'>
-                        <div className='service-box'>
-                            <h2>Para clientes, contratistas y proveedores</h2>
+                        <div className='service-box' onClick={onSelectTipoFianza} id='div-servicebox-tipofianza-01'>
+                            <h2 id='h2-servicebox-tipofianza-01'>Para clientes, contratistas y proveedores</h2>
                         </div>
-                        <div className='service-box'>
-                            <h2>Crédito</h2>
+                        <div className='service-box' onClick={onSelectTipoFianza} id='div-servicebox-tipofianza-02'>
+                            <h2 id='h2-servicebox-tipofianza-02'>Crédito</h2>
                         </div>
-                        <div className='service-box'>
-                            <h2>Judiciales</h2>
+                        <div className='service-box' onClick={onSelectTipoFianza} id='div-servicebox-tipofianza-03'>
+                            <h2 id='h2-servicebox-tipofianza-03'>Judiciales</h2>
                         </div>
-                        <div className='service-box'>
-                            <h2>Fideicomiso de Garantia</h2>
+                        <div className='service-box' onClick={onSelectTipoFianza} id='div-servicebox-tipofianza-04'>
+                            <h2 id='h2-servicebox-tipofianza-04'>Fideicomiso de Garantia</h2>
                         </div>
 
                     </div>
@@ -76,9 +107,6 @@ export const FianzasProductos = () => {
 
 
         </div>
-
-
-
         
         <Footer />
         </>

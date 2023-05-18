@@ -1,9 +1,10 @@
 import './css/Branches.css';
 
-import fiMap from '../../../assets/fianzas/map-fianzas.jpg';
+import fiMap from '../../../assets/fianzas/map-fianzas.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 export const Branches = () => {
     
@@ -16,7 +17,7 @@ export const Branches = () => {
             <div className='branches-lower-content'>
                 
                 <div className='branches-detail'>
-                    <img src={fiMap} alt='mapa de sucursales'></img>
+                    <Link to='/fianzas/oficinas'><img src={fiMap} alt='mapa de sucursales'></img></Link>
                 </div>
                 
                 <div className='branches-detail vertical-centered'>

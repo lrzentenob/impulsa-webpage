@@ -67,12 +67,15 @@ a {
 section {
   max-width: var(--maximum-width);
   margin: auto;
+  
 }
 
 hr {
-  color: var(--clr-gray);
+  border-top: 1px solid var(--clr-gray);
 }
-
+.hr-orange {
+  border-top: 1px solid var(--clr-orange);
+}
 .vertical-centered {
   display: flex;
   flex-direction: column;

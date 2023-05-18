@@ -6,7 +6,7 @@
     z-index: 9999;
     margin: auto;
     width: 100%;
-    height: 100vh;
+    height: 560vh;
 }
 
 .impulsa-content {
@@ -15,8 +15,8 @@
     backdrop-filter: blur(10px);
     color: white;
     padding: 1em;
-    height: 350vh;
-    
+    height: 560vh;
+
 }
 .modalhome-title-content {
     padding: 2em;
@@ -33,7 +33,6 @@
     top: 0;
     right: 0.5em;
 }
-
 .modalhome-logo {
     margin-bottom: 2em;
 }
@@ -134,15 +133,15 @@
 .fa-dropdown-icon-minus-c,
 .fa-dropdown-icon-minus-d { display: none }
 
-.modalhome-check-a:checked ~ .fa-dropdown-icon-minus-a,
-.modalhome-check-b:checked ~ .fa-dropdown-icon-minus-b,
-.modalhome-check-c:checked ~ .fa-dropdown-icon-minus-c,
-.modalhome-check-d:checked ~ .fa-dropdown-icon-minus-d {
+.modalhome-check-a:checked ~ label .fa-dropdown-icon-minus-a,
+.modalhome-check-b:checked ~ label .fa-dropdown-icon-minus-b,
+.modalhome-check-c:checked ~ label .fa-dropdown-icon-minus-c,
+.modalhome-check-d:checked ~ label .fa-dropdown-icon-minus-d {
     display: inline-block;
 }
-.modalhome-check-a:checked ~ .fa-dropdown-icon-plus-a,
-.modalhome-check-b:checked ~ .fa-dropdown-icon-plus-b,
-.modalhome-check-c:checked ~ .fa-dropdown-icon-plus-c,
-.modalhome-check-d:checked ~ .fa-dropdown-icon-plus-d {
+.modalhome-check-a:checked ~ label .fa-dropdown-icon-plus-a,
+.modalhome-check-b:checked ~ label .fa-dropdown-icon-plus-b,
+.modalhome-check-c:checked ~ label .fa-dropdown-icon-plus-c,
+.modalhome-check-d:checked ~ label .fa-dropdown-icon-plus-d {
     display: none;
 }

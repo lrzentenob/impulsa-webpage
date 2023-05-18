@@ -1,45 +1,45 @@
-
-.requisitos h1 {
-    text-align: center;
+.fianzas-requisitos h1{
     color: var(--clr-blue);
+    
 }
-.requisitos .legend-note {
-    color: #9c3f3b;
-    max-width: 550px;
-    line-height: 2em;
-    font-size: var(--fs-xsm);
-    text-align: justify;
-    margin: auto;
+
+.fianzas-requisitos .fianzas-requisitos-content {
+    padding: 1em;
 }
-.requisitos-content {
+.fianzas-requisitos .fianzas-requisitos-content .requisitos-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 }
-.requisitos-content h2 {
-    color: var(--clr-blue);
-    line-height: 3em;
+.fianzas-requisitos .fianzas-requisitos-content .requisitos-row .requisitos-col {
+    
+    padding: 2em;
 }
-.requisitos-content p {
-    color: var(--clr-gray-font);
-    line-height: 2em;
+.fianzas-requisitos .fianzas-requisitos-content .requisitos-row .left{
+    width: 250px;
+    
+}
+.fianzas-requisitos .fianzas-requisitos-content .requisitos-row .mid{
+    max-width: 600px;  
+}
+.fianzas-requisitos .fianzas-requisitos-content .requisitos-row .actions {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-around;
+    max-width: 300px;
+}
+
+.fianzas-requisitos .fianzas-requisitos-content .requisitos-col h2{
+    color:var(--clr-blue);
+}
+.fianzas-requisitos .fianzas-requisitos-content .requisitos-col h3{
+    color:var(--clr-blue);
     margin-bottom: 1em;
 }
-.requisitos-content .requisitos-actions {
-    display: flex;
-    justify-content: flex-start;
+.fianzas-requisitos .fianzas-requisitos-content .requisitos-col p{
+    line-height: 1.8em;
 }
-.requisitos-actions a {
-    margin: 1em;
+.fianzas-requisitos .fianzas-requisitos-content .requisitos-col ul{
+    margin-bottom: 1em;
+    list-style: none;
 }
-
-.requisitos-left {    
-    margin-right: 1em;
-    margin-left: 1em;
-    max-width: 400px;
-}
-
-.requisitos-right {
-    max-width: 400px;
-}
-

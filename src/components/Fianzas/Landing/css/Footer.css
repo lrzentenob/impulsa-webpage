@@ -88,6 +88,7 @@ footer .footer-upper-content-container h4{
 footer .footer-lower-content {
     color: var(--clr-gray-font);
     background: var(--clr-gray);
+    padding: 1em;
 }
 footer .footer-lower-content .footer-lower-content-foot {
     display: flex;

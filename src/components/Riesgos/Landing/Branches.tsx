@@ -1,5 +1,5 @@
 import './css/Branches.css';
-import riMap from '../../../assets/riesgos/map-riesgos.jpg';
+import riMap from '../../../assets/riesgos/map-riesgos.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';

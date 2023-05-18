@@ -18,8 +18,8 @@ export const FianzaFidelidad = () => {
                         <img src={fiCurveBk} className="fianza-tipo-curved-image"></img>
                     </div>
                     <div className="tipo-fianza-box">
-                        <h2>Fianzas de Fidelidad</h2>
-                        <h3>Resguarde su patrimonio empresarial ante delitos.</h3>
+                        <h1>Fianzas de Fidelidad:</h1>
+                        <h2>Resguarde su patrimonio empresarial ante delitos.</h2>
                         <p> Son aquellas fianzas que garantizan al patrón, la reparación del daño patrimonial derivado de un delito cometido por uno o varios de sus empleados en contra de bienes del patrón o de bienes de los que sea jurídicamente responsable.
                             Esta fianza es un instrumento auxiliar de una administración empresarial sana que protege el patrimonio de la empresa cuando se comete cualquiera de los siguientes delitos:
                             <ul>

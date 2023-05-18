@@ -49,7 +49,7 @@ export const ProductsInfo = () =>{
                         </div>
                     </Link>
                     
-                    <Link to='/fianzas/fianzas/notario'>
+                    <Link to='/fianzas/notario'>
                         <div className='product-detail'>
                             <img src={fiNotario}></img>
                             <h5>Fianzas de Notario</h5>

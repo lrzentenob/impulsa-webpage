@@ -23,11 +23,11 @@ export const FianzasCancelacion = () => {
                             <br/>
                             Para ello contamos con las siguientes opciones:
                             <br/><br/>
-                            <ul>
-                                <li><p><strong>1. Acta de – Recepción</strong></p></li>
-                                <li><p><strong>2. Carta del beneficiario dando por terminada y cumplida la obligación afianzada</strong></p></li>
-                                <li><p><strong>3. Facturas y depósitos (Estados de Cuenta), reflejando la amortización del anticipo afianzado</strong></p></li>
-                            </ul>
+                            <ol>
+                                <li><strong>Acta de – Recepción</strong></li>
+                                <li><strong>Carta del beneficiario dando por terminada y cumplida la obligación afianzada</strong></li>
+                                <li><strong>Facturas y depósitos (Estados de Cuenta), reflejando la amortización del anticipo afianzado</strong></li>
+                            </ol>
 
                          
 
