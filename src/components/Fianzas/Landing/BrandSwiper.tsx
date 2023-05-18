@@ -1,17 +1,18 @@
 // Import Swiper React components
 import { Autoplay } from 'swiper';
-import fiBrand01 from '../../../assets/fianzas/brands/1-aserta.jpg';
-import fiBrand02 from '../../../assets/fianzas/brands/2-berkley.jpg';
-import fiBrand03 from '../../../assets/fianzas/brands/3-chubb.jpg';
-import fiBrand04 from '../../../assets/fianzas/brands/4-insurgentes.jpg';
-import fiBrand05 from '../../../assets/fianzas/brands/5-doroma.jpg';
-import fiBrand06 from '../../../assets/fianzas/brands/6-sofimex.jpg';
-import fiBrand07 from '../../../assets/fianzas/brands/7-liberty.jpg';
-import fiBrand08 from '../../../assets/fianzas/brands/8-fianzas-atlas.jpg';
-import fiBrand09 from '../../../assets/fianzas/brands/9-cescemex.jpg';
-import fiBrand10 from '../../../assets/fianzas/brands/10-fiducia.jpg';
-import fiBrand11 from '../../../assets/fianzas/brands/11-mapfre.jpg';
-import fiBrand12 from '../../../assets/fianzas/brands/12-avla.jpg';
+import fiBrand01 from '../../../assets/fianzas/brands/1-aserta.png';
+import fiBrand02 from '../../../assets/fianzas/brands/2-berkley.png';
+import fiBrand03 from '../../../assets/fianzas/brands/3-chubb.png';
+import fiBrand04 from '../../../assets/fianzas/brands/4-insurgentes.png';
+import fiBrand05 from '../../../assets/fianzas/brands/5-doroma.png';
+import fiBrand06 from '../../../assets/fianzas/brands/6-sofimex.png';
+import fiBrand07 from '../../../assets/fianzas/brands/7-liberty.png';
+import fiBrand08 from '../../../assets/fianzas/brands/8-fianzas-atlas.png';
+import fiBrand09 from '../../../assets/fianzas/brands/9-cescemex.png';
+import fiBrand10 from '../../../assets/fianzas/brands/10-fiducia.png';
+import fiBrand11 from '../../../assets/fianzas/brands/11-mapfre.png';
+import fiBrand12 from '../../../assets/fianzas/brands/12-avla.png';
+import fiBrand13 from '../../../assets/fianzas/brands/13-toki-marine.png';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -42,6 +43,7 @@ export default () => {
       <SwiperSlide><div className='brand-container'><img src={fiBrand10}></img></div></SwiperSlide>
       <SwiperSlide><div className='brand-container'><img src={fiBrand11}></img></div></SwiperSlide>
       <SwiperSlide><div className='brand-container'><img src={fiBrand12}></img></div></SwiperSlide>
+      <SwiperSlide><div className='brand-container'><img src={fiBrand13}></img></div></SwiperSlide>
 
     </Swiper>
   );

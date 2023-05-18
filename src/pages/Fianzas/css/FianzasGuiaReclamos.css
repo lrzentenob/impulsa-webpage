@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: flex-start;
     padding: 1em;
-    height: 1200px;
+    
 }
 
 .guiareclamos-content h1,
@@ -56,6 +56,7 @@
 .guiareclamos-content .row .paragraph .mid h2, 
 .guiareclamos-content .row .paragraph .mid p{ 
     margin-bottom: 1.5em;
+    line-height: 1.5em;
 }
 
 .guiareclamos-content .guiareclamos-content .row .single-img {
@@ -68,35 +69,38 @@
 }
 
 .guiareclamos-content .row .text-note {
-    height: 400px;
     width: 700px;
     margin: auto;
-    
 }
 .guiareclamos-content .row .text-note h2 {
     text-align: center;
-    max-width: 300px;
+    max-width: 500px;
     margin: 1em auto;
+    line-height: 1.5em;
 }
 .guiareclamos-content .row .text-note ol {
     color: var(--clr-gray-font);
     line-height: 1.8em;
     font-weight: var(--fw-regular);
-
+}
+.guiareclamos-content .row .text-note ul {
+    color: var(--clr-gray-font);
 }
 
+
  .text-titles-container {
-    height: 100px;
+    min-height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;    
+    
 }
 
- .text-titles-container div {
+ .text-titles-container .case1 {
     display: flex;
     justify-content: space-around;
     max-width: 700px;
-    margin: auto;   
+    margin: auto;
 }
 
 .text-titles-container h2 {
@@ -106,7 +110,32 @@
 }
 .text-titles-container .actions {
     width: 400px;
+    display: flex;
+    justify-content: space-between;
 }
+
+.text-titles-container .case2 {
+    display: flex;
+    padding: 1em;
+    margin: auto;
+}
+.text-titles-container .case2 h2,
+.text-titles-container .case2 p{
+    
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.8em;
+}
+.text-titles-container .case2 p {
+    color: var(--clr-gray-font);
+    text-align: justify;
+}
+
+
+
+
 .text-footer-notes {
     max-width: 700px;
     margin: auto;

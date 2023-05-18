@@ -1,8 +1,12 @@
 .brand-container {
-    width: 200px;
-    height: 140px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 130px;
+    
 }
+
+
 .brand-container img {
     margin: auto;
     width: 100%;

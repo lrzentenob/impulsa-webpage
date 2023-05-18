@@ -1,6 +1,7 @@
 import './css/Base.css';
 import './css/CentralSlider.css';
 import seGirlBk from '../../../assets/seguros/seguros-girl-home.png';
+import seAutoPhoto from '../../../assets/seguros/seguros-auto-foto.png';
 import slider01Girl from '../../../assets/seguros/slider/slide01-girl.png';
 import curvedBk from '../../../assets/seguros/general/seguros-curvedbk.png';
 import seSoycliPortrait01 from '../../../assets/seguros/general/seguros-soycli-portrait01.png';
@@ -65,11 +66,11 @@ export const CentralSlider = () => {
                                     <a className='btn-fianzas-outline' onClick={onShowContactForm}>Contáctanos</a> */}
                                 </div>
                             </div>
-
+                            
                         </div>
                         <div className='right-div'>
                             <div className='curved-bk-img'>
-                                <img src={seGirlBk} alt='fianzas girl' className='girl-img'/>
+                                <img src={seAutoPhoto} alt='fianzas girl' className='girl-img auto-seguros-photo'/>
                                 <img src={curvedBk} alt='curved background' className='curvedbk-img'/>
                             </div>
 

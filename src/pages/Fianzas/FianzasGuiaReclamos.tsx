@@ -15,11 +15,8 @@ export const FianzasGuiaReclamos = () => {
             <Submenu />
             <section>
                 <div className="guiareclamos-content">
-                    
-
+                
                     <div className="row">
-
-
                         <div className="logo-curvebk">
                             <img src={fiCurvedBk} className="bk"></img>
                             <img src={fiGuiaReclamos} className="icon"></img>
@@ -54,9 +51,9 @@ export const FianzasGuiaReclamos = () => {
                         <div className="text-note">
                             <h2>Requisitos Esenciales de una Reclamación</h2>                        
                             <ol>
-                                <li>Los beneficiarios deberán presentar sus reclamaciones en la institución de fianzas, entendiendo como tal a las oficinas principales, sucursales u oficinas de servicio.</li>
-                                <li>La reclamación debe hacerse por escrito y acompañando la documentación y demás elementos que sean necesarios para demostrar la existencia y exigibilidad de la obligación garantizada por la fianza.</li>
-                                <li>La institución de fianzas cuenta con un plazo de 15 días naturales a partir de la presentación de la reclamación para solicitar al beneficiario todo tipo de información o documentación que sean necesarias relacionadas con la fianza motivo de la reclamación.</li>
+                                <li>Los beneficiarios deberán presentar sus reclamaciones en la institución de fianzas, entendiendo como tal a las oficinas principales, sucursales u oficinas de servicio.</li><br/>
+                                <li>La reclamación debe hacerse por escrito y acompañando la documentación y demás elementos que sean necesarios para demostrar la existencia y exigibilidad de la obligación garantizada por la fianza.</li><br/>
+                                <li>La institución de fianzas cuenta con un plazo de 15 días naturales a partir de la presentación de la reclamación para solicitar al beneficiario todo tipo de información o documentación que sean necesarias relacionadas con la fianza motivo de la reclamación.</li><br/>
                             </ol>
                         </div>
                     </div>
@@ -65,7 +62,7 @@ export const FianzasGuiaReclamos = () => {
                 
                 <hr className="hr-orange"></hr>
                 <div className="text-titles-container">
-                    <div>
+                    <div className="case1">
                         <h2>Sector Gobierno</h2>
                         <div className="actions">
                             <Link to='' className="btn-fianzas">Obra</Link>
@@ -75,7 +72,7 @@ export const FianzasGuiaReclamos = () => {
                 </div>
                 <hr className="hr-orange"></hr>
                 <div className="text-titles-container">
-                    <div>
+                    <div className="case1">
                         <h2>Sector Privado</h2>
                         <div className="actions">
                             <Link to='' className="btn-fianzas">Obra</Link>

@@ -57,9 +57,17 @@
   .girl-img {
     position: absolute;
     top: 0;
+    left: 0;
     width:100%;
-    
+  
   }
+  .auto-seguros-photo {
+    top: 6em;
+    left: -8em;
+    width:150%;
+
+  }
+
   .curvedbk-img {
     position: absolute;
     top: 5em;
@@ -73,7 +81,12 @@
     right: 0;
     z-index: -9999;
 }
-  
+.girl-img-size2 {
+  position: absolute;
+  top: 5em;
+  width: 100%;
+}
+
   h1 {
     font-size: var(--fs-h1); 
     line-height: 1em;

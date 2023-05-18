@@ -1,4 +1,5 @@
 import { Branches } from "../../components/Seguros/Landing/Branches";
+import BrandSwiper from "../../components/Seguros/Landing/BrandSwiper";
 import { CentralSlider } from "../../components/Seguros/Landing/CentralSlider";
 import { Footer } from "../../components/Seguros/Landing/Footer";
 import { Header } from "../../components/Seguros/Landing/Header";
@@ -13,6 +14,7 @@ export const Seguros = () => {
             <Header />
             <Submenu />
             <CentralSlider />
+            <BrandSwiper />
             <ProductsInfo />
             <Branches />
             <Services />
