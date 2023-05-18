@@ -1,17 +1,6 @@
 .brand-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 130px;
-    
+    width: 200px;
 }
-
-
-.brand-container img {
-    margin: auto;
-    width: 100%;
-}
-
 @media screen and (max-width: 980px) {
     .brandswiper {
         display: none;

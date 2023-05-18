@@ -1,12 +1,3 @@
-.brandswiper-seguros .brand-container {
-    width: 280px;
-    display: flex;
-    
-}
-.brandswiper-seguros .brand-container img {
-    margin: auto;
-    width: 100%;
-}
 
 
 @media screen and (max-width: 980px) {
