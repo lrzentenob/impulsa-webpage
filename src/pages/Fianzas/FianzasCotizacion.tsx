@@ -48,6 +48,13 @@ export const FianzasCotizacion = () => {
     }
 
     function onAmtInputChange (e:any) {
+
+        if(import.meta.env.MODE === "development"){
+            console.log(`devMode: apiUrl: ${import.meta.env.VITE_API_URL} ,moneyRegex: ${import.meta.env.VITE_MONEY_ENTRY_REGEX}`)
+        }
+        else{
+            console.log(`prodMode: apiUrl: ${import.meta.env.VITE_API_URL} ,moneyRegex: ${import.meta.env.VITE_MONEY_ENTRY_REGEX}`)
+        }
         const entryAmount = e.target.value
         const amountRE = new RegExp(import.meta.env.VITE_MONEY_ENTRY_REGEX!);
         const amountMatch = entryAmount.match(amountRE);
