@@ -147,7 +147,7 @@ Licitacion Total
         const MontoAnticipo = MontoContrato * upfront / 100
         setMontoAnticipo( MontoAnticipo );
 
-        let primaNetaTmp = MontoAnticipo * 0.12;
+        let primaNetaTmp = MontoAnticipo * 0.012;
         const PrimaNetaFinal = primaNetaTmp < 1700 ? 1700 : primaNetaTmp
 
         setPrimaNetaAnticipo( PrimaNetaFinal );
@@ -165,7 +165,7 @@ Licitacion Total
         MontoCumplimiento = MontoCumplimiento < 1700 ? 1700 : MontoCumplimiento;
         setMontoCump(MontoCumplimiento);
 
-        let PrimaNetaCumplimento = viciosOcultos ? (MontoCumplimiento / 12)*(term + 12) : MontoCumplimiento * 0.12;
+        let PrimaNetaCumplimento = viciosOcultos ? (MontoCumplimiento / 12)*(term + 12) : MontoCumplimiento * 0.012;
 
         PrimaNetaCumplimento = PrimaNetaCumplimento < 1700 ? 1700 : PrimaNetaCumplimento;
         setPrimaNetaCump(PrimaNetaCumplimento);
