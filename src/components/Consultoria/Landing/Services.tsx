@@ -1,12 +1,11 @@
 import './css/Services.css'
-import seServicesBk from '../../../assets/seguros/seguros-services-bk.png'
+import seServicesBk from '../../../assets/consultoria/consultoria-servicios-bk.jpg'
 
 import { Link } from 'react-router-dom';
 export const Services = ()=> {
 
     return (
         <div className='services-consult'>
-
             <div className='services-upper-content'>
                 <div className='cover'></div>
                 <img src={seServicesBk}></img>

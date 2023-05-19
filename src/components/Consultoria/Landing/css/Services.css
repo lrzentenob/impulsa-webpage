@@ -6,7 +6,9 @@
     position: relative;    
     overflow: hidden;
     min-height: 550px;
+    height: 745px;
 }
+
 
 .services-consult .services-upper-content .cover {
     position: absolute;
@@ -21,6 +23,7 @@
     position: absolute;
     top: 0;
     z-index: -999;
+    height: 100%;
     width: 100%;
     color: white;
 }

@@ -10,20 +10,9 @@ import { formatLocalCurrency } from "../../utils/CurrencyFormatter";
 
 export const FianzasCotizacion = () => {
     
-    async function onSubmit() {
-        alert('Hola!')
-    }
 
-    const [valuesAmt] = useState([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,40,50,100])
-    const [minAmt] = useState(0);
-    const [maxAmt] = useState(valuesAmt.length - 1);
-    const [positionAmt, setPositionAmt] = useState(0);
-    const [amount, setAmount] = useState(valuesAmt[0]);
+    const [amount, setAmount] = useState('');
 
-    function onUpdateAmt(e:any) {
-        setPositionAmt(e.target.value);
-        setAmount(valuesAmt[e.target.value]);
-    }
 
     const [valuesUpfront] = useState([0,10,15,20,25,30,35,40,45,50,55,60])
     const [minUpfront] = useState(0);
@@ -58,6 +47,15 @@ export const FianzasCotizacion = () => {
         setTerm(valuesTerm[e.target.value]);
     }
 
+    function onAmtInputChange (e:any) {
+        const entryAmount = e.target.value
+        const amountRE = new RegExp(import.meta.env.VITE_MONEY_ENTRY_REGEX!);
+        const amountMatch = entryAmount.match(amountRE);
+        
+        if( amountMatch || !entryAmount ){
+            setAmount(entryAmount);
+        }
+    }
 
     return (
         <>
@@ -66,13 +64,18 @@ export const FianzasCotizacion = () => {
             <section>
                 
                 <div className="fianzas-quote">
+                    
+                   <div className="table-title">
+                        <h1>Cotizador de Fianzas</h1>
+                    </div>
+
                     <div className="container">
 
-                        <div className="range-selection">
+                        <div className="user-input">
                             <div className="label">
-                                <p>Monto del Contrato <b>{amount} MDP</b></p>
+                                <p>Monto del Contrato: { amount ?formatLocalCurrency(parseFloat(amount),'$','','') : '' } </p>
                             </div>
-                            <RangeSlider min={minAmt} max={maxAmt} value={positionAmt} onUpdateHandler={onUpdateAmt} step={1} />                     
+                            <input type="text" onChange={onAmtInputChange} value={amount}></input>
                         </div>
 
                         <div className="range-selection">
@@ -89,8 +92,14 @@ export const FianzasCotizacion = () => {
                             <RangeSlider min={minAccomplish} max={maxAccomplish} value={positionAccomplish} onUpdateHandler={onUpdateAccomplish} step={1} />                     
                         </div>
 
-                        <input type="checkbox" id='vicios-ocultos-checkbox'></input>
-                        <label htmlFor="vicios-ocultos-checkbox">Con vicios ocultos</label>
+                        <div className="user-input">
+                        
+                            <div className="label">
+                                <label htmlFor="vicios-ocultos-checkbox">Con vicios ocultos</label>
+                            </div>
+                            <input type="checkbox" id='vicios-ocultos-checkbox'></input>
+
+                        </div>
 
                         <div className="range-selection">
                             <div className="label">
@@ -101,11 +110,7 @@ export const FianzasCotizacion = () => {
 
                     </div>
                 
-                
-                    <div className="table-title">
-                        <h1>Cotizacion</h1>
-                        <p>Monto del Contrato: <b>{`${formatLocalCurrency(amount*1000000, "$","","")}`}</b></p>
-                    </div>
+                    { amount &&
                     <table>
                         <tr>
                             <th className="th-left">Concepto</th>
@@ -114,8 +119,8 @@ export const FianzasCotizacion = () => {
                         </tr>
                         <tr>
                             <td data-cell="full"><b>Monto Fianza</b>    </td>
-                            <td data-cell="limited">{formatLocalCurrency(amount*1000000*(upfront/100), "$","","")}</td>
-                            <td data-cell="civil">{formatLocalCurrency(amount*1000000*(accomplish/100), "$","","")}</td>
+                            <td data-cell="limited">{formatLocalCurrency(parseFloat(amount)*1000000*(upfront/100), "$","","")}</td>
+                            <td data-cell="civil">{formatLocalCurrency(parseFloat(amount)*1000000*(accomplish/100), "$","","")}</td>
                         </tr>
                         <tr>
                             <td data-cell="full">Prima Neta</td>
@@ -148,7 +153,7 @@ export const FianzasCotizacion = () => {
                             <td data-cell="civil" className="td-right"><b>$6,750.04</b></td>
                         </tr>
 
-                    </table>
+                    </table>}
 
                     {/* <h2>Cotiza tu fianza</h2>
                     <p>Cillum ullamco elit in aliquip nulla quis. Anim eiusmod anim esse sint Lorem id eiusmod proident eu voluptate id Lorem. Labore nisi voluptate in eu deserunt veniam minim elit sit exercitation exercitation eiusmod.</p>

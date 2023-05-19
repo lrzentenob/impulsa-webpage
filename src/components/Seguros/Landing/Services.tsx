@@ -1,12 +1,12 @@
 import './css/Services.css'
-import seServicesBk from '../../../assets/seguros/seguros-services-bk.png'
+import seServicesBk from '../../../assets/seguros/seguros-services-bk.jpg'
 import seService01 from '../../../assets/seguros/general/seguros-services01.png';
 import seService02 from '../../../assets/seguros/general/seguros-services02.png';
 import seService03 from '../../../assets/seguros/general/seguros-services03.png';
 import seService04 from '../../../assets/seguros/general/seguros-services04.png';
 import seService05 from '../../../assets/seguros/general/seguros-services05.png';
 import seService06 from '../../../assets/seguros/general/seguros-services06.png';
-import { Link } from 'react-router-dom';
+
 export const Services = ()=> {
 
     return (

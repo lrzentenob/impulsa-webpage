@@ -1,5 +1,5 @@
 import './css/Services.css'
-import seServicesBk from '../../../assets/seguros/seguros-services-bk.png'
+import seServicesBk from '../../../assets/riesgos/riesgos-servicios-bk.jpg'
 export const Services = ()=> {
 
     return (
