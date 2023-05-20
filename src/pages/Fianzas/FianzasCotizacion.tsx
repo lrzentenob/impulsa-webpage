@@ -164,8 +164,8 @@ Licitacion Total
         let MontoCumplimiento = MontoContrato * (accomplish /100)
         MontoCumplimiento = MontoCumplimiento < 1700 ? 1700 : MontoCumplimiento;
         setMontoCump(MontoCumplimiento);
-
-        let PrimaNetaCumplimento = viciosOcultos ? (MontoCumplimiento / 12)*(term + 12) : MontoCumplimiento * 0.012;
+        console.log(term + 12)
+        let PrimaNetaCumplimento = viciosOcultos ? ((MontoCumplimiento / 12)*(term + 12)*0.012) : MontoCumplimiento * 0.012;
 
         PrimaNetaCumplimento = PrimaNetaCumplimento < 1700 ? 1700 : PrimaNetaCumplimento;
         setPrimaNetaCump(PrimaNetaCumplimento);
@@ -197,6 +197,7 @@ Licitacion Total
     }
 
     useEffect( ()=>{
+        
         recalculateForm();
     },[amount,upfront,accomplish, term, bid])
 
@@ -285,12 +286,12 @@ Licitacion Total
                         </div>}
 
                     </div>
-                    {amount && tipoFianza === 'anticipo' &&
+                    {/* {amount && tipoFianza === 'anticipo' &&
                     <div className="scorecard">
                             <h2>Fianza Anticipo/Cumplimiento Total: {formatLocalCurrency(totalFianza)}</h2>
                             <hr></hr>
                         <div>
-                            {/* <p>Monto Contrato: {formatLocalCurrency(montoContrato)}</p> */}
+                            
                             <p>Monto Anticipo: {formatLocalCurrency(montoAnticipo)}</p>
                             <p>Prima Neta Anticipo: {formatLocalCurrency(primaNetaAnticipo)}</p>
                             <p>Derechos Anticipo: {formatLocalCurrency(derechoAnticipo)}</p>
@@ -301,7 +302,7 @@ Licitacion Total
                             <hr></hr>
                         </div>
                         <div>
-                            {/* <p>Monto Cumplimiento: {formatLocalCurrency(montoCump)}</p> */}
+                            <p>Monto Cumplimiento: {formatLocalCurrency(montoCump)}</p>
                             <p>Prima Neta Cumplimiento: {formatLocalCurrency(primaNetaCump)}</p>
                             <p>Derechos Cumplimiento: {formatLocalCurrency(derechosCump)}</p>
                             <p>Gastos Exp Cumplimiento: {formatLocalCurrency(gastosExpCump)}</p>
@@ -327,9 +328,10 @@ Licitacion Total
                             <hr></hr>
                         </div>
 
-                    </div>}
+                    </div>} */}
 
-                    { false &&
+                    { amount && tipoFianza === 'anticipo' &&
+                    <div className="table-container">
                     <table>
                         <tr>
                             <th className="th-left">Concepto</th>
@@ -337,85 +339,89 @@ Licitacion Total
                             <th className="th-right">Cumplimiento</th>
                         </tr>
                         <tr>
-                            <td data-cell="full"><b>Monto Fianza</b>    </td>
+                            <td data-cell="full"><b>Monto Fianza</b></td>
                             <td data-cell="limited">{formatLocalCurrency(parseFloat(amount)*(upfront/100))}</td>
                             <td data-cell="civil">{formatLocalCurrency(parseFloat(amount)*(accomplish/100))}</td>
                         </tr>
                         <tr>
                             <td data-cell="full">Prima Neta</td>
-                            <td data-cell="limited">{ }</td>
-                            <td data-cell="civil">$3,400.00</td>                            
+                            <td data-cell="limited">{formatLocalCurrency(primaNetaAnticipo)}</td>
+                            <td data-cell="civil">{formatLocalCurrency(primaNetaCump)}</td>                            
                         </tr>
                         <tr>
                             <td data-cell="full">Derechos</td>
-                            <td data-cell="limited">$126.00</td>
-                            <td data-cell="civil">$119.00</td>
+                            <td data-cell="limited">{formatLocalCurrency(derechoAnticipo)}</td>
+                            <td data-cell="civil">{formatLocalCurrency(derechosCump)}</td>
                         </tr>
                         <tr>
                             <td data-cell="full">Gastos Exp</td>
-                            <td data-cell="limited">$2,300.00</td>
-                            <td data-cell="civil">$2,300.00</td>
+                            <td data-cell="limited">{formatLocalCurrency(gastoExpAnticipo)}</td>
+                            <td data-cell="civil">{formatLocalCurrency(gastosExpCump)}</td>
                         </tr>
                         <tr>
                             <td data-cell="full">Subtotal</td>
-                            <td data-cell="limited">$6,026.00</td>
-                            <td data-cell="civil">$5,819.00</td>
+                            <td data-cell="limited">{formatLocalCurrency(anticipoSubt)}</td>
+                            <td data-cell="civil">{formatLocalCurrency(cumpSubtotal)}</td>
                         </tr>
                         <tr>
                             <td data-cell="full" className="td-left">IVA</td>
-                            <td data-cell="limited">$964.16</td>
-                            <td data-cell="civil" className="td-right">$931.04</td>
+                            <td data-cell="limited">{formatLocalCurrency(anticipoIva)}</td>
+                            <td data-cell="civil" className="td-right">{formatLocalCurrency(cumpIva)}</td>
                         </tr>
                         <tr>
                             <td data-cell="full" className="td-left"><b>Total</b></td>
-                            <td data-cell="limited"><b>$6,990.16</b></td>
-                            <td data-cell="civil" className="td-right"><b>$6,750.04</b></td>
+                            <td data-cell="limited"><b>{formatLocalCurrency(anticipoTotal)}</b></td>
+                            <td data-cell="civil" className="td-right"><b>{formatLocalCurrency(cumpTotal)}</b></td>
+                        </tr>
+                        <tr>
+                            <td data-cell="full" className="td-left" colSpan={2}><b>Costo Total de Fianzas</b></td>
+                            {/* <td data-cell="limited"></td> */}
+                            <td data-cell="civil" className="td-right"><b>{formatLocalCurrency(totalFianza)}</b></td>
                         </tr>
 
-                    </table>}
 
-                    {/* <h2>Cotiza tu fianza</h2>
-                    <p>Cillum ullamco elit in aliquip nulla quis. Anim eiusmod anim esse sint Lorem id eiusmod proident eu voluptate id Lorem. Labore nisi voluptate in eu deserunt veniam minim elit sit exercitation exercitation eiusmod.</p>
+                    </table>
+                    </div>}
+                    { amount && tipoFianza === 'licitacion' &&
+                    <div className="table-container">
+                    <table>
+                        <tr>
+                            <th className="th-left">Concepto</th>
+                            <th className="th-right">Licitación</th>
+                        </tr>
+                        <tr>
+                            <td data-cell="full"><b>Monto Licitación</b></td>
+                            <td data-cell="limited">{formatLocalCurrency(montoLiciation)}</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="full">Prima Neta</td>
+                            <td data-cell="limited">{formatLocalCurrency(primaNetaLic)}</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="full">Derechos</td>
+                            <td data-cell="limited">{formatLocalCurrency(derechosLic)}</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="full">Gastos Exp</td>
+                            <td data-cell="limited">{formatLocalCurrency(gastosExpLic)}</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="full">Subtotal</td>
+                            <td data-cell="limited">{formatLocalCurrency(licSubtotal)}</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="full" className="td-left">IVA</td>
+                            <td data-cell="limited">{formatLocalCurrency(licIva)}</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="full" className="td-left"><b>Total</b></td>
+                            <td data-cell="limited" className="td-right"><b>{formatLocalCurrency(licTotal)}</b></td>
 
-                    <div className="container">
+                        </tr>
 
-                    <form onSubmit={onSubmit}>
-                        <div className="row">
-                            <div className="col-25">
-                                <label htmlFor="contractAmt">Monto del Contrato *</label>
-                            </div>
-                            <div className="col-75">
-                            <input type="text" id="contractAmt" name="contract-amount" placeholder="Ingrese una cantidad..." />
-                            </div>
-                        </div>
+                    </table>
+                    </div>}
 
-                        <div className="row">
-                            <div className="col-25">
-                            <label htmlFor="lname">Last Name</label>
-                            </div>
-                            <div className="col-75">
-                            <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
-                            </div>
-                        </div>
-
-                        <div className="row">
-                            <div className="col-25">
-                            <label htmlFor="country">Country</label>
-                            </div>
-                            <div className="col-75">
-                            <select id="country" name="country">
-                                <option value="australia">Australia</option>
-                                <option value="canada">Canada</option>
-                                <option value="usa">USA</option>
-                            </select>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <input type="submit" value="Submit"/>
-                        </div>
-                    </form>
-                    </div>
-               */}
                 </div>
             </section>
             <Footer />
