@@ -7,8 +7,10 @@ export const Services = ()=> {
     return (
         <div className='services-consult'>
             <div className='services-upper-content'>
+
                 <div className='cover'></div>
-                <img src={seServicesBk}></img>
+                <img src={seServicesBk} className='img-bk'></img>
+
                     <div className='service-main'>
                         <div className='service-main-left'>
                         <div className='service-title'>

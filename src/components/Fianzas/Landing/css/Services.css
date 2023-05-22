@@ -6,7 +6,7 @@
 .services-upper-content {
     position: relative;    
     overflow: hidden;
-    min-height: 550px;
+    min-height: 400px;
 }
 
 .services-upper-content .cover {
@@ -20,9 +20,14 @@
 
 .services-upper-content img {
     position: absolute;
-    top: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     z-index: -999;
     width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
     color: white;
 }
 .service-main {

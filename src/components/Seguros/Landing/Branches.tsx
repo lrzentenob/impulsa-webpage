@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 
 export const Branches = () => {
-
+    
     return (
         <div className="branches-seguros">
             <div className='branches-upper-content'>

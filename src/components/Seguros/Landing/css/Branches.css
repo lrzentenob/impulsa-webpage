@@ -41,11 +41,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
-    
+    height: 500px;
 }
 .branches-seguros .branches-detail {
-    width: 400px;
+    width: 500px;
+    margin: 2em;
     
 }
 .branches-seguros .branches-detail ul {

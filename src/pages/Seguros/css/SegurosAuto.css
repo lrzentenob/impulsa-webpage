@@ -31,7 +31,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+}
+.seguros-auto .paragraph ul {
+    list-style-position: inside;
 }
 .seguros-auto .paragraph h1,
 .seguros-auto .paragraph h2 {
@@ -42,8 +44,10 @@
 }
 
 .seguros-auto .footnote,
-.seguros-auto .paragraph p {
+.seguros-auto .paragraph p,
+.seguros-auto .paragraph li {
     color: var(--clr-gray-font);
+    font-weight: var(--fw-regular);
     line-height: 1.5em;
     text-align: justify;
     margin-bottom: 1em;;

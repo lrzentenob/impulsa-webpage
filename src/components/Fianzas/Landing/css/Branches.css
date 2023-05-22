@@ -24,6 +24,7 @@
     max-width: 700px;
     margin: auto;
     padding: 1em;
+    
 }
 .branches-fianzas .branches-upper-content h1 {
     color: var(--clr-blue);
@@ -35,18 +36,14 @@
     text-align: justify;
 }
 
-
 .branches-fianzas .branches-lower-content {
-    padding: 1em;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;    
-    
+    justify-content: center;   
 }
 .branches-fianzas .branches-detail {
-    width: 400px;
-    margin: 1em;
-    
+    width: 500px;
+    margin: 3em;
 }
 .branches-fianzas .branches-detail ul {
     display: grid;

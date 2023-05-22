@@ -68,7 +68,6 @@ export const SegurosAuto = () =>{
             <div className="seguros-auto-block">
                 <p className="footnote"><b>En IMPULSA ASESORES te brindaremos el respaldo que necesites en los momentos más difíciles.</b></p>
             </div>
-
                 <div className="seguros-auto-block table-area">
                     <div className="table-title">
                         <h1>Paquetes</h1>
@@ -122,11 +121,11 @@ export const SegurosAuto = () =>{
                     <div className="paragraph">
                         <h2>¿Por qué contratar un seguro con nosotros?</h2>
                             <ul>
-                                <li><p>Asesoría adecuada a tus necesidades</p></li>
-                                <li><p>Te acompañamos antes, durante y después de un siniestro</p></li>
-                                <li><p>Asistencia y apoyo personalizado</p></li>
-                                <li><p>Servicio 24/7 los 365 días del año</p></li>
-                                <li><p>Contamos con el respaldo de las mejores aseguradoras del mercado</p></li>
+                                <li>Asesoría adecuada a tus necesidades</li>
+                                <li>Te acompañamos antes, durante y después de un siniestro</li>
+                                <li>Asistencia y apoyo personalizado</li>
+                                <li>Servicio 24/7 los 365 días del año</li>
+                                <li>Contamos con el respaldo de las mejores aseguradoras del mercado</li>
                             </ul>
                         <h2>¿Tienes alguna duda?</h2>
                         <p>Comunícate con uno de nuestros asesores al <b>800 902 3456</b></p>
@@ -177,8 +176,8 @@ export const SegurosAuto = () =>{
                         <h2>¿Qué hacer en caso de siniestro?</h2>
                         <p>Nuestra calidad en la atención a tu siniestro está basada y garantizada en la estrecha relación que mantenemos con las principales aseguradoras y despachos de ajustadores en la república mexicana para ofrecerte el respaldo, la tranquilidad y satisfacción durante estas situaciones.</p>
                             <ul>
-                                <li><p><b>Mantén la calma</b></p></li>
-                                <li><p><b>Repórtalo al teléfono que aparece en tu póliza</b></p></li>
+                                <li><b>Mantén la calma</b></li>
+                                <li><b>Repórtalo al teléfono que aparece en tu póliza</b></li>
                             </ul>
 
                         <p>Los ejecutivos que te apoyarán son especialistas para cada tipo de seguro y cuentan con el conocimiento técnico para obtener el resultado adecuado a tu persona.</p>

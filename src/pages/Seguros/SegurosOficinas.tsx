@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Footer } from "../../components/Seguros/Landing/Footer";
 import { Header } from "../../components/Seguros/Landing/Header";
 import { Submenu } from "../../components/Seguros/Landing/Submenu";
+import curvedImageBk from '../../assets/general/curved-background.png';
 
 import './css/SegurosOficinas.css';
 import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -13,7 +14,16 @@ export const SegurosOficinas = () => {
             <Header />
             <Submenu />
             <section className="oficinas oficinas-seguros">
-            <h1>Oficinas</h1>
+
+            <div className="curved-titled">
+                <div className="h-container">   
+                    <h1 className="title-text">Oficinas</h1>
+                    <div className="image-content">
+                        <img src={curvedImageBk} className="image-background"></img>
+                    </div>
+                </div>
+            </div>
+                            
             <div className="oficinas-content">
                 <div className="oficina-box">
                     <div className="address">

@@ -5,8 +5,7 @@
 .services-consult .services-upper-content {
     position: relative;    
     overflow: hidden;
-    min-height: 550px;
-    height: 745px;
+    height: 500px;
 }
 
 
@@ -18,14 +17,11 @@
     background: linear-gradient(0deg, rgba(100, 142, 61, 0.462), rgb(100, 142, 61,0.7));
     z-index: -998;
 }
-
-.services-consult .services-upper-content img {
-    position: absolute;
-    top: 0;
-    z-index: -999;
-    height: 100%;
+.services-consult .services-upper-content .img-bk {
     width: 100%;
-    color: white;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
 }
 .services-consult .service-main {
     display: flex;

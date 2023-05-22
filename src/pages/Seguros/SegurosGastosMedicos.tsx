@@ -53,7 +53,7 @@ export const SegurosGastosMedicos = () => {
           <div className="seguros-gastos-medicos-block">
             <div className="single-paragraph">
               <h2>¿Cómo funciona un seguro de gastos médicos?</h2>
-              <p>El Seguro de Gastos Médicos Mayores tiene como función proteger tu salud y tu patrimonio al mismo tiempo, ante alguna enfermedad o accidente. Puede cubrir los gastos de atención médica, cirugías, medicina, análisis clínicos, entre otros servicios. Esto siempre dependerá de la aseguradora y del plan contratado.</p>
+              <p>El Seguro de Gastos Médicos Mayores tiene como función <b>proteger tu salud y tu patrimonio al mismo tiempo</b>, ante alguna enfermedad o accidente. Puede cubrir los gastos de atención médica, cirugías, medicina, análisis clínicos, entre otros servicios. Esto <b>siempre</b> dependerá de la aseguradora y del plan contratado.</p>
             </div>
           </div>
 

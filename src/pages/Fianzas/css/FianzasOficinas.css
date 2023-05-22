@@ -2,6 +2,10 @@
 .oficinas {
     margin-bottom: 4em;
 }
+.oficinas .curved-titled {
+    
+    height: 260px;
+}
 .oficinas h1 {
     text-align: center;
     color: var(--clr-blue);

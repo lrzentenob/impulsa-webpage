@@ -54,16 +54,16 @@ export const Footer = ()=>{
                     <div>
                         <h4>Contacto</h4>
                         <ul>
-                            <li><Link to="/"><p><FontAwesomeIcon icon={faPhone} size='1x'  className='fa-iconx'/> 01 800 902 3456</p></Link></li>
+                            <li><Link to="/"><p><FontAwesomeIcon icon={faPhone} size='1x'  className='fa-iconx'/> 800 902 3456</p></Link></li>
                             <li><Link to="/"><p><FontAwesomeIcon icon={faLocationDot} size='1x' className='fa-iconx'/> 9 oficinas en todo el país</p></Link></li>
-                            <li><Link to="/"><p><FontAwesomeIcon icon={faEnvelope} size='1x' className='fa-iconx'/><span> atencion@impulsaasesores.mx</span></p></Link></li>
+                            <li><Link to="mailto:atencion@impulsaasesores.mx"><p><FontAwesomeIcon icon={faEnvelope} size='1x' className='fa-iconx'/><span> atencion@impulsaasesores.mx</span></p></Link></li>
                         </ul>
                     </div>
                     <div>
                         <p>Descarga nuestra aplicación móvil</p>
                         <ul>
-                            <li><img src={appStore} className='store'></img></li>
-                            <li><img src={playStore} className='store'></img></li>
+                            <li><Link to=''><img src={appStore} className='store'></img></Link></li>
+                            <li><Link to='https://play.google.com/store/apps/details?id=mx.impulsaasesores.togo'><img src={playStore} className='store'></img></Link></li>
                         </ul>
                     </div>
                 </div>
