@@ -31,7 +31,7 @@ export const Footer = ()=>{
                 <div className='footer-upper-content-container'>
                     <div>
                         <img src={seLogo} className='logo'></img>
-                        <p>Más de { getYearsFromYear(2013)} años de experiencia.</p>
+                        <p>Más de { getYearsFromYear(1981)} años de experiencia.</p>
                     </div>
                     <div>
                         <h4>Productos</h4>
