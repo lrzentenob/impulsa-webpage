@@ -20,7 +20,7 @@ export const Submenu = () => {
                 <div className='logo'>
                     <img src={seLogo}></img>
                 </div>
-                <input type='checkbox' className='navtoggle' id='togglecheck-submenu'></input>
+                {/* <input type='checkbox' className='navtoggle' id='togglecheck-submenu'></input>
                 <nav>
                     <ul>
                         <li> <Link to="/consultoria">Inicio</Link></li>
@@ -33,7 +33,7 @@ export const Submenu = () => {
                 </nav>
                 <label htmlFor='togglecheck-submenu' className='navtoggle-label'>
                     <span></span>
-                </label>
+                </label> */}
             </div>
         </div>
     );

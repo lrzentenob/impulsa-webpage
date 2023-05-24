@@ -1,7 +1,7 @@
 import './css/Base.css'
 import './css/Submenu.css';
 import riLogo from '../../../assets/riesgos/riesgos-logo.png'
-import { Link } from 'react-router-dom';
+
 
 export const Submenu = () => {
 
