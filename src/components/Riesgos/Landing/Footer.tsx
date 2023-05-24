@@ -6,6 +6,7 @@ import riLogo from '../../../assets/riesgos/riesgos-logo.png';
 import appStore from '../../../assets/general/appstore.png';
 import playStore from  '../../../assets/general/playstore.png';
 import { Link } from 'react-router-dom';
+import { getCurrentYear } from '../../../utils/CurrencyFormatter';
 
 export const Footer = ()=>{
     function onShowContactForm () {
@@ -72,7 +73,7 @@ export const Footer = ()=>{
 
             <div className='footer-lower-content'>
                 <div className='footer-lower-content-foot'>
-                    <p>© 2020 Impulsa Fianzas. Todos los derechos reservados</p>
+                    <p>© {getCurrentYear()} Impulsa Fianzas. Todos los derechos reservados</p>
                     <div className='footer-social'>
                         <FontAwesomeIcon icon={faFacebook} size='2x' />
                         <FontAwesomeIcon icon={faInstagram} size='2x' />

@@ -6,6 +6,7 @@ import fiLogo from '../../../assets/fianzas/fianzas-logo.png';
 import appStore from '../../../assets/general/appstore.png';
 import playStore from  '../../../assets/general/playstore.png';
 import { Link } from 'react-router-dom';
+import { getCurrentYear, getYearsFromYear } from '../../../utils/CurrencyFormatter';
 
 export const Footer = ()=>{
     function onShowContactForm () {
@@ -31,7 +32,7 @@ export const Footer = ()=>{
                 <div className='footer-upper-content-container'>
                     <div>
                         <img src={fiLogo} className='logo'></img>
-                        <p>Más de 37 años de experiencia en el ramo afianzador.</p>
+                        <p>Más de {getYearsFromYear(1981)} años de experiencia en el ramo afianzador.</p>
                     </div>
                     <div>
                         <h4>Productos</h4>
@@ -74,7 +75,7 @@ export const Footer = ()=>{
 
             <div className='footer-lower-content'>
                 <div className='footer-lower-content-foot'>
-                    <p>© 2023 Impulsa Asesores. Todos los derechos reservados</p>
+                    <p>© {getCurrentYear()} Impulsa Asesores. Todos los derechos reservados</p>
                     <div className='footer-social'>
                         <FontAwesomeIcon icon={faFacebook} size='2x' />
                         <FontAwesomeIcon icon={faInstagram} size='2x' />

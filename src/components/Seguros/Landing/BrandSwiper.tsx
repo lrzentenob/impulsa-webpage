@@ -35,6 +35,7 @@ import seBrand28 from '../../../assets/seguros/brands/ABA.png';
 
 // Import Swiper styles
 import 'swiper/css';
+import './css/BrandSwiper.css'
 
 export default () => {
   return (

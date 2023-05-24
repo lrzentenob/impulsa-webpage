@@ -1,4 +1,6 @@
-
+.brandswiper-seguros {
+    width: var(--maximum-width);
+}
 
 @media screen and (max-width: 980px) {
     .brandswiper-seguros .brandswiper {

@@ -14,7 +14,7 @@ export const Header  = ()=>{
                         <li><Link to='/fianzas'>Fianzas</Link></li>
                         <li> <Link to='/seguros'>Seguros</Link></li>
                         <li> <Link to='/riesgos'>Riesgos</Link></li>
-                        <li> <Link to='/consultoria'>Consultoria</Link></li>
+                        <li> <Link to='/consultoria'>Consultoría</Link></li>
                     </ul>
                 </nav>
                 <label htmlFor='togglecheck-header' className='navtoggle-label'>

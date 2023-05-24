@@ -69,7 +69,9 @@ section {
   margin: auto;
   
 }
-
+#root {
+  overflow: hidden;
+}
 hr {
   border-top: 1px solid var(--clr-gray);
 }

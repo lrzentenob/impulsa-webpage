@@ -1,5 +1,6 @@
-.brand-container {
-    width: 200px;
+.brandswiper-fianzas {
+    width: var(--maximum-width);
+ 
 }
 @media screen and (max-width: 980px) {
     .brandswiper {

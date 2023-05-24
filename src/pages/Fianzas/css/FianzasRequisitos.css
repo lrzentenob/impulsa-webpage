@@ -12,15 +12,14 @@
     justify-content: center;
 }
 .fianzas-requisitos .fianzas-requisitos-content .requisitos-row .requisitos-col {
-    
     padding: 2em;
 }
 .fianzas-requisitos .fianzas-requisitos-content .requisitos-row .left{
-    width: 250px;
+    width: 270px;
     
 }
 .fianzas-requisitos .fianzas-requisitos-content .requisitos-row .mid{
-    max-width: 600px;  
+    width: 600px;
 }
 .fianzas-requisitos .fianzas-requisitos-content .requisitos-row .actions {
     margin-top: 1em;
@@ -39,7 +38,11 @@
 .fianzas-requisitos .fianzas-requisitos-content .requisitos-col p{
     line-height: 1.8em;
 }
-.fianzas-requisitos .fianzas-requisitos-content .requisitos-col ul{
+.fianzas-requisitos .fianzas-requisitos-content .requisitos-col ol{
     margin-bottom: 1em;
-    list-style: none;
+    
+    color: var(--clr-gray-font);
+    line-height: 1.8em;
+    font-weight: var(--fw-regular);
 }
+

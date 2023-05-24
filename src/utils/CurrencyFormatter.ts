@@ -15,3 +15,14 @@ export const formatLocalCurrency = (numero: number) => {
 
   return numberString;
 }
+
+export function getCurrentYear() {
+    const today  = new Date();
+    return today.getFullYear();
+
+}
+
+export function getYearsFromYear( yearFounded: number) {
+    const todayYear = new Date().getFullYear();
+    return todayYear - yearFounded;
+}

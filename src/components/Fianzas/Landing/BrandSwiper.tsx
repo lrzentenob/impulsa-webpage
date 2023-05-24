@@ -23,13 +23,14 @@ import './css/BrandSwiper.css';
 
 export default () => {
   return (
+    
     <Swiper
         modules={[Autoplay]}
         slidesPerView={5}
         speed={1500}
         loop={true}
         autoplay={ {delay: 500, waitForTransition: true }}
-      className='brandswiper'
+        className='brandswiper-fianzas'
     >
       <SwiperSlide><div className='brand-container'><img src={fiBrand01}></img></div></SwiperSlide>
       <SwiperSlide><div className='brand-container'><img src={fiBrand02}></img></div></SwiperSlide>
@@ -46,5 +47,6 @@ export default () => {
       <SwiperSlide><div className='brand-container'><img src={fiBrand13}></img></div></SwiperSlide>
 
     </Swiper>
+    
   );
 };

@@ -6,6 +6,7 @@ import seLogo from '../../../assets/consultoria/consult-logo.png';
 import appStore from '../../../assets/general/appstore.png';
 import playStore from  '../../../assets/general/playstore.png';
 import { Link } from 'react-router-dom';
+import { getCurrentYear, getYearsFromYear } from '../../../utils/CurrencyFormatter';
 
 export const Footer = ()=>{
     function onShowContactForm () {
@@ -13,12 +14,14 @@ export const Footer = ()=>{
         const disp = modal?.style.display;
         modal!.style.display = disp === 'block' ? "none" : "block";
     }
+
+
     return (
         <footer className='footer-consult'>
             <div className='services-content'>
                 <div className='service-title'>
                     <h2>Servicio Eficiente</h2>
-                    <p>Coberturas a tu medida en el menor tiempo, con facilidades de pago y grandes beneficios.</p>
+                    <p>Consultoría profesional para empresas</p>
                 </div>
                 <div className='service-action'>
                     <Link className='btn-consult' to="/consultoria" onClick={onShowContactForm}>Contáctanos</Link>
@@ -30,19 +33,9 @@ export const Footer = ()=>{
                 <div className='footer-upper-content-container'>
                     <div>
                         <img src={seLogo} className='logo'></img>
-                        <p>Más de 37 años de experiencia en el ramo afianzador.</p>
+                        {/* <p>Más de {getYearsFromYear(1981)} años de experiencia en el ramo afianzador.</p> */}
                     </div>
-                    <div>
-                        <h4>Productos</h4>
-                        <ul>
-                            <li><Link to='/arrendamiento'>Arrendamiento</Link></li>
-                            <li><Link to='/fidelidad'>Fidelidad</Link></li>
-                            <li><Link to='/fiscal'>Fiscales</Link></li>
-                            <li><Link to='/judicial'>Judiciales</Link></li>
-                            <li><Link to='/notario'>Notario</Link></li>
-                            
-                        </ul>
-                    </div>
+
                     <div>
                         <h4>Legal</h4>
                         <ul>
@@ -54,7 +47,7 @@ export const Footer = ()=>{
                     <div>
                         <h4>Contacto</h4>
                         <ul>
-                            <li><Link to="/"><p><FontAwesomeIcon icon={faPhone} size='1x'  className='fa-iconx'/> 01 800 902 3456</p></Link></li>
+                            <li><Link to="/"><p><FontAwesomeIcon icon={faPhone} size='1x'  className='fa-iconx'/> 800 902 3456</p></Link></li>
                             <li><Link to="/"><p><FontAwesomeIcon icon={faLocationDot} size='1x' className='fa-iconx'/> 9 oficinas en todo el país</p></Link></li>
                             <li><Link to="mailto:atencion@impulsaasesores.mx"><p><FontAwesomeIcon icon={faEnvelope} size='1x' className='fa-iconx'/><span> atencion@impulsaasesores.mx</span></p></Link></li>
                         </ul>
@@ -72,7 +65,7 @@ export const Footer = ()=>{
 
             <div className='footer-lower-content'>
                 <div className='footer-lower-content-foot'>
-                    <p>© 2020 Impulsa Fianzas. Todos los derechos reservados</p>
+                    <p>© {getCurrentYear()} Impulsa Fianzas. Todos los derechos reservados</p>
                     <div className='footer-social'>
                         <FontAwesomeIcon icon={faFacebook} size='2x' />
                         <FontAwesomeIcon icon={faInstagram} size='2x' />

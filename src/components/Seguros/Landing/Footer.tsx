@@ -6,6 +6,7 @@ import seLogo from '../../../assets/seguros/seguros-logo.png';
 import appStore from '../../../assets/general/appstore.png';
 import playStore from  '../../../assets/general/playstore.png';
 import { Link } from 'react-router-dom';
+import { getCurrentYear, getYearsFromYear } from '../../../utils/CurrencyFormatter';
 
 export const Footer = ()=>{
     function onShowContactForm () {
@@ -30,7 +31,7 @@ export const Footer = ()=>{
                 <div className='footer-upper-content-container'>
                     <div>
                         <img src={seLogo} className='logo'></img>
-                        <p>Más de 20 años de experiencia.</p>
+                        <p>Más de { getYearsFromYear(2013)} años de experiencia.</p>
                     </div>
                     <div>
                         <h4>Productos</h4>
@@ -53,7 +54,7 @@ export const Footer = ()=>{
                     <div>
                         <h4>Contacto</h4>
                         <ul>
-                            <li><Link to="/"><p><FontAwesomeIcon icon={faPhone} size='1x'  className='fa-iconx'/>800 902 3456</p></Link></li>
+                            <li><Link to="/"><p><FontAwesomeIcon icon={faPhone} size='1x'  className='fa-iconx'/> 800 902 3456</p></Link></li>
                             <li><Link to="/seguros/oficinas"><p><FontAwesomeIcon icon={faLocationDot} size='1x' className='fa-iconx'/> 9 oficinas en todo el país</p></Link></li>
                             <li><Link to="mailto:atencion@impulsaasesores.mx"><p><FontAwesomeIcon icon={faEnvelope} size='1x' className='fa-iconx'/><span> atencion@impulsaasesores.mx</span></p></Link></li>
                         </ul>
@@ -71,7 +72,7 @@ export const Footer = ()=>{
 
             <div className='footer-lower-content'>
                 <div className='footer-lower-content-foot'>
-                    <p>© 2020 Impulsa Fianzas. Todos los derechos reservados</p>
+                    <p>© {getCurrentYear()} Impulsa Fianzas. Todos los derechos reservados</p>
                     <div className='footer-social'>
                         <FontAwesomeIcon icon={faFacebook} size='2x' />
                         <FontAwesomeIcon icon={faInstagram} size='2x' />

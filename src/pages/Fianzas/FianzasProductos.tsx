@@ -66,7 +66,7 @@ export const FianzasProductos = () => {
                     <div className="whatis-right">
                         <div>
                             <h2>¿Qué es una fianza?</h2>
-                            <p> Las fianzas son contratos que garantizan el cumplimiento de obligaciones entre dos partes, principalmente derivadas de otros contratos, convenios o leyes; las cuales deban ser garantizadas por su seguridad y confianza mutua.  <br/>Existen diferentes tipos de fianzas dependiendo de la obligación que se desee garantizar.                                
+                            <p> Las fianzas son contratos que garantizan el cumplimiento de obligaciones entre dos partes, principalmente derivadas de otros contratos, convenios o leyes; las cuales deban ser garantizadas por su seguridad y confianza mutua.  <br/><br/>Existen diferentes tipos de fianzas dependiendo de la obligación que se desee garantizar.                                
                             </p>
                         </div>
                     </div>
