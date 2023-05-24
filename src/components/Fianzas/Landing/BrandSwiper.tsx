@@ -26,7 +26,7 @@ export default () => {
     
     <Swiper
         modules={[Autoplay]}
-        slidesPerView={5}
+        slidesPerView={7}
         speed={1500}
         loop={true}
         autoplay={ {delay: 500, waitForTransition: true }}
