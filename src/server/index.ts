@@ -22,6 +22,7 @@ const io = new Server(httpServer, {
 
 httpServer.listen(port, function (){
     console.log('Socket server started at port ' + port);
+    console.log(`${import.meta.env.BASE_URL}`);
 });
 
 

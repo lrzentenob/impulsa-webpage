@@ -3,7 +3,7 @@ import io from "socket.io-client";
 
 import "./css/ContactForm.css";
 
-const socket = io(import.meta.env.VITE_API_URL);
+const socket = io(`${import.meta.env.BASE_URL}:4076`);
 
 interface MessageData {
   id: string;

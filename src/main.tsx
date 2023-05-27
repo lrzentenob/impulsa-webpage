@@ -9,10 +9,6 @@ import ScrollToTop from './components/Fianzas/Landing/ScrollToTop'
 import { BackgroundImages } from './components/Fianzas/Landing/BackgroundImages'
 import { ModalHome } from './components/Fianzas/Landing/ModalHome'
 
-function onLoad (){
-  console.log(import.meta.env.BASE_URL);
-}
-onLoad();
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
