@@ -2,7 +2,6 @@
 import { faSquarePlus } from '@fortawesome/free-regular-svg-icons';
 import { faSquareMinus } from '@fortawesome/free-regular-svg-icons';
 
-import { Link } from "react-router-dom";
 import { Footer } from "../../components/Fianzas/Landing/Footer";
 import { Header } from "../../components/Fianzas/Landing/Header";
 import { Submenu } from "../../components/Fianzas/Landing/Submenu";
@@ -16,12 +15,17 @@ export const FianzasRequisitos = () => {
 
     const [showItemOne, setShowItemOne] = useState<boolean>(true);
     const [showItemTwo, setShowItemTwo] = useState<boolean>(false);
+    const [showEmailInput1, setShowEmailInput1] = useState<boolean>(false);
+    const [showEmailInput2, setShowEmailInput2] = useState<boolean>(false);
 
     function onShowHideItemOne() {
         setShowItemOne(!showItemOne);
     }
     function onShowHideItemTwo() {
         setShowItemTwo(!showItemTwo);
+    }
+    function onShowEmailInput () {
+
     }
 
 
@@ -79,8 +83,8 @@ export const FianzasRequisitos = () => {
                             <li>Acta de Matrimonio (En caso de ser Casado), Identificación con Fotografía (INE) del Cónyuge.</li>
                         </ol>
                         <div className="actions">
-                            <button className="btn-fianzas">Imprimir</button>
-                            <button className="btn-fianzas">Enviar por correo</button>
+                            <a className="btn-fianzas" href="/clientes-nuevo-ingreso-2023-pmoral.pdf" target="_blank">Imprimir</a>
+                            <button className="btn-fianzas" onClick={onShowEmailInput}>Enviar por correo</button>
                         </div>
                     </div>
                     :   <div className="requisitos-col mid">
@@ -126,7 +130,7 @@ export const FianzasRequisitos = () => {
                         </ol>
 
                     <div className="actions">
-                        <button className="btn-fianzas">Imprimir</button>
+                        <a href='/clientes-nuevo-ingreso-2023-pfisica.pdf' target="_blank" className="btn-fianzas">Imprimir</a>
                         <button className="btn-fianzas">Enviar por correo</button>
                     </div>
                     </div>
@@ -135,7 +139,6 @@ export const FianzasRequisitos = () => {
                     </div>
                     
                     }
-
 
 
                 </div>
@@ -147,4 +150,16 @@ export const FianzasRequisitos = () => {
 
         </>
     );
+}
+
+async function onSendEmail() {
+
+}
+
+function EmailInputForm () {
+    <div className='email-input-form'>
+        
+        <input type='text' placeholder='...ingresa una direccion de correo'></input>
+        <button onClick={onSendEmail}>Enviar</button>
+    </div>
 }
