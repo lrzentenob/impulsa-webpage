@@ -1,7 +1,8 @@
 import './css/Base.css';
 import './css/CentralSlider.css';
 import fiGirlBk from '../../../assets/fianzas/fianzas-girl-home.png';
-import slide2girl from '../../../assets/fianzas/slider/slide2-girl.png';
+import sliderRequisitos from '../../../assets/fianzas/fianzas-slider-requisitos.png';
+import sliderExpertosEnElRamo from '../../../assets/fianzas/fianzas-slider-expertos.png';
 import slide3girl from '../../../assets/fianzas/slider/slide3-girl.png';
 import curvedBk from '../../../assets/general/curved-background.png';
 
@@ -63,7 +64,7 @@ export const CentralSlider = () => {
                             </div>
                             <div className='right-div'>
                                 <div className='curved-bk-img'>
-                                    <img src={fiGirlBk} alt='fianzas girl' className='girl-img'/>
+                                    <img src={sliderRequisitos} alt='fianzas girl' className='girl-img'/>
                                     <img src={curvedBk} alt='curved background' className='curvedbk-img'/>
                                 </div>
 
@@ -109,7 +110,7 @@ export const CentralSlider = () => {
                             </div>
                             <div className='right-div'>
                                 <div className='curved-bk-img'>
-                                    <img src={fiGirlBk} alt='fianzas girl' className='girl-img'/>
+                                    <img src={sliderExpertosEnElRamo} alt='fianzas girl' className='girl-img'/>
                                     <img src={curvedBk} alt='curved background' className='curvedbk-img'/>
                                 </div>
 

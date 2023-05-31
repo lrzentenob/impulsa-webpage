@@ -2,7 +2,8 @@
 import { Autoplay } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import seBrand01 from '../../../assets/seguros/brands/ALLIANZ.png';
+
+import seBrand01 from '../../../assets/seguros/brands/ANA.png';
 import seBrand02 from '../../../assets/seguros/brands/ZURICH.png';
 import seBrand03 from '../../../assets/seguros/brands/TOKIOMARINE.png';
 import seBrand04 from '../../../assets/seguros/brands/THONA.png';
@@ -28,9 +29,6 @@ import seBrand23 from '../../../assets/seguros/brands/AXXA.png';
 import seBrand24 from '../../../assets/seguros/brands/ARGOS.png';
 import seBrand25 from '../../../assets/seguros/brands/AIG.png';
 import seBrand26 from '../../../assets/seguros/brands/AFIRME.png';
-import seBrand27 from '../../../assets/seguros/brands/ACE.png';
-import seBrand28 from '../../../assets/seguros/brands/ABA.png';
-
 
 
 // Import Swiper styles
@@ -73,8 +71,8 @@ export default () => {
       <SwiperSlide><div className='brand-container'><img src={seBrand24}></img></div></SwiperSlide>
       <SwiperSlide><div className='brand-container'><img src={seBrand25}></img></div></SwiperSlide>
       <SwiperSlide><div className='brand-container'><img src={seBrand26}></img></div></SwiperSlide>
-      <SwiperSlide><div className='brand-container'><img src={seBrand27}></img></div></SwiperSlide>
-      <SwiperSlide><div className='brand-container'><img src={seBrand28}></img></div></SwiperSlide>
+    
+      
 
     </Swiper>
   );

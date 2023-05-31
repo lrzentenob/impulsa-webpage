@@ -6,6 +6,9 @@ import { Submenu } from "../../components/Fianzas/Landing/Submenu";
 import './css/FianzasCotizacion.css';
 import { RangeSlider } from "../../components/Fianzas/Landing/RangeSlider";
 import { formatLocalCurrency } from "../../utils/CurrencyFormatter";
+import { EmailInputForm } from "../../components/Fianzas/Landing/EmailSendingForm";
+import api from "../../api/api";
+
 
 
 export const FianzasCotizacion = () => {
@@ -13,6 +16,7 @@ export const FianzasCotizacion = () => {
 
     const [viciosOcultos,setViciosOcultos] = useState<boolean>(false);
     const [amount, setAmount] = useState('');
+    const [showEmailSendingForm, setShowEmailSendingForm] = useState<boolean>(true);
 
     const valuesUpfront = [0,10,15,20,25,30,35,40,45,50,55,60]
     const [minUpfront] = useState(0);
@@ -201,6 +205,33 @@ Licitacion Total
         recalculateForm();
     },[amount,upfront,accomplish, term, bid])
 
+    function onShowHideEmailSendingForm() {
+        setShowEmailSendingForm(!showEmailSendingForm);
+    }
+
+    async function onSendEmail(inputEmailParam:string, onSetSpinnerHandler: any, onSentEmailHanlder: any){
+        const fromEmail = 'Impulsa Fianzas<fianzas@impulsaasesores.mx>';
+        const toEmail = inputEmailParam;
+        const templateId = 'd-284e44ee113040b3ae1a194643aa7d94' /// plantilla Cotizacion
+
+        try {
+            onSetSpinnerHandler( true);
+            const apiRes = await api.post(`/sendemail?fromEmail=${fromEmail}&toEmail=${toEmail}&templateId=${templateId}`);
+            onSetSpinnerHandler( false);
+            onSentEmailHanlder(true);
+            
+        }
+        catch(e){
+
+            onSetSpinnerHandler( false);
+            alert('Se produjo un error al intentar enviar el correo...')
+        }
+
+    }
+    function onCancel (){
+        setShowEmailSendingForm(false);
+    }
+
 
     return (
         <>
@@ -373,12 +404,15 @@ Licitacion Total
                         <tr>
                             <td data-cell="full" className="td-left"><b>Total</b></td>
                             <td data-cell="limited" className="td-right"><b>{formatLocalCurrency(licTotal)}</b></td>
-
                         </tr>
-
                     </table>
                     </div>}
 
+                    
+                <div className="email-form-container">
+                    <button className="btn-fianzas" onClickCapture={onShowHideEmailSendingForm}>Enviar por correo </button>
+                    { showEmailSendingForm && <EmailInputForm sendEmailHandler={onSendEmail} cancelHandler={onCancel}/>}
+                </div>
                 </div>
             </section>
             <Footer />

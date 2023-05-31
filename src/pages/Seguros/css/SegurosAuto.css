@@ -94,7 +94,7 @@
 
 /* Table section on the page*/
 .seguros-auto .table-area {
-    max-width: 800px;
+    max-width: var(--maximum-width);
     margin: auto;
     margin-bottom: 2em;
 }

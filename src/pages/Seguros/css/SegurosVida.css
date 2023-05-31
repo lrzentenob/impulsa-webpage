@@ -25,6 +25,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
+}
+.seguros-vida .paragraph ul {
+    list-style-position: inside;
 }
 .seguros-vida .paragraph h1,
 .seguros-vida .paragraph h2 {
@@ -58,8 +62,9 @@
 .seguros-vida .floating-portrait .lg {
     width: 500px;
 }
+
 .seguros-vida .floating-portrait .seguros-vida-icon {
-    margin: 6em 8em;
+    margin: 5em 6em;
 }
 .seguros-vida .floating-portrait .seguros-vida-portrait {
     position: absolute;

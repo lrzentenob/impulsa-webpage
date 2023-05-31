@@ -12,6 +12,7 @@
     animation-name: fadeIn;
     animation-duration: 0.4s;
     text-align: center;
+    z-index: 9999;
   }
 
 /* Modal Content */

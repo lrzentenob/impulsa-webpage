@@ -163,7 +163,7 @@ export const SegurosAuto = () =>{
                     <div className="option">
                         <img src={seSegurosAutoOption04}></img>
                         <h4>Modalidades de pago</h4>
-                        <p>Paga como tú quieras, a 3, 6 9 o 12 MSI según la compañía que deseas o puedes fraccionar tus pagos.</p>
+                        <p>Paga como tú quieras, a 3, 6, 9 o 12 MSI según la compañía que deseas o puedes fraccionar tus pagos.</p>
                     </div>
 
                 </div>

@@ -50,8 +50,8 @@ export const SegurosSoyCliente = () => {
                                 <h2>Descarga nuestra APP móvil Impulsa To Go</h2>
                                 <p>Puedes descargarla desde App Store (para dispositivos iPhone o iPad) o bien, desde Google Play (para dispositivos Android).</p>
                                 <div className="appstore-container">
-                                    <img src={appStore}></img>
-                                    <img src={playStore}></img>
+                                    <Link to='https://apps.apple.com/us/app/impulsa-to-go/id1633313375' target="_blank"><img src={appStore}></img></Link>
+                                    <Link to='https://play.google.com/store/apps/details?id=mx.impulsaasesores.togo' target="_blank"><img src={playStore}></img></Link>
                                 </div>
                             </div>
 

@@ -179,3 +179,11 @@
 .fianzas-quote td,th {
   border: 2px solid var(--clr-orange);
 }
+
+.fianzas-quote .email-form-container {
+  max-width: 600px;
+  margin: auto;
+}
+.fianzas-quote .email-form-container button {
+  margin-bottom: 1em;
+}

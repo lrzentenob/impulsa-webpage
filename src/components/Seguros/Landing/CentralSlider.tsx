@@ -84,7 +84,7 @@ export const CentralSlider = () => {
                             <div className='home-intro'>
                                 <h1>Descarga nuestra App</h1>
                                 
-                                <p>In proident sint ad nostrud consequat. Consectetur in occaecat velit adipisicing incididunt aliquip.</p>
+                                <p>Podrás reportar de inmediato tu siniestro. Conoce los beneficios de contratar tu seguro con nosotros.</p>
                                 <div className='buttons-array'>
                                     <Link className='btn-seguros' to='/seguros/soycliente' >Ver Más</Link>
                                     {/* <a className='btn-fianzas-outline' href='/requisitos'>Requisitos</a>

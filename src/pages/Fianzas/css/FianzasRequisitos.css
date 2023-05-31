@@ -47,36 +47,3 @@
     font-weight: var(--fw-regular);
 }
 
-
-.email-input-form {
-    width: 100%;
-    padding: 1em;
-    height: 170px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    border: 1px solid var(--clr-orange);  
-    border-radius: 4px;
-    
-}
-
-.email-input-form .buttons {
-    width: 300px;
-    display: flex;
-    justify-content: space-evenly;
-}
-.email-input-form button {
-    width: 120px
-}
-.email-input-form button:disabled {
-    color: gray;
-    border: 1px solid gray;
-}
-.email-input-form input[type="text"] {
-    
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    
-}
-
