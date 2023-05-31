@@ -3,7 +3,7 @@ import io from "socket.io-client";
 
 import "./css/ContactForm.css";
 
-const socket = io(`${import.meta.env.BASE_URL}:4076`);
+const socket = io(`${import.meta.env.VITE_API_URL}`);
 
 interface MessageData {
   id: string;
@@ -119,22 +119,8 @@ const [chatStarted, setChatStarted] = useState(false);
   return (
     <div id="chat-window-component" className="chat-modal-window">
       <div className="chat-content">
-        {!isConnected && 
-          <>
-            <div className="chat-content-form">
-              <div className="chat-header">
-              <p>Bienvenido al chat de Impulsa Asesores!</p>
-                <span className="chat-close" onClick={onCloseModalWindow}>&times;</span>
-              </div>
-                <div className="chat-body-login">
-                    <div className="input-container">
-                      <h3>Mil disculpas, el chat no esta disponible
-                      </h3>
-                </div>
-              </div>
-            </div>
-          </>}
-        {!chatStarted && isConnected &&
+        
+        {!chatStarted &&
           <div className="chat-content-form">
           <div className="chat-header">
             <p>Bienvenido al chat de Impulsa Asesores!</p>
@@ -148,7 +134,7 @@ const [chatStarted, setChatStarted] = useState(false);
               </div>
               <div className="input-container">
                 <h3>Sala de chat</h3>
-                <input type="text" placeholder="Seguros, Fianzas, Consultoria, Riesgos" value={room} onChange={(e:any) =>setRoom(e.target.value)}></input>
+                <input type="text" placeholder="Seguros, Fianzas, Consultoría, Riesgos" value={room} onChange={(e:any) =>setRoom(e.target.value)}></input>
               </div>
               <button className="btn2" onClick={()=>{ setChatStarted(true)}} disabled={!user}>Iniciar Chat</button>
           </div>  
@@ -175,8 +161,7 @@ const [chatStarted, setChatStarted] = useState(false);
                 <div className="chat-info-users">
                   <h3>Usuarios</h3>
                   <ul>
-                    <li>Andrea</li>
-                    <li>{user}</li>
+                    <li>{user} { isConnected ? 'ok': '...'}</li>
                   </ul>
                 </div>
               </div>

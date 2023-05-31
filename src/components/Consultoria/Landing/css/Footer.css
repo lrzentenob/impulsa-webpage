@@ -12,6 +12,7 @@
     line-height: 1.5em;
     max-width: 400px;
 }
+
 .footer-consult .service-title p {
     color: var(--clr-gray-font);
 }
@@ -100,11 +101,13 @@
     font-size: 12px;
 }
 
-.footer-consult .footer-social{
+.footer-consult .footer-social {
     display: flex;
     width: 250px;
     justify-content: space-between;
     font-size: 12px;
+    
+}
+.footer-consult .footer-social a {
     color: var(--clr-emerald);
 }
-

@@ -148,7 +148,7 @@ const [chatStarted, setChatStarted] = useState(false);
               </div>
               <div className="input-container">
                 <h3>Sala de chat</h3>
-                <input type="text" placeholder="Seguros, Fianzas, Consultoria, Riesgos" value={room} onChange={(e:any) =>setRoom(e.target.value)}></input>
+                <input type="text" placeholder="Seguros, Fianzas, Consultoría, Riesgos" value={room} onChange={(e:any) =>setRoom(e.target.value)}></input>
               </div>
               <button className="btn2" onClick={()=>{ setChatStarted(true)}} disabled={!user}>Iniciar Chat</button>
           </div>  

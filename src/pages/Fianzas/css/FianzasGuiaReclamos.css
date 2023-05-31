@@ -87,13 +87,11 @@
     color: var(--clr-gray-font);
 }
 
-
  .text-titles-container {
     min-height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;    
-    
 }
 
  .text-titles-container .case1 {
@@ -101,6 +99,7 @@
     justify-content: space-around;
     max-width: 700px;
     margin: auto;
+    
 }
 
 .text-titles-container h2 {
@@ -133,7 +132,34 @@
     text-align: justify;
 }
 
+.guia-reclamos .table-container {
+    width: 100%;
+    margin: 1em auto;
+}
 
+.guia-reclamos table {
+    border-collapse: collapse;
+    width: 100%;
+    color: var(--clr-gray-font);
+    font-size: var(--fs-mm);
+  }
+.guia-reclamos th {
+    border: 1px solid gray;
+}
+.guia-reclamos td {
+    border: 1px solid gray;
+    font-size: var(--fs-sm);
+    line-height: 1.5em;
+    
+}
+
+.guia-reclamos td .ol-container {
+    margin-left: 1em;
+    height: 380px;
+}
+.guia-reclamos td .height2 {
+    height: 320px;
+}
 
 
 .text-footer-notes {

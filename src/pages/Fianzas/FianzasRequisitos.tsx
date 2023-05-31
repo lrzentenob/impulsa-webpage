@@ -9,12 +9,15 @@ import './css/Base.css';
 import './css/FianzasRequisitos.css';
 import curvedImageBk from '../../assets/general/curved-background.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import api from '../../api/api';
+import { Spinner } from '../../components/Fianzas/Landing/Spinner';
+
 
 export const FianzasRequisitos = () => {
 
     const [showItemOne, setShowItemOne] = useState<boolean>(true);
-    const [showItemTwo, setShowItemTwo] = useState<boolean>(false);
+    const [showItemTwo, setShowItemTwo] = useState<boolean>(true);
     const [showEmailInput1, setShowEmailInput1] = useState<boolean>(false);
     const [showEmailInput2, setShowEmailInput2] = useState<boolean>(false);
 
@@ -24,8 +27,66 @@ export const FianzasRequisitos = () => {
     function onShowHideItemTwo() {
         setShowItemTwo(!showItemTwo);
     }
-    function onShowEmailInput () {
 
+    function onShowEmailInput1 () {
+        setShowEmailInput1(true);        
+    }
+    function onShowEmailInput2 () {
+        setShowEmailInput2(true);
+       
+    }
+
+    async function onSendEmailTypeA( inputEmailParam:string, onSetSpinnerHandler: any, onSentEmailHanlder: any) {
+
+        const fromEmail = 'Impulsa Fianzas<fianzas@impulsaasesores.mx>';
+        const toEmail = inputEmailParam;
+        const templateId = 'd-f798bfa3491641a58c144770338966f1' /// plantilla Personal Moral
+
+        try {
+            onSetSpinnerHandler( true);
+            const apiRes = await api.post(`/sendemail?fromEmail=${fromEmail}&toEmail=${toEmail}&templateId=${templateId}`);
+            console.log(apiRes.data);
+            onSetSpinnerHandler( false);
+            onSentEmailHanlder(true);
+            
+        }
+        catch(e){
+            console.log(e);
+            onSetSpinnerHandler( false);
+            alert('Se produjo un error al intentar enviar el correo...')
+        }
+    
+    }
+
+    function onCancelSend1  () {
+        setShowEmailInput1(false);
+    }
+
+    async function onSendEmailTypeB(inputEmailParam:string,onSetSpinnerHandler: any, onSentEmailHanlder: any) {
+        
+        const fromEmail = 'Impulsa Fianzas<fianzas@impulsaasesores.mx>';
+        const toEmail = inputEmailParam;
+        const templateId = 'd-0965dd6435d24a6893a8bc7678ebbd48'
+
+        try {
+            onSetSpinnerHandler( true);
+            const apiRes = await api.post(`/sendemail?fromEmail=${fromEmail}&toEmail=${toEmail}&templateId=${templateId}`);
+            console.log(apiRes.data);
+            onSetSpinnerHandler( false);
+            onSentEmailHanlder(true);
+            
+        }
+        catch(e){
+            console.log(e);
+            onSetSpinnerHandler( false);
+            alert('Se produjo un error al intentar enviar el correo...')
+        }
+
+
+
+    }
+    function onCancelSend2  () {
+        setShowEmailInput2(false);
     }
 
 
@@ -34,7 +95,7 @@ export const FianzasRequisitos = () => {
         <Header />
         <Submenu />
         <section className="fianzas-requisitos">
-
+        
             <div className="curved-titled">
                     <div className="h-container">   
                         <h1 className="title-text">Requisitos</h1>
@@ -84,8 +145,9 @@ export const FianzasRequisitos = () => {
                         </ol>
                         <div className="actions">
                             <a className="btn-fianzas" href="/clientes-nuevo-ingreso-2023-pmoral.pdf" target="_blank">Imprimir</a>
-                            <button className="btn-fianzas" onClick={onShowEmailInput}>Enviar por correo</button>
+                            <button className="btn-fianzas" onClick={onShowEmailInput1} disabled={showEmailInput1}>Enviar por correo</button>
                         </div>
+                        {showEmailInput1 &&<EmailInputForm sendEmailHandler={onSendEmailTypeA} cancelHandler={onCancelSend1} />}
                     </div>
                     :   <div className="requisitos-col mid">
 
@@ -131,8 +193,9 @@ export const FianzasRequisitos = () => {
 
                     <div className="actions">
                         <a href='/clientes-nuevo-ingreso-2023-pfisica.pdf' target="_blank" className="btn-fianzas">Imprimir</a>
-                        <button className="btn-fianzas">Enviar por correo</button>
+                        <button className="btn-fianzas" onClickCapture={onShowEmailInput2}>Enviar por correo </button>
                     </div>
+                        {showEmailInput2 && <EmailInputForm sendEmailHandler={onSendEmailTypeB} cancelHandler={onCancelSend2} />}
                     </div>
                     :                    
                     <div className="requisitos-col mid">
@@ -152,14 +215,44 @@ export const FianzasRequisitos = () => {
     );
 }
 
-async function onSendEmail() {
 
-}
 
-function EmailInputForm () {
+const EmailInputForm: React.FC<{ sendEmailHandler: any, cancelHandler:any}> =( { sendEmailHandler, cancelHandler}) => {
+    const [ emailOk, setEmailOk] = useState(false);
+    const [ inputEmail, setInputEmail] = useState('');
+    const [spinnerOn, setSpinnerOn] = useState<boolean>(false);
+    const [sentEmail, setSentEmail] = useState(false);
+
+    const inputRef = useRef<any>();
+
+    useEffect( ()=>{
+        if( inputRef.current )
+            inputRef.current.focus()
+    },[])
+    useEffect( ()=> {
+        const emailRegex = new RegExp( /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/);
+        const emailMatch = inputEmail.match(emailRegex);
+        if( emailMatch  ){
+            setEmailOk(true);
+        } else {
+            setEmailOk(false);
+        }
+    },[inputEmail])
+
+    function onSendEmail(){
+        sendEmailHandler(inputEmail,setSpinnerOn, setSentEmail);
+    }
+
+    return (
     <div className='email-input-form'>
         
-        <input type='text' placeholder='...ingresa una direccion de correo'></input>
-        <button onClick={onSendEmail}>Enviar</button>
+        <input type='text' placeholder='...ingresa una direccion de correo' ref={inputRef} disabled={sentEmail} value={inputEmail} onChange={ (e)=>setInputEmail(e.target.value)} ></input>
+        { sentEmail ? <p>&#9989; Correo enviado!</p> :
+        <div className='buttons'>
+            <button onClick={ onSendEmail} disabled={!emailOk} className='btn-fianzas-outline'>Enviar</button>
+            <button className='btn-fianzas' onClick={cancelHandler}>Cancelar</button>
+             { spinnerOn && <Spinner />}
+        </div>}
     </div>
-}
+        
+)}

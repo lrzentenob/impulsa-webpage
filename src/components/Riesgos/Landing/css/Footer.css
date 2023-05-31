@@ -100,11 +100,13 @@
     font-size: 12px;
 }
 
-.footer-riesgos .footer-social{
+.footer-riesgos .footer-social {
     display: flex;
     width: 250px;
     justify-content: space-between;
     font-size: 12px;
+    
+}
+.footer-riesgos .footer-social a {
     color: var(--clr-gold);
 }
-

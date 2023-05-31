@@ -3,6 +3,7 @@ import seMap from '../../../assets/seguros/map-seguros.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 export const Branches = () => {
     
@@ -14,7 +15,7 @@ export const Branches = () => {
             </div>
             <div className='branches-lower-content'>
                 <div className='branches-detail'>
-                    <img src={seMap} alt='mapa de sucursales'></img>
+                    <Link to='/seguros/oficinas'><img src={seMap} alt='mapa de sucursales'></img></Link>
                 </div>
                 <div className='branches-detail vertical-centered'>
                     <ul>

@@ -21,7 +21,7 @@ export const ProductsInfo = () =>{
                     <Link to='/seguros/vida'>
                         <div className='product-detail'>
                             <img src={seVidaAhorro}></img>
-                            <h5>Vida y accidentes personales</h5>
+                            <h5>Vida y Accidentes Personales</h5>
                             <p>Protege económicamente a los familiares del asegurado en caso de fallecimiento.</p>
                         </div>
                     </Link>
@@ -43,7 +43,7 @@ export const ProductsInfo = () =>{
                     <Link to='/seguros/hogar'>
                         <div className='product-detail'>
                             <img src={seDanosInmuebles}></img>
-                            <h5>Hogar y empresariales</h5>
+                            <h5>Hogar y Empresariales</h5>
                             <p>Asegura tu patrimonio contra robo y desastres naturales.</p>
                         </div>
                     </Link>

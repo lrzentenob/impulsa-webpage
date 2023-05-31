@@ -1,4 +1,4 @@
-import { faFacebook, faInstagram,faTwitter, faGoogle, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram,faTwitter, faGoogle, faWhatsapp, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import './css/Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faLocationDot} from '@fortawesome/free-solid-svg-icons'
@@ -62,8 +62,8 @@ export const Footer = ()=>{
                     <div>
                         <p>Descarga nuestra aplicación móvil</p>
                         <ul>
-                            <li><Link to=''><img src={appStore} className='store'></img></Link></li>
-                            <li><Link to='https://play.google.com/store/apps/details?id=mx.impulsaasesores.togo'><img src={playStore} className='store'></img></Link></li>
+                            <li><Link to='https://apps.apple.com/us/app/impulsa-to-go/id1633313375' target='_blank'><img src={appStore} className='store'></img></Link></li>
+                            <li><Link to='https://play.google.com/store/apps/details?id=mx.impulsaasesores.togo' target='_blank'><img src={playStore} className='store'></img></Link></li>
                         </ul>
                     </div>
                 </div>
@@ -74,11 +74,12 @@ export const Footer = ()=>{
                 <div className='footer-lower-content-foot'>
                     <p>© {getCurrentYear()} Impulsa Fianzas. Todos los derechos reservados</p>
                     <div className='footer-social'>
-                        <FontAwesomeIcon icon={faFacebook} size='2x' />
-                        <FontAwesomeIcon icon={faInstagram} size='2x' />
-                        <FontAwesomeIcon icon={faTwitter} size='2x' />
-                        <FontAwesomeIcon icon={faGoogle} size='2x' />
-                        <FontAwesomeIcon icon={faWhatsapp} size='2x' />
+                    <Link to='https://www.facebook.com/impulsa.asesores.mx' target='_blank'><FontAwesomeIcon icon={faFacebook} size='2x' /></Link>
+                        <Link to='https://www.instagram.com/impulsa_asesores/?hl=es' target='_blank'><FontAwesomeIcon icon={faInstagram} size='2x' /></Link>
+                        <Link to='https://twitter.com/ImpulsaAsesores' target='_blank'><FontAwesomeIcon icon={faTwitter} size='2x' /></Link>
+                        <Link to='https://www.tiktok.com/@impulsaasesoresmx' target='_blank'><FontAwesomeIcon icon={faTiktok} size='2x' /></Link>
+                        <Link to='https://www.google.com/search?q=Impulsa-asesores' target='_blank'><FontAwesomeIcon icon={faGoogle} size='2x' /></Link>
+                        <Link to='https://wa.link/m6wvk3' target='_blank'><FontAwesomeIcon icon={faWhatsapp} size='2x' /></Link>
                     </div>
                 </div>
             </div>

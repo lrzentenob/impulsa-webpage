@@ -61,7 +61,7 @@ export const ModalHome = () => {
                     <Link to='/consultoria' onClick={onGoTo}>
                     <div className='modalhome-banner-box banner-box-consultoria'>
                         <img src={iconCo}></img>
-                        <h1>Consultoria</h1>
+                        <h1>Consultoría</h1>
                         <p>Nuestros expertos te dan la mano para buscar soluciones, resolver tus dudas y orientarte en lo que tú o tu empresa necesitan.</p>
                     </div>
                     </Link>

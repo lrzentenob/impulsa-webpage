@@ -286,49 +286,6 @@ Licitacion Total
                         </div>}
 
                     </div>
-                    {/* {amount && tipoFianza === 'anticipo' &&
-                    <div className="scorecard">
-                            <h2>Fianza Anticipo/Cumplimiento Total: {formatLocalCurrency(totalFianza)}</h2>
-                            <hr></hr>
-                        <div>
-                            
-                            <p>Monto Anticipo: {formatLocalCurrency(montoAnticipo)}</p>
-                            <p>Prima Neta Anticipo: {formatLocalCurrency(primaNetaAnticipo)}</p>
-                            <p>Derechos Anticipo: {formatLocalCurrency(derechoAnticipo)}</p>
-                            <p>Gastos Expedicion Anticipo: {formatLocalCurrency(gastoExpAnticipo)}</p>
-                            <p>Anticipo Subtotal: {formatLocalCurrency(anticipoSubt)}</p>
-                            <p>Anticipo IVA: {formatLocalCurrency(anticipoIva)}</p>
-                            <h3>Anticipo Total: {formatLocalCurrency(anticipoTotal)}</h3>
-                            <hr></hr>
-                        </div>
-                        <div>
-                            <p>Monto Cumplimiento: {formatLocalCurrency(montoCump)}</p>
-                            <p>Prima Neta Cumplimiento: {formatLocalCurrency(primaNetaCump)}</p>
-                            <p>Derechos Cumplimiento: {formatLocalCurrency(derechosCump)}</p>
-                            <p>Gastos Exp Cumplimiento: {formatLocalCurrency(gastosExpCump)}</p>
-                            <p>Cumplimiento Sub: {formatLocalCurrency(cumpSubtotal)}</p>
-                            <p>Cumplimiento IVA: {formatLocalCurrency(cumpIva)}</p>
-                            <h3>Cumplimiento Total: {formatLocalCurrency(cumpTotal)}</h3>
-                            <hr></hr>                            
-                        </div>
-                    </div>}
-
-                    {amount && tipoFianza === 'licitacion' &&
-                    <div className="scorecard">
-                            <h2>Fianza Licitacion Total: {formatLocalCurrency(licTotal)}</h2>
-                            <hr></hr>
-                        <div>
-                            <p>Monto Licitacion: {formatLocalCurrency(montoLiciation)}</p>
-                            <p>Prima Neta Licitación: {formatLocalCurrency(primaNetaLic)}</p>
-                            <p>Derechos Licitación: {formatLocalCurrency(derechosLic)}</p>
-                            <p>Gastos Expedicion Licitación: {formatLocalCurrency(gastosExpLic)}</p>
-                            <p>Licitación Subtotal: {formatLocalCurrency(licSubtotal)}</p>
-                            <p>Licitación IVA: {formatLocalCurrency(licIva)}</p>
-                            <h3>Licitación Total: {formatLocalCurrency(licTotal)}</h3>
-                            <hr></hr>
-                        </div>
-
-                    </div>} */}
 
                     { amount && tipoFianza === 'anticipo' &&
                     <div className="table-container">
