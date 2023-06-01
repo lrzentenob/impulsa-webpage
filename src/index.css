@@ -67,8 +67,9 @@ a {
 section {
   max-width: var(--maximum-width);
   margin: auto;
-  
+  padding-top: var(--section-padding-top); 
 }
+
 #root {
   overflow: hidden;
 }

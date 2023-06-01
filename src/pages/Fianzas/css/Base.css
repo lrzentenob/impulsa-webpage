@@ -1,9 +1,16 @@
+
 section {
+  border: 2px dotted gray;
+}
+
+@media screen and (min-width: 980px) {
+  section {
     padding-top: var(--section-padding-top);
     padding-left: 1em;
     padding-bottom: 1em;
     padding-right: 1em;
     overflow: hidden;
+    
 }
 
 .tipo-fianza-content {
@@ -11,7 +18,8 @@ section {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    min-height: 500px; 
+    min-height: 500px;
+     
   }
 
   .tipo-fianza-box {
@@ -20,6 +28,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
     
   }
   
@@ -65,4 +74,7 @@ section {
         position: absolute;
         left: -1.2em;
         font-weight: var(--fw-bold);
+}
+
+
 }
