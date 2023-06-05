@@ -45,6 +45,8 @@ export const FianzasGuiaReclamos = () => {
             <Header />
             <Submenu />
             <section className="guia-reclamos">
+
+                
                 <div className="guiareclamos-content">
                 
                     <div className="row">

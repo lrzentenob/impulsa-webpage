@@ -12,9 +12,13 @@ export const FianzasCancelacion = () => {
             <Submenu />
             <section className="tipo-fianza">
                 <div className="tipo-fianza-content">
-                    <div className="tipo-fianza-box left-box-tipo-fianza">
-                        <img src={fiCancelacion} className="fianza-tipo-photo"></img>
-                        <img src={fiCurveBk} className="fianza-tipo-curved-image"></img>
+                    <div className="tipo-fianza-box">
+
+                        <div className="img-bk-container">
+                            <img className="curved-bk" src={fiCurveBk}></img>
+                            <img className="rounded-image" src={fiCancelacion}></img>
+                        </div>
+
                     </div>
                     <div className="tipo-fianza-box">
                         <h2>Cancela tu Fianza</h2>
@@ -23,17 +27,15 @@ export const FianzasCancelacion = () => {
                             <br/>
                             Para ello contamos con las siguientes opciones:
                             <br/><br/>
+                            </p>
                             <ol>
-                                <li><strong>Acta de – Recepción</strong></li>
-                                <li><strong>Carta del beneficiario dando por terminada y cumplida la obligación afianzada</strong></li>
-                                <li><strong>Facturas y depósitos (Estados de Cuenta), reflejando la amortización del anticipo afianzado</strong></li>
+                                <strong><li>Acta de – Recepción</li></strong>
+                                <strong><li>Carta del beneficiario dando por terminada y cumplida la obligación afianzada</li></strong>
+                                <strong><li>Facturas y depósitos (Estados de Cuenta), reflejando la amortización del anticipo afianzado</li></strong>
                             </ol>
 
-                         
 
-
-
-                        </p>
+                        
                     </div>
                 </div>
             </section>

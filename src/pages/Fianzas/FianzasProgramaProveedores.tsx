@@ -5,7 +5,6 @@ import { Submenu } from "../../components/Fianzas/Landing/Submenu";
 import fiGuiaReclamos from '../../assets/fianzas/fianzas-programa-proveedores.png';
 import fiGuiaReclamosP from '../../assets/fianzas/fianzas-programa-proveedores-img.png';
 import fiCurvedBk from '../../assets/general/curved-background.png';
-import { Link } from "react-router-dom";
 
 export const FianzasProgramaProveedores = () => {
     return (
@@ -43,7 +42,6 @@ export const FianzasProgramaProveedores = () => {
                     </div>            
                 </div>
 
-
                 <div className="row">
                     <div className="text-note">
                         <h2>Para lograr eso, hacemos la siguiente labor</h2>                        
@@ -53,10 +51,7 @@ export const FianzasProgramaProveedores = () => {
                             <li><b>Tramitamos la fianza y se las entregamos para que ustedes continúen con el control.</b></li><br/>
                             <li><b>En caso de reclamación, apoyamos en el proceso de reclamación.</b></li><br/>
                         </ul>
-                        
-
-
-
+                       
                     </div>
                 </div>
 

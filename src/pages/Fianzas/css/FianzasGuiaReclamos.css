@@ -1,9 +1,9 @@
+
 .guiareclamos-content {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 1em;
-    
+    padding: 1em;   
 }
 
 .guiareclamos-content h1,
@@ -13,7 +13,6 @@
 
 .guiareclamos-content .row {
     margin-bottom: 1em;
-
     display: flex;
     flex-wrap: wrap;
 }
@@ -82,9 +81,12 @@
     color: var(--clr-gray-font);
     line-height: 1.8em;
     font-weight: var(--fw-regular);
+    list-style-position: inside;
+    text-align: justify;
 }
 .guiareclamos-content .row .text-note ul {
     color: var(--clr-gray-font);
+    margin-left: 1em;   
 }
 
  .text-titles-container {
@@ -96,36 +98,45 @@
 
  .text-titles-container .case1 {
     display: flex;
-    justify-content: space-around;
-    max-width: 700px;
+    flex-wrap: wrap ;
+    justify-content: space-between;
     margin: auto;
+    padding: 1em;
     
 }
 
 .text-titles-container h2 {
     color: var(--clr-blue);
-    width: 600px;
+    max-width: 600px;
     text-align: center;
+    padding: 1em;
 }
 .text-titles-container .actions {
-    width: 400px;
+    max-width: 400px;
     display: flex;
     justify-content: space-between;
+    
+}
+.text-titles-container .actions a {
+    margin: auto 1em;
 }
 
 .text-titles-container .case2 {
     display: flex;
+    flex-wrap: wrap;
     padding: 1em;
     margin: auto;
+    width: 100%;
 }
 .text-titles-container .case2 h2,
 .text-titles-container .case2 p{
-    
     max-width: 500px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     line-height: 1.8em;
+    
 }
 .text-titles-container .case2 p {
     color: var(--clr-gray-font);
@@ -135,6 +146,7 @@
 .guia-reclamos .table-container {
     width: 100%;
     margin: 1em auto;
+    
 }
 
 .guia-reclamos table {
@@ -156,15 +168,15 @@
 .guia-reclamos td .ol-container {
     margin-left: 1em;
     height: 380px;
+    
 }
 .guia-reclamos td .height2 {
     height: 320px;
 }
 
-
 .text-footer-notes {
     max-width: 700px;
-    margin: auto;
+    margin: auto; 
     height: 120px;
     color: var(--clr-gray-font);
     line-height: 1.8em;
@@ -172,4 +184,21 @@
 .text-footer-notes a {
     color: var(--clr-orange);
     text-decoration: underline;
+}
+
+
+
+@media screen and (max-width: 550px) { 
+    .guiareclamos-content .row .logo-curvebk {
+        height: 280px;
+    }
+    .guiareclamos-content .row .paragraph .top {
+        left: 0;
+    }
+    .guiareclamos-content .row .paragraph .mid {
+        left: 0;
+    }
+    .text-footer-notes {
+        margin: 1em;
+    }
 }

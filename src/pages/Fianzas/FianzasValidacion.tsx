@@ -25,7 +25,6 @@ export const FianzasValidacion = () => {
                         </div>
                     </div>
 
-
                     <div className="fianza-valid-paragraph">
                         <h1>Valida tu fianza</h1>
                         <p>Verifica la autenticidad y vigencia de tus pólizas de fianzas, accediendo a nuestro listado de validación por afianzadora. Garantiza tranquilidad y seguridad en tus operaciones.</p>

@@ -38,6 +38,11 @@
   list-style-position: inside;
   line-height: 1.8em;
 }
+.tipo-fianza-box ol {
+  text-align: left;
+  list-style-position: inside;
+  line-height: 2em;
+}
 
 @media screen and (min-width: 980px) {
   .tipo-fianza-content {

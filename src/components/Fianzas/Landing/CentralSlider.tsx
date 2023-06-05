@@ -15,6 +15,7 @@ import { Autoplay, Navigation } from 'swiper';
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { getYearsFromYear } from '../../../utils/CurrencyFormatter';
 
 export const CentralSlider = () => {
     function onShowContactForm () {
@@ -101,7 +102,7 @@ export const CentralSlider = () => {
                                 <div className='home-intro'>
                                     <h1>Expertos en el ramo afianzador</h1>
                                     
-                                    <p>Con más de 41 años de experiencia usted recibirá siempre la mejor asesoría del mercado.</p>
+                                    <p>Con más de {getYearsFromYear(1981)} años de experiencia usted recibirá siempre la mejor asesoría del mercado.</p>
                                     <div className='buttons-array'>
                                         <Link className='btn-fianzas' to='/fianzas/oficinas'>Ubícanos</Link>                            
                                     </div>

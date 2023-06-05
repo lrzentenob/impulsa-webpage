@@ -9,7 +9,3 @@
 .tipo-fianza-box li p {
     text-align: left;
 }
-.tipo-fianza-box ol {
-    list-style: none;
-    counter-reset: item;
-}
