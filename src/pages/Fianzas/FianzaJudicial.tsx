@@ -12,9 +12,12 @@ export const FianzaJudicial = () => {
             <section className="tipo-fianza">
                 <div className="tipo-fianza-content">
 
-                    <div className="tipo-fianza-box left-box-tipo-fianza">
-                        <img src={fiTipoJudicial} className="fianza-tipo-photo"></img>
-                        <img src={fiCurveBk} className="fianza-tipo-curved-image"></img>
+                    <div className="tipo-fianza-box">
+                        <div className="img-bk-container">
+                            <img className="rounded-image" src={fiTipoJudicial}></img>
+                            <img className="curved-bk" src={fiCurveBk}></img>
+                        </div>
+
                     </div>
                     <div className="tipo-fianza-box">
                         <h1>Fianzas Judiciales:</h1>

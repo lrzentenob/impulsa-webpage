@@ -70,7 +70,7 @@ export const SegurosGastosMedicos = () => {
                     <li>Maternidad</li>
                     <li>Servicios de asistencia médica</li>
                     <li>Medicamentos, estudios y análisis</li>
-                    <li>Eliminación de deducible por accidenteMuerte colectiva</li>
+                    <li>Eliminación de deducible por accidente</li>
                     <li>Emergencia en el extranjero</li>
                     <li>Indemnización por hospitalización</li>
                     <li>Indemnización por cáncer</li>

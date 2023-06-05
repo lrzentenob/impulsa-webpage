@@ -169,7 +169,7 @@ Licitacion Total
         MontoCumplimiento = MontoCumplimiento < 1700 ? 1700 : MontoCumplimiento;
         setMontoCump(MontoCumplimiento);
         console.log(term + 12)
-        let PrimaNetaCumplimento = viciosOcultos ? ((MontoCumplimiento / 12)*(term + 12)*0.012) : MontoCumplimiento * 0.012;
+        let PrimaNetaCumplimento = viciosOcultos ? ((MontoCumplimiento / 12)*(term + 12)) : MontoCumplimiento * 0.012;
 
         PrimaNetaCumplimento = PrimaNetaCumplimento < 1700 ? 1700 : PrimaNetaCumplimento;
         setPrimaNetaCump(PrimaNetaCumplimento);
@@ -324,7 +324,7 @@ Licitacion Total
                         <tr>
                             <th className="th-left">Concepto</th>
                             <th className="th-mid">Anticipo</th>
-                            <th className="th-right">Cumplimiento</th>
+                            <th className="th-right">{ !viciosOcultos ? 'Cumplimiento' : 'Cumplimiento y VO'}</th>
                         </tr>
                         <tr>
                             <td data-cell="full"><b>Monto Fianza</b></td>
