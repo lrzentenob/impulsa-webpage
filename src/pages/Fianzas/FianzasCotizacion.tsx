@@ -16,7 +16,7 @@ export const FianzasCotizacion = () => {
 
     const [viciosOcultos,setViciosOcultos] = useState<boolean>(false);
     const [amount, setAmount] = useState('');
-    const [showEmailSendingForm, setShowEmailSendingForm] = useState<boolean>(true);
+    const [showEmailSendingForm, setShowEmailSendingForm] = useState<boolean>(false);
 
     const valuesUpfront = [0,10,15,20,25,30,35,40,45,50,55,60]
     const [minUpfront] = useState(0);
@@ -166,12 +166,18 @@ Licitacion Total
         setAnticipoTotal( AnticipoSubtotal * 1.16);
 
         let MontoCumplimiento = MontoContrato * (accomplish /100)
-        MontoCumplimiento = MontoCumplimiento < 1700 ? 1700 : MontoCumplimiento;
+        // MontoCumplimiento = MontoCumplimiento < 1700 ? 1700 : MontoCumplimiento;
         setMontoCump(MontoCumplimiento);
-        console.log(term + 12)
-        let PrimaNetaCumplimento = viciosOcultos ? ((MontoCumplimiento / 12)*(term + 12)) : MontoCumplimiento * 0.012;
 
-        PrimaNetaCumplimento = PrimaNetaCumplimento < 1700 ? 1700 : PrimaNetaCumplimento;
+        let MontoMinimo = 0;
+        if( viciosOcultos ){
+            let montoMinimoTmp = MontoCumplimiento * 0.012;
+            MontoMinimo = montoMinimoTmp < 1700 ? 1700 : montoMinimoTmp;
+        }
+        primaNetaTmp = viciosOcultos ? ( (MontoMinimo/12)*(term +12) ) : MontoCumplimiento * 0.012 
+
+        let PrimaNetaCumplimento = primaNetaTmp < 1700 ? 1700 : primaNetaTmp;
+
         setPrimaNetaCump(PrimaNetaCumplimento);
 
         const DerechosCumplimiento = PrimaNetaCumplimento * 0.035;

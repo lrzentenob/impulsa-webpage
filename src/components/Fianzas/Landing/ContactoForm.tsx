@@ -46,8 +46,8 @@ export const ContactoForm = () => {
       try {
           setSpinnerOn( true);
           const apiRes = await api.post(`/sendemail?fromEmail=${fromEmail}&toEmail=${toEmail}&templateId=${templateId}`,{
-            contactoDe: "",
-            contactoMensaje: ""
+            Remitente_Contacto: name,
+            Mensaje_Contacto: comment
           });
           setSpinnerOn( false);
           setIsSent(true); 
