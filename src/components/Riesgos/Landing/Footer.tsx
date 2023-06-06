@@ -47,7 +47,7 @@ export const Footer = ()=>{
                     <div>
                         <h4>Legal</h4>
                         <ul>
-                            <li><Link to="/">Aviso de privacidad</Link></li>
+                            <li><Link to="/avisoprivacidad.pdf" target='_blank'>Aviso de privacidad</Link></li>
                             {/* <li><Link to="/">Términos</Link></li>
                             <li><Link to="/">Condiciones</Link></li> */}
                         </ul>

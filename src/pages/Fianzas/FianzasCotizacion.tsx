@@ -222,7 +222,24 @@ Licitacion Total
 
         try {
             onSetSpinnerHandler( true);
-            const apiRes = await api.post(`/sendemail?fromEmail=${fromEmail}&toEmail=${toEmail}&templateId=${templateId}`);
+            const apiRes = await api.post(`/sendemail?fromEmail=${fromEmail}&toEmail=${toEmail}&templateId=${templateId}`,{
+                Monto_Contrato: `${formatLocalCurrency(parseFloat(amount))}`,
+                Ant_Monto: `${formatLocalCurrency(parseFloat(amount)*(upfront/100))}`,
+                Cum_Monto: `${formatLocalCurrency(parseFloat(amount)*(accomplish/100))}`,
+                Ant_Prima: `${formatLocalCurrency(primaNetaAnticipo)}`,
+                Cum_Prima: `${formatLocalCurrency(primaNetaCump)}`,
+                Ant_Derechos: `${formatLocalCurrency(derechoAnticipo)}`,
+                Cum_Derechos: `${formatLocalCurrency(derechosCump)}`,
+                Ant_Gastos: `${formatLocalCurrency(gastoExpAnticipo)}`,
+                Cum_Gastos: `${formatLocalCurrency(gastosExpCump)}`,
+                Ant_SubTotal: `${formatLocalCurrency(anticipoSubt)}`,
+                Cum_SubTotal: `${formatLocalCurrency(cumpSubtotal)}`,
+                Ant_IVA: `${formatLocalCurrency(anticipoIva)}`,
+                Cum_IVA: `${formatLocalCurrency(cumpIva)}`,
+                Ant_Total: `${formatLocalCurrency(anticipoTotal)}`,
+                Cum_Total: `${formatLocalCurrency(cumpTotal)}`,
+                Costo_Total: `${formatLocalCurrency(totalFianza)}`
+            });
             onSetSpinnerHandler( false);
             onSentEmailHanlder(true);
             
