@@ -41,7 +41,7 @@ export const FianzasValidacion = () => {
                         <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> <Link to=''>Afianzadora Berkley</Link></p></li>
                         <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> <Link to=''>Fianzas Doroma</Link></p></li>
                         <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> <Link to=''>Zurich Fianzas de Mexico</Link></p></li>
-                        <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> <Link to=''>Fudicia</Link></p></li>
+                        <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> <Link to=''>Fiducia</Link></p></li>
                         <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> <Link to=''>Afianzadora Cescemex</Link> </p></li>
                         <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> <Link to=''>Chubb México</Link></p></li>
                         <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> <Link to=''>Afianzadora Mapfre</Link></p></li>
