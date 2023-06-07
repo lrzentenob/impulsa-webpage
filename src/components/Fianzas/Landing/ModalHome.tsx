@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquarePlus } from '@fortawesome/free-regular-svg-icons';
 import { faSquareMinus } from '@fortawesome/free-regular-svg-icons';
 import { Link } from 'react-router-dom';
+import { getYearsFromYear } from '../../../utils/CurrencyFormatter';
 
 export const ModalHome = () => {
 
@@ -32,7 +33,7 @@ export const ModalHome = () => {
                 <div className='modalhome-title-content'>
                     <img src={impulsaLogo} className='modalhome-logo'></img>
                     <h1 className='title-shadow'>¡Siempre cerca de ti!</h1>
-                    <p>Bienvenido a Impulsa Fianzas, contamos con 37 años de experiencia en el ramo afianzador.</p>
+                    <p>Bienvenido a Impulsa Fianzas, contamos con {getYearsFromYear(1981)} años de experiencia en el ramo afianzador.</p>
                 </div>
                 
                 
