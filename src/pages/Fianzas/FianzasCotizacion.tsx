@@ -218,27 +218,45 @@ Licitacion Total
     async function onSendEmail(inputEmailParam:string, onSetSpinnerHandler: any, onSentEmailHanlder: any){
         const fromEmail = 'Impulsa Fianzas<fianzas@impulsaasesores.mx>';
         const toEmail = inputEmailParam;
-        const templateId = 'd-284e44ee113040b3ae1a194643aa7d94' /// plantilla Cotizacion
+
+        let templateId: string = 'd-284e44ee113040b3ae1a194643aa7d94' // default template Anticipo
+        let templateBody:any = {
+            Monto_Contrato: `${formatLocalCurrency(parseFloat(amount))}`,
+            Ant_Monto: `${formatLocalCurrency(parseFloat(amount)*(upfront/100))}`,
+            Cum_Monto: `${formatLocalCurrency(parseFloat(amount)*(accomplish/100))}`,
+            Ant_Prima: `${formatLocalCurrency(primaNetaAnticipo)}`,
+            Cum_Prima: `${formatLocalCurrency(primaNetaCump)}`,
+            Ant_Derechos: `${formatLocalCurrency(derechoAnticipo)}`,
+            Cum_Derechos: `${formatLocalCurrency(derechosCump)}`,
+            Ant_Gastos: `${formatLocalCurrency(gastoExpAnticipo)}`,
+            Cum_Gastos: `${formatLocalCurrency(gastosExpCump)}`,
+            Ant_SubTotal: `${formatLocalCurrency(anticipoSubt)}`,
+            Cum_SubTotal: `${formatLocalCurrency(cumpSubtotal)}`,
+            Ant_IVA: `${formatLocalCurrency(anticipoIva)}`,
+            Cum_IVA: `${formatLocalCurrency(cumpIva)}`,
+            Ant_Total: `${formatLocalCurrency(anticipoTotal)}`,
+            Cum_Total: `${formatLocalCurrency(cumpTotal)}`,
+            Costo_Total: `${formatLocalCurrency(totalFianza)}` }
+
+        if( tipoFianza === 'licitacion'){
+            templateId = 'd-5ba91a39a85b438ca7ebb09a5f233e96'; // template para Licitacion
+            templateBody = {
+                Monto_Contrato: `${formatLocalCurrency(parseFloat(amount))}`,
+                Monto_Licitacion: `${formatLocalCurrency(montoLiciation)}`,
+                Prima_Licitacion: `${formatLocalCurrency(primaNetaLic)}`,
+                Derechos_Licitacion: `${formatLocalCurrency(derechosLic)}`,
+                GastosExp_Licitacion: `${formatLocalCurrency(gastosExpLic)}`,
+                Subtotal_Licitacion: `${formatLocalCurrency(licSubtotal)}`,
+                IVA_Licitacion: `${formatLocalCurrency(licIva)}`,
+                Total_Licitacion: `${formatLocalCurrency(licTotal)}`
+            }
+        }
+
 
         try {
             onSetSpinnerHandler( true);
             const apiRes = await api.post(`/sendemail?fromEmail=${fromEmail}&toEmail=${toEmail}&templateId=${templateId}`,{
-                Monto_Contrato: `${formatLocalCurrency(parseFloat(amount))}`,
-                Ant_Monto: `${formatLocalCurrency(parseFloat(amount)*(upfront/100))}`,
-                Cum_Monto: `${formatLocalCurrency(parseFloat(amount)*(accomplish/100))}`,
-                Ant_Prima: `${formatLocalCurrency(primaNetaAnticipo)}`,
-                Cum_Prima: `${formatLocalCurrency(primaNetaCump)}`,
-                Ant_Derechos: `${formatLocalCurrency(derechoAnticipo)}`,
-                Cum_Derechos: `${formatLocalCurrency(derechosCump)}`,
-                Ant_Gastos: `${formatLocalCurrency(gastoExpAnticipo)}`,
-                Cum_Gastos: `${formatLocalCurrency(gastosExpCump)}`,
-                Ant_SubTotal: `${formatLocalCurrency(anticipoSubt)}`,
-                Cum_SubTotal: `${formatLocalCurrency(cumpSubtotal)}`,
-                Ant_IVA: `${formatLocalCurrency(anticipoIva)}`,
-                Cum_IVA: `${formatLocalCurrency(cumpIva)}`,
-                Ant_Total: `${formatLocalCurrency(anticipoTotal)}`,
-                Cum_Total: `${formatLocalCurrency(cumpTotal)}`,
-                Costo_Total: `${formatLocalCurrency(totalFianza)}`
+               ...templateBody
             });
             onSetSpinnerHandler( false);
             onSentEmailHanlder(true);
