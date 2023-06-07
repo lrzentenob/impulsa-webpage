@@ -11,6 +11,7 @@ export const formatLocalCurrency = (numero: number) => {
           case 'currency': return '$' ;
           default: return value;
       }
+      
   }).reduce((string, part) => string + part);
 
   return numberString;
