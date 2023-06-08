@@ -19,7 +19,7 @@ export const ContactoForm = () => {
     }
     const emailFromPath = () =>{
       const pathName = window.location.pathname;
-
+      
       if(  pathName.indexOf('fianzas') > -1 )
         return "Impulsa Asesores<fianzas@impulsaasesores.mx>"
       if(  pathName.indexOf('seguros') > -1 )
@@ -83,7 +83,7 @@ export const ContactoForm = () => {
               </span>
             </div>
             <div className="chat-body-login">
-              {isSent && <h3>Muchas gracias por contactarnos, un ejecutivo te llamará a la brevedad!</h3>}
+              {isSent && <h3>Muchas gracias por contactarnos, se envio un correo a {email}un ejecutivo te llamará a la brevedad!</h3>}
               { !isSent &&
                 <>
               <div className="input-container">
