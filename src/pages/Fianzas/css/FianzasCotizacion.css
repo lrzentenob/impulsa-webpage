@@ -187,3 +187,18 @@
 .fianzas-quote .email-form-container button {
   margin-bottom: 1em;
 }
+
+.fianzas-quote .table-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+  .fianzas-quote .table-desktop {
+      display: none;
+  }
+  .fianzas-quote .table-mobile {
+      display: table;
+      margin-bottom: 1em;
+  }
+}

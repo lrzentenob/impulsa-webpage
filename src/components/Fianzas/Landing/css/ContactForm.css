@@ -13,6 +13,7 @@
     animation-duration: 0.4s;
     text-align: center;
     z-index: 9999;
+    
   }
 
 /* Modal Content */
@@ -24,6 +25,7 @@
   -webkit-animation-duration: 0.4s;
   animation-name: slideIn;
   animation-duration: 0.4s;
+  
 }
 
 .chat-content-form {
@@ -31,6 +33,7 @@
   margin: auto;
   border-radius: 10px;
   overflow: hidden;
+  
 }
 
 /* The Close Button */
@@ -39,6 +42,7 @@
   float: right;
   font-size: 28px;
   font-weight: bold;
+  
 }
 
 .chat-close:hover,
@@ -119,7 +123,7 @@
 .chat-body-login .input-container{
   padding: 1rem;
   margin: auto;
-  
+  width: 100%;
 }
 
 .chat-body {
@@ -173,8 +177,12 @@
   justify-content: space-around;  
   background-color: #ff5100;
 }
+.chat-footer .input-container{
+  width: 500px;
+}
+
 .input-container{
-  width: 400px;
+  max-width: 500px;
 }
 .input-container input, textarea {
   border-radius: 50px;
@@ -182,7 +190,9 @@
   width: 100%;
   padding: 15px;
   border: none;
+  
 }
+
 .input-container textarea{
   height: 6rem;
   border-radius: 10px;

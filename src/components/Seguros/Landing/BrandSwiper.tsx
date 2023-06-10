@@ -42,7 +42,8 @@ export default () => {
         slidesPerView={7}
         speed={1500}
         loop={true}
-        autoplay={ {delay: 500, waitForTransition: true }}
+        allowTouchMove={true}
+        autoplay={ {delay: 500, waitForTransition: true, disableOnInteraction: false }}
       className='brandswiper-seguros'
     >
       <SwiperSlide><div className='brand-container'><img src={seBrand01}></img></div></SwiperSlide>

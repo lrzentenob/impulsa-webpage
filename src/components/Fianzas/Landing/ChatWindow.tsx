@@ -161,13 +161,12 @@ const [chatStarted, setChatStarted] = useState(false);
                 <div className="chat-info-users">
                   <h3>Usuarios</h3>
                   <ul>
-                    <li>{user} { isConnected ? 'ok': '...'}</li>
+                    <li>{user}</li>
                   </ul>
                 </div>
               </div>
             </div>
             <div className="chat-body-col chat-body-right" id="#conversation-container-node">
-
 
 
             </div>

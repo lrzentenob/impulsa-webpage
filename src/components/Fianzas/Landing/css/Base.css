@@ -53,6 +53,7 @@
   /*** Imagen con fondo curvo */
   .curved-bk-img{
     position: relative;
+   
   }
   .girl-img {
     position: absolute;
@@ -76,12 +77,15 @@
     left: -5em;
     width: 130%;
     z-index: -999;
+    
   }
+  
   .curved-faded {
     position: absolute;
     top: 4em;
     right: 0;
     z-index: -9999;
+    
 }
 .girl-img-size2 {
   position: absolute;
@@ -96,3 +100,13 @@
   }
 
 
+@media screen and (max-width: 500px) {
+  .curvedbk-img {
+    width: 300px;
+    left: 0em;
+  }
+  .auto-seguros-photo {
+    left: -5em;
+    top: 0;
+  }
+}

@@ -26,10 +26,11 @@ export default () => {
     
     <Swiper
         modules={[Autoplay]}
-        slidesPerView={7}
+        slidesPerView={6}
         speed={1500}
+        allowTouchMove={true}
         loop={true}
-        autoplay={ {delay: 500, waitForTransition: true }}
+        autoplay={{ delay: 500, disableOnInteraction: false } }
         className='brandswiper-fianzas'
     >
       <SwiperSlide><div className='brand-container'><img src={fiBrand01}></img></div></SwiperSlide>

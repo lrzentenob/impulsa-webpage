@@ -167,11 +167,7 @@
 
 .guia-reclamos td .ol-container {
     margin-left: 1em;
-    height: 380px;
     
-}
-.guia-reclamos td .height2 {
-    height: 320px;
 }
 
 .text-footer-notes {
@@ -187,6 +183,9 @@
 }
 
 
+.guia-reclamos .table-mobile {
+    display: none;
+}
 
 @media screen and (max-width: 550px) { 
     .guiareclamos-content .row .logo-curvebk {
@@ -201,4 +200,15 @@
     .text-footer-notes {
         margin: 1em;
     }
+
+    .guia-reclamos .table-desktop {
+        display: none;
+    }
+    .guia-reclamos .table-mobile {
+        display: table;
+        margin-bottom: 1em;
+    }
 }
+
+
+

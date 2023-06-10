@@ -152,7 +152,7 @@ Licitacion Total
         setMontoAnticipo( MontoAnticipo );
 
         let primaNetaTmp = MontoAnticipo * 0.012;
-        const PrimaNetaFinal = primaNetaTmp < 1700 ? 1700 : primaNetaTmp
+        const PrimaNetaFinal = primaNetaTmp < 1700 && primaNetaTmp ? 1700 : primaNetaTmp
 
         setPrimaNetaAnticipo( PrimaNetaFinal );
 
@@ -172,11 +172,11 @@ Licitacion Total
         let MontoMinimo = 0;
         if( viciosOcultos ){
             let montoMinimoTmp = MontoCumplimiento * 0.012;
-            MontoMinimo = montoMinimoTmp < 1700 ? 1700 : montoMinimoTmp;
+            MontoMinimo = montoMinimoTmp < 1700 && montoMinimoTmp ? 1700 : montoMinimoTmp;
         }
         primaNetaTmp = viciosOcultos ? ( (MontoMinimo/12)*(term +12) ) : MontoCumplimiento * 0.012 
 
-        let PrimaNetaCumplimento = primaNetaTmp < 1700 ? 1700 : primaNetaTmp;
+        let PrimaNetaCumplimento = primaNetaTmp < 1700 && primaNetaTmp ? 1700 : primaNetaTmp;
 
         setPrimaNetaCump(PrimaNetaCumplimento);
 
@@ -194,7 +194,7 @@ Licitacion Total
         setMontoLicitacion(MontoLicitacion);
 
         let PrimaNetaLicitacion =  MontoLicitacion * 0.03;
-        PrimaNetaLicitacion = PrimaNetaLicitacion < 1700 ? 1700 : PrimaNetaLicitacion;
+        PrimaNetaLicitacion = PrimaNetaLicitacion < 1700 && PrimaNetaLicitacion ? 1700 : PrimaNetaLicitacion;
         setPrimaNetLic(PrimaNetaLicitacion);
 
         const DerechosLicitacion = PrimaNetaLicitacion * 0.035;
@@ -361,7 +361,8 @@ Licitacion Total
 
                     { amount && tipoFianza === 'anticipo' &&
                     <div className="table-container">
-                    <table>
+
+                    <table className="table-desktop">
                         <tr>
                             <th className="th-left">Concepto</th>
                             <th className="th-mid">Anticipo</th>
@@ -408,8 +409,84 @@ Licitacion Total
                             <td data-cell="civil" className="td-right"><b>{formatLocalCurrency(totalFianza)}</b></td>
                         </tr>
 
+                    </table>
+
+                    <table className="table-mobile">
+                        <tr>
+                            <th className="th-left">Concepto</th>
+                            <th className="th-mid">Anticipo</th>
+                        </tr>
+                        <tr>
+                            <td data-cell="full"><b>Monto Fianza</b></td>
+                            <td data-cell="limited">{formatLocalCurrency(parseFloat(amount)*(upfront/100))}</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="full">Prima Neta</td>
+                            <td data-cell="limited">{formatLocalCurrency(primaNetaAnticipo)}</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="full">Derechos</td>
+                            <td data-cell="limited">{formatLocalCurrency(derechoAnticipo)}</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="full">Gastos Exp</td>
+                            <td data-cell="limited">{formatLocalCurrency(gastoExpAnticipo)}</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="full">Subtotal</td>
+                            <td data-cell="limited">{formatLocalCurrency(anticipoSubt)}</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="full" className="td-left">IVA</td>
+                            <td data-cell="limited">{formatLocalCurrency(anticipoIva)}</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="full" className="td-left"><b>Total</b></td>
+                            <td data-cell="limited"><b>{formatLocalCurrency(anticipoTotal)}</b></td>
+                        </tr>
 
                     </table>
+
+                    <table className="table-mobile">
+                        <tr>
+                            <th className="th-left">Concepto</th>
+                            <th className="th-right">{ !viciosOcultos ? 'Cumplimiento' : 'Cumplimiento y VO'}</th>
+                        </tr>
+                        <tr>
+                            <td data-cell="full"><b>Monto Fianza</b></td>
+                            <td data-cell="civil">{formatLocalCurrency(parseFloat(amount)*(accomplish/100))}</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="full">Prima Neta</td>
+                            <td data-cell="civil">{formatLocalCurrency(primaNetaCump)}</td>                            
+                        </tr>
+                        <tr>
+                            <td data-cell="full">Derechos</td>
+                            <td data-cell="civil">{formatLocalCurrency(derechosCump)}</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="full">Gastos Exp</td>
+                            <td data-cell="civil">{formatLocalCurrency(gastosExpCump)}</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="full">Subtotal</td>
+                            <td data-cell="civil">{formatLocalCurrency(cumpSubtotal)}</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="full" className="td-left">IVA</td>
+                            <td data-cell="civil" className="td-right">{formatLocalCurrency(cumpIva)}</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="full" className="td-left"><b>Total</b></td>
+                            <td data-cell="civil" className="td-right"><b>{formatLocalCurrency(cumpTotal)}</b></td>
+                        </tr>
+                        <tr>
+                            <td data-cell="full" className="td-left"><b>Costo Total de Fianzas</b></td>
+                            <td data-cell="civil" className="td-right"><b>{formatLocalCurrency(totalFianza)}</b></td>
+                        </tr>
+
+                    </table>
+
                     </div>}
                     { amount && tipoFianza === 'licitacion' &&
                     <div className="table-container">

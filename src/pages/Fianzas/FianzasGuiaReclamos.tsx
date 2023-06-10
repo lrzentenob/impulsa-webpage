@@ -109,149 +109,374 @@ export const FianzasGuiaReclamos = () => {
                 { showItemOne &&
                     <div className="table-container">
                     { !gobSwitchTableView ? 
-                        <table>
-                                <tr>
-                                    <th><b>Para Obra:</b></th>
-                                    <th>Anticipo</th>
-                                    <th>Cumplimiento</th>
-                                    <th>Buena Calidad</th>
-                                </tr>
-                                <tr>
-                                    <td>Producto</td>
-                                    <td>Anticipo (Sector Gobierno)</td>
-                                    <td>Cumplimiento (Sector Gobierno)</td>
-                                    <td>Buena Calidad (Sector Gobierno)</td>
-                                </tr>
-                                <tr>
-                                    <td>Plazo para presentar su reclamación:</td>
-                                    <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>
-                                    <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>
-                                    <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>                            
-                                </tr>
-                                <tr>
-                                    <td>Artículos de la Ley relacionados con su fianza:</td>
-                                    <td>Art. 95 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
-                                    <td>Art. 95 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
-                                    <td>Art. 95 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
-                                </tr>
-                                <tr>
-                                    <td>Documentación adicional para presentar su reclamación:</td>
-                                    <td>
-                                        <div className="ol-container">
-                                            <ol>
-                                                <li>Póliza de Fianza</li>
-                                                <li>Contrato de Obra y/o prestación de servicios ó el respectivo.</li>
-                                                <li>Documentación que se haya firmado al contrato a la recepción del anticipo, cheque póliza contable y estado de cuenta.</li>
-                                                <li>Documentos pagados por el Beneficiario donde se compruebe las amortizaciones realizadas.</li>
-                                                <li>Cuantificaron de los intereses respectivos.</li>
-                                                <li>Liquidación.</li>
-                                                <li>Peritaje y Bitácora.</li>
-                                                <li>Oficio de Remisión</li>
-                                            </ol>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div className="ol-container">
-                                            <ol>
-                                                <li>Póliza de Fianza</li>
-                                                <li>Contrato Garantizado.</li>
-                                                <li>Acta Circunstancia del estado general que guarda el contrato.</li>
-                                                <li>Documento de modificación al fiado del Incumplimiento ó la rescisión del contrato.</li>
-                                                <li>Liquidación.</li>
-                                                <li>Peritaje y Bitácoras.</li>
-                                                <li>Oficio de Remisión para Obra Pública.</li>
-                                            </ol>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div className="ol-container">
-                                            <ol>
-                                                <li>Póliza de Fianza</li>
-                                                <li>Contrato de Obra y/o prestación de servicios ó el respectivo.</li>
-                                                <li>Documento que acredite la existencia de Vicios Ocultos ó Defectos y cuantificación Peritaje.</li>
-                                                <li>Copia de algún escrito en el cual el beneficiario reclame al contratista ó prestador de servicios la reparación de los defectos ó vicios.</li>
-                                                <li>Peritaje que acredite la existencia de los Vicios Ocultos.</li>
-                                                <li>Liquidación.</li>
-                                                <li>Acta de Incumplimiento.</li>
-                                                <li>Oficio de Remisión</li>
-                                            </ol>
-                                        </div>
-                                    </td>
-                                </tr>
-                        </table>
+                        <>
+                            <table className="table-desktop">
+                                    <tr>
+                                        <th><b>Para Obra:</b></th>
+                                        <th>Anticipo</th>
+                                        <th>Cumplimiento</th>
+                                        <th>Buena Calidad</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Producto</td>
+                                        <td>Anticipo (Sector Gobierno)</td>
+                                        <td>Cumplimiento (Sector Gobierno)</td>
+                                        <td>Buena Calidad (Sector Gobierno)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Plazo para presentar su reclamación:</td>
+                                        <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>
+                                        <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>
+                                        <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>                            
+                                    </tr>
+                                    <tr>
+                                        <td>Artículos de la Ley relacionados con su fianza:</td>
+                                        <td>Art. 95 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
+                                        <td>Art. 95 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
+                                        <td>Art. 95 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Documentación adicional para presentar su reclamación:</td>
+                                        <td>
+                                            <div className="ol-container">
+                                                <ol>
+                                                    <li>Póliza de Fianza</li>
+                                                    <li>Contrato de Obra y/o prestación de servicios ó el respectivo.</li>
+                                                    <li>Documentación que se haya firmado al contrato a la recepción del anticipo, cheque póliza contable y estado de cuenta.</li>
+                                                    <li>Documentos pagados por el Beneficiario donde se compruebe las amortizaciones realizadas.</li>
+                                                    <li>Cuantificaron de los intereses respectivos.</li>
+                                                    <li>Liquidación.</li>
+                                                    <li>Peritaje y Bitácora.</li>
+                                                    <li>Oficio de Remisión</li>
+                                                </ol>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div className="ol-container">
+                                                <ol>
+                                                    <li>Póliza de Fianza</li>
+                                                    <li>Contrato Garantizado.</li>
+                                                    <li>Acta Circunstancia del estado general que guarda el contrato.</li>
+                                                    <li>Documento de modificación al fiado del Incumplimiento ó la rescisión del contrato.</li>
+                                                    <li>Liquidación.</li>
+                                                    <li>Peritaje y Bitácoras.</li>
+                                                    <li>Oficio de Remisión para Obra Pública.</li>
+                                                </ol>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div className="ol-container">
+                                                <ol>
+                                                    <li>Póliza de Fianza</li>
+                                                    <li>Contrato de Obra y/o prestación de servicios ó el respectivo.</li>
+                                                    <li>Documento que acredite la existencia de Vicios Ocultos ó Defectos y cuantificación Peritaje.</li>
+                                                    <li>Copia de algún escrito en el cual el beneficiario reclame al contratista ó prestador de servicios la reparación de los defectos ó vicios.</li>
+                                                    <li>Peritaje que acredite la existencia de los Vicios Ocultos.</li>
+                                                    <li>Liquidación.</li>
+                                                    <li>Acta de Incumplimiento.</li>
+                                                    <li>Oficio de Remisión</li>
+                                                </ol>
+                                            </div>
+                                        </td>
+                                    </tr>
+                            </table>
+                        
+                            <table className="table-mobile">
+                                    <tr>
+                                        <th><b>Para Obra:</b></th>
+                                        <th>Anticipo</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Producto</td>
+                                        <td>Anticipo (Sector Gobierno)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Plazo para presentar su reclamación:</td>
+                                        <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Artículos de la Ley relacionados con su fianza:</td>
+                                        <td>Art. 95 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Documentación adicional para presentar su reclamación:</td>
+                                        <td>
+                                            <div className="ol-container">
+                                                <ol>
+                                                    <li>Póliza de Fianza</li>
+                                                    <li>Contrato de Obra y/o prestación de servicios ó el respectivo.</li>
+                                                    <li>Documentación que se haya firmado al contrato a la recepción del anticipo, cheque póliza contable y estado de cuenta.</li>
+                                                    <li>Documentos pagados por el Beneficiario donde se compruebe las amortizaciones realizadas.</li>
+                                                    <li>Cuantificaron de los intereses respectivos.</li>
+                                                    <li>Liquidación.</li>
+                                                    <li>Peritaje y Bitácora.</li>
+                                                    <li>Oficio de Remisión</li>
+                                                </ol>
+                                            </div>
+                                        </td>
+                                    </tr>
+                            </table>
+                            
+                            <table className="table-mobile">
+                                    <tr>
+                                        <th><b>Para Obra:</b></th>
+                                        <th>Cumplimiento</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Producto</td>
+                                        <td>Cumplimiento (Sector Gobierno)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Plazo para presentar su reclamación:</td>
+                                        <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Artículos de la Ley relacionados con su fianza:</td>
+                                        <td>Art. 95 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Documentación adicional para presentar su reclamación:</td>
+                                        <td>
+                                            <div className="ol-container">
+                                                <ol>
+                                                    <li>Póliza de Fianza</li>
+                                                    <li>Contrato Garantizado.</li>
+                                                    <li>Acta Circunstancia del estado general que guarda el contrato.</li>
+                                                    <li>Documento de modificación al fiado del Incumplimiento ó la rescisión del contrato.</li>
+                                                    <li>Liquidación.</li>
+                                                    <li>Peritaje y Bitácoras.</li>
+                                                    <li>Oficio de Remisión para Obra Pública.</li>
+                                                </ol>
+                                            </div>
+                                        </td>
+                                    </tr>
+                            </table>
+
+                            <table className="table-mobile">
+                                    <tr>
+                                        <th><b>Para Obra:</b></th>
+                                        <th>Buena Calidad</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Producto</td>
+                                        <td>Buena Calidad (Sector Gobierno)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Plazo para presentar su reclamación:</td>
+                                        <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>                            
+                                    </tr>
+                                    <tr>
+                                        <td>Artículos de la Ley relacionados con su fianza:</td>
+                                        <td>Art. 95 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Documentación adicional para presentar su reclamación:</td>
+                                        <td>
+                                            <div className="ol-container">
+                                                <ol>
+                                                    <li>Póliza de Fianza</li>
+                                                    <li>Contrato de Obra y/o prestación de servicios ó el respectivo.</li>
+                                                    <li>Documento que acredite la existencia de Vicios Ocultos ó Defectos y cuantificación Peritaje.</li>
+                                                    <li>Copia de algún escrito en el cual el beneficiario reclame al contratista ó prestador de servicios la reparación de los defectos ó vicios.</li>
+                                                    <li>Peritaje que acredite la existencia de los Vicios Ocultos.</li>
+                                                    <li>Liquidación.</li>
+                                                    <li>Acta de Incumplimiento.</li>
+                                                    <li>Oficio de Remisión</li>
+                                                </ol>
+                                            </div>
+                                        </td>
+                                    </tr>
+                            </table>
+
+                        </>
+                        
                     :
-                        <table>
-                                <tr>
-                                    <th><b>Para Proveduría:</b></th>
-                                    <th>Anticipo</th>
-                                    <th>Cumplimiento</th>
-                                    <th>Buena Calidad</th>
-                                </tr>
-                                <tr>
-                                    <td>Producto</td>
-                                    <td>Anticipo (Sector Gobierno)</td>
-                                    <td>Cumplimiento (Sector Gobierno)</td>
-                                    <td>Buena Calidad (Sector Gobierno)</td>
-                                </tr>
-                                <tr>
-                                    <td>Plazo para presentar su reclamación:</td>
-                                    <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>
-                                    <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>
-                                    <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>                            
-                                </tr>
-                                <tr>
-                                    <td>Artículos de la Ley relacionados con su fianza:</td>
-                                    <td>Art. 95 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
-                                    <td>Art. 95 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
-                                    <td>Art. 95 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
-                                </tr>
-                                <tr>
-                                    <td>Documentación adicional para presentar su reclamación:</td>
-                                    <td>
-                                        <div className="ol-container">
-                                            <ol>
-                                                <li>Póliza de Fianza</li>
-                                                <li>Contrato de Obra y/o prestación de servicios ó el respectivo.</li>
-                                                <li>Documentación que se haya firmado al contrato a la recepción del anticipo, cheque póliza contable y estado de cuenta.</li>
-                                                <li>Documentos pagados por el Beneficiario donde se compruebe las amortizaciones realizadas.</li>
-                                                <li>Cuantificaron de los intereses respectivos.</li>
-                                                <li>Liquidación.</li>
-                                                <li>Peritaje y Bitácora.</li>
-                                                <li>Oficio de Remisión.</li>
-                                                <li>Acta de Incumplimiento.</li>
-                                            </ol>
-                                    </div>
-                                    </td>
-                                    <td>
-                                        <div className="ol-container">
-                                            <ol>
-                                                <li>Póliza de Fianza</li>
-                                                <li>Contrato Garantizado.</li>
-                                                <li>Acta Circunstancia del estado general que guarda el contrato.</li>
-                                                <li>Documento de modificación al fiado del Incumplimiento ó la rescisión del contrato.</li>
-                                                <li>Liquidación.</li>
-                                                <li>Peritaje y Bitácora.</li>
-                                                <li>Oficio de Remisión para Obra Pública.</li>
-                                                <li>Liquidación.</li>
-                                            </ol>
+                        <>
+                            <table className="table-desktop">
+                                    <tr>
+                                        <th><b>Para Proveduría:</b></th>
+                                        <th>Anticipo</th>
+                                        <th>Cumplimiento</th>
+                                        <th>Buena Calidad</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Producto</td>
+                                        <td>Anticipo (Sector Gobierno)</td>
+                                        <td>Cumplimiento (Sector Gobierno)</td>
+                                        <td>Buena Calidad (Sector Gobierno)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Plazo para presentar su reclamación:</td>
+                                        <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>
+                                        <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>
+                                        <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>                            
+                                    </tr>
+                                    <tr>
+                                        <td>Artículos de la Ley relacionados con su fianza:</td>
+                                        <td>Art. 95 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
+                                        <td>Art. 95 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
+                                        <td>Art. 95 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Documentación adicional para presentar su reclamación:</td>
+                                        <td>
+                                            <div className="ol-container">
+                                                <ol>
+                                                    <li>Póliza de Fianza</li>
+                                                    <li>Contrato de Obra y/o prestación de servicios ó el respectivo.</li>
+                                                    <li>Documentación que se haya firmado al contrato a la recepción del anticipo, cheque póliza contable y estado de cuenta.</li>
+                                                    <li>Documentos pagados por el Beneficiario donde se compruebe las amortizaciones realizadas.</li>
+                                                    <li>Cuantificaron de los intereses respectivos.</li>
+                                                    <li>Liquidación.</li>
+                                                    <li>Peritaje y Bitácora.</li>
+                                                    <li>Oficio de Remisión.</li>
+                                                    <li>Acta de Incumplimiento.</li>
+                                                </ol>
                                         </div>
-                                    </td>
-                                    <td>
-                                        <div className="ol-container">
-                                            <ol>
-                                                <li>Póliza de Fianza</li>
-                                                <li>Contrato Garantizado.</li>
-                                                <li>Documento que acredite la existencia de Vicios Ocultos ó Defectos y cuantificación Peritaje.</li>
-                                                <li>Copia de algún escrito en el cual el beneficiario reclame al contratista ó prestador de servicios la reparación de los defectos ó vicios.</li>
-                                                <li>Peritaje que acredite la existencia de los Vicios Ocultos.</li>
-                                                <li>Liquidación.</li>
-                                                <li>Acta de Incumplimiento</li>
-                                                <li>Oficio de Remisión.</li>
-                                            </ol>
+                                        </td>
+                                        <td>
+                                            <div className="ol-container">
+                                                <ol>
+                                                    <li>Póliza de Fianza</li>
+                                                    <li>Contrato Garantizado.</li>
+                                                    <li>Acta Circunstancia del estado general que guarda el contrato.</li>
+                                                    <li>Documento de modificación al fiado del Incumplimiento ó la rescisión del contrato.</li>
+                                                    <li>Liquidación.</li>
+                                                    <li>Peritaje y Bitácora.</li>
+                                                    <li>Oficio de Remisión para Obra Pública.</li>
+                                                    <li>Liquidación.</li>
+                                                </ol>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div className="ol-container">
+                                                <ol>
+                                                    <li>Póliza de Fianza</li>
+                                                    <li>Contrato Garantizado.</li>
+                                                    <li>Documento que acredite la existencia de Vicios Ocultos ó Defectos y cuantificación Peritaje.</li>
+                                                    <li>Copia de algún escrito en el cual el beneficiario reclame al contratista ó prestador de servicios la reparación de los defectos ó vicios.</li>
+                                                    <li>Peritaje que acredite la existencia de los Vicios Ocultos.</li>
+                                                    <li>Liquidación.</li>
+                                                    <li>Acta de Incumplimiento</li>
+                                                    <li>Oficio de Remisión.</li>
+                                                </ol>
+                                            </div>
+                                        </td>
+                                    </tr>
+                            </table>
+
+                            <table className="table-mobile">
+                                    <tr>
+                                        <th><b>Para Proveduría:</b></th>
+                                        <th>Anticipo</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Producto</td>
+                                        <td>Anticipo (Sector Gobierno)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Plazo para presentar su reclamación:</td>
+                                        <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Artículos de la Ley relacionados con su fianza:</td>
+                                        <td>Art. 95 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Documentación adicional para presentar su reclamación:</td>
+                                        <td>
+                                            <div className="ol-container">
+                                                <ol>
+                                                    <li>Póliza de Fianza</li>
+                                                    <li>Contrato de Obra y/o prestación de servicios ó el respectivo.</li>
+                                                    <li>Documentación que se haya firmado al contrato a la recepción del anticipo, cheque póliza contable y estado de cuenta.</li>
+                                                    <li>Documentos pagados por el Beneficiario donde se compruebe las amortizaciones realizadas.</li>
+                                                    <li>Cuantificaron de los intereses respectivos.</li>
+                                                    <li>Liquidación.</li>
+                                                    <li>Peritaje y Bitácora.</li>
+                                                    <li>Oficio de Remisión.</li>
+                                                    <li>Acta de Incumplimiento.</li>
+                                                </ol>
                                         </div>
-                                    </td>
-                                </tr>
-                        </table>
+                                        </td>
+                                    </tr>
+                            </table>
+
+                            <table className="table-mobile">
+                                    <tr>
+                                        <th><b>Para Proveduría:</b></th>
+                                        <th>Cumplimiento</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Producto</td>
+                                        <td>Cumplimiento (Sector Gobierno)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Plazo para presentar su reclamación:</td>
+                                        <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Artículos de la Ley relacionados con su fianza:</td>
+                                        <td>Art. 95 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Documentación adicional para presentar su reclamación:</td>
+                                        <td>
+                                            <div className="ol-container">
+                                                <ol>
+                                                    <li>Póliza de Fianza</li>
+                                                    <li>Contrato Garantizado.</li>
+                                                    <li>Acta Circunstancia del estado general que guarda el contrato.</li>
+                                                    <li>Documento de modificación al fiado del Incumplimiento ó la rescisión del contrato.</li>
+                                                    <li>Liquidación.</li>
+                                                    <li>Peritaje y Bitácora.</li>
+                                                    <li>Oficio de Remisión para Obra Pública.</li>
+                                                    <li>Liquidación.</li>
+                                                </ol>
+                                            </div>
+                                        </td>
+                                    </tr>
+                            </table>
+
+                            <table className="table-mobile">
+                                    <tr>
+                                        <th><b>Para Proveduría:</b></th>
+                                        <th>Buena Calidad</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Producto</td>
+                                        <td>Buena Calidad (Sector Gobierno)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Plazo para presentar su reclamación:</td>
+                                        <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>                            
+                                    </tr>
+                                    <tr>
+                                        <td>Artículos de la Ley relacionados con su fianza:</td>
+                                        <td>Art. 95 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Documentación adicional para presentar su reclamación:</td>
+                                        <td>
+                                            <div className="ol-container">
+                                                <ol>
+                                                    <li>Póliza de Fianza</li>
+                                                    <li>Contrato Garantizado.</li>
+                                                    <li>Documento que acredite la existencia de Vicios Ocultos ó Defectos y cuantificación Peritaje.</li>
+                                                    <li>Copia de algún escrito en el cual el beneficiario reclame al contratista ó prestador de servicios la reparación de los defectos ó vicios.</li>
+                                                    <li>Peritaje que acredite la existencia de los Vicios Ocultos.</li>
+                                                    <li>Liquidación.</li>
+                                                    <li>Acta de Incumplimiento</li>
+                                                    <li>Oficio de Remisión.</li>
+                                                </ol>
+                                            </div>
+                                        </td>
+                                    </tr>
+                            </table>
+
+
+                        </>
+
                     }
                 </div>}
 
@@ -272,136 +497,347 @@ export const FianzasGuiaReclamos = () => {
                 {   showItemTwo &&
                     <div className="table-container">
                 { !privSwitchTableView ? 
-                        <table>
-                                <tr>
-                                    <th><b>Para Obra:</b></th>
-                                    <th>Anticipo</th>
-                                    <th>Cumplimiento</th>
-                                    <th>Buena Calidad</th>
-                                </tr>
-                                <tr>
-                                    <td>Producto</td>
-                                    <td>Anticipo (Sector Privado)</td>
-                                    <td>Cumplimiento (Sector Privado)</td>
-                                    <td>Buena Calidad (Sector Privado)</td>
-                                </tr>
-                                <tr>
-                                    <td>Plazo para presentar su reclamación:</td>
-                                    <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>
-                                    <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>
-                                    <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>                            
-                                </tr>
-                                <tr>
-                                    <td>Artículos de la Ley relacionados con su fianza:</td>
-                                    <td>Art. 93 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
-                                    <td>Art. 93 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
-                                    <td>Art. 93 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
-                                </tr>
-                                <tr>
-                                    <td>Documentación adicional para presentar su reclamación:</td>
-                                    <td>
-                                        <div className="ol-container height2">
-                                            <ol>
-                                                <li>Póliza de Fianza</li>
-                                                <li>Contrato de Obra y/o prestación de servicios ó el respectivo.</li>
-                                                <li>Documentación que se haya firmado al contrato a la recepción del anticipo, cheque póliza contable y estado de cuenta.</li>
-                                                <li>Documentos pagados por el Beneficiario donde se compruebe las amortizaciones realizadas.</li>
-                                                <li>Cuantificaron de los intereses respectivos.</li>
-                                                <li>Liquidación.</li>
-                                                <li>Peritaje y Bitácora.</li>
+                        <>
+                            <table className="table-desktop">
+                                    <tr>
+                                        <th><b>Para Obra:</b></th>
+                                        <th>Anticipo</th>
+                                        <th>Cumplimiento</th>
+                                        <th>Buena Calidad</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Producto</td>
+                                        <td>Anticipo (Sector Privado)</td>
+                                        <td>Cumplimiento (Sector Privado)</td>
+                                        <td>Buena Calidad (Sector Privado)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Plazo para presentar su reclamación:</td>
+                                        <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>
+                                        <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>
+                                        <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>                            
+                                    </tr>
+                                    <tr>
+                                        <td>Artículos de la Ley relacionados con su fianza:</td>
+                                        <td>Art. 93 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
+                                        <td>Art. 93 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
+                                        <td>Art. 93 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Documentación adicional para presentar su reclamación:</td>
+                                        <td>
+                                            <div className="ol-container height2">
+                                                <ol>
+                                                    <li>Póliza de Fianza</li>
+                                                    <li>Contrato de Obra y/o prestación de servicios ó el respectivo.</li>
+                                                    <li>Documentación que se haya firmado al contrato a la recepción del anticipo, cheque póliza contable y estado de cuenta.</li>
+                                                    <li>Documentos pagados por el Beneficiario donde se compruebe las amortizaciones realizadas.</li>
+                                                    <li>Cuantificaron de los intereses respectivos.</li>
+                                                    <li>Liquidación.</li>
+                                                    <li>Peritaje y Bitácora.</li>
 
-                                            </ol>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div className="ol-container height2">
-                                            <ol>
-                                                <li>Póliza de Fianza</li>
-                                                <li>Contrato Garantizado.</li>
-                                                <li>Acta Circunstancia del estado general que guarda el contrato.</li>
-                                                <li>Documento de modificación al fiado del Incumplimiento ó la rescisión del contrato.</li>
-                                                <li>Liquidación.</li>
-                                                <li>Peritaje y Bitácoras.</li>
-                                            </ol>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div className="ol-container height2">
-                                            <ol>
-                                                <li>Póliza de Fianza</li>
-                                                <li>Contrato Garantizado.</li>
-                                                <li>Documento que acredite la existencia de Vicios Ocultos ó Defectos y cuantificación Peritaje.</li>
-                                                <li>Copia de algún escrito en el cual el beneficiario reclame al contratista ó prestador de servicios la reparación de los defectos ó vicios.</li>
-                                                <li>Peritaje que acredite la existencia de los Vicios Ocultos.</li>
-                                            </ol>
-                                        </div>
-                                    </td>
-                                </tr>
-                        </table>
+                                                </ol>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div className="ol-container height2">
+                                                <ol>
+                                                    <li>Póliza de Fianza</li>
+                                                    <li>Contrato Garantizado.</li>
+                                                    <li>Acta Circunstancia del estado general que guarda el contrato.</li>
+                                                    <li>Documento de modificación al fiado del Incumplimiento ó la rescisión del contrato.</li>
+                                                    <li>Liquidación.</li>
+                                                    <li>Peritaje y Bitácoras.</li>
+                                                </ol>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div className="ol-container height2">
+                                                <ol>
+                                                    <li>Póliza de Fianza</li>
+                                                    <li>Contrato Garantizado.</li>
+                                                    <li>Documento que acredite la existencia de Vicios Ocultos ó Defectos y cuantificación Peritaje.</li>
+                                                    <li>Copia de algún escrito en el cual el beneficiario reclame al contratista ó prestador de servicios la reparación de los defectos ó vicios.</li>
+                                                    <li>Peritaje que acredite la existencia de los Vicios Ocultos.</li>
+                                                </ol>
+                                            </div>
+                                        </td>
+                                    </tr>
+                            </table>
+
+                            <table className="table-mobile">
+                                    <tr>
+                                        <th><b>Para Obra:</b></th>
+                                        <th>Anticipo</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Producto</td>
+                                        <td>Anticipo (Sector Privado)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Plazo para presentar su reclamación:</td>
+                                        <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Artículos de la Ley relacionados con su fianza:</td>
+                                        <td>Art. 93 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Documentación adicional para presentar su reclamación:</td>
+                                        <td>
+                                            <div className="ol-container height2">
+                                                <ol>
+                                                    <li>Póliza de Fianza</li>
+                                                    <li>Contrato de Obra y/o prestación de servicios ó el respectivo.</li>
+                                                    <li>Documentación que se haya firmado al contrato a la recepción del anticipo, cheque póliza contable y estado de cuenta.</li>
+                                                    <li>Documentos pagados por el Beneficiario donde se compruebe las amortizaciones realizadas.</li>
+                                                    <li>Cuantificaron de los intereses respectivos.</li>
+                                                    <li>Liquidación.</li>
+                                                    <li>Peritaje y Bitácora.</li>
+
+                                                </ol>
+                                            </div>
+                                        </td>
+                                    </tr>
+                            </table>
+
+                            <table className="table-mobile">
+                                    <tr>
+                                        <th><b>Para Obra:</b></th>
+                                        <th>Cumplimiento</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Producto</td>
+                                        <td>Cumplimiento (Sector Privado)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Plazo para presentar su reclamación:</td>
+                                        <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Artículos de la Ley relacionados con su fianza:</td>
+                                        <td>Art. 93 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Documentación adicional para presentar su reclamación:</td>
+
+                                        <td>
+                                            <div className="ol-container height2">
+                                                <ol>
+                                                    <li>Póliza de Fianza</li>
+                                                    <li>Contrato Garantizado.</li>
+                                                    <li>Acta Circunstancia del estado general que guarda el contrato.</li>
+                                                    <li>Documento de modificación al fiado del Incumplimiento ó la rescisión del contrato.</li>
+                                                    <li>Liquidación.</li>
+                                                    <li>Peritaje y Bitácoras.</li>
+                                                </ol>
+                                            </div>
+                                        </td>
+                                    </tr>
+                            </table>
+
+                            <table className="table-mobile">
+                                    <tr>
+                                        <th><b>Para Obra:</b></th>
+                                        <th>Buena Calidad</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Producto</td>
+                                        <td>Buena Calidad (Sector Privado)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Plazo para presentar su reclamación:</td>
+                                        <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>                            
+                                    </tr>
+                                    <tr>
+                                        <td>Artículos de la Ley relacionados con su fianza:</td>
+                                        <td>Art. 93 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Documentación adicional para presentar su reclamación:</td>
+                                        <td>
+                                            <div className="ol-container height2">
+                                                <ol>
+                                                    <li>Póliza de Fianza</li>
+                                                    <li>Contrato Garantizado.</li>
+                                                    <li>Documento que acredite la existencia de Vicios Ocultos ó Defectos y cuantificación Peritaje.</li>
+                                                    <li>Copia de algún escrito en el cual el beneficiario reclame al contratista ó prestador de servicios la reparación de los defectos ó vicios.</li>
+                                                    <li>Peritaje que acredite la existencia de los Vicios Ocultos.</li>
+                                                </ol>
+                                            </div>
+                                        </td>
+                                    </tr>
+                            </table>
+
+                        </>
                     :
-                        <table>
-                                <tr>
-                                    <th><b>Para Proveduría:</b></th>
-                                    <th>Anticipo</th>
-                                    <th>Cumplimiento</th>
-                                    <th>Buena Calidad</th>
-                                </tr>
-                                <tr>
-                                    <td>Producto</td>
-                                    <td>Anticipo (Sector Privado)</td>
-                                    <td>Cumplimiento (Sector Privado)</td>
-                                    <td>Buena Calidad (Sector Privado)</td>
-                                </tr>
-                                <tr>
-                                    <td>Plazo para presentar su reclamación:</td>
-                                    <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>
-                                    <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>
-                                    <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>                            
-                                </tr>
-                                <tr>
-                                    <td>Artículos de la Ley relacionados con su fianza:</td>
-                                    <td>Art. 93 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
-                                    <td>Art. 93 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
-                                    <td>Art. 93 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
-                                </tr>
-                                <tr>
-                                    <td>Documentación adicional para presentar su reclamación:</td>
-                                    <td>
-                                        <div className="ol-container height2">                                        
-                                            <ol>
-                                                <li>Póliza de Fianza</li>
-                                                <li>Contrato de Obra y/o prestación de servicios ó el respectivo.</li>
-                                                <li>Documentación que se haya firmado al contrato a la recepción del anticipo, cheque póliza contable y estado de cuenta.</li>
-                                                <li>Documentos pagados por el Beneficiario donde se compruebe las amortizaciones realizadas.</li>
-                                                <li>Cuantificaron de los intereses respectivos.</li>
-                                                <li>Peritaje y Bitácora.</li>
-                                            </ol>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div className="ol-container height2">
-                                            <ol>
-                                                <li>Póliza de Fianza</li>
-                                                <li>Contrato Garantizado.</li>
-                                                <li>Acta Circunstancia del estado general que guarda el contrato.</li>
-                                                <li>Documento de modificación al fiado del Incumplimiento ó la rescisión del contrato.</li>
-                                                <li>Peritaje y Bitácora.</li>
-                                            </ol>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div className="ol-container height2">
-                                            <ol>
-                                                <li>Póliza de Fianza</li>
-                                                <li>Contrato Garantizado.</li>
-                                                <li>Documento que acredite la existencia de Vicios Ocultos ó Defectos y cuantificación Peritaje.</li>
-                                                <li>Copia de algún escrito en el cual el beneficiario reclame al contratista ó prestador de servicios la reparación de los defectos ó vicios.</li>
-                                                <li>Peritaje que acredite la existencia de los Vicios Ocultos.</li>
-                                            </ol>
-                                        </div>
-                                    </td>
-                                </tr>
-                        </table>
+                        <>
+                            <table className="table-desktop">
+                                    <tr>
+                                        <th><b>Para Proveduría:</b></th>
+                                        <th>Anticipo</th>
+                                        <th>Cumplimiento</th>
+                                        <th>Buena Calidad</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Producto</td>
+                                        <td>Anticipo (Sector Privado)</td>
+                                        <td>Cumplimiento (Sector Privado)</td>
+                                        <td>Buena Calidad (Sector Privado)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Plazo para presentar su reclamación:</td>
+                                        <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>
+                                        <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>
+                                        <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>                            
+                                    </tr>
+                                    <tr>
+                                        <td>Artículos de la Ley relacionados con su fianza:</td>
+                                        <td>Art. 93 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
+                                        <td>Art. 93 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
+                                        <td>Art. 93 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Documentación adicional para presentar su reclamación:</td>
+                                        <td>
+                                            <div className="ol-container height2">                                        
+                                                <ol>
+                                                    <li>Póliza de Fianza</li>
+                                                    <li>Contrato de Obra y/o prestación de servicios ó el respectivo.</li>
+                                                    <li>Documentación que se haya firmado al contrato a la recepción del anticipo, cheque póliza contable y estado de cuenta.</li>
+                                                    <li>Documentos pagados por el Beneficiario donde se compruebe las amortizaciones realizadas.</li>
+                                                    <li>Cuantificaron de los intereses respectivos.</li>
+                                                    <li>Peritaje y Bitácora.</li>
+                                                </ol>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div className="ol-container height2">
+                                                <ol>
+                                                    <li>Póliza de Fianza</li>
+                                                    <li>Contrato Garantizado.</li>
+                                                    <li>Acta Circunstancia del estado general que guarda el contrato.</li>
+                                                    <li>Documento de modificación al fiado del Incumplimiento ó la rescisión del contrato.</li>
+                                                    <li>Peritaje y Bitácora.</li>
+                                                </ol>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div className="ol-container height2">
+                                                <ol>
+                                                    <li>Póliza de Fianza</li>
+                                                    <li>Contrato Garantizado.</li>
+                                                    <li>Documento que acredite la existencia de Vicios Ocultos ó Defectos y cuantificación Peritaje.</li>
+                                                    <li>Copia de algún escrito en el cual el beneficiario reclame al contratista ó prestador de servicios la reparación de los defectos ó vicios.</li>
+                                                    <li>Peritaje que acredite la existencia de los Vicios Ocultos.</li>
+                                                </ol>
+                                            </div>
+                                        </td>
+                                    </tr>
+                            </table>
+
+                            <table className="table-mobile">
+                                    <tr>
+                                        <th><b>Para Proveduría:</b></th>
+                                        <th>Anticipo</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Producto</td>
+                                        <td>Anticipo (Sector Privado)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Plazo para presentar su reclamación:</td>
+                                        <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Artículos de la Ley relacionados con su fianza:</td>
+                                        <td>Art. 93 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Documentación adicional para presentar su reclamación:</td>
+                                        <td>
+                                            <div className="ol-container height2">                                        
+                                                <ol>
+                                                    <li>Póliza de Fianza</li>
+                                                    <li>Contrato de Obra y/o prestación de servicios ó el respectivo.</li>
+                                                    <li>Documentación que se haya firmado al contrato a la recepción del anticipo, cheque póliza contable y estado de cuenta.</li>
+                                                    <li>Documentos pagados por el Beneficiario donde se compruebe las amortizaciones realizadas.</li>
+                                                    <li>Cuantificaron de los intereses respectivos.</li>
+                                                    <li>Peritaje y Bitácora.</li>
+                                                </ol>
+                                            </div>
+                                        </td>
+                                    </tr>
+                            </table>
+
+                            <table className="table-mobile">
+                                    <tr>
+                                        <th><b>Para Proveduría:</b></th>
+                                        <th>Cumplimiento</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Producto</td>
+                                        <td>Cumplimiento (Sector Privado)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Plazo para presentar su reclamación:</td>
+                                        <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Artículos de la Ley relacionados con su fianza:</td>
+                                        <td>Art. 93 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Documentación adicional para presentar su reclamación:</td>
+                                        <td>
+                                            <div className="ol-container height2">
+                                                <ol>
+                                                    <li>Póliza de Fianza</li>
+                                                    <li>Contrato Garantizado.</li>
+                                                    <li>Acta Circunstancia del estado general que guarda el contrato.</li>
+                                                    <li>Documento de modificación al fiado del Incumplimiento ó la rescisión del contrato.</li>
+                                                    <li>Peritaje y Bitácora.</li>
+                                                </ol>
+                                            </div>
+                                        </td>
+                                    </tr>
+                            </table>
+
+
+                            <table className="table-mobile">
+                                    <tr>
+                                        <th><b>Para Proveduría:</b></th>
+                                        <th>Buena Calidad</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Producto</td>
+                                        <td>Buena Calidad (Sector Privado)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Plazo para presentar su reclamación:</td>
+                                        <td>180 días a partir del incumplimiento y del inicio de exigibilidad de la obligación afianzada.</td>                            
+                                    </tr>
+                                    <tr>
+                                        <td>Artículos de la Ley relacionados con su fianza:</td>
+                                        <td>Art. 93 de la Ley Federal De Instituciones de Fianzas Para Autoridades del Gobierno Federal ó Local.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Documentación adicional para presentar su reclamación:</td>
+                                        <td>
+                                            <div className="ol-container height2">
+                                                <ol>
+                                                    <li>Póliza de Fianza</li>
+                                                    <li>Contrato Garantizado.</li>
+                                                    <li>Documento que acredite la existencia de Vicios Ocultos ó Defectos y cuantificación Peritaje.</li>
+                                                    <li>Copia de algún escrito en el cual el beneficiario reclame al contratista ó prestador de servicios la reparación de los defectos ó vicios.</li>
+                                                    <li>Peritaje que acredite la existencia de los Vicios Ocultos.</li>
+                                                </ol>
+                                            </div>
+                                        </td>
+                                    </tr>
+                            </table>
+
+                        </>
                     }
                 </div>}
 

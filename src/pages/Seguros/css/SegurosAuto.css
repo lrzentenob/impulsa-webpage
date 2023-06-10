@@ -57,7 +57,6 @@
     position: relative;
     width: 450px;
     height: 345px;
-    
 }
 
 .seguros-auto .floating-portrait .curvedbk {
@@ -97,6 +96,7 @@
     max-width: var(--maximum-width);
     margin: auto;
     margin-bottom: 2em;
+    
 }
 
 .seguros-auto-block .seguros-auto-choices {
@@ -105,6 +105,11 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: space-evenly;
+}
+.seguros-auto-block .seguros-auto-choices .option {
+    
+    margin: auto;   
 }
 
 .seguros-auto-block .seguros-auto-choices .option img{
@@ -126,6 +131,7 @@
 
 .seguros-auto hr {
     margin-bottom: 3em;
+    
 }
 
 .seguros-auto table {
@@ -133,6 +139,7 @@
     width: 100%;
     color: var(--clr-gray-font);
     font-size: var(--fs-mm);
+    
 }
   
 .seguros-auto .table-title {
@@ -173,15 +180,30 @@
 
 .seguros-auto td,th {
     border: 2px solid var(--clr-blue);
+    
 }
   
 .seguros-auto th {
     background: var(--clr-blue);
 }
 
-  
-@media screen and (max-width: 1100px) {
-    .seguros-auto .floating-portrait {
+.seguros-auto .table-mobile {
+    display: none;
+}
+    
+@media screen and (max-width: 600px) {
+
+    .seguros-auto .table-desktop {
         display: none;
     }
-  }
+    .seguros-auto .table-mobile {
+        display: table;
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+     .floating-portrait {
+        display: none;
+    }
+}

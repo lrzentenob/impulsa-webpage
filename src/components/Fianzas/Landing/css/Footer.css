@@ -115,6 +115,7 @@ footer .footer-social{
     width: 250px;
     justify-content: space-between;
     font-size: 12px;
+    margin: 1em;
 }
 
 footer .footer-social a {

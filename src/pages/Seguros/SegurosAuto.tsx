@@ -68,46 +68,112 @@ export const SegurosAuto = () =>{
             <div className="seguros-auto-block">
                 <p className="footnote"><b>En IMPULSA ASESORES te brindaremos el respaldo que necesites en los momentos más difíciles.</b></p>
             </div>
+            
                 <div className="seguros-auto-block table-area">
+
                     <div className="table-title">
                         <h1>Paquetes</h1>
                         <p>Cobertura a prueba de todo</p>
                     </div>
-                    <table>
+
+                    <table className="table-desktop">
                         <tr>
                             <th className="th-left">Amplia</th>
                             <th>Limitada</th>
                             <th className="th-right">Responsabilidad Civil</th>
                         </tr>
                         <tr>
-                            <td data-cell="full"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Daños materiales</td>
-                            <td data-cell="limited"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Robo total</td>
-                            <td data-cell="civil"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Responsabilidad civil</td>
+                            <td data-cell="amplia"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Daños materiales</td>
+                            <td data-cell="limitada"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Robo total</td>
+                            <td data-cell="responsabilidad civil"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Responsabilidad civil</td>
                         </tr>
                         <tr>
-                            <td data-cell="full"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Robo total</td>
-                            <td data-cell="limited"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Gastos médicos</td>
-                            <td data-cell="civil"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Gastos médicos</td>                            
+                            <td data-cell="amplia"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Robo total</td>
+                            <td data-cell="limitada"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Gastos médicos</td>
+                            <td data-cell="responsabilidad civil"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Gastos médicos</td>                            
                         </tr>
                         <tr>
-                            <td data-cell="full"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Gastos médicos</td>
-                            <td data-cell="limited"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Defensa legal</td>
-                            <td data-cell="civil"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Defensa legal</td>
+                            <td data-cell="amplia"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Gastos médicos</td>
+                            <td data-cell="limitada"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Defensa legal</td>
+                            <td data-cell="responsabilidad civil"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Defensa legal</td>
                         </tr>
                         <tr>
-                            <td data-cell="full"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Defensa legal</td>
-                            <td data-cell="limited"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Responsabilidad civil</td>
-                            <td data-cell="civil"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Asistencia en viajes</td>
+                            <td data-cell="amplia"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Defensa legal</td>
+                            <td data-cell="limitada"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Responsabilidad civil</td>
+                            <td data-cell="responsabilidad civil"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Asistencia en viajes</td>
                         </tr>
                         <tr>
-                            <td data-cell="full"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Responsabilidad civil</td>
-                            <td data-cell="limited"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Asistencia en viajes</td>
-                            <td data-cell="civil"></td>
+                            <td data-cell="amplia"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Responsabilidad civil</td>
+                            <td data-cell="limitada"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Asistencia en viajes</td>
+                            <td data-cell="responsabilidad civil"></td>
                         </tr>
                         <tr>
-                            <td data-cell="full" className="td-left"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Asistencia en viajes</td>
-                            <td data-cell="limited"></td>
-                            <td data-cell="civil" className="td-right"></td>
+                            <td data-cell="amplia" className="td-left"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Asistencia en viajes</td>
+                            <td data-cell="limitada"></td>
+                            <td data-cell="responsabilidad civil" className="td-right"></td>
+                        </tr>
+                    </table>
+
+                    <table className="table-mobile">
+                        <tr>
+                            <th className="th-left th-right">Amplia</th>
+                        </tr>
+                        <tr>
+                            <td data-cell="amplia"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Daños materiales</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="amplia"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Robo total</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="amplia"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Gastos médicos</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="amplia"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Defensa legal</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="amplia"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Responsabilidad civil</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="amplia" className="td-left td-right"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Asistencia en viajes</td>
+                        </tr>
+                    </table>
+
+                    <table className="table-mobile">
+                        <tr>
+                            <th className="th-left th-right">Limitada</th>
+                        </tr>
+                        <tr>
+                            <td data-cell="limitada"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Robo total</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="limitada"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Gastos médicos</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="limitada"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Defensa legal</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="limitada"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Responsabilidad civil</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="limitada" className="td-left td-right"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Asistencia en viajes</td>
+                        </tr>
+                    </table>
+
+                    <table className="table-mobile">
+                        <tr>
+                            <th className="th-left th-right">Responsabilidad Civil</th>
+                        </tr>
+                        <tr>
+                            <td data-cell="responsabilidad civil"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Responsabilidad civil</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="responsabilidad civil"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Gastos médicos</td>                            
+                        </tr>
+                        <tr>
+                            <td data-cell="responsabilidad civil"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Defensa legal</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="responsabilidad civil" className="td-left td-right"><FontAwesomeIcon icon={faSquareCheck} size="1x"/> Asistencia en viajes</td>
                         </tr>
                     </table>
                 
@@ -140,6 +206,7 @@ export const SegurosAuto = () =>{
 
             
             <div className="seguros-auto-block">
+                
                 <div className="seguros-auto-choices">
 
                     <div className="option">
