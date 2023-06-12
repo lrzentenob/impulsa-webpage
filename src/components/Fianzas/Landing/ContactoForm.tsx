@@ -21,13 +21,13 @@ export const ContactoForm = () => {
       const pathName = window.location.pathname;
       
       if(  pathName.indexOf('fianzas') > -1 )
-        return "Impulsa Asesores<fianzas@impulsaasesores.mx>"
+        return "fianzas@impulsaasesores.mx"
       if(  pathName.indexOf('seguros') > -1 )
-        return "Impulsa Asesores<seguros@impulsaasesores.mx>"
+        return "seguros@impulsaasesores.mx"
       if(  pathName.indexOf('riesgos') > -1 )
-        return "Impulsa Asesores<riesgos@impulsaasesores.mx>"
+        return "riesgos@impulsaasesores.mx"
       if(  pathName.indexOf('consultoria') > -1 )
-        return "Impulsa Asesores<consultoria@impulsaasesores.mx>"
+        return "consultoria@impulsaasesores.mx"
 
       return '';
  /*     Fianzas – fianzas@impulsaasesores.mx
