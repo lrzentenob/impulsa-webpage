@@ -46,13 +46,11 @@ export const FianzasCotizacion = () => {
     const inputAmountRef = useRef<any>();
 
     const [montoContrato, setMontoContrato] =  useState<number>(0);
-    // const [porcentajeAnticipo, setPorcentajeAnticipo] =  useState<number>(0);
-    // const [porcentajeCumplimiento, setPorcentajeCumplimiento] =  useState<number>(0);
 
     const [montoAnticipo, setMontoAnticipo] =  useState<number>(0);
     const [primaNetaAnticipo, setPrimaNetaAnticipo]  = useState<number>(0);
     const [derechoAnticipo, setDerechoAnticipo] = useState<number>(0);
-    const [gastoExpAnticipo, setGastoExpAnticipo] = useState<number>(2300);
+    const [gastoExpAnticipo, setGastosExpAnticipo] = useState<number>(2300);
     const [anticipoSubt, setAnticipoSubt] = useState<number>(0);
     const [anticipoIva, setAnticipoIva] = useState<number>(0);
     const [anticipoTotal, setAnticipoTotal] = useState<number>(0);
@@ -68,15 +66,6 @@ export const FianzasCotizacion = () => {
     
     const [totalFianza, setTotalFianza] = useState<number>(0);
 
-/**
-Monto Licitacion
-Prima Neta Licitacion
-Derechos Licitacion
-Gastos Expedicion Anticipo
-Licitacion SubTotal
-Licitacion IVA
-Licitacion Total
- */
     const [montoLiciation, setMontoLicitacion ] = useState<number>(0)
     const [primaNetaLic, setPrimaNetLic ] = useState<number>(0)
     const [derechosLic, setDerechosLic ] = useState<number>(0)
@@ -159,7 +148,10 @@ Licitacion Total
         const DerechosAnticipo = PrimaNetaFinal *0.035;
         setDerechoAnticipo( DerechosAnticipo );
         
-        const AnticipoSubtotal = PrimaNetaFinal + DerechosAnticipo + gastoExpAnticipo;
+        let gastosExpAnticipoTmp = primaNetaTmp > 0 ? 2300 : 0
+        setGastosExpAnticipo(gastosExpAnticipoTmp);
+        const AnticipoSubtotal = PrimaNetaFinal + DerechosAnticipo + gastosExpAnticipoTmp;
+
         setAnticipoSubt(AnticipoSubtotal);
         
         setAnticipoIva( AnticipoSubtotal * 0.16);
@@ -183,7 +175,10 @@ Licitacion Total
         const DerechosCumplimiento = PrimaNetaCumplimento * 0.035;
         setDerechosCump(DerechosCumplimiento);
 
-        const CumplimientoSubtotal = PrimaNetaCumplimento + DerechosCumplimiento + gastosExpCump;
+        let gastosExpCumpTmp = PrimaNetaCumplimento > 0 ? 2300 : 0;
+        setGastosExpCump(gastosExpCumpTmp)
+
+        const CumplimientoSubtotal = PrimaNetaCumplimento + DerechosCumplimiento + gastosExpCumpTmp;
         setCumpSubtotal(CumplimientoSubtotal);
         setCumpIva( CumplimientoSubtotal *0.16);
         setCumpTotal( CumplimientoSubtotal *1.16);
@@ -359,7 +354,7 @@ Licitacion Total
 
                     </div>
 
-                    { amount && tipoFianza === 'anticipo' &&
+                    { amount && tipoFianza === 'anticipo' && 
                     <div className="table-container">
 
                     <table className="table-desktop">

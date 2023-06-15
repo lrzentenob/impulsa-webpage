@@ -41,6 +41,8 @@ export const SegurosAuto = () =>{
                     
                 </div>
 
+
+
                 <div className="seguros-auto-block">
 
                     <div className="vertical-centered">
@@ -65,9 +67,9 @@ export const SegurosAuto = () =>{
                     
                 </div>
 
-            <div className="seguros-auto-block">
-                <p className="footnote"><b>En IMPULSA ASESORES te brindaremos el respaldo que necesites en los momentos más difíciles.</b></p>
-            </div>
+                <div className="seguros-auto-block">
+                    <p className="footnote"><b>En IMPULSA ASESORES te brindaremos el respaldo que necesites en los momentos más difíciles.</b></p>
+                </div>
             
                 <div className="seguros-auto-block table-area">
 
@@ -198,65 +200,68 @@ export const SegurosAuto = () =>{
                     </div>
                 </div>
 
-        <div className="seguros-auto-block">
-            <div className="footnote">
-                <p>No esperes más para brindar seguridad y calma a tu familia, recuerda que estamos para apoyarte y esperamos que te acerques a nuestras <Link to='/seguros/oficinas'>oficinas de servicio</Link>.</p>
-            </div>
-        </div>
-
-            
-            <div className="seguros-auto-block">
-                
-                <div className="seguros-auto-choices">
-
-                    <div className="option">
-                        <img src={seSegurosAutoOption01}></img>
-                        <h4>Personaliza tu seguro</h4>
-                        <p>Elige el tipo de cobertura y agrega solo lo que tú necesites.</p>
+                <div className="seguros-auto-block">
+                    <div className="footnote">
+                        <p>No esperes más para brindar seguridad y calma a tu familia, recuerda que estamos para apoyarte y esperamos que te acerques a nuestras <Link to='/seguros/oficinas'>oficinas de servicio</Link>.</p>
                     </div>
-
-                    <div className="option">
-                        <img src={seSegurosAutoOption02}></img>
-                        <h4>¡Estamos contigo!</h4>
-                        <p>Después de contratar, nosotros te acompañamos en caso de un siniestro.</p>
-                    </div>
-                    
-                    <div className="option">
-                        <img src={seSegurosAutoOption03}></img>
-                        <h4>¿Ya checaste nuestra app?</h4>
-                        <p>Lleva tus seguros contigo en todo momento, podrás reportar un siniestro ded manera rápida desde tu app.</p>
-                    </div>
-
-                    <div className="option">
-                        <img src={seSegurosAutoOption04}></img>
-                        <h4>Modalidades de pago</h4>
-                        <p>Paga como tú quieras, a 3, 6, 9 o 12 MSI según la compañía que deseas o puedes fraccionar tus pagos.</p>
-                    </div>
-
                 </div>
-            </div>
-            <hr></hr>
+
             
-            <div className="seguros-auto-block">
-
-                    <div className="paragraph">
-                        <h2>¿Qué hacer en caso de siniestro?</h2>
-                        <p>Nuestra calidad en la atención a tu siniestro está basada y garantizada en la estrecha relación que mantenemos con las principales aseguradoras y despachos de ajustadores en la república mexicana para ofrecerte el respaldo, la tranquilidad y satisfacción durante estas situaciones.</p>
-                            <ul>
-                                <li><b>Mantén la calma</b></li>
-                                <li><b>Repórtalo al teléfono que aparece en tu póliza</b></li>
-                            </ul>
-
-                        <p>Los ejecutivos que te apoyarán son especialistas para cada tipo de seguro y cuentan con el conocimiento técnico para obtener el resultado adecuado a tu persona.</p>
-                    </div>
+                <div className="seguros-auto-block">
                     
-                    <div className="single-image">
-                        <img src={seSegurosVidaWhatis2}></img>
+                    <div className="seguros-auto-choices">
+
+                        <div className="option">
+                            <img src={seSegurosAutoOption01}></img>
+                            <h4>Personaliza tu seguro</h4>
+                            <p>Elige el tipo de cobertura y agrega solo lo que tú necesites.</p>
+                        </div>
+
+                        <div className="option">
+                            <img src={seSegurosAutoOption02}></img>
+                            <h4>¡Estamos contigo!</h4>
+                            <p>Después de contratar, nosotros te acompañamos en caso de un siniestro.</p>
+                        </div>
+                        
+                        <div className="option">
+                            <img src={seSegurosAutoOption03}></img>
+                            <h4>¿Ya checaste nuestra app?</h4>
+                            <p>Lleva tus seguros contigo en todo momento, podrás reportar un siniestro ded manera rápida desde tu app.</p>
+                        </div>
+
+                        <div className="option">
+                            <img src={seSegurosAutoOption04}></img>
+                            <h4>Modalidades de pago</h4>
+                            <p>Paga como tú quieras, a 3, 6, 9 o 12 MSI según la compañía que deseas o puedes fraccionar tus pagos.</p>
+                        </div>
+
                     </div>
-            </div>
+                </div>
+                <hr></hr>
+            
+                <div className="seguros-auto-block">
+
+                        <div className="paragraph">
+                            <h2>¿Qué hacer en caso de siniestro?</h2>
+                            <p>Nuestra calidad en la atención a tu siniestro está basada y garantizada en la estrecha relación que mantenemos con las principales aseguradoras y despachos de ajustadores en la república mexicana para ofrecerte el respaldo, la tranquilidad y satisfacción durante estas situaciones.</p>
+                                <ul>
+                                    <li><b>Mantén la calma</b></li>
+                                    <li><b>Repórtalo al teléfono que aparece en tu póliza</b></li>
+                                </ul>
+
+                            <p>Los ejecutivos que te apoyarán son especialistas para cada tipo de seguro y cuentan con el conocimiento técnico para obtener el resultado adecuado a tu persona.</p>
+                        </div>
+                        
+                        <div className="single-image">
+                            <img src={seSegurosVidaWhatis2}></img>
+                        </div>
+                </div>
 
 
             </div>
+
+
+
         </section>
         <Footer />
         </>  

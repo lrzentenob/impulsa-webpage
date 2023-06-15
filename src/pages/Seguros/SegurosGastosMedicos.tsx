@@ -34,13 +34,12 @@ export const SegurosGastosMedicos = () => {
           </div>
 
           <div className="seguros-gastos-medicos-block">
+
             <div className="floating-portrait">
               <img src={seBackgroundCurved} className="curvedbk lg"></img>
-              <img
-                src={seSegurosVidaPortrait}
-                className="seguros-vida-portrait"
-              ></img>
+              <img src={seSegurosVidaPortrait} className="seguros-vida-portrait"></img>
             </div>
+            
             <div className="paragraph">
               <h2>¿Ya cuentas con Seguro de Gastos Médicos Mayores?</h2>
               <p>

@@ -1,5 +1,6 @@
 .seguros-auto {
-    padding: 1em;   
+    padding: 1em;  
+     
 }
 
 .seguros-auto .seguros-auto-block {
@@ -8,8 +9,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* border: 1px solid red; */
-    margin-bottom: 2em;
+    margin-bottom: 1em; 
 }
 
 /* Aplicado solo al primero elemento de los blocks*/
@@ -17,12 +17,14 @@
     justify-content: flex-end;
 }
 .seguros-auto .top .floating-portrait {
-    position: absolute;
-    top: 0;
-    left: 9em;
-    width: 350px;
+    position: relative;
+    max-width: 350px;
+    width: 100%;
     height: auto;
+    
+    margin: 1em;
 }
+
 .seguros-auto .top .paragraph {
     width: 550px;
 }
@@ -31,6 +33,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 .seguros-auto .paragraph ul {
     list-style-position: inside;
@@ -56,19 +59,19 @@
 .seguros-auto .floating-portrait {
     position: relative;
     width: 450px;
-    height: 345px;
+    height: 385px;
+    
 }
 
 .seguros-auto .floating-portrait .curvedbk {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0em;
     width: 100%;
     z-index: -9999;
+    
 }
-.seguros-auto .floating-portrait .lg {
-    width: 500px;
-}
+
 .seguros-auto .floating-portrait .seguros-auto-icon {
     margin: 5em 7em;
 }
@@ -76,6 +79,7 @@
     position: absolute;
     top: 0;
     left: 4em;
+    width: 80%;
 }
 .seguros-auto .single-image {
     max-width: 400px;
@@ -190,9 +194,16 @@
 .seguros-auto .table-mobile {
     display: none;
 }
-    
+
 @media screen and (max-width: 600px) {
 
+    .seguros-auto .floating-portrait {
+        width: 380px;
+    }
+    .seguros-auto .floating-portrait .seguros-auto-portrait {
+        top: 0;
+        left: 2em;
+    }
     .seguros-auto .table-desktop {
         display: none;
     }
@@ -202,8 +213,3 @@
     }
 }
 
-@media screen and (max-width: 1100px) {
-     .floating-portrait {
-        display: none;
-    }
-}

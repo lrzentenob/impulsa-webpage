@@ -17,11 +17,9 @@
     justify-content: flex-end;
 }
 .seguros-hogar .top .floating-portrait {
-    position: absolute;
-    top: 0;
-    left: 9em;
     width: 350px;
     height: auto;
+    
 }
 .seguros-hogar .top .paragraph {
     width: 550px;
@@ -49,12 +47,14 @@
  {
    color: var(--clr-blue);
    text-align: center;
-   line-height: 2em;
+   line-height: 1.5em;
+   margin-bottom: 1em;
 }
 
 .seguros-hogar .paragraph h1,
 .seguros-hogar .paragraph h2 {
     color: var(--clr-blue);
+    
 }
 .seguros-hogar .paragraph h2 {
     margin-bottom: 0.5em;
@@ -71,28 +71,28 @@
 /* Image con fondo curveado */
 .seguros-hogar .floating-portrait {
     position: relative;
-    width: 450px;
-    height: 345px;
+    max-width: 450px;
+    margin-bottom: 1em;
     
 }
-
 .seguros-hogar .floating-portrait .curvedbk {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     z-index: -9999;
 }
 .seguros-hogar .floating-portrait .lg {
-    width: 500px;
+    width: 100%;
 }
 .seguros-hogar .floating-portrait .seguros-hogar-icon {
+    position: absolute;
+    top:0;
+    left: 0;
     margin: 5em 7em;
 }
 .seguros-hogar .floating-portrait .seguros-hogar-portrait {
     position: absolute;
     top: 0;
     left: 4em;
+    width: 75%;
 }
 .seguros-hogar .single-image {
     max-width: 400px;
@@ -106,3 +106,9 @@
     margin: auto;
     text-align: center;
 }
+@media screen and (max-width: 500px) {
+    .seguros-hogar .seguros-hogar-block {
+        margin-bottom: 1em;
+    }
+}
+

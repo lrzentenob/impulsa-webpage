@@ -1,5 +1,5 @@
 .seguros-vida {
-    padding: 2em;   
+    padding: 1em;   
 }
 
 .seguros-vida .seguros-vida-block {
@@ -82,4 +82,17 @@
     max-width: 600px;
     margin: auto;
     text-align: center;
+}
+
+
+@media screen and (max-width: 500px) {
+    
+    .seguros-vida .floating-portrait .seguros-vida-portrait{
+        left: 1em;
+        width: 100%;
+    }
+    .seguros-vida .floating-portrait .curvedbk {
+        width: 110%;
+        left: -1em;
+    }
 }

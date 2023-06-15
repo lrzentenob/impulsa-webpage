@@ -13,12 +13,6 @@ import { Branches } from "../../components/Fianzas/Landing/Branches"
 
 export const Fianzas  = () =>{
 
-  function onShowChat () {
-    const modal = document.getElementById('chat-window-component');
-    const disp = modal?.style.display;
-    modal!.style.display = disp === 'block' ? "none" : "block";
-    
-  }
 
     return (
         <>
@@ -26,9 +20,6 @@ export const Fianzas  = () =>{
         <Submenu />
         <CentralSlider />
         <BrandSwiper />
-        <div className='chat-icon' onClick={onShowChat}>
-          <FontAwesomeIcon icon={faMessage} size='2x' className='faicon' />
-        </div>
         <ProductsInfo />
         <Branches />
         <Services />

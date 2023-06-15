@@ -7,8 +7,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 1em;
-    padding: 1em;   
+    margin-bottom: 2em;
 }
 
 /* Aplicado solo al primero elemento de los blocks*/
@@ -18,6 +17,7 @@
 .seguros-gastos-medicos .top .floating-portrait {
     width: 350px;
     height: auto;
+    
 }
 
 .seguros-gastos-medicos .paragraph {
@@ -41,7 +41,7 @@
 }
 .seguros-gastos-medicos .single-paragraph h2{
     color: var(--clr-blue);
-    line-height: 2em;
+    line-height: 1.5em;
     margin-bottom: 1em;
     text-align: center;
 }
@@ -64,27 +64,28 @@
 /* Image con fondo curveado */
 .seguros-gastos-medicos .floating-portrait {
     position: relative;
-    width: 450px;
-    height: 420px;
+    width: 500px;
+    
 }
 
 .seguros-gastos-medicos .floating-portrait .curvedbk {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     z-index: -9999;
 }
 .seguros-gastos-medicos .floating-portrait .lg {
-    width: 500px;
+    width: 100%;
 }
 .seguros-gastos-medicos .floating-portrait .seguros-vida-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
     margin: 5em 7em;
 }
 .seguros-gastos-medicos .floating-portrait .seguros-vida-portrait {
     position: absolute;
     top: 0;
-    left: 4em;
+    left: 0em;
+    width: 75%;
 }
 .seguros-gastos-medicos .single-image {
     max-width: 400px;
@@ -102,3 +103,14 @@
 .seguros-gastos-medicos .footnote p{
     margin-bottom: 1em
 }
+
+@media screen and (max-width: 500px) {
+    .seguros-gastos-medicos {
+        padding: 1em;   
+    }
+    .seguros-gastos-medicos .seguros-gastos-medicos-block {
+        margin-bottom: 1em;
+    }
+       
+}
+

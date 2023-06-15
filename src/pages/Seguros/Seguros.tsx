@@ -10,13 +10,6 @@ import { Submenu } from "../../components/Seguros/Landing/Submenu";
 import { faMessage } from "@fortawesome/free-solid-svg-icons";
 
 export const Seguros = () => {
-
-    function onShowChat () {
-        const modal = document.getElementById('chat-window-component');
-        const disp = modal?.style.display;
-        modal!.style.display = disp === 'block' ? "none" : "block";
-        
-      }
     
     return (
         <>
@@ -24,9 +17,6 @@ export const Seguros = () => {
             <Submenu />
             <CentralSlider />
             <BrandSwiper />
-            <div className='chat-icon' onClick={onShowChat}>
-              <FontAwesomeIcon icon={faMessage} size='2x' className='faicon-blue' />
-            </div>
             <ProductsInfo />
             <Branches />
             <Services />
