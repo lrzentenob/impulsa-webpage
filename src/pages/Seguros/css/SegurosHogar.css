@@ -42,8 +42,12 @@
     line-height: 1.5em;
 }
 
-.seguros-hogar .single-paragraph h2,
-.seguros-hogar .single-paragraph h1
+.seguros-hogar .single-paragraph h1 {
+    color: var(--clr-blue);
+    text-align: center;    
+
+}
+.seguros-hogar .single-paragraph h2
  {
    color: var(--clr-blue);
    text-align: center;
@@ -58,6 +62,8 @@
 }
 .seguros-hogar .paragraph h2 {
     margin-bottom: 0.5em;
+    margin: 1em 0em 1em 0em;
+    line-height: 1.5em;
 }
 
 .seguros-hogar .footnote,
@@ -100,6 +106,7 @@
 .seguros-hogar .single-image img {
     width: 100%;
 }
+
 
 .seguros-hogar .footnote {
     max-width: 800px;
