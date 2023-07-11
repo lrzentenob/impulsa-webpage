@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './css/ContactForm.css';
 import api from '../../../api/api';
 import { Spinner } from './Spinner';
+import axios, { AxiosHeaders } from 'axios';
 
 export const ContactoForm = () => {
     
@@ -41,14 +42,21 @@ export const ContactoForm = () => {
 
       const fromEmail = emailFromPath();
       const toEmail = `${email}`;
-      const templateId = 'd-792f3aa1368a4ab79d994e1918a2b34b'
-
+      const AC = 'd-792f3aa1368a4ab79d994e1918a2b34b'
+      const nombre = `${name}`;
+      const comentario = `${comment}`;
+      
       try {
           setSpinnerOn( true);
-          const apiRes = await api.post(`/sendemail?fromEmail=${fromEmail}&toEmail=${toEmail}&templateId=${templateId}`,{
+         /* const apiRes = await api.post(`/sendemail?fromEmail=${fromEmail}&toEmail=${toEmail}&templateId=${templateId}`,{
+            Remitente_Contacto: name,
+            Mensaje_Contacto: comment
+          });*/
+          const apiRes = api.post(`contacto.php?fromEmail=${fromEmail}&toEmail=${toEmail}&AC=${AC}&name=${nombre}&comment=${comentario}`,{
             Remitente_Contacto: name,
             Mensaje_Contacto: comment
           });
+          
           setSpinnerOn( false);
           setIsSent(true); 
       }
@@ -57,7 +65,34 @@ export const ContactoForm = () => {
           console.log(e);
           alert('Se produjo un error al intentar enviar el correo...')
       }
-
+      //aca esta lo que voy a probar del fetch
+      /*let handleSubmit = async () => {
+    
+        try {
+          const res = await fetch('http://localhost/php/sendgrid/enviarmail.php?fromEmail=${fromEmail}&toEmail=${toEmail}&templateId=${templateId}&name=${nombre}&comment=${comentario}', {
+            method: "POST",
+            body: JSON.stringify({
+              name: name,
+              toEmail: email,
+            }),
+          });
+          
+          let resJson = await res.json();
+          
+          if (res.status === 200) {
+            setName("");
+            setEmail("");
+            //setMessage("User created successfully");
+            console.log("Correo Enviado con Exito");
+          } else {
+            console.log("Se presento un error");
+            //setMessage("Some error occured");
+          }
+        } catch (err) {
+          console.log(err);
+        }
+      };
+*/
     
       
     }

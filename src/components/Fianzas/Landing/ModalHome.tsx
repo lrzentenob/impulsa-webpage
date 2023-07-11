@@ -33,7 +33,7 @@ export const ModalHome = () => {
                 <div className='modalhome-title-content'>
                     <img src={impulsaLogo} className='modalhome-logo'></img>
                     <h1 className='title-shadow'>¡Siempre cerca de ti!</h1>
-                    <p>Bienvenido a Impulsa Fianzas, contamos con {getYearsFromYear(1981)} años de experiencia en el ramo afianzador.</p>
+                    <p>Bienvenido a Impulsa Asesores, contamos con {getYearsFromYear(1981)} años de experiencia en el ramo afianzador.</p>
                 </div>
                 
                 

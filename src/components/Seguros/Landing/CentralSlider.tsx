@@ -78,7 +78,7 @@ export const CentralSlider = () => {
                     </div>
                 </SwiperSlide>
 
-                <SwiperSlide>            
+                {/*<SwiperSlide>            
                     <div className='flex-content'>
                         <div className='left-div'>
                             <div className='home-intro'>
@@ -88,7 +88,7 @@ export const CentralSlider = () => {
                                 <div className='buttons-array'>
                                     <Link className='btn-seguros' to='/seguros/soycliente' >Ver Más</Link>
                                     {/* <a className='btn-fianzas-outline' href='/requisitos'>Requisitos</a>
-                                    <a className='btn-fianzas-outline' onClick={onShowContactForm}>Contáctanos</a> */}
+                                    <a className='btn-fianzas-outline' onClick={onShowContactForm}>Contáctanos</a> }
                                 </div>
                             </div>
 
@@ -101,7 +101,7 @@ export const CentralSlider = () => {
 
                         </div>
                     </div>
-                </SwiperSlide>
+                                </SwiperSlide>*/}
 
 
             </Swiper>

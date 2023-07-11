@@ -211,31 +211,80 @@ export const FianzasCotizacion = () => {
     }
 
     async function onSendEmail(inputEmailParam:string, onSetSpinnerHandler: any, onSentEmailHanlder: any){
-        const fromEmail = 'Impulsa Fianzas<fianzas@impulsaasesores.mx>';
+        const fromEmail = 'fianzas@impulsaasesores.mx';
         const toEmail = inputEmailParam;
+        
+        let AC: string = 'd-284e44ee113040b3ae1a194643aa7d94' // default template Anticipo
+        let templateBody:any
+        if ( tipoFianza === 'anticipo'){
+           /* templateBody = {
+                Monto_Contrato: `${formatLocalCurrency(parseFloat(amount))}`,
+                Ant_Monto: `${formatLocalCurrency(parseFloat(amount)*(upfront/100))}`,
+                Cum_Monto: `${formatLocalCurrency(parseFloat(amount)*(accomplish/100))}`,
+                Ant_Prima: `${formatLocalCurrency(primaNetaAnticipo)}`,
+                Cum_Prima: `${formatLocalCurrency(primaNetaCump)}`,
+                Ant_Derechos: `${formatLocalCurrency(derechoAnticipo)}`,
+                Cum_Derechos: `${formatLocalCurrency(derechosCump)}`,
+                Ant_Gastos: `${formatLocalCurrency(gastoExpAnticipo)}`,
+                Cum_Gastos: `${formatLocalCurrency(gastosExpCump)}`,
+                Ant_SubTotal: `${formatLocalCurrency(anticipoSubt)}`,
+                Cum_SubTotal: `${formatLocalCurrency(cumpSubtotal)}`,
+                Ant_IVA: `${formatLocalCurrency(anticipoIva)}`,
+                Cum_IVA: `${formatLocalCurrency(cumpIva)}`,
+                Ant_Total: `${formatLocalCurrency(anticipoTotal)}`,
+                Cum_Total: `${formatLocalCurrency(cumpTotal)}`,
+                Costo_Total: `${formatLocalCurrency(totalFianza)}` }*/
+                
+                const Monto = `${formatLocalCurrency(parseFloat(amount))}`;
+                const MontoAnt = `${formatLocalCurrency(parseFloat(amount)*(upfront/100))}`;
+                const MontoCum = `${formatLocalCurrency(parseFloat(amount)*(accomplish/100))}`;
+                const PrimaAnt = `${formatLocalCurrency(primaNetaAnticipo)}`;
+                const PrimaCum = `${formatLocalCurrency(primaNetaCump)}`;
+                const DerechosAnt = `${formatLocalCurrency(derechoAnticipo)}`;
+                const DerechoCum = `${formatLocalCurrency(derechosCump)}`;
+                const GastosAnt = `${formatLocalCurrency(gastoExpAnticipo)}`;
+                const GastosCum = `${formatLocalCurrency(gastosExpCump)}`;
+                const SubtotalAnt = `${formatLocalCurrency(anticipoSubt)}`;
+                const SubtotalCum = `${formatLocalCurrency(cumpSubtotal)}`;
+                const IVAAnt = `${formatLocalCurrency(anticipoIva)}`;
+                const IVACum = `${formatLocalCurrency(cumpIva)}`;
+                const TotalAnt = `${formatLocalCurrency(anticipoTotal)}`;
+                const TotalCum = `${formatLocalCurrency(cumpTotal)}`;
+                const CostoTotal = `${formatLocalCurrency(totalFianza)}`;
 
-        let templateId: string = 'd-284e44ee113040b3ae1a194643aa7d94' // default template Anticipo
-        let templateBody:any = {
-            Monto_Contrato: `${formatLocalCurrency(parseFloat(amount))}`,
-            Ant_Monto: `${formatLocalCurrency(parseFloat(amount)*(upfront/100))}`,
-            Cum_Monto: `${formatLocalCurrency(parseFloat(amount)*(accomplish/100))}`,
-            Ant_Prima: `${formatLocalCurrency(primaNetaAnticipo)}`,
-            Cum_Prima: `${formatLocalCurrency(primaNetaCump)}`,
-            Ant_Derechos: `${formatLocalCurrency(derechoAnticipo)}`,
-            Cum_Derechos: `${formatLocalCurrency(derechosCump)}`,
-            Ant_Gastos: `${formatLocalCurrency(gastoExpAnticipo)}`,
-            Cum_Gastos: `${formatLocalCurrency(gastosExpCump)}`,
-            Ant_SubTotal: `${formatLocalCurrency(anticipoSubt)}`,
-            Cum_SubTotal: `${formatLocalCurrency(cumpSubtotal)}`,
-            Ant_IVA: `${formatLocalCurrency(anticipoIva)}`,
-            Cum_IVA: `${formatLocalCurrency(cumpIva)}`,
-            Ant_Total: `${formatLocalCurrency(anticipoTotal)}`,
-            Cum_Total: `${formatLocalCurrency(cumpTotal)}`,
-            Costo_Total: `${formatLocalCurrency(totalFianza)}` }
+
+
+                try {
+                    onSetSpinnerHandler( true);
+                    try {
+                        onSetSpinnerHandler( true);
+                        const apiRes = await api.post(`cotizaciones.php?fromEmail=${fromEmail}&toEmail=${toEmail}&AC=${AC}&ID=AN&Monto=${Monto}&MontoAnt=${MontoAnt}&MontoCum=${MontoCum}&PrimaAnt=${PrimaAnt}&PrimaCum=${PrimaCum}&DerechosAnt=${DerechosAnt}&DerechoCum=${DerechoCum}&GastosAnt=${GastosAnt}&GastosCum=${GastosCum}&SubtotalAnt=${SubtotalAnt}&SubtotalCum=${SubtotalCum}&IVAAnt=${IVAAnt}&IVACum=${IVACum}&TotalAnt=${TotalAnt}&TotalCum=${TotalCum}&CostoTotal=${CostoTotal}`);                    
+                        onSetSpinnerHandler( false);
+                        onSentEmailHanlder(true);
+                        
+                    }
+                    catch(e){
+            
+                        onSetSpinnerHandler( false);
+                        alert('Se produjo un error al intentar enviar el correo...')
+                    }
+                    
+                    onSetSpinnerHandler( false);
+                    onSentEmailHanlder(true);
+                    
+                }
+                catch(e){
+        
+                    onSetSpinnerHandler( false);
+                    alert('Se produjo un error al intentar enviar el correo...')
+                }
+
+        }
+        
 
         if( tipoFianza === 'licitacion'){
-            templateId = 'd-5ba91a39a85b438ca7ebb09a5f233e96'; // template para Licitacion
-            templateBody = {
+            AC = 'd-5ba91a39a85b438ca7ebb09a5f233e96'; // template para Licitacion
+           /* templateBody = {
                 Monto_Contrato: `${formatLocalCurrency(parseFloat(amount))}`,
                 Monto_Licitacion: `${formatLocalCurrency(montoLiciation)}`,
                 Prima_Licitacion: `${formatLocalCurrency(primaNetaLic)}`,
@@ -244,24 +293,46 @@ export const FianzasCotizacion = () => {
                 Subtotal_Licitacion: `${formatLocalCurrency(licSubtotal)}`,
                 IVA_Licitacion: `${formatLocalCurrency(licIva)}`,
                 Total_Licitacion: `${formatLocalCurrency(licTotal)}`
+            }*/
+            const Monto = `${formatLocalCurrency(parseFloat(amount))}`;
+            const MontoLi = `${formatLocalCurrency(montoLiciation)}`;
+            const PrimaLi = `${formatLocalCurrency(primaNetaLic)}`;
+            const DerechoLi = `${formatLocalCurrency(derechosLic)}`;
+            const GastosLi = `${formatLocalCurrency(gastosExpLic)}`;
+            const SubtotalLi = `${formatLocalCurrency(licSubtotal)}`;
+            const IVALi = `${formatLocalCurrency(licIva)}`;
+            const TotalLi = `${formatLocalCurrency(licTotal)}`;
+
+            try {
+                onSetSpinnerHandler( true);
+                try {
+                    onSetSpinnerHandler( true);
+                    const apiRes = await api.post(`cotizaciones.php?fromEmail=${fromEmail}&toEmail=${toEmail}&AC=${AC}&ID=LI&Monto=${Monto}&MontoLi=${MontoLi}&PrimaLi=${PrimaLi}&DerechoLi=${DerechoLi}&GastosLi=${GastosLi}&SubtotalLi=${SubtotalLi}&IVALi=${IVALi}&TotalLi=${TotalLi}`);                    
+                    onSetSpinnerHandler( false);
+                    onSentEmailHanlder(true);
+                    
+                }
+                catch(e){
+        
+                    onSetSpinnerHandler( false);
+                    alert('Se produjo un error al intentar enviar el correo...')
+                }
+                
+                onSetSpinnerHandler( false);
+                onSentEmailHanlder(true);
+                
             }
-        }
-
-
-        try {
-            onSetSpinnerHandler( true);
-            const apiRes = await api.post(`/sendemail?fromEmail=${fromEmail}&toEmail=${toEmail}&templateId=${templateId}`,{
-               ...templateBody
-            });
-            onSetSpinnerHandler( false);
-            onSentEmailHanlder(true);
+            catch(e){
+    
+                onSetSpinnerHandler( false);
+                alert('Se produjo un error al intentar enviar el correo...')
+            }
+            
             
         }
-        catch(e){
 
-            onSetSpinnerHandler( false);
-            alert('Se produjo un error al intentar enviar el correo...')
-        }
+
+        
 
     }
     function onCancel (){

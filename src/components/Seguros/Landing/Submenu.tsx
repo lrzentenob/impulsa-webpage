@@ -25,7 +25,7 @@ export const Submenu = () => {
                 <ul>
                     <li> <Link to="/seguros">Inicio</Link></li>
                     <li> <Link to="/seguros/oficinas">Oficinas</Link></li>
-                    <li> <Link to="/seguros/soycliente">Soy Cliente</Link></li>
+                    {/* <li> <Link to="/seguros/soycliente">Soy Cliente</Link></li> */}
                     <li> <Link to="/seguros/nosotros">Nosotros</Link></li>
                     <li> <button className="btn-seguros" onClick={onShowContactForm}>Contacto</button></li>
                 </ul>

@@ -59,13 +59,13 @@ export const Footer = ()=>{
                             <li><Link to="mailto:atencion@impulsaasesores.mx"><p><FontAwesomeIcon icon={faEnvelope} size='1x' className='fa-iconx'/><span> atencion@impulsaasesores.mx</span></p></Link></li>
                         </ul>
                     </div>
-                    <div>
+                    {/*<div>
                         <p>Descarga nuestra aplicación móvil</p>
                         <ul>
                             <li><Link to='https://apps.apple.com/us/app/impulsa-to-go/id1633313375' target='_blank'><img src={appStore} className='store'></img></Link></li>
                             <li><Link to='https://play.google.com/store/apps/details?id=mx.impulsaasesores.togo' target='_blank'><img src={playStore} className='store'></img></Link></li>
                         </ul>
-                    </div>
+                        </div>*/}
                 </div>
             </div>
 

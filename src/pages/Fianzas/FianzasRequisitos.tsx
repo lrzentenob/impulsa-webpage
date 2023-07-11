@@ -39,13 +39,13 @@ export const FianzasRequisitos = () => {
 
     async function onSendEmailTypeA( inputEmailParam:string, onSetSpinnerHandler: any, onSentEmailHanlder: any) {
 
-        const fromEmail = 'Impulsa Fianzas<fianzas@impulsaasesores.mx>';
+        const fromEmail = 'fianzas@impulsaasesores.mx';
         const toEmail = inputEmailParam;
-        const templateId = 'd-f798bfa3491641a58c144770338966f1' /// plantilla Personal Moral
+        const AC = 'd-f798bfa3491641a58c144770338966f1' /// plantilla Personal Moral
 
         try {
             onSetSpinnerHandler( true);
-            const apiRes = await api.post(`/sendemail?fromEmail=${fromEmail}&toEmail=${toEmail}&templateId=${templateId}`);
+            const apiRes = await api.post(`/requisitos.php?fromEmail=${fromEmail}&toEmail=${toEmail}&AC=${AC}&ID=PM`);
             console.log(apiRes.data);
             onSetSpinnerHandler( false);
             onSentEmailHanlder(true);
@@ -65,13 +65,13 @@ export const FianzasRequisitos = () => {
 
     async function onSendEmailTypeB(inputEmailParam:string,onSetSpinnerHandler: any, onSentEmailHanlder: any) {
         
-        const fromEmail = 'Impulsa Fianzas<fianzas@impulsaasesores.mx>';
+        const fromEmail = 'fianzas@impulsaasesores.mx';
         const toEmail = inputEmailParam;
-        const templateId = 'd-0965dd6435d24a6893a8bc7678ebbd48'
+        const AC = 'd-0965dd6435d24a6893a8bc7678ebbd48'
 
         try {
             onSetSpinnerHandler( true);
-            const apiRes = await api.post(`/sendemail?fromEmail=${fromEmail}&toEmail=${toEmail}&templateId=${templateId}`);
+            const apiRes = await api.post(`/requisitos.php?fromEmail=${fromEmail}&toEmail=${toEmail}&AC=${AC}&ID=PF`);
             console.log(apiRes.data);
             onSetSpinnerHandler( false);
             onSentEmailHanlder(true);
