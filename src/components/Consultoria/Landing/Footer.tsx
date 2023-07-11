@@ -64,7 +64,7 @@ export const Footer = ()=>{
 
             <div className='footer-lower-content'>
                 <div className='footer-lower-content-foot'>
-                    <p>© {getCurrentYear()} Impulsa Fianzas. Todos los derechos reservados</p>
+                    <p>© {getCurrentYear()} Impulsa Asesores. Todos los derechos reservados</p>
                     <div className='footer-social'>
                         <Link to='https://www.facebook.com/impulsa.asesores.mx' target='_blank'><FontAwesomeIcon icon={faFacebook} size='2x' /></Link>
                         <Link to='https://www.instagram.com/impulsa_asesores/?hl=es' target='_blank'><FontAwesomeIcon icon={faInstagram} size='2x' /></Link>
