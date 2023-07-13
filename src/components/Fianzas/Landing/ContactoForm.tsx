@@ -31,11 +31,6 @@ export const ContactoForm = () => {
         return "consultoria@impulsaasesores.mx"
 
       return '';
- /*     Fianzas – fianzas@impulsaasesores.mx
-        Seguros – seguros@impulsaasesores.mx
-        Riesgos – riesgos@impulsaasesores.mx
-        Consultoría – consultoria@impulsaasesores.mx
-  */
          
     }
     async function onSend(){
@@ -48,10 +43,6 @@ export const ContactoForm = () => {
       
       try {
           setSpinnerOn( true);
-         /* const apiRes = await api.post(`/sendemail?fromEmail=${fromEmail}&toEmail=${toEmail}&templateId=${templateId}`,{
-            Remitente_Contacto: name,
-            Mensaje_Contacto: comment
-          });*/
           const apiRes = api.post(`contacto.php?fromEmail=${fromEmail}&toEmail=${toEmail}&AC=${AC}&name=${nombre}&comment=${comentario}`,{
             Remitente_Contacto: name,
             Mensaje_Contacto: comment
@@ -64,37 +55,7 @@ export const ContactoForm = () => {
           setSpinnerOn( false);
           console.log(e);
           alert('Se produjo un error al intentar enviar el correo...')
-      }
-      //aca esta lo que voy a probar del fetch
-      /*let handleSubmit = async () => {
-    
-        try {
-          const res = await fetch('http://localhost/php/sendgrid/enviarmail.php?fromEmail=${fromEmail}&toEmail=${toEmail}&templateId=${templateId}&name=${nombre}&comment=${comentario}', {
-            method: "POST",
-            body: JSON.stringify({
-              name: name,
-              toEmail: email,
-            }),
-          });
-          
-          let resJson = await res.json();
-          
-          if (res.status === 200) {
-            setName("");
-            setEmail("");
-            //setMessage("User created successfully");
-            console.log("Correo Enviado con Exito");
-          } else {
-            console.log("Se presento un error");
-            //setMessage("Some error occured");
-          }
-        } catch (err) {
-          console.log(err);
-        }
-      };
-*/
-    
-      
+      }      
     }
     
     useEffect( ()=> {
