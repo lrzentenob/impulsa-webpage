@@ -1,9 +1,7 @@
-
 .oficinas {
     margin-bottom: 4em;
 }
-.oficinas .curved-titled {
-    
+.oficinas .curved-titled {    
     height: 260px;
 }
 .oficinas h1 {
@@ -14,8 +12,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 2em;
-    
+    margin: 2em;    
 }
 .oficinas-content h2 {
     color: var(--clr-blue);
@@ -27,8 +24,7 @@
 }
 .oficinas .oficina-box {
     width: 290px;
-    margin-right: 2em;
-    
+    margin-right: 2em;    
 }
 .oficina-box .iconfa {
     color: var(--clr-orange);

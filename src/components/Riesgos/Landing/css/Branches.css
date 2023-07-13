@@ -23,17 +23,10 @@
     line-height: 1.5em;
     max-width: 700px;
     margin: auto;
-    padding: 1em;
+    padding: 1em;    
 }
 .branches-riesgos .branches-upper-content h1 {
     color: var(--clr-blue);
-}
-.branches-riesgos .branches-detail ul li {
-    color: var(--clr-blue);
-}
-
-.branches-riesgos .branches-detail .bullet-point {
-    color: var(--clr-gold);
 }
 
 .branches-riesgos .branches-upper-content p {
@@ -42,15 +35,14 @@
     text-align: justify;
 }
 
-
 .branches-riesgos .branches-lower-content {
-    padding: 1em;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center;   
 }
 .branches-riesgos .branches-detail {
-    width: 400px;
+    width: 500px;
+    margin: 3em;
 }
 .branches-riesgos .branches-detail ul {
     display: grid;
@@ -60,12 +52,15 @@
 .branches-riesgos .branches-detail li {
     font-size: var(--fs-sm);
     max-width: 220px;
-    color: var(--clr-gold);
+    color: var(--clr-blue);
     line-height: 2em;
-}
+}   
 .branches-riesgos .branches-detail li p {
     font-weight: var(--fw-semibold);
 }
+.branches-riesgos .branches-detail li .bullet-point {
+    color: var(--clr-gold);
+}
 .branches-riesgos .branches-detail img {
-    width: 100%;
+    width: 100%;    
 }

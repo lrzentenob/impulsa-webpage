@@ -1,10 +1,8 @@
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faPhone, faLocationDot} from '@fortawesome/free-solid-svg-icons'
-
 import { Footer } from "../../components/Fianzas/Landing/Footer";
 import { Header } from "../../components/Fianzas/Landing/Header";
 import { Submenu } from "../../components/Fianzas/Landing/Submenu";
+import { faPhone, faLocationDot} from '@fortawesome/free-solid-svg-icons'
 import './css/FianzasOficinas.css';
 import { Link } from "react-router-dom";
 import curvedImageBk from '../../assets/general/curved-background.png';

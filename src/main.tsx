@@ -16,8 +16,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <App />
       <ContactoForm />
       <BackgroundImages />
-      <ModalHome />
-      
+      <ModalHome />      
     </BrowserRouter>
   </React.StrictMode>
 )

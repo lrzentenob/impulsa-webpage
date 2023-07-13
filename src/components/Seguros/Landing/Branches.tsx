@@ -15,7 +15,7 @@ export const Branches = () => {
             </div>
             <div className='branches-lower-content'>
                 <div className='branches-detail'>
-                    <Link to='/seguros/oficinas'><img src={seMap} alt='mapa de sucursales'></img></Link>
+                    <Link to='/seguros/oficinas'><img src={seMap} alt='Mapa de Sucursales'></img></Link>
                 </div>
                 <div className='branches-detail vertical-centered'>
                     <ul>

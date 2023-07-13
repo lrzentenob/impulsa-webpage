@@ -27,6 +27,11 @@
 .title-shadow {
     text-shadow: 1px 1px 2px gray, 0 0 1em var(--clr-gray), 0 0 0.2em var(--clr-orange);
 }
+
+.paragraph-large {
+    color: white;
+    font-size: large;
+}
 .close {
     font-size: 4em;
     position: absolute;

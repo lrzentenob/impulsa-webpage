@@ -1,8 +1,8 @@
 import './css/Branches.css';
 import riMap from '../../../assets/riesgos/map-riesgos.png';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 export const Branches = () => {
 
@@ -14,8 +14,9 @@ export const Branches = () => {
             </div>
             <div className='branches-lower-content'>
                 <div className='branches-detail'>
-                    <img src={riMap} alt='mapa de sucursales'></img>
+                    <Link to='/riesgos/oficinas'><img src={riMap} alt='Mapa de Sucursales'></img></Link>
                 </div>
+
                 <div className='branches-detail vertical-centered'>
                     <ul>
                         <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className='bullet-point' /> Cuidad de México</p></li>
@@ -29,7 +30,6 @@ export const Branches = () => {
                         <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className='bullet-point' /> Tapachula</p></li>
                     </ul>
                 </div>
-
             </div>
         </div>
     )

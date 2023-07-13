@@ -23,34 +23,31 @@ import { SegurosHogar } from './pages/Seguros/SegurosHogar';
 import { SegurosSoyCliente } from './pages/Seguros/SegurosSoyCliente';
 import { SegurosOficinas } from './pages/Seguros/SegurosOficinas';
 import { SegurosNosotros } from './pages/Seguros/SegurosNosotros';
-import { Consultoria } from './pages/Consultoria/Consultoria';
 import { Riesgos } from './pages/Riesgos/Riesgos';
 import { RiesgosOficinas } from './pages/Riesgos/RiesgosOficinas';
+import { Consultoria } from './pages/Consultoria/Consultoria';
+import { ConsultoriaOficinas } from './pages/Consultoria/ConsultoriaOficinas';
 
 function App() {
   return ( 
 
       <Routes>
-        <Route path="/" element={ <Navigate to='/fianzas' replace={true}/>}>
-        </Route>
+        <Route path="/" element={ <Navigate to='/fianzas' replace={true}/>}></Route>
         <Route path="/fianzas" element={<Fianzas/>}></Route>
         <Route path="/fianzas/productos" element={<FianzasProductos/>}></Route>
         <Route path="/fianzas/requisitos" element={<FianzasRequisitos/>}></Route>
         <Route path="/fianzas/oficinas" element={<FianzasOficinas/>}></Route>
         <Route path="/fianzas/nosotros" element={<FianzasNosotros/>}></Route>
-
         <Route path="/fianzas/arrendamiento" element={<FianzaArrendamiento/>}></Route>
         <Route path="/fianzas/fidelidad" element={<FianzaFidelidad/>}></Route>
         <Route path="/fianzas/fiscal" element={<FianzaFiscal/>}></Route>
         <Route path="/fianzas/judicial" element={<FianzaJudicial/>}></Route>
         <Route path="/fianzas/notario" element={<FianzaNotario/>}></Route>
-
         <Route path="/fianzas/cotizacion" element={<FianzasCotizacion/>}></Route>
         <Route path="/fianzas/validacion" element={<FianzasValidacion/>}></Route>
         <Route path="/fianzas/cancelacion" element={<FianzasCancelacion/>}></Route>
         <Route path="/fianzas/guia-reclamos" element={<FianzasGuiaReclamos/>}></Route>
-        <Route path="/fianzas/programa-proveedores" element={<FianzasProgramaProveedores/>}></Route>
-        
+        <Route path="/fianzas/programa-proveedores" element={<FianzasProgramaProveedores/>}></Route>        
 
         <Route path="/seguros" element={<Seguros/>}></Route>
         <Route path="/seguros/vida" element={<SegurosVida/>}></Route>
@@ -62,10 +59,10 @@ function App() {
         <Route path="/seguros/nosotros" element={<SegurosNosotros/>}></Route>
 
         <Route path="/consultoria" element={<Consultoria/>}></Route>
+        <Route path="/consultoria/oficinas" element={<ConsultoriaOficinas/>}></Route>
         
         <Route path="/riesgos" element={<Riesgos/>}></Route>
         <Route path="/riesgos/oficinas" element={<RiesgosOficinas/>}></Route>
-
       </Routes>
     
 )

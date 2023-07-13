@@ -31,8 +31,8 @@
     flex-direction: column;
     justify-content: center;
   }
+
   .right-div{
-    /* height: 550px; */
     width: 400px;
   }
   
@@ -45,6 +45,7 @@
   .home-intro .buttons-array a {
     margin-bottom: 1em;
   }
+  
   .home-intro p {
     margin-bottom: 1em;
   }

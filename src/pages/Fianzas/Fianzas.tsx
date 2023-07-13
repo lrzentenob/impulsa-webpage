@@ -23,8 +23,7 @@ export const Fianzas  = () =>{
         <ProductsInfo />
         <Branches />
         <Services />
-        <Footer/>
-        
+        <Footer/>        
       </>         
     )
 }
