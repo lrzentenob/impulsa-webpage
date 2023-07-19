@@ -79,7 +79,7 @@ export const CentralSlider = () => {
                                 <div className='home-intro'>
                                     <h1>Contáctanos</h1>
                                     
-                                    <p>La urgencia de las Fianzas es algo que entendemos a la perfección, así que nos aseguramos de que tenga su fianza en 24 horas.</p>
+                                    <p>La urgencia de las Fianzas es algo que entendemos a la perfección, así que nos aseguramos de que tenga su fianza en maximo 24 horas.</p>
                                     <div className='buttons-array'>
                                         <Link className='btn-fianzas' to='' onClick={onShowContactForm}>Contáctanos</Link>                            
                                     </div>
