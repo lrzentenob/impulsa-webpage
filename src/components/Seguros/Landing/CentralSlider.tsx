@@ -5,6 +5,7 @@ import seAutoPhoto from '../../../assets/seguros/seguros-auto-foto.png';
 import slider01Girl from '../../../assets/seguros/slider/slide01-girl.png';
 import curvedBk from '../../../assets/seguros/general/seguros-curvedbk.png';
 import seSoycliPortrait01 from '../../../assets/seguros/general/seguros-soycli-portrait01.png';
+import slider02Girl from '../../../assets/seguros/slider/slide02-girl.png';
 
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -57,7 +58,7 @@ export const CentralSlider = () => {
                     <div className='flex-content'>
                         <div className='left-div'>
                             <div className='home-intro'>
-                                <h1>Protección para tu salud, hogar y auto.</h1>
+                                <h1>Protección para tu salud, hogar y auto</h1>
                                 
                                 <p>Nosotros te asesoramos para que elijas el seguro que más te conviene.</p>
                                 <div className='buttons-array'>
@@ -71,6 +72,29 @@ export const CentralSlider = () => {
                         <div className='right-div'>
                             <div className='curved-bk-img'>
                                 <img src={seAutoPhoto} alt='fianzas girl' className='girl-img auto-seguros-photo'/>
+                                <img src={curvedBk} alt='curved background' className='curvedbk-img'/>
+                            </div>
+
+                        </div>
+                    </div>
+                </SwiperSlide>
+
+                <SwiperSlide>            
+                    <div className='flex-content'>
+                        <div className='left-div'>
+                            <div className='home-intro'>
+                                <h1>Cotiza tu Seguro con nosotros</h1>
+                                
+                                <p>Escribenos que necesitas y con gusto te ayudamos.</p>
+                                <div className='buttons-array'>
+                                    <button className='btn-seguros' onClick={onShowContactForm}>Contáctanos</button>
+                                    </div>
+                            </div>
+                            
+                        </div>
+                        <div className='right-div'>
+                            <div className='curved-bk-img'>
+                                <img src={slider02Girl} alt='fianzas girl' className='girl-img-size2'/>
                                 <img src={curvedBk} alt='curved background' className='curvedbk-img'/>
                             </div>
 
