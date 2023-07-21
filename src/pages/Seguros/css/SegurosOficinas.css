@@ -1,3 +1,33 @@
 .oficinas .iconsa{
     color: var(--clr-blue);
 }
+.oficinas .curved-title{
+    position: relative;
+    width:  450px;
+    margin: auto;
+    height: 250px;
+    margin-bottom: 3em;
+    
+}
+.oficinas h1 {
+    text-align: center;
+    color: var(--clr-blue);
+    padding-top: 2.8em;
+}
+.oficinas .oficinas-nosotros-block {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 3em;
+    padding: 1em;
+}
+.oficinas .curvedbk {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -9999;
+    
+}

@@ -5,7 +5,7 @@ import { Submenu } from "../../components/Seguros/Landing/Submenu";
 import curvedImageBk from '../../assets/general/curved-background.png';
 
 import './css/SegurosOficinas.css';
-import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 export const SegurosOficinas = () => {
@@ -14,14 +14,12 @@ export const SegurosOficinas = () => {
             <Header />
             <Submenu />
             <section className="oficinas">
-                <div className="curved-titled">
-                    <div className="h-container">   
-                        <h1 className="title-text">Oficinas</h1>
-                        <div className="image-content">
-                            <img src={curvedImageBk} className="image-background"></img>
+            <div className="oficinas-nosotros-block">
+                        <div className="curved-title">
+                            <img src={curvedImageBk} className="curvedbk"></img>
+                            <h1>Oficinas</h1>
                         </div>
                     </div>
-                </div>
                             
                 <div className="oficinas-content">
                     <div className="oficina-box">
@@ -31,7 +29,7 @@ export const SegurosOficinas = () => {
                         </div>
                             <p><FontAwesomeIcon className="iconsa" icon={faLocationDot}/> <Link to='https://goo.gl/maps/HpU4E5s7AKVXdE219' target="_blank">Ver mapa</Link></p>
                             <p><FontAwesomeIcon className="iconsa" icon={faPhone}/> <strong>(55) 53 60 69 75</strong></p>
-                            <p><FontAwesomeIcon className="iconsa" icon={faLocationDot}/> <Link to='mailto:cdmexico@impulsaasesores.mx'>cdmexico@impulsaasesores.mx</Link></p>
+                            <p><FontAwesomeIcon className="iconsa" icon={faEnvelope}/> <Link to='mailto:cdmexico@impulsaasesores.mx'>cdmexico@impulsaasesores.mx</Link></p>
                     </div>
                     <div className="oficina-box">
                         <div className="address">
@@ -40,7 +38,7 @@ export const SegurosOficinas = () => {
                         </div>
                         <p><FontAwesomeIcon className="iconsa" icon={faLocationDot}/> <Link to='https://goo.gl/maps/CvStnsNexHD2' target="_blank">Ver mapa</Link></p>
                         <p><FontAwesomeIcon className="iconsa" icon={faPhone}/> <strong>(961) 60 2 50 88</strong></p>
-                        <p><FontAwesomeIcon className="iconsa" icon={faLocationDot}/> <Link to='mailto:tuxtla@impulsaasesores.mx'>tuxtla@impulsaasesores.mx</Link></p>
+                        <p><FontAwesomeIcon className="iconsa" icon={faEnvelope}/> <Link to='mailto:tuxtla@impulsaasesores.mx'>tuxtla@impulsaasesores.mx</Link></p>
 
                     </div>
                     
@@ -51,7 +49,7 @@ export const SegurosOficinas = () => {
                         </div>
                         <p><FontAwesomeIcon className="iconsa" icon={faLocationDot}/> <Link to={"https://www.google.com/maps/place/16%C2%B054'41.0%22N+92%C2%B005'50.3%22W/@16.911377,-92.097305,14z/data=!4m5!3m4!1s0x0:0x0!8m2!3d16.911377!4d-92.097305?ll=16.911377,-92.097305&z=14&t=m&hl=es-ES&gl=US&mapclient=embed&q=16%C2%B054%2741.0%22N+92%C2%B005%2750.3%22W@16.911377,-92.09730499999999"} target="_blank">Ver mapa</Link></p>
                         <p><FontAwesomeIcon className="iconsa" icon={faPhone}/> <strong>(919) 67 3 06 47</strong></p>
-                        <p><FontAwesomeIcon className="iconsa" icon={faLocationDot}/> <Link to='mailto:ocosingo@impulsaasesores.mx'>ocosingo@impulsaasesores.mx</Link></p>
+                        <p><FontAwesomeIcon className="iconsa" icon={faEnvelope}/> <Link to='mailto:ocosingo@impulsaasesores.mx'>ocosingo@impulsaasesores.mx</Link></p>
 
                     </div>
                 </div>
@@ -64,7 +62,7 @@ export const SegurosOficinas = () => {
                         </div>
                         <p><FontAwesomeIcon className="iconsa" icon={faLocationDot}/> <Link to={"https://goo.gl/maps/3Zn5FkE9LdK8yjiw5"} target="_blank">Ver mapa</Link></p>
                         <p><FontAwesomeIcon className="iconsa" icon={faPhone}/> <strong>(55) 53 60 69 75</strong></p>
-                        <p><FontAwesomeIcon className="iconsa" icon={faLocationDot}/> <Link to='mailto:edomexico@impulsaasesores.mx'>edomexico@impulsaasesores.mx</Link></p>
+                        <p><FontAwesomeIcon className="iconsa" icon={faEnvelope}/> <Link to='mailto:edomexico@impulsaasesores.mx'>edomexico@impulsaasesores.mx</Link></p>
 
                     </div>
                     <div className="oficina-box">
@@ -74,7 +72,7 @@ export const SegurosOficinas = () => {
                         </div>
                         <p><FontAwesomeIcon className="iconsa" icon={faLocationDot}/> <Link to={"https://www.google.com/maps/place/16%C2%B044'04.6%22N+92%C2%B038'19.7%22W/@16.734605,-92.6388,14z/data=!4m5!3m4!1s0x0:0x0!8m2!3d16.734605!4d-92.6388?ll=16.734605,-92.6388&z=14&t=m&hl=es-ES&gl=US&mapclient=embed&q=16%C2%B044%2704.6%22N+92%C2%B038%2719.7%22W@16.734605,-92.63879999999999"} target="_blank">Ver mapa</Link></p>
                         <p><FontAwesomeIcon className="iconsa" icon={faPhone}/> <strong>(967) 67 4 03 06</strong></p>
-                        <p><FontAwesomeIcon className="iconsa" icon={faLocationDot}/> <Link to='mailto:sancristobal@impulsaasesores.mx'>sancristobal@impulsaasesores.mx</Link></p>
+                        <p><FontAwesomeIcon className="iconsa" icon={faEnvelope}/> <Link to='mailto:sancristobal@impulsaasesores.mx'>sancristobal@impulsaasesores.mx</Link></p>
 
                     </div>
                     
@@ -85,7 +83,7 @@ export const SegurosOficinas = () => {
                         </div>
                         <p><FontAwesomeIcon className="iconsa" icon={faLocationDot}/> <Link to={"https://goo.gl/maps/4jxp76ZTg2c3F69U9"} target="_blank">Ver mapa</Link></p>
                         <p><FontAwesomeIcon className="iconsa" icon={faPhone}/> <strong>(962) 62 6 77 05</strong></p>
-                        <p><FontAwesomeIcon className="iconsa" icon={faLocationDot}/> <Link to='mailto:tapachula@impulsaasesores.mx'>tapachula@impulsaasesores.mx</Link></p>
+                        <p><FontAwesomeIcon className="iconsa" icon={faEnvelope}/> <Link to='mailto:tapachula@impulsaasesores.mx'>tapachula@impulsaasesores.mx</Link></p>
 
                     </div>
                 </div>
@@ -98,7 +96,7 @@ export const SegurosOficinas = () => {
                         </div>
                         <p><FontAwesomeIcon className="iconsa" icon={faLocationDot}/> <Link to={"https://goo.gl/maps/JaCeiLp6X7PdonRA9"} target="_blank">Ver mapa</Link></p>
                         <p><FontAwesomeIcon className="iconsa" icon={faPhone}/> <strong>(993) 316 0115</strong></p>
-                        <p><FontAwesomeIcon className="iconsa" icon={faLocationDot}/> <Link to='mailto:villahermosa@impulsaasesores.mx'>villahermosa@impulsaasesores.mx</Link></p>
+                        <p><FontAwesomeIcon className="iconsa" icon={faEnvelope}/> <Link to='mailto:villahermosa@impulsaasesores.mx'>villahermosa@impulsaasesores.mx</Link></p>
                     </div>
                     <div className="oficina-box">
                         <div className="address">
@@ -107,7 +105,7 @@ export const SegurosOficinas = () => {
                         </div>
                         <p><FontAwesomeIcon className="iconsa" icon={faLocationDot}/> <Link to={"https://www.google.com/maps/place/16%C2%B015'10.1%22N+92%C2%B008'09.6%22W/@16.252809,-92.136004,14z/data=!4m5!3m4!1s0x0:0x0!8m2!3d16.252809!4d-92.136004?hl=es-ES"} target="_blank">Ver mapa</Link></p>
                         <p><FontAwesomeIcon className="iconsa" icon={faPhone}/> <strong>(963) 63 2 18 57</strong></p>
-                        <p><FontAwesomeIcon className="iconsa" icon={faLocationDot}/> <Link to='mailto:comitan@impulsaasesores.mx'>comitan@impulsaasesores.mx</Link></p>
+                        <p><FontAwesomeIcon className="iconsa" icon={faEnvelope}/> <Link to='mailto:comitan@impulsaasesores.mx'>comitan@impulsaasesores.mx</Link></p>
 
                     </div>
                     
@@ -118,7 +116,7 @@ export const SegurosOficinas = () => {
                         </div>
                         <p><FontAwesomeIcon className="iconsa" icon={faLocationDot}/> <Link to={"https://goo.gl/maps/WwXR8xeFQUQR2WPR6"} target="_blank">Ver mapa</Link></p>
                         <p><FontAwesomeIcon className="iconsa" icon={faPhone}/> <strong>(229) 932 53 63</strong></p>
-                        <p><FontAwesomeIcon className="iconsa" icon={faLocationDot}/> <Link to='mailto:veracruz@impulsaasesores.mx'>veracruz@impulsaasesores.mx</Link></p>
+                        <p><FontAwesomeIcon className="iconsa" icon={faEnvelope}/> <Link to='mailto:veracruz@impulsaasesores.mx'>veracruz@impulsaasesores.mx</Link></p>
                     </div>
                 </div>
                 <hr></hr>
