@@ -13,14 +13,12 @@ export const ConsultoriaOficinas = () => {
             <Header />
             <Submenu />
             <section className="oficinas">
-                <div className="curved-titled">
-                    <div className="h-container">   
-                        <h1 className="title-text">Oficinas</h1>
-                        <div className="image-content">
-                            <img src={curvedImageBk} className="image-background"></img>
+            <div className="oficinas-nosotros-block">
+                        <div className="curved-title">
+                            <img src={curvedImageBk} className="curvedbk"></img>
+                            <h1>Oficinas</h1>
                         </div>
                     </div>
-                </div>
 
                 <div className="oficinas-content">
                     <div className="oficina-box">
