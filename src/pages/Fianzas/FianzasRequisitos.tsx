@@ -132,7 +132,7 @@ export const FianzasRequisitos = () => {
                             <li>bante de Domicilio Fiscal de la Empresa (No mayor a 3 Meses).</li>
                             <li>RFC y/o Constancia de Situación Fiscal.</li>
                             <li>Declaración ISR con Acuse 2022.</li>
-                            <li>Balance General y Estado de Resultados Internos al 31 de Diciembre del 2022.</li>
+                            <li>Balance General y Estado de Resultados al 31 de Diciembre del 2022.</li>
                             <li>Balance General y Estado de Resultados Parciales Internos 2023 (No Mayor a 6 Meses). Con Leyenda de validacion (*Abajo citada). Deberán Estar en Papel Membretado y Firmados Por el Representante Legal y Contador Público, anexando copia de su Cedula Profesional.</li>
                         </ol>
                         <h3>Sus obligados</h3>
@@ -178,7 +178,7 @@ export const FianzasRequisitos = () => {
                             <li>Comprobante de Domicilio Fiscal de la Empresa (No mayor a 3 Meses).</li>
                             <li>CURP.</li>
                             <li>RFC y/o Constancia de Situación Fiscal.</li>                         <li>Declaración ISR y Acuse 2022.</li>
-                            <li>Balance General y Estado de Resultados Internos al 31 de Diciembre del 2022.</li>
+                            <li>Balance General y Estado de Resultados al 31 de Diciembre del 2022.</li>
                             <li>Balance General y Estado de Resultados Parciales Internos 2023 (No mayores a 6 meses). Con Leyenda de validación (*Abajo citada). Deberán Estar en Papel Membretado y Firmados Por el Representante Legal y Contador Público, anexando copia de su Cédula Profesional.</li>
 
                         </ol>
