@@ -129,23 +129,23 @@ export const FianzasRequisitos = () => {
                             <li>Copia de Acta Constitutiva y Protocolizaciones.</li>
                             <li>Identificación Vigente con Foto del Representante Legal (INE, Pasaporte o Licencia).</li>
                             <li>Curriculum de Obras/Servicios de la Empresa.</li>
-                            <li>bante de Domicilio Fiscal de la Empresa (No mayor a 3 Meses).</li>
+                            <li>Comprobante de Domicilio Fiscal de la Empresa (No mayor a 3 Meses).</li>
                             <li>RFC y/o Constancia de Situación Fiscal.</li>
-                            <li>Declaración ISR con Acuse 2022.</li>
-                            <li>Balance General y Estado de Resultados al 31 de Diciembre del 2022.</li>
-                            <li>Balance General y Estado de Resultados Parciales Internos 2023 (No Mayor a 6 Meses). Con Leyenda de validacion (*Abajo citada). Deberán Estar en Papel Membretado y Firmados Por el Representante Legal y Contador Público, anexando copia de su Cedula Profesional.</li>
+                            <li>Declaración ISR con Acuse y Anexos 2023.</li>
+                            <li>Balance General y Estado de Resultados al 31 de Diciembre del 2023.</li>
+                            <li>Balance General y Estado de Resultados Parciales Internos 2024 (No Mayor a 6 Meses). Con Leyenda de validacion (*Abajo citada). Deberán Estar en Papel Membretado y Firmados Por el Representante Legal y Contador Público, anexando copia de su Cedula Profesional.</li>
                         </ol>
                         <h3>Sus obligados</h3>
                         <ol>
                             <li>Copia de Escrituras de Bienes Inmuebles Urbanos. Libres de Gravamen.</li>
                             <li>Identificación Vigente con Foto (IFE o Pasaporte).</li>
                             <li>Comprobante de Domicilio del Obligado Solidario (No Mayor a 3 Meses).</li>
-                            <li>Boleta Predial del Año 2023.</li>
-                            <li>Certificado de Libertad o Gravamen del Año 2023.</li>
+                            <li>Boleta Predial del Año 2024.</li>
+                            <li>Certificado de Libertad o Gravamen del Año 2024.</li>
                             <li>Acta de Matrimonio (En caso de ser Casado), Identificación con Fotografía (INE) del Cónyuge.</li>
                         </ol>
                         <div className="actions">
-                            <a className="btn-fianzas" href="/clientes-nuevo-ingreso-2023-pmoral.pdf" target="_blank">Imprimir</a>
+                            <a className="btn-fianzas" href="/clientes-nuevo-ingreso-2024-pmoral.pdf" target="_blank">Imprimir</a>
                             <button className="btn-fianzas" onClick={onShowEmailInput1} disabled={showEmailInput1}>Enviar por correo</button>
                         </div>
                         {showEmailInput1 &&<EmailInputForm sendEmailHandler={onSendEmailTypeA} cancelHandler={onCancelSend1} />}
@@ -177,9 +177,9 @@ export const FianzasRequisitos = () => {
                             <li>Curriculum de Obras/Servicios de la Empresa</li>
                             <li>Comprobante de Domicilio Fiscal de la Empresa (No mayor a 3 Meses).</li>
                             <li>CURP.</li>
-                            <li>RFC y/o Constancia de Situación Fiscal.</li>                         <li>Declaración ISR y Acuse 2022.</li>
-                            <li>Balance General y Estado de Resultados al 31 de Diciembre del 2022.</li>
-                            <li>Balance General y Estado de Resultados Parciales Internos 2023 (No mayores a 6 meses). Con Leyenda de validación (*Abajo citada). Deberán Estar en Papel Membretado y Firmados Por el Representante Legal y Contador Público, anexando copia de su Cédula Profesional.</li>
+                            <li>RFC y/o Constancia de Situación Fiscal.</li>                         <li>Declaración ISR y Acuse 2023.</li>
+                            <li>Balance General y Estado de Resultados al 31 de Diciembre del 2023.</li>
+                            <li>Balance General y Estado de Resultados Parciales Internos 2024 (No mayores a 6 meses). Con Leyenda de validación (*Abajo citada). Deberán Estar en Papel Membretado y Firmados Por el Representante Legal y Contador Público, anexando copia de su Cédula Profesional.</li>
 
                         </ol>
                         <h3>Sus obligados</h3>
@@ -187,13 +187,13 @@ export const FianzasRequisitos = () => {
                             <li>Copia de Escrituras de Bienes Inmuebles Urbanos. Libres de Gravamen.</li>
                             <li>Identificación Vigente con Foto (INE o Pasaporte).</li>
                             <li>Comprobante de Domicilio del Obligado Solidario (No mayor a 3 meses).</li>
-                            <li>Boleta Predial del Año 2023.</li>
-                            <li>Certificado de Libertad o Gravamen del Año 2023.</li>
+                            <li>Boleta Predial del Año 2024.</li>
+                            <li>Certificado de Libertad o Gravamen del Año 2024.</li>
                             <li>Acta de Matrimonio (En caso de ser Casado), Identificación con Fotografía (INE) del Cónyuge</li>
                         </ol>
 
                     <div className="actions">
-                        <a href='/clientes-nuevo-ingreso-2023-pfisica.pdf' target="_blank" className="btn-fianzas">Imprimir</a>
+                        <a href='/clientes-nuevo-ingreso-2024-pfisica.pdf' target="_blank" className="btn-fianzas">Imprimir</a>
                         <button className="btn-fianzas" onClickCapture={onShowEmailInput2}>Enviar por correo </button>
                     </div>
                         {showEmailInput2 && <EmailInputForm sendEmailHandler={onSendEmailTypeB} cancelHandler={onCancelSend2} />}
