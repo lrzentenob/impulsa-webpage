@@ -50,7 +50,7 @@ export const FianzasCotizacion = () => {
     const [montoAnticipo, setMontoAnticipo] =  useState<number>(0);
     const [primaNetaAnticipo, setPrimaNetaAnticipo]  = useState<number>(0);
     const [derechoAnticipo, setDerechoAnticipo] = useState<number>(0);
-    const [gastoExpAnticipo, setGastosExpAnticipo] = useState<number>(2300);
+    const [gastoExpAnticipo, setGastosExpAnticipo] = useState<number>(2500);
     const [anticipoSubt, setAnticipoSubt] = useState<number>(0);
     const [anticipoIva, setAnticipoIva] = useState<number>(0);
     const [anticipoTotal, setAnticipoTotal] = useState<number>(0);
@@ -59,7 +59,7 @@ export const FianzasCotizacion = () => {
     const [montoCump, setMontoCump] = useState<number>(0);
     const [primaNetaCump, setPrimaNetaCump] = useState<number>(0);
     const [derechosCump, setDerechosCump] = useState<number>(0);
-    const [gastosExpCump, setGastosExpCump] = useState<number>(2300);
+    const [gastosExpCump, setGastosExpCump] = useState<number>(2500);
     const [cumpSubtotal, setCumpSubtotal] = useState<number>(0);
     const [cumpIva, setCumpIva] = useState<number>(0);
     const [cumpTotal, setCumpTotal] = useState<number>(0);
@@ -69,7 +69,7 @@ export const FianzasCotizacion = () => {
     const [montoLiciation, setMontoLicitacion ] = useState<number>(0)
     const [primaNetaLic, setPrimaNetLic ] = useState<number>(0)
     const [derechosLic, setDerechosLic ] = useState<number>(0)
-    const [gastosExpLic, setGastosExpLic ] = useState<number>(2300)
+    const [gastosExpLic, setGastosExpLic ] = useState<number>(2500)
     const [licSubtotal, setLicSubtotal ] = useState<number>(0)
     const [licIva, setLicIva ] = useState<number>(0)
     const [licTotal, setLicTotal ] = useState<number>(0)
@@ -148,7 +148,7 @@ export const FianzasCotizacion = () => {
         const DerechosAnticipo = PrimaNetaFinal *0.035;
         setDerechoAnticipo( DerechosAnticipo );
         
-        let gastosExpAnticipoTmp = primaNetaTmp > 0 ? 2300 : 0
+        let gastosExpAnticipoTmp = primaNetaTmp > 0 ? 2500 : 0
         setGastosExpAnticipo(gastosExpAnticipoTmp);
         const AnticipoSubtotal = PrimaNetaFinal + DerechosAnticipo + gastosExpAnticipoTmp;
 
@@ -175,7 +175,7 @@ export const FianzasCotizacion = () => {
         const DerechosCumplimiento = PrimaNetaCumplimento * 0.035;
         setDerechosCump(DerechosCumplimiento);
 
-        let gastosExpCumpTmp = PrimaNetaCumplimento > 0 ? 2300 : 0;
+        let gastosExpCumpTmp = PrimaNetaCumplimento > 0 ? 2500 : 0;
         setGastosExpCump(gastosExpCumpTmp)
 
         const CumplimientoSubtotal = PrimaNetaCumplimento + DerechosCumplimiento + gastosExpCumpTmp;
