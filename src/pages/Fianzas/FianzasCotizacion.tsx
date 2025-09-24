@@ -8,7 +8,7 @@ import { RangeSlider } from "../../components/Fianzas/Landing/RangeSlider";
 import { formatLocalCurrency } from "../../utils/CurrencyFormatter";
 import { EmailInputForm } from "../../components/Fianzas/Landing/EmailSendingForm";
 import api from "../../api/api";
-
+// import GoogleTag from "../../components/GoogleAnalytics";
 
 
 export const FianzasCotizacion = () => {
@@ -599,6 +599,7 @@ export const FianzasCotizacion = () => {
                 </div>
                 </div>
             </section>
+            
             <Footer />
         </>
     );

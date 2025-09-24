@@ -27,3 +27,10 @@ export function getYearsFromYear( yearFounded: number) {
     const todayYear = new Date().getFullYear();
     return todayYear - yearFounded;
 }
+
+export {};
+declare global {
+  interface Window {
+    dataLayer: any[];
+  }
+}

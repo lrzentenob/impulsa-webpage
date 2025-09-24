@@ -27,9 +27,12 @@ import { Riesgos } from './pages/Riesgos/Riesgos';
 import { RiesgosOficinas } from './pages/Riesgos/RiesgosOficinas';
 import { Consultoria } from './pages/Consultoria/Consultoria';
 import { ConsultoriaOficinas } from './pages/Consultoria/ConsultoriaOficinas';
+import GoogleTag from "./components/GoogleAnalytics";
 
 function App() {
   return ( 
+    <>
+      <GoogleTag />
 
       <Routes>
         <Route path="/" element={ <Navigate to='/fianzas' replace={true}/>}></Route>
@@ -64,8 +67,9 @@ function App() {
         <Route path="/riesgos" element={<Riesgos/>}></Route>
         <Route path="/riesgos/oficinas" element={<RiesgosOficinas/>}></Route>
       </Routes>
-    
-)
+    </>
+
+);
 }
 
 export default App
