@@ -141,7 +141,7 @@ export const FianzasCotizacion = () => {
         setMontoAnticipo( MontoAnticipo );
 
         let primaNetaTmp = MontoAnticipo * 0.012;
-        const PrimaNetaFinal = primaNetaTmp < 1800 && primaNetaTmp ? 1800 : primaNetaTmp
+        const PrimaNetaFinal = primaNetaTmp < 2500 && primaNetaTmp ? 2500 : primaNetaTmp
 
         setPrimaNetaAnticipo( PrimaNetaFinal );
 
@@ -168,7 +168,7 @@ export const FianzasCotizacion = () => {
         }
         primaNetaTmp = viciosOcultos ? ( (MontoMinimo/12)*(term +12) ) : MontoCumplimiento * 0.012 
 
-        let PrimaNetaCumplimento = primaNetaTmp < 1800 && primaNetaTmp ? 1800 : primaNetaTmp;
+        let PrimaNetaCumplimento = primaNetaTmp < 2500 && primaNetaTmp ? 2500 : primaNetaTmp;
 
         setPrimaNetaCump(PrimaNetaCumplimento);
 
@@ -189,7 +189,7 @@ export const FianzasCotizacion = () => {
         setMontoLicitacion(MontoLicitacion);
 
         let PrimaNetaLicitacion =  MontoLicitacion * 0.03;
-        PrimaNetaLicitacion = PrimaNetaLicitacion < 1800 && PrimaNetaLicitacion ? 1800 : PrimaNetaLicitacion;
+        PrimaNetaLicitacion = PrimaNetaLicitacion < 2500 && PrimaNetaLicitacion ? 2500 : PrimaNetaLicitacion;
         setPrimaNetLic(PrimaNetaLicitacion);
 
         const DerechosLicitacion = PrimaNetaLicitacion * 0.035;
