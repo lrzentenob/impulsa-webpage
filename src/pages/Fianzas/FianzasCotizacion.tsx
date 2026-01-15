@@ -8,6 +8,7 @@ import { RangeSlider } from "../../components/Fianzas/Landing/RangeSlider";
 import { formatLocalCurrency } from "../../utils/CurrencyFormatter";
 import { EmailInputForm } from "../../components/Fianzas/Landing/EmailSendingForm";
 import api from "../../api/api";
+import emailjs from '@emailjs/browser';
 // import GoogleTag from "../../components/GoogleAnalytics";
 
 
@@ -73,8 +74,6 @@ export const FianzasCotizacion = () => {
     const [licSubtotal, setLicSubtotal ] = useState<number>(0)
     const [licIva, setLicIva ] = useState<number>(0)
     const [licTotal, setLicTotal ] = useState<number>(0)
-    
-
 
     function onUpdateUpfront(e:any) {
         setPositionUpfront(e.target.value);
@@ -164,7 +163,7 @@ export const FianzasCotizacion = () => {
         let MontoMinimo = 0;
         if( viciosOcultos ){
             let montoMinimoTmp = MontoCumplimiento * 0.012;
-            MontoMinimo = montoMinimoTmp < 1800 && montoMinimoTmp ? 1800 : montoMinimoTmp;
+            MontoMinimo = montoMinimoTmp < 2500 && montoMinimoTmp ? 2500 : montoMinimoTmp;
         }
         primaNetaTmp = viciosOcultos ? ( (MontoMinimo/12)*(term +12) ) : MontoCumplimiento * 0.012 
 
@@ -251,14 +250,63 @@ export const FianzasCotizacion = () => {
                 const TotalAnt = `${formatLocalCurrency(anticipoTotal)}`;
                 const TotalCum = `${formatLocalCurrency(cumpTotal)}`;
                 const CostoTotal = `${formatLocalCurrency(totalFianza)}`;
-
+                const EMAILJS_SERVICE_ID = 'service_0b0jb2x';
+                const EMAILJS_TEMPLATE_ID = 'template_wyjilst';
+                const EMAILJS_PUBLIC_KEY = 'Crb0KXp8AMwOsXZaM';
 
 
                 try {
                     onSetSpinnerHandler( true);
                     try {
                         onSetSpinnerHandler( true);
-                        const apiRes = await api.post(`cotizaciones.php?fromEmail=${fromEmail}&toEmail=${toEmail}&AC=${AC}&ID=AN&Monto=${Monto}&MontoAnt=${MontoAnt}&MontoCum=${MontoCum}&PrimaAnt=${PrimaAnt}&PrimaCum=${PrimaCum}&DerechosAnt=${DerechosAnt}&DerechoCum=${DerechoCum}&GastosAnt=${GastosAnt}&GastosCum=${GastosCum}&SubtotalAnt=${SubtotalAnt}&SubtotalCum=${SubtotalCum}&IVAAnt=${IVAAnt}&IVACum=${IVACum}&TotalAnt=${TotalAnt}&TotalCum=${TotalCum}&CostoTotal=${CostoTotal}`);                    
+                        // const apiRes = await api.post(`cotizaciones.php?fromEmail=${fromEmail}&toEmail=${toEmail}&AC=${AC}&ID=AN
+                        //     &Monto=${Monto}
+                        //     &MontoAnt=${MontoAnt}
+                        //     &MontoCum=${MontoCum}
+                        //     &PrimaAnt=${PrimaAnt}
+                        //     &PrimaCum=${PrimaCum}
+                        //     &DerechosAnt=${DerechosAnt}
+                        //     &DerechoCum=${DerechoCum}
+                        //     &GastosAnt=${GastosAnt}
+                        //     &GastosCum=${GastosCum}
+                        //     &SubtotalAnt=${SubtotalAnt}
+                        //     &SubtotalCum=${SubtotalCum}
+                        //     &IVAAnt=${IVAAnt}
+                        //     &IVACum=${IVACum}
+                        //     &TotalAnt=${TotalAnt}
+                        //     &TotalCum=${TotalCum}
+                        //     &CostoTotal=${CostoTotal}`);  
+                            
+                            const templateParams = {
+                                from_name: name,
+                                to_email: toEmail,
+                                from_email: fromEmail, 
+                                Monto_Contrato: Monto,
+                                Ant_Monto: MontoAnt,
+                                Cum_Monto: MontoCum,
+                                Ant_Prima: PrimaAnt,
+                                Cum_Prima: PrimaCum,
+                                Ant_Derechos: DerechosAnt,
+                                Cum_Derechos: DerechoCum,
+                                Ant_Gastos: GastosAnt,
+                                Cum_Gastos: GastosCum,
+                                Ant_SubTotal: SubtotalAnt,
+                                Cum_SubTotal: SubtotalCum,
+                                Ant_IVA: IVAAnt,
+                                Cum_IVA: IVACum,
+                                Ant_Total: TotalAnt,
+                                Cum_Total: TotalCum,
+                                Costo_Total: CostoTotal
+                            };
+
+                            // Enviar email usando EmailJS
+                            const result = await emailjs.send(
+                                EMAILJS_SERVICE_ID,
+                                EMAILJS_TEMPLATE_ID,
+                                templateParams,
+                                EMAILJS_PUBLIC_KEY
+                            );
+
                         onSetSpinnerHandler( false);
                         onSentEmailHanlder(true);
                         
@@ -283,7 +331,7 @@ export const FianzasCotizacion = () => {
         
 
         if( tipoFianza === 'licitacion'){
-            AC = 'd-5ba91a39a85b438ca7ebb09a5f233e96'; // template para Licitacion
+            //AC = 'd-5ba91a39a85b438ca7ebb09a5f233e96'; // template para Licitacion
            /* templateBody = {
                 Monto_Contrato: `${formatLocalCurrency(parseFloat(amount))}`,
                 Monto_Licitacion: `${formatLocalCurrency(montoLiciation)}`,
@@ -302,12 +350,45 @@ export const FianzasCotizacion = () => {
             const SubtotalLi = `${formatLocalCurrency(licSubtotal)}`;
             const IVALi = `${formatLocalCurrency(licIva)}`;
             const TotalLi = `${formatLocalCurrency(licTotal)}`;
+            const EMAILJS_SERVICE_ID = 'service_0b0jb2x'; 
+            const EMAILJS_TEMPLATE_ID = 'template_5ff8cnd';
+            const EMAILJS_PUBLIC_KEY = 'Crb0KXp8AMwOsXZaM';
 
             try {
                 onSetSpinnerHandler( true);
                 try {
                     onSetSpinnerHandler( true);
-                    const apiRes = await api.post(`cotizaciones.php?fromEmail=${fromEmail}&toEmail=${toEmail}&AC=${AC}&ID=LI&Monto=${Monto}&MontoLi=${MontoLi}&PrimaLi=${PrimaLi}&DerechoLi=${DerechoLi}&GastosLi=${GastosLi}&SubtotalLi=${SubtotalLi}&IVALi=${IVALi}&TotalLi=${TotalLi}`);                    
+                    // const apiRes = await api.post(`cotizaciones.php?fromEmail=${fromEmail}&toEmail=${toEmail}&AC=${AC}&ID=LI
+                    //     &Monto=${Monto}
+                    //     &MontoLi=${MontoLi}
+                    //     &PrimaLi=${PrimaLi}
+                    //     &DerechoLi=${DerechoLi}
+                    //     &GastosLi=${GastosLi}
+                    //     &SubtotalLi=${SubtotalLi}
+                    //     &IVALi=${IVALi} 
+                    //     &TotalLi=${TotalLi}`);                    
+                    const templateParams = {
+                    from_name: name,
+                    to_email: toEmail,
+                    from_email: fromEmail, 
+                    Monto_Contrato: Monto,
+                    Monto_Licitacion: MontoLi,
+                    Prima_Licitacion: PrimaLi,
+                    Derechos_Licitacion: DerechoLi,
+                    GastosExp_Licitacion: GastosLi,
+                    Subtotal_Licitacion: SubtotalLi,
+                    IVA_Licitacion: IVALi,
+                    Total_Licitacion: TotalLi
+                };
+
+                // Enviar email usando EmailJS
+                const result = await emailjs.send(
+                    EMAILJS_SERVICE_ID,
+                    EMAILJS_TEMPLATE_ID,
+                    templateParams,
+                    EMAILJS_PUBLIC_KEY
+                );
+                    
                     onSetSpinnerHandler( false);
                     onSentEmailHanlder(true);
                     

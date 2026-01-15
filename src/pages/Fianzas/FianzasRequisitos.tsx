@@ -13,7 +13,7 @@ import { useEffect, useRef, useState } from 'react';
 import api from '../../api/api';
 import { Spinner } from '../../components/Fianzas/Landing/Spinner';
 import { EmailInputForm } from '../../components/Fianzas/Landing/EmailSendingForm';
-
+import emailjs from '@emailjs/browser';
 
 export const FianzasRequisitos = () => {
 
@@ -41,12 +41,33 @@ export const FianzasRequisitos = () => {
 
         const fromEmail = 'fianzas@impulsaasesores.mx';
         const toEmail = inputEmailParam;
-        const AC = 'd-f798bfa3491641a58c144770338966f1' /// plantilla Personal Moral
+       //const AC = 'd-f798bfa3491641a58c144770338966f1' /// plantilla Personal Moral
+
+        // Configuración de EmailJS - reemplaza con tus datos reales
+        const EMAILJS_SERVICE_ID = 'service_cd7p41w'; // Ej: 'service_abc123'
+        const EMAILJS_TEMPLATE_ID = 'template_y0xpgaj'; // Ej: 'template_xyz789'
+        const EMAILJS_PUBLIC_KEY = 'HvCTh4fQmd53HBvr9'; // Ej: 'user_abc123'
 
         try {
             onSetSpinnerHandler( true);
-            const apiRes = await api.post(`/requisitos.php?fromEmail=${fromEmail}&toEmail=${toEmail}&AC=${AC}&ID=PM`);
-            console.log(apiRes.data);
+            // const apiRes = await api.post(`/requisitos.php?fromEmail=${fromEmail}&toEmail=${toEmail}&AC=${AC}&ID=PM`);
+            // console.log(apiRes.data);
+            const templateParams = {
+            from_name: name,
+            to_email: toEmail,
+            from_email: fromEmail, // El email destino basado en la ruta
+            //message: comment,
+            reply_to: fromEmail
+          };
+
+          // Enviar email usando EmailJS
+          const result = await emailjs.send(
+            EMAILJS_SERVICE_ID,
+            EMAILJS_TEMPLATE_ID,
+            templateParams,
+            EMAILJS_PUBLIC_KEY
+          );
+
             onSetSpinnerHandler( false);
             onSentEmailHanlder(true);
             
@@ -67,12 +88,36 @@ export const FianzasRequisitos = () => {
         
         const fromEmail = 'fianzas@impulsaasesores.mx';
         const toEmail = inputEmailParam;
-        const AC = 'd-0965dd6435d24a6893a8bc7678ebbd48'
+        //const AC = 'd-0965dd6435d24a6893a8bc7678ebbd48';//persona fisica
+
+        // Configuración de EmailJS - reemplaza con tus datos reales
+        const EMAILJS_SERVICE_ID = 'service_cd7p41w'; // Ej: 'service_abc123'
+        const EMAILJS_TEMPLATE_ID = 'template_xzociyo'; // Ej: 'template_xyz789'
+        const EMAILJS_PUBLIC_KEY = 'HvCTh4fQmd53HBvr9'; // Ej: 'user_abc123'
 
         try {
             onSetSpinnerHandler( true);
-            const apiRes = await api.post(`/requisitos.php?fromEmail=${fromEmail}&toEmail=${toEmail}&AC=${AC}&ID=PF`);
-            console.log(apiRes.data);
+            // const apiRes = await api.post(`/requisitos.php?fromEmail=${fromEmail}&toEmail=${toEmail}&AC=${AC}&ID=PF`);
+
+            // Preparar los parámetros para EmailJS
+          const templateParams = {
+            from_name: name,
+            to_email: toEmail,
+            from_email: fromEmail, // El email destino basado en la ruta
+            //message: comment,
+            reply_to: fromEmail
+          };
+
+          // Enviar email usando EmailJS
+          const result = await emailjs.send(
+            EMAILJS_SERVICE_ID,
+            EMAILJS_TEMPLATE_ID,
+            templateParams,
+            EMAILJS_PUBLIC_KEY
+          );
+
+            
+            //console.log(apiRes.data);
             onSetSpinnerHandler( false);
             onSentEmailHanlder(true);
             

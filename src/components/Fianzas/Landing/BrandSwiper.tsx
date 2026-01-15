@@ -13,6 +13,7 @@ import fiBrand10 from '../../../assets/fianzas/brands/10-fiducia.png';
 import fiBrand11 from '../../../assets/fianzas/brands/11-mapfre.png';
 import fiBrand12 from '../../../assets/fianzas/brands/12-avla.png';
 import fiBrand13 from '../../../assets/fianzas/brands/13-toki-marine.png';
+import fiBrand14 from '../../../assets/fianzas/brands/14-avanza.png';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -46,6 +47,7 @@ export default () => {
       <SwiperSlide><div className='brand-container'><img src={fiBrand11}></img></div></SwiperSlide>
       <SwiperSlide><div className='brand-container'><img src={fiBrand12}></img></div></SwiperSlide>
       <SwiperSlide><div className='brand-container'><img src={fiBrand13}></img></div></SwiperSlide>
+      <SwiperSlide><div className='brand-container'><img src={fiBrand14}></img></div></SwiperSlide>
 
     </Swiper>
     
