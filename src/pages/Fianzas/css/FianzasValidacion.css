@@ -6,7 +6,7 @@
 .fianza-valid-content .fianza-valid-paragraph, 
 .fianza-valid-content .fianza-valid-brands{
     padding: 2em;
-    max-width: 600px;
+    max-width: 700px;
     margin: auto;
 }
 .fianza-valid-content .fianza-valid-portrait div {
@@ -36,7 +36,7 @@
 }
 .fianza-valid-content .fianza-valid-brands ul {
     list-style: none;
-    height: 15em;
+    height: 17em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

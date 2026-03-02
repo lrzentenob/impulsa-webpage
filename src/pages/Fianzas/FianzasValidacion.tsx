@@ -49,6 +49,8 @@ export const FianzasValidacion = () => {
                         <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> <Link to='https://www.fianzasatlas.net/efianza/Validador/ValidadorDocumentos.aspx'>Afianzadora Atlas</Link></p></li>
                         <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> <Link to='https://www.avla.com/cl/portalgarantias/verificar-polizas'>Afianzadora Avla</Link></p></li>
                         <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> <Link to='https://fianzasavanza.mx:9091/(S(e2ngl0u4e1rnvxfufuzkmzk3))/Electronicos/Ratificacion/ratificacion2.aspx'>Afianzadora Avanza</Link></p></li>
+                        <li><p><FontAwesomeIcon icon={faCircleCheck} size='1x' className="icon" /> <Link to='https://www.asecam.com.mx/portal/consultas/'>Afianzadora ASECAM</Link></p></li>
+
                     </ul>
                     </div>
                 </div>
